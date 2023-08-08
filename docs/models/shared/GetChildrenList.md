@@ -1,0 +1,11 @@
+# GetChildrenList
+
+list of children
+
+
+## Fields
+
+| Field                                                                            | Type                                                                             | Required                                                                         | Description                                                                      | Example                                                                          |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `children`                                                                       | array<[GetChildrenListChildren](../../models/shared/GetChildrenListChildren.md)> | :heavy_minus_sign:                                                               | Your children's account information                                              |                                                                                  |
+| `count`                                                                          | *?int*                                                                           | :heavy_minus_sign:                                                               | Number of child accounts                                                         | 24                                                                               |

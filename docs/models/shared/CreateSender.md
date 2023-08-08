@@ -1,0 +1,12 @@
+# CreateSender
+
+sender's name
+
+
+## Fields
+
+| Field                                                                                | Type                                                                                 | Required                                                                             | Description                                                                          | Example                                                                              |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `email`                                                                              | *string*                                                                             | :heavy_check_mark:                                                                   | From email to use for the sender. A verification email will be sent to this address. | newsletter@mycompany.com                                                             |
+| `ips`                                                                                | array<[CreateSenderIps](../../models/shared/CreateSenderIps.md)>                     | :heavy_minus_sign:                                                                   | **Mandatory in case of dedicated IP**. IPs to associate to the sender<br/>           |                                                                                      |
+| `name`                                                                               | *string*                                                                             | :heavy_check_mark:                                                                   | From Name to use for the sender                                                      | Newsletter                                                                           |

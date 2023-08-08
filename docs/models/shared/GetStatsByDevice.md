@@ -1,0 +1,11 @@
+# GetStatsByDevice
+
+
+## Fields
+
+| Field                                                                                | Type                                                                                 | Required                                                                             | Description                                                                          |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `desktop`                                                                            | array<string, [GetDeviceBrowserStats](../../models/shared/GetDeviceBrowserStats.md)> | :heavy_minus_sign:                                                                   | Statistics of the campaign on the basis of desktop devices                           |
+| `mobile`                                                                             | array<string, [GetDeviceBrowserStats](../../models/shared/GetDeviceBrowserStats.md)> | :heavy_minus_sign:                                                                   | Statistics of the campaign on the basis of mobile devices                            |
+| `tablet`                                                                             | array<string, [GetDeviceBrowserStats](../../models/shared/GetDeviceBrowserStats.md)> | :heavy_minus_sign:                                                                   | Statistics of the campaign on the basis of tablet devices                            |
+| `unknown`                                                                            | array<string, [GetDeviceBrowserStats](../../models/shared/GetDeviceBrowserStats.md)> | :heavy_minus_sign:                                                                   | Statistics of the campaign on the basis of unknown devices                           |

@@ -1,0 +1,9 @@
+# PatchCrmDealsLinkUnlinkIdRequest
+
+
+## Fields
+
+| Field                                                                                                   | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `requestBody`                                                                                           | [PatchCrmDealsLinkUnlinkIdRequestBody](../../models/operations/PatchCrmDealsLinkUnlinkIdRequestBody.md) | :heavy_check_mark:                                                                                      | Linked / Unlinked contacts and companies ids.                                                           |
+| `id`                                                                                                    | *string*                                                                                                | :heavy_check_mark:                                                                                      | N/A                                                                                                     |

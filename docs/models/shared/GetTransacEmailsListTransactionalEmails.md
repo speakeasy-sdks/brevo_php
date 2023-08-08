@@ -1,0 +1,15 @@
+# GetTransacEmailsListTransactionalEmails
+
+
+## Fields
+
+| Field                                                     | Type                                                      | Required                                                  | Description                                               | Example                                                   |
+| --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
+| `date`                                                    | *string*                                                  | :heavy_check_mark:                                        | Date on which transactional email was sent                | 2017-03-12T12:30:00Z                                      |
+| `email`                                                   | *string*                                                  | :heavy_check_mark:                                        | Email address to which transactional email has been sent  | john.smith@example.com                                    |
+| `from`                                                    | *?string*                                                 | :heavy_minus_sign:                                        | Email address of the sender from which the email was sent | diana.doe@example.com                                     |
+| `messageId`                                               | *string*                                                  | :heavy_check_mark:                                        | Message Id of the sent email                              | <201798300811.5700093@relay.domain.com>                   |
+| `subject`                                                 | *string*                                                  | :heavy_check_mark:                                        | Subject of the sent email                                 | Summer Camp                                               |
+| `tags`                                                    | array<*string*>                                           | :heavy_minus_sign:                                        | Tags used for your email                                  |                                                           |
+| `templateId`                                              | *?int*                                                    | :heavy_minus_sign:                                        | Id of the template                                        | 2                                                         |
+| `uuid`                                                    | *string*                                                  | :heavy_check_mark:                                        | Unique id of the email sent to a particular contact       | 5a78c-209ok98262910-s99a341                               |

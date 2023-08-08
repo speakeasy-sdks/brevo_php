@@ -1,0 +1,11 @@
+# GetSmtpTemplates
+
+transactional email templates informations
+
+
+## Fields
+
+| Field                                                                            | Type                                                                             | Required                                                                         | Description                                                                      | Example                                                                          |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `count`                                                                          | *?int*                                                                           | :heavy_minus_sign:                                                               | Count of transactional email templates                                           | 1                                                                                |
+| `templates`                                                                      | array<[GetSmtpTemplateOverview](../../models/shared/GetSmtpTemplateOverview.md)> | :heavy_minus_sign:                                                               | N/A                                                                              |                                                                                  |

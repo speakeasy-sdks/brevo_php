@@ -1,0 +1,9 @@
+# GetScheduledEmailByBatchId
+
+
+## Fields
+
+| Field                                                                                                | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `batches`                                                                                            | array<[GetScheduledEmailByBatchIdBatches](../../models/shared/GetScheduledEmailByBatchIdBatches.md)> | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |
+| `count`                                                                                              | *?int*                                                                                               | :heavy_minus_sign:                                                                                   | Total number of batches                                                                              |

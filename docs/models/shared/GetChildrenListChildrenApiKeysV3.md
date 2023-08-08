@@ -1,0 +1,9 @@
+# GetChildrenListChildrenApiKeysV3
+
+
+## Fields
+
+| Field                                 | Type                                  | Required                              | Description                           | Example                               |
+| ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- |
+| `key`                                 | *string*                              | :heavy_check_mark:                    | API Key for version 3                 | xkeysib-21881axxxxxcc92e04-mIrexxxx7z |
+| `name`                                | *string*                              | :heavy_check_mark:                    | Name of the key for version 3         | N˚3                                   |

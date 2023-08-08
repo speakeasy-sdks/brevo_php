@@ -1,0 +1,11 @@
+# GetWhatsappCampaigns
+
+WhatsApp campaigns information
+
+
+## Fields
+
+| Field                                                                                        | Type                                                                                         | Required                                                                                     | Description                                                                                  | Example                                                                                      |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `campaigns`                                                                                  | array<[GetWhatsappCampaignsCampaigns](../../models/shared/GetWhatsappCampaignsCampaigns.md)> | :heavy_minus_sign:                                                                           | N/A                                                                                          |                                                                                              |
+| `count`                                                                                      | *?int*                                                                                       | :heavy_minus_sign:                                                                           | Number of WhatsApp campaigns retrieved                                                       | 40                                                                                           |

@@ -1,0 +1,13 @@
+# MasterDetailsResponseBillingInfo
+
+Billing details of the master account organization
+
+
+## Fields
+
+| Field                                                                                                      | Type                                                                                                       | Required                                                                                                   | Description                                                                                                |
+| ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `address`                                                                                                  | [?MasterDetailsResponseBillingInfoAddress](../../models/shared/MasterDetailsResponseBillingInfoAddress.md) | :heavy_minus_sign:                                                                                         | Billing address of master account                                                                          |
+| `companyName`                                                                                              | *?string*                                                                                                  | :heavy_minus_sign:                                                                                         | Company name of master account                                                                             |
+| `email`                                                                                                    | *?string*                                                                                                  | :heavy_minus_sign:                                                                                         | Billing email id of master account                                                                         |
+| `name`                                                                                                     | [?MasterDetailsResponseBillingInfoName](../../models/shared/MasterDetailsResponseBillingInfoName.md)       | :heavy_minus_sign:                                                                                         | Billing name of master account holder                                                                      |

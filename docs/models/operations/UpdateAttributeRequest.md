@@ -1,0 +1,10 @@
+# UpdateAttributeRequest
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `attributeCategory`                                                                             | [UpdateAttributeAttributeCategory](../../models/operations/UpdateAttributeAttributeCategory.md) | :heavy_check_mark:                                                                              | Category of the attribute                                                                       |
+| `attributeName`                                                                                 | *string*                                                                                        | :heavy_check_mark:                                                                              | Name of the existing attribute                                                                  |
+| `updateAttribute`                                                                               | [\test\BREVO\Models\Shared\UpdateAttribute](../../models/shared/UpdateAttribute.md)             | :heavy_check_mark:                                                                              | Values to update an attribute                                                                   |

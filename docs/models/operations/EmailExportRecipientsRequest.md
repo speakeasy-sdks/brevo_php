@@ -1,0 +1,9 @@
+# EmailExportRecipientsRequest
+
+
+## Fields
+
+| Field                                                                                            | Type                                                                                             | Required                                                                                         | Description                                                                                      |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `campaignId`                                                                                     | *int*                                                                                            | :heavy_check_mark:                                                                               | Id of the campaign                                                                               |
+| `emailExportRecipients`                                                                          | [?\test\BREVO\Models\Shared\EmailExportRecipients](../../models/shared/EmailExportRecipients.md) | :heavy_minus_sign:                                                                               | Values to send for a recipient export request                                                    |

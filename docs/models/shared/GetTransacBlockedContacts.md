@@ -1,0 +1,11 @@
+# GetTransacBlockedContacts
+
+List of blocked or unsubscribed transactional contacts
+
+
+## Fields
+
+| Field                                                                                                | Type                                                                                                 | Required                                                                                             | Description                                                                                          | Example                                                                                              |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `contacts`                                                                                           | array<[GetTransacBlockedContactsContacts](../../models/shared/GetTransacBlockedContactsContacts.md)> | :heavy_minus_sign:                                                                                   | N/A                                                                                                  |                                                                                                      |
+| `count`                                                                                              | *?int*                                                                                               | :heavy_minus_sign:                                                                                   | Count of blocked or unsubscribed contact                                                             | 1                                                                                                    |

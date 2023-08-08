@@ -1,0 +1,15 @@
+# GetCategoryDetails
+
+Category informations
+
+
+## Fields
+
+| Field                                                                      | Type                                                                       | Required                                                                   | Description                                                                | Example                                                                    |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| `createdAt`                                                                | *string*                                                                   | :heavy_check_mark:                                                         | Creation UTC date-time of the category (YYYY-MM-DDTHH:mm:ss.SSSZ)          | 2017-05-12T12:30:00Z                                                       |
+| `id`                                                                       | *string*                                                                   | :heavy_check_mark:                                                         | Category ID for which you requested the details                            | C11                                                                        |
+| `isDeleted`                                                                | *?bool*                                                                    | :heavy_minus_sign:                                                         | category deleted from the shop's database                                  | true                                                                       |
+| `modifiedAt`                                                               | *string*                                                                   | :heavy_check_mark:                                                         | Last modification UTC date-time of the category (YYYY-MM-DDTHH:mm:ss.SSSZ) | 2017-05-12T12:30:00Z                                                       |
+| `name`                                                                     | *string*                                                                   | :heavy_check_mark:                                                         | Name of the category for which you requested the details                   | Electronics                                                                |
+| `url`                                                                      | *?string*                                                                  | :heavy_minus_sign:                                                         | URL to the category                                                        | http://mydomain.com/category/clothing                                      |

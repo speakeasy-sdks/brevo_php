@@ -1,0 +1,9 @@
+# RequestSmsRecipientExportRequest
+
+
+## Fields
+
+| Field                                                                                                    | Type                                                                                                     | Required                                                                                                 | Description                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `campaignId`                                                                                             | *int*                                                                                                    | :heavy_check_mark:                                                                                       | id of the campaign                                                                                       |
+| `requestSmsRecipientExport`                                                                              | [?\test\BREVO\Models\Shared\RequestSmsRecipientExport](../../models/shared/RequestSmsRecipientExport.md) | :heavy_minus_sign:                                                                                       | Values to send for a recipient export request                                                            |

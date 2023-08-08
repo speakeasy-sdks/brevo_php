@@ -1,0 +1,12 @@
+# GetAccountActivityLogs
+
+
+## Fields
+
+| Field                                                            | Type                                                             | Required                                                         | Description                                                      | Example                                                          |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
+| `action`                                                         | *string*                                                         | :heavy_check_mark:                                               | Type of activity in the account.                                 | login-success                                                    |
+| `date`                                                           | *string*                                                         | :heavy_check_mark:                                               | Time of the activity.                                            | 2023-03-27T16:30:00Z                                             |
+| `userAgent`                                                      | *string*                                                         | :heavy_check_mark:                                               | Browser details of the user who performed the activity.          | Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us)         |
+| `userEmail`                                                      | *string*                                                         | :heavy_check_mark:                                               | Email address of the user who performed activity in the account. | test@mycompany.com                                               |
+| `userIp`                                                         | *string*                                                         | :heavy_check_mark:                                               | IP address of the user who performed activity in the account.    | 192.158.1.38                                                     |

@@ -1,0 +1,9 @@
+# PatchCompaniesLinkUnlinkIdRequest
+
+
+## Fields
+
+| Field                                                                                                     | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `requestBody`                                                                                             | [PatchCompaniesLinkUnlinkIdRequestBody](../../models/operations/PatchCompaniesLinkUnlinkIdRequestBody.md) | :heavy_check_mark:                                                                                        | Linked / Unlinked contacts and deals ids.                                                                 |
+| `id`                                                                                                      | *string*                                                                                                  | :heavy_check_mark:                                                                                        | N/A                                                                                                       |

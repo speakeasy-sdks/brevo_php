@@ -1,0 +1,11 @@
+# GetDeviceBrowserStats
+
+
+## Fields
+
+| Field                                                                   | Type                                                                    | Required                                                                | Description                                                             | Example                                                                 |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `clickers`                                                              | *int*                                                                   | :heavy_check_mark:                                                      | Number of total clicks for the campaign using the particular browser    | 2665                                                                    |
+| `uniqueClicks`                                                          | *int*                                                                   | :heavy_check_mark:                                                      | Number of unique clicks for the campaign using the particular browser   | 2300                                                                    |
+| `uniqueViews`                                                           | *int*                                                                   | :heavy_check_mark:                                                      | Number of unique openings for the campaign using the particular browser | 7779                                                                    |
+| `viewed`                                                                | *int*                                                                   | :heavy_check_mark:                                                      | Number of openings for the campaign using the particular browser        | 8999                                                                    |

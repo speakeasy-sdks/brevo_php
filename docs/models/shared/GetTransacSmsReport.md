@@ -1,0 +1,10 @@
+# GetTransacSmsReport
+
+Aggregated SMS report informations
+
+
+## Fields
+
+| Field                                                                                  | Type                                                                                   | Required                                                                               | Description                                                                            |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `reports`                                                                              | array<[GetTransacSmsReportReports](../../models/shared/GetTransacSmsReportReports.md)> | :heavy_minus_sign:                                                                     | N/A                                                                                    |

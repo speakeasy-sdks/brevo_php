@@ -1,0 +1,11 @@
+# GetEmailCampaigns
+
+Email campaigns informations
+
+
+## Fields
+
+| Field                                                                                  | Type                                                                                   | Required                                                                               | Description                                                                            | Example                                                                                |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `campaigns`                                                                            | array<[GetEmailCampaignsCampaigns](../../models/shared/GetEmailCampaignsCampaigns.md)> | :heavy_minus_sign:                                                                     | N/A                                                                                    |                                                                                        |
+| `count`                                                                                | *?int*                                                                                 | :heavy_minus_sign:                                                                     | Number of Email campaigns retrieved                                                    | 24                                                                                     |

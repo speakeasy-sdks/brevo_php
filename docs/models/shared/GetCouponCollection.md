@@ -1,0 +1,15 @@
+# GetCouponCollection
+
+Coupon collections
+
+
+## Fields
+
+| Field                                                         | Type                                                          | Required                                                      | Description                                                   | Example                                                       |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| `createdAt`                                                   | [\DateTime](https://www.php.net/manual/en/class.datetime.php) | :heavy_check_mark:                                            | Datetime on which the collection was created                  | 2023-01-06T05:03:47.053000000Z                                |
+| `defaultCoupon`                                               | *string*                                                      | :heavy_check_mark:                                            | The default coupon of the collection                          | 10 OFF                                                        |
+| `id`                                                          | *string*                                                      | :heavy_check_mark:                                            | The id of the collection                                      | 23befbae-1505-47a8-bd27-e30ef739f32c                          |
+| `name`                                                        | *string*                                                      | :heavy_check_mark:                                            | The name of the collection                                    | SummerPromotions                                              |
+| `remainingCoupons`                                            | *int*                                                         | :heavy_check_mark:                                            | Not sent coupons in the collection                            | 5000                                                          |
+| `totalCoupons`                                                | *int*                                                         | :heavy_check_mark:                                            | Total coupons in the collection                               | 10000                                                         |
