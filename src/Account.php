@@ -62,7 +62,7 @@ class Account
      * @return \test\BREVO\Models\Operations\GetAccountActivityResponse
      */
 	public function getAccountActivity(
-        \test\BREVO\Models\Operations\GetAccountActivityRequest $request,
+        ?\test\BREVO\Models\Operations\GetAccountActivityRequest $request,
     ): \test\BREVO\Models\Operations\GetAccountActivityResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

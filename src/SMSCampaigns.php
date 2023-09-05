@@ -75,7 +75,7 @@ class SMSCampaigns
      * @return \test\BREVO\Models\Operations\DeleteSmsCampaignResponse
      */
 	public function deleteSmsCampaign(
-        \test\BREVO\Models\Operations\DeleteSmsCampaignRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteSmsCampaignRequest $request,
     ): \test\BREVO\Models\Operations\DeleteSmsCampaignResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -113,7 +113,7 @@ class SMSCampaigns
      * @return \test\BREVO\Models\Operations\GetSmsCampaignResponse
      */
 	public function getSmsCampaign(
-        \test\BREVO\Models\Operations\GetSmsCampaignRequest $request,
+        ?\test\BREVO\Models\Operations\GetSmsCampaignRequest $request,
     ): \test\BREVO\Models\Operations\GetSmsCampaignResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -155,7 +155,7 @@ class SMSCampaigns
      * @return \test\BREVO\Models\Operations\GetSmsCampaignsResponse
      */
 	public function getSmsCampaigns(
-        \test\BREVO\Models\Operations\GetSmsCampaignsRequest $request,
+        ?\test\BREVO\Models\Operations\GetSmsCampaignsRequest $request,
     ): \test\BREVO\Models\Operations\GetSmsCampaignsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -200,7 +200,7 @@ class SMSCampaigns
      * @return \test\BREVO\Models\Operations\RequestSmsRecipientExportResponse
      */
 	public function requestSmsRecipientExport(
-        \test\BREVO\Models\Operations\RequestSmsRecipientExportRequest $request,
+        ?\test\BREVO\Models\Operations\RequestSmsRecipientExportRequest $request,
     ): \test\BREVO\Models\Operations\RequestSmsRecipientExportResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -208,7 +208,9 @@ class SMSCampaigns
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "requestSmsRecipientExport", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
@@ -244,7 +246,7 @@ class SMSCampaigns
      * @return \test\BREVO\Models\Operations\SendSmsCampaignNowResponse
      */
 	public function sendSmsCampaignNow(
-        \test\BREVO\Models\Operations\SendSmsCampaignNowRequest $request,
+        ?\test\BREVO\Models\Operations\SendSmsCampaignNowRequest $request,
     ): \test\BREVO\Models\Operations\SendSmsCampaignNowResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

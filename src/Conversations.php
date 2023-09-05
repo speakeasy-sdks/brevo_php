@@ -30,7 +30,7 @@ class Conversations
      * @return \test\BREVO\Models\Operations\DeleteConversationsMessagesIdResponse
      */
 	public function deleteConversationsMessagesId(
-        \test\BREVO\Models\Operations\DeleteConversationsMessagesIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteConversationsMessagesIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteConversationsMessagesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -68,7 +68,7 @@ class Conversations
      * @return \test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdResponse
      */
 	public function deleteConversationsPushedMessagesId(
-        \test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -106,7 +106,7 @@ class Conversations
      * @return \test\BREVO\Models\Operations\GetConversationsMessagesIdResponse
      */
 	public function getConversationsMessagesId(
-        \test\BREVO\Models\Operations\GetConversationsMessagesIdRequest $request,
+        ?\test\BREVO\Models\Operations\GetConversationsMessagesIdRequest $request,
     ): \test\BREVO\Models\Operations\GetConversationsMessagesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -148,7 +148,7 @@ class Conversations
      * @return \test\BREVO\Models\Operations\GetConversationsPushedMessagesIdResponse
      */
 	public function getConversationsPushedMessagesId(
-        \test\BREVO\Models\Operations\GetConversationsPushedMessagesIdRequest $request,
+        ?\test\BREVO\Models\Operations\GetConversationsPushedMessagesIdRequest $request,
     ): \test\BREVO\Models\Operations\GetConversationsPushedMessagesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

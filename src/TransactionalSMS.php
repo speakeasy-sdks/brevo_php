@@ -28,7 +28,7 @@ class TransactionalSMS
      * @return \test\BREVO\Models\Operations\GetSmsEventsResponse
      */
 	public function getSmsEvents(
-        \test\BREVO\Models\Operations\GetSmsEventsRequest $request,
+        ?\test\BREVO\Models\Operations\GetSmsEventsRequest $request,
     ): \test\BREVO\Models\Operations\GetSmsEventsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -71,7 +71,7 @@ class TransactionalSMS
      * @return \test\BREVO\Models\Operations\GetTransacAggregatedSmsReportResponse
      */
 	public function getTransacAggregatedSmsReport(
-        \test\BREVO\Models\Operations\GetTransacAggregatedSmsReportRequest $request,
+        ?\test\BREVO\Models\Operations\GetTransacAggregatedSmsReportRequest $request,
     ): \test\BREVO\Models\Operations\GetTransacAggregatedSmsReportResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -114,7 +114,7 @@ class TransactionalSMS
      * @return \test\BREVO\Models\Operations\GetTransacSmsReportResponse
      */
 	public function getTransacSmsReport(
-        \test\BREVO\Models\Operations\GetTransacSmsReportRequest $request,
+        ?\test\BREVO\Models\Operations\GetTransacSmsReportRequest $request,
     ): \test\BREVO\Models\Operations\GetTransacSmsReportResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

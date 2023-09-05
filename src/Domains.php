@@ -28,7 +28,7 @@ class Domains
      * @return \test\BREVO\Models\Operations\AuthenticateDomainResponse
      */
 	public function authenticateDomain(
-        \test\BREVO\Models\Operations\AuthenticateDomainRequest $request,
+        ?\test\BREVO\Models\Operations\AuthenticateDomainRequest $request,
     ): \test\BREVO\Models\Operations\AuthenticateDomainResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -70,7 +70,7 @@ class Domains
      * @return \test\BREVO\Models\Operations\CreateDomainResponse
      */
 	public function createDomain(
-        \test\BREVO\Models\Shared\CreateDomain $request,
+        ?\test\BREVO\Models\Shared\CreateDomain $request,
     ): \test\BREVO\Models\Operations\CreateDomainResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -78,7 +78,9 @@ class Domains
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "request", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
@@ -114,7 +116,7 @@ class Domains
      * @return \test\BREVO\Models\Operations\DeleteDomainResponse
      */
 	public function deleteDomain(
-        \test\BREVO\Models\Operations\DeleteDomainRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteDomainRequest $request,
     ): \test\BREVO\Models\Operations\DeleteDomainResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -152,7 +154,7 @@ class Domains
      * @return \test\BREVO\Models\Operations\GetDomainConfigurationResponse
      */
 	public function getDomainConfiguration(
-        \test\BREVO\Models\Operations\GetDomainConfigurationRequest $request,
+        ?\test\BREVO\Models\Operations\GetDomainConfigurationRequest $request,
     ): \test\BREVO\Models\Operations\GetDomainConfigurationResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

@@ -79,7 +79,7 @@ class ExternalFeeds
      * @return \test\BREVO\Models\Operations\DeleteExternalFeedResponse
      */
 	public function deleteExternalFeed(
-        \test\BREVO\Models\Operations\DeleteExternalFeedRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteExternalFeedRequest $request,
     ): \test\BREVO\Models\Operations\DeleteExternalFeedResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -119,7 +119,7 @@ class ExternalFeeds
      * @return \test\BREVO\Models\Operations\GetAllExternalFeedsResponse
      */
 	public function getAllExternalFeeds(
-        \test\BREVO\Models\Operations\GetAllExternalFeedsRequest $request,
+        ?\test\BREVO\Models\Operations\GetAllExternalFeedsRequest $request,
     ): \test\BREVO\Models\Operations\GetAllExternalFeedsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -164,7 +164,7 @@ class ExternalFeeds
      * @return \test\BREVO\Models\Operations\GetExternalFeedByUUIDResponse
      */
 	public function getExternalFeedByUUID(
-        \test\BREVO\Models\Operations\GetExternalFeedByUUIDRequest $request,
+        ?\test\BREVO\Models\Operations\GetExternalFeedByUUIDRequest $request,
     ): \test\BREVO\Models\Operations\GetExternalFeedByUUIDResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

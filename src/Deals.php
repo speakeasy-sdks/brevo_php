@@ -28,7 +28,7 @@ class Deals
      * @return \test\BREVO\Models\Operations\DeleteCrmDealsIdResponse
      */
 	public function deleteCrmDealsId(
-        \test\BREVO\Models\Operations\DeleteCrmDealsIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteCrmDealsIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteCrmDealsIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -100,7 +100,7 @@ class Deals
      * @return \test\BREVO\Models\Operations\GetCrmDealsResponse
      */
 	public function getCrmDeals(
-        \test\BREVO\Models\Operations\GetCrmDealsRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmDealsRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmDealsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -143,7 +143,7 @@ class Deals
      * @return \test\BREVO\Models\Operations\GetCrmDealsIdResponse
      */
 	public function getCrmDealsId(
-        \test\BREVO\Models\Operations\GetCrmDealsIdRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmDealsIdRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmDealsIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -264,7 +264,7 @@ class Deals
      * @return \test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDResponse
      */
 	public function getCrmPipelineDetailsPipelineID(
-        \test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

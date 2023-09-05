@@ -30,7 +30,7 @@ class TransactionalWhatsApp
      * @return \test\BREVO\Models\Operations\GetWhatsappEventReportResponse
      */
 	public function getWhatsappEventReport(
-        \test\BREVO\Models\Operations\GetWhatsappEventReportRequest $request,
+        ?\test\BREVO\Models\Operations\GetWhatsappEventReportRequest $request,
     ): \test\BREVO\Models\Operations\GetWhatsappEventReportResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

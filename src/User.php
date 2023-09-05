@@ -68,7 +68,7 @@ class User
      * @return \test\BREVO\Models\Operations\GetUserPermissionResponse
      */
 	public function getUserPermission(
-        \test\BREVO\Models\Operations\GetUserPermissionRequest $request,
+        ?\test\BREVO\Models\Operations\GetUserPermissionRequest $request,
     ): \test\BREVO\Models\Operations\GetUserPermissionResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

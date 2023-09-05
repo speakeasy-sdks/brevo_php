@@ -75,7 +75,7 @@ class EmailCampaigns
      * @return \test\BREVO\Models\Operations\DeleteEmailCampaignResponse
      */
 	public function deleteEmailCampaign(
-        \test\BREVO\Models\Operations\DeleteEmailCampaignRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteEmailCampaignRequest $request,
     ): \test\BREVO\Models\Operations\DeleteEmailCampaignResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -113,7 +113,7 @@ class EmailCampaigns
      * @return \test\BREVO\Models\Operations\EmailExportRecipientsResponse
      */
 	public function emailExportRecipients(
-        \test\BREVO\Models\Operations\EmailExportRecipientsRequest $request,
+        ?\test\BREVO\Models\Operations\EmailExportRecipientsRequest $request,
     ): \test\BREVO\Models\Operations\EmailExportRecipientsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -121,7 +121,9 @@ class EmailCampaigns
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "emailExportRecipients", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
@@ -159,7 +161,7 @@ class EmailCampaigns
      * @return \test\BREVO\Models\Operations\GetAbTestCampaignResultResponse
      */
 	public function getAbTestCampaignResult(
-        \test\BREVO\Models\Operations\GetAbTestCampaignResultRequest $request,
+        ?\test\BREVO\Models\Operations\GetAbTestCampaignResultRequest $request,
     ): \test\BREVO\Models\Operations\GetAbTestCampaignResultResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -201,7 +203,7 @@ class EmailCampaigns
      * @return \test\BREVO\Models\Operations\GetEmailCampaignResponse
      */
 	public function getEmailCampaign(
-        \test\BREVO\Models\Operations\GetEmailCampaignRequest $request,
+        ?\test\BREVO\Models\Operations\GetEmailCampaignRequest $request,
     ): \test\BREVO\Models\Operations\GetEmailCampaignResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -244,7 +246,7 @@ class EmailCampaigns
      * @return \test\BREVO\Models\Operations\GetEmailCampaignsResponse
      */
 	public function getEmailCampaigns(
-        \test\BREVO\Models\Operations\GetEmailCampaignsRequest $request,
+        ?\test\BREVO\Models\Operations\GetEmailCampaignsRequest $request,
     ): \test\BREVO\Models\Operations\GetEmailCampaignsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -289,7 +291,7 @@ class EmailCampaigns
      * @return \test\BREVO\Models\Operations\GetSharedTemplateUrlResponse
      */
 	public function getSharedTemplateUrl(
-        \test\BREVO\Models\Operations\GetSharedTemplateUrlRequest $request,
+        ?\test\BREVO\Models\Operations\GetSharedTemplateUrlRequest $request,
     ): \test\BREVO\Models\Operations\GetSharedTemplateUrlResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -331,7 +333,7 @@ class EmailCampaigns
      * @return \test\BREVO\Models\Operations\SendEmailCampaignNowResponse
      */
 	public function sendEmailCampaignNow(
-        \test\BREVO\Models\Operations\SendEmailCampaignNowRequest $request,
+        ?\test\BREVO\Models\Operations\SendEmailCampaignNowRequest $request,
     ): \test\BREVO\Models\Operations\SendEmailCampaignNowResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

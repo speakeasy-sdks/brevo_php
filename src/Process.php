@@ -28,7 +28,7 @@ class Process
      * @return \test\BREVO\Models\Operations\GetProcessResponse
      */
 	public function getProcess(
-        \test\BREVO\Models\Operations\GetProcessRequest $request,
+        ?\test\BREVO\Models\Operations\GetProcessRequest $request,
     ): \test\BREVO\Models\Operations\GetProcessResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -70,7 +70,7 @@ class Process
      * @return \test\BREVO\Models\Operations\GetProcessesResponse
      */
 	public function getProcesses(
-        \test\BREVO\Models\Operations\GetProcessesRequest $request,
+        ?\test\BREVO\Models\Operations\GetProcessesRequest $request,
     ): \test\BREVO\Models\Operations\GetProcessesResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

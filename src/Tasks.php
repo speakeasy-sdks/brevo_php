@@ -28,7 +28,7 @@ class Tasks
      * @return \test\BREVO\Models\Operations\DeleteCrmTasksIdResponse
      */
 	public function deleteCrmTasksId(
-        \test\BREVO\Models\Operations\DeleteCrmTasksIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteCrmTasksIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteCrmTasksIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -66,7 +66,7 @@ class Tasks
      * @return \test\BREVO\Models\Operations\GetCrmTasksResponse
      */
 	public function getCrmTasks(
-        \test\BREVO\Models\Operations\GetCrmTasksRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmTasksRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmTasksResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -109,7 +109,7 @@ class Tasks
      * @return \test\BREVO\Models\Operations\GetCrmTasksIdResponse
      */
 	public function getCrmTasksId(
-        \test\BREVO\Models\Operations\GetCrmTasksIdRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmTasksIdRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmTasksIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

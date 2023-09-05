@@ -28,7 +28,7 @@ class Files
      * @return \test\BREVO\Models\Operations\DeleteCrmFilesIdResponse
      */
 	public function deleteCrmFilesId(
-        \test\BREVO\Models\Operations\DeleteCrmFilesIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteCrmFilesIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteCrmFilesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -66,7 +66,7 @@ class Files
      * @return \test\BREVO\Models\Operations\GetCrmFilesResponse
      */
 	public function getCrmFiles(
-        \test\BREVO\Models\Operations\GetCrmFilesRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmFilesRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmFilesResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -109,7 +109,7 @@ class Files
      * @return \test\BREVO\Models\Operations\GetCrmFilesIdResponse
      */
 	public function getCrmFilesId(
-        \test\BREVO\Models\Operations\GetCrmFilesIdRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmFilesIdRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmFilesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -151,7 +151,7 @@ class Files
      * @return \test\BREVO\Models\Operations\GetCrmFilesIdDataResponse
      */
 	public function getCrmFilesIdData(
-        \test\BREVO\Models\Operations\GetCrmFilesIdDataRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmFilesIdDataRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmFilesIdDataResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

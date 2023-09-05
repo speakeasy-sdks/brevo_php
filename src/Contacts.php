@@ -304,7 +304,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\DeleteAttributeResponse
      */
 	public function deleteAttribute(
-        \test\BREVO\Models\Operations\DeleteAttributeRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteAttributeRequest $request,
     ): \test\BREVO\Models\Operations\DeleteAttributeResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -342,7 +342,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\DeleteContactResponse
      */
 	public function deleteContact(
-        \test\BREVO\Models\Operations\DeleteContactRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteContactRequest $request,
     ): \test\BREVO\Models\Operations\DeleteContactResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -380,7 +380,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\DeleteFolderResponse
      */
 	public function deleteFolder(
-        \test\BREVO\Models\Operations\DeleteFolderRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteFolderRequest $request,
     ): \test\BREVO\Models\Operations\DeleteFolderResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -418,7 +418,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\DeleteListResponse
      */
 	public function deleteList(
-        \test\BREVO\Models\Operations\DeleteListRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteListRequest $request,
     ): \test\BREVO\Models\Operations\DeleteListResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -492,7 +492,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetContactInfoResponse
      */
 	public function getContactInfo(
-        \test\BREVO\Models\Operations\GetContactInfoRequest $request,
+        ?\test\BREVO\Models\Operations\GetContactInfoRequest $request,
     ): \test\BREVO\Models\Operations\GetContactInfoResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -535,7 +535,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetContactStatsResponse
      */
 	public function getContactStats(
-        \test\BREVO\Models\Operations\GetContactStatsRequest $request,
+        ?\test\BREVO\Models\Operations\GetContactStatsRequest $request,
     ): \test\BREVO\Models\Operations\GetContactStatsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -578,7 +578,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetContactsResponse
      */
 	public function getContacts(
-        \test\BREVO\Models\Operations\GetContactsRequest $request,
+        ?\test\BREVO\Models\Operations\GetContactsRequest $request,
     ): \test\BREVO\Models\Operations\GetContactsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -621,7 +621,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetContactsFromListResponse
      */
 	public function getContactsFromList(
-        \test\BREVO\Models\Operations\GetContactsFromListRequest $request,
+        ?\test\BREVO\Models\Operations\GetContactsFromListRequest $request,
     ): \test\BREVO\Models\Operations\GetContactsFromListResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -664,7 +664,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetFolderResponse
      */
 	public function getFolder(
-        \test\BREVO\Models\Operations\GetFolderRequest $request,
+        ?\test\BREVO\Models\Operations\GetFolderRequest $request,
     ): \test\BREVO\Models\Operations\GetFolderResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -706,7 +706,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetFolderListsResponse
      */
 	public function getFolderLists(
-        \test\BREVO\Models\Operations\GetFolderListsRequest $request,
+        ?\test\BREVO\Models\Operations\GetFolderListsRequest $request,
     ): \test\BREVO\Models\Operations\GetFolderListsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -749,7 +749,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetFoldersResponse
      */
 	public function getFolders(
-        \test\BREVO\Models\Operations\GetFoldersRequest $request,
+        ?\test\BREVO\Models\Operations\GetFoldersRequest $request,
     ): \test\BREVO\Models\Operations\GetFoldersResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -792,7 +792,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetListResponse
      */
 	public function getList(
-        \test\BREVO\Models\Operations\GetListRequest $request,
+        ?\test\BREVO\Models\Operations\GetListRequest $request,
     ): \test\BREVO\Models\Operations\GetListResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -834,7 +834,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetListsResponse
      */
 	public function getLists(
-        \test\BREVO\Models\Operations\GetListsRequest $request,
+        ?\test\BREVO\Models\Operations\GetListsRequest $request,
     ): \test\BREVO\Models\Operations\GetListsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -877,7 +877,7 @@ class Contacts
      * @return \test\BREVO\Models\Operations\GetSegmentsResponse
      */
 	public function getSegments(
-        \test\BREVO\Models\Operations\GetSegmentsRequest $request,
+        ?\test\BREVO\Models\Operations\GetSegmentsRequest $request,
     ): \test\BREVO\Models\Operations\GetSegmentsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

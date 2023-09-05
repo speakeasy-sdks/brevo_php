@@ -122,7 +122,7 @@ class WhatsAppCampaigns
      * @return \test\BREVO\Models\Operations\DeleteWhatsAppCampaignResponse
      */
 	public function deleteWhatsAppCampaign(
-        \test\BREVO\Models\Operations\DeleteWhatsAppCampaignRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteWhatsAppCampaignRequest $request,
     ): \test\BREVO\Models\Operations\DeleteWhatsAppCampaignResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -160,7 +160,7 @@ class WhatsAppCampaigns
      * @return \test\BREVO\Models\Operations\GetWhatsAppCampaignResponse
      */
 	public function getWhatsAppCampaign(
-        \test\BREVO\Models\Operations\GetWhatsAppCampaignRequest $request,
+        ?\test\BREVO\Models\Operations\GetWhatsAppCampaignRequest $request,
     ): \test\BREVO\Models\Operations\GetWhatsAppCampaignResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -202,7 +202,7 @@ class WhatsAppCampaigns
      * @return \test\BREVO\Models\Operations\GetWhatsAppCampaignsResponse
      */
 	public function getWhatsAppCampaigns(
-        \test\BREVO\Models\Operations\GetWhatsAppCampaignsRequest $request,
+        ?\test\BREVO\Models\Operations\GetWhatsAppCampaignsRequest $request,
     ): \test\BREVO\Models\Operations\GetWhatsAppCampaignsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -285,7 +285,7 @@ class WhatsAppCampaigns
      * @return \test\BREVO\Models\Operations\GetWhatsAppTemplatesResponse
      */
 	public function getWhatsAppTemplates(
-        \test\BREVO\Models\Operations\GetWhatsAppTemplatesRequest $request,
+        ?\test\BREVO\Models\Operations\GetWhatsAppTemplatesRequest $request,
     ): \test\BREVO\Models\Operations\GetWhatsAppTemplatesResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -328,7 +328,7 @@ class WhatsAppCampaigns
      * @return \test\BREVO\Models\Operations\SendWhatsAppTemplateApprovalResponse
      */
 	public function sendWhatsAppTemplateApproval(
-        \test\BREVO\Models\Operations\SendWhatsAppTemplateApprovalRequest $request,
+        ?\test\BREVO\Models\Operations\SendWhatsAppTemplateApprovalRequest $request,
     ): \test\BREVO\Models\Operations\SendWhatsAppTemplateApprovalResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

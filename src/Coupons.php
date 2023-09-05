@@ -118,7 +118,7 @@ class Coupons
      * @return \test\BREVO\Models\Operations\GetCouponCollectionResponse
      */
 	public function getCouponCollection(
-        \test\BREVO\Models\Operations\GetCouponCollectionRequest $request,
+        ?\test\BREVO\Models\Operations\GetCouponCollectionRequest $request,
     ): \test\BREVO\Models\Operations\GetCouponCollectionResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -160,7 +160,7 @@ class Coupons
      * @return \test\BREVO\Models\Operations\GetCouponCollectionsResponse
      */
 	public function getCouponCollections(
-        \test\BREVO\Models\Operations\GetCouponCollectionsRequest $request,
+        ?\test\BREVO\Models\Operations\GetCouponCollectionsRequest $request,
     ): \test\BREVO\Models\Operations\GetCouponCollectionsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

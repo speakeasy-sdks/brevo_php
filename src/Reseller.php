@@ -161,7 +161,7 @@ class Reseller
      * @return \test\BREVO\Models\Operations\CreateResellerChildResponse
      */
 	public function createResellerChild(
-        \test\BREVO\Models\Shared\CreateChild $request,
+        ?\test\BREVO\Models\Shared\CreateChild $request,
     ): \test\BREVO\Models\Operations\CreateResellerChildResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -169,7 +169,9 @@ class Reseller
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "request", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
@@ -205,7 +207,7 @@ class Reseller
      * @return \test\BREVO\Models\Operations\DeleteChildDomainResponse
      */
 	public function deleteChildDomain(
-        \test\BREVO\Models\Operations\DeleteChildDomainRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteChildDomainRequest $request,
     ): \test\BREVO\Models\Operations\DeleteChildDomainResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -243,7 +245,7 @@ class Reseller
      * @return \test\BREVO\Models\Operations\DeleteResellerChildResponse
      */
 	public function deleteResellerChild(
-        \test\BREVO\Models\Operations\DeleteResellerChildRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteResellerChildRequest $request,
     ): \test\BREVO\Models\Operations\DeleteResellerChildResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -324,7 +326,7 @@ class Reseller
      * @return \test\BREVO\Models\Operations\GetChildAccountCreationStatusResponse
      */
 	public function getChildAccountCreationStatus(
-        \test\BREVO\Models\Operations\GetChildAccountCreationStatusRequest $request,
+        ?\test\BREVO\Models\Operations\GetChildAccountCreationStatusRequest $request,
     ): \test\BREVO\Models\Operations\GetChildAccountCreationStatusResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -366,7 +368,7 @@ class Reseller
      * @return \test\BREVO\Models\Operations\GetChildDomainsResponse
      */
 	public function getChildDomains(
-        \test\BREVO\Models\Operations\GetChildDomainsRequest $request,
+        ?\test\BREVO\Models\Operations\GetChildDomainsRequest $request,
     ): \test\BREVO\Models\Operations\GetChildDomainsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -408,7 +410,7 @@ class Reseller
      * @return \test\BREVO\Models\Operations\GetChildInfoResponse
      */
 	public function getChildInfo(
-        \test\BREVO\Models\Operations\GetChildInfoRequest $request,
+        ?\test\BREVO\Models\Operations\GetChildInfoRequest $request,
     ): \test\BREVO\Models\Operations\GetChildInfoResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -450,7 +452,7 @@ class Reseller
      * @return \test\BREVO\Models\Operations\GetResellerChildsResponse
      */
 	public function getResellerChilds(
-        \test\BREVO\Models\Operations\GetResellerChildsRequest $request,
+        ?\test\BREVO\Models\Operations\GetResellerChildsRequest $request,
     ): \test\BREVO\Models\Operations\GetResellerChildsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -495,7 +497,7 @@ class Reseller
      * @return \test\BREVO\Models\Operations\GetSsoTokenResponse
      */
 	public function getSsoToken(
-        \test\BREVO\Models\Operations\GetSsoTokenRequest $request,
+        ?\test\BREVO\Models\Operations\GetSsoTokenRequest $request,
     ): \test\BREVO\Models\Operations\GetSsoTokenResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

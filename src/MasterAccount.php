@@ -28,7 +28,7 @@ class MasterAccount
      * @return \test\BREVO\Models\Operations\DeleteCorporateSubAccountIdResponse
      */
 	public function deleteCorporateSubAccountId(
-        \test\BREVO\Models\Operations\DeleteCorporateSubAccountIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteCorporateSubAccountIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteCorporateSubAccountIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -66,7 +66,7 @@ class MasterAccount
      * @return \test\BREVO\Models\Operations\GetAccountActivityResponse
      */
 	public function getAccountActivity(
-        \test\BREVO\Models\Operations\GetAccountActivityRequest $request,
+        ?\test\BREVO\Models\Operations\GetAccountActivityRequest $request,
     ): \test\BREVO\Models\Operations\GetAccountActivityResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -153,7 +153,7 @@ class MasterAccount
      * @return \test\BREVO\Models\Operations\GetCorporateSubAccountResponse
      */
 	public function getCorporateSubAccount(
-        \test\BREVO\Models\Operations\GetCorporateSubAccountRequest $request,
+        ?\test\BREVO\Models\Operations\GetCorporateSubAccountRequest $request,
     ): \test\BREVO\Models\Operations\GetCorporateSubAccountResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -198,7 +198,7 @@ class MasterAccount
      * @return \test\BREVO\Models\Operations\GetCorporateSubAccountIdResponse
      */
 	public function getCorporateSubAccountId(
-        \test\BREVO\Models\Operations\GetCorporateSubAccountIdRequest $request,
+        ?\test\BREVO\Models\Operations\GetCorporateSubAccountIdRequest $request,
     ): \test\BREVO\Models\Operations\GetCorporateSubAccountIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -291,7 +291,7 @@ class MasterAccount
      * @return \test\BREVO\Models\Operations\PostCorporateSubAccountKeyResponse
      */
 	public function postCorporateSubAccountKey(
-        \test\BREVO\Models\Operations\PostCorporateSubAccountKeyRequestBody $request,
+        ?\test\BREVO\Models\Operations\PostCorporateSubAccountKeyRequestBody $request,
     ): \test\BREVO\Models\Operations\PostCorporateSubAccountKeyResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -299,7 +299,9 @@ class MasterAccount
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "request", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
@@ -337,7 +339,7 @@ class MasterAccount
      * @return \test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenResponse
      */
 	public function postCorporateSubAccountSsoToken(
-        \test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBody $request,
+        ?\test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBody $request,
     ): \test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -345,7 +347,9 @@ class MasterAccount
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "request", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         

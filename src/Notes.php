@@ -28,7 +28,7 @@ class Notes
      * @return \test\BREVO\Models\Operations\DeleteCrmNotesIdResponse
      */
 	public function deleteCrmNotesId(
-        \test\BREVO\Models\Operations\DeleteCrmNotesIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteCrmNotesIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteCrmNotesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -66,7 +66,7 @@ class Notes
      * @return \test\BREVO\Models\Operations\GetCrmNotesResponse
      */
 	public function getCrmNotes(
-        \test\BREVO\Models\Operations\GetCrmNotesRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmNotesRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmNotesResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -109,7 +109,7 @@ class Notes
      * @return \test\BREVO\Models\Operations\GetCrmNotesIdResponse
      */
 	public function getCrmNotesId(
-        \test\BREVO\Models\Operations\GetCrmNotesIdRequest $request,
+        ?\test\BREVO\Models\Operations\GetCrmNotesIdRequest $request,
     ): \test\BREVO\Models\Operations\GetCrmNotesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

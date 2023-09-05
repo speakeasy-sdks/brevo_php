@@ -28,7 +28,7 @@ class Companies
      * @return \test\BREVO\Models\Operations\DeleteCompaniesIdResponse
      */
 	public function deleteCompaniesId(
-        \test\BREVO\Models\Operations\DeleteCompaniesIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteCompaniesIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteCompaniesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -66,7 +66,7 @@ class Companies
      * @return \test\BREVO\Models\Operations\GetCompaniesResponse
      */
 	public function getCompanies(
-        \test\BREVO\Models\Operations\GetCompaniesRequest $request,
+        ?\test\BREVO\Models\Operations\GetCompaniesRequest $request,
     ): \test\BREVO\Models\Operations\GetCompaniesResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -143,7 +143,7 @@ class Companies
      * @return \test\BREVO\Models\Operations\GetCompaniesIdResponse
      */
 	public function getCompaniesId(
-        \test\BREVO\Models\Operations\GetCompaniesIdRequest $request,
+        ?\test\BREVO\Models\Operations\GetCompaniesIdRequest $request,
     ): \test\BREVO\Models\Operations\GetCompaniesIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

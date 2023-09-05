@@ -75,7 +75,7 @@ class Webhooks
      * @return \test\BREVO\Models\Operations\DeleteWebhookResponse
      */
 	public function deleteWebhook(
-        \test\BREVO\Models\Operations\DeleteWebhookRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteWebhookRequest $request,
     ): \test\BREVO\Models\Operations\DeleteWebhookResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -162,7 +162,7 @@ class Webhooks
      * @return \test\BREVO\Models\Operations\GetWebhookResponse
      */
 	public function getWebhook(
-        \test\BREVO\Models\Operations\GetWebhookRequest $request,
+        ?\test\BREVO\Models\Operations\GetWebhookRequest $request,
     ): \test\BREVO\Models\Operations\GetWebhookResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -204,7 +204,7 @@ class Webhooks
      * @return \test\BREVO\Models\Operations\GetWebhooksResponse
      */
 	public function getWebhooks(
-        \test\BREVO\Models\Operations\GetWebhooksRequest $request,
+        ?\test\BREVO\Models\Operations\GetWebhooksRequest $request,
     ): \test\BREVO\Models\Operations\GetWebhooksResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

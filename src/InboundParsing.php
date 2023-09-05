@@ -30,7 +30,7 @@ class InboundParsing
      * @return \test\BREVO\Models\Operations\GetInboundEmailAttachmentResponse
      */
 	public function getInboundEmailAttachment(
-        \test\BREVO\Models\Operations\GetInboundEmailAttachmentRequest $request,
+        ?\test\BREVO\Models\Operations\GetInboundEmailAttachmentRequest $request,
     ): \test\BREVO\Models\Operations\GetInboundEmailAttachmentResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -75,7 +75,7 @@ class InboundParsing
      * @return \test\BREVO\Models\Operations\GetInboundEmailEventsResponse
      */
 	public function getInboundEmailEvents(
-        \test\BREVO\Models\Operations\GetInboundEmailEventsRequest $request,
+        ?\test\BREVO\Models\Operations\GetInboundEmailEventsRequest $request,
     ): \test\BREVO\Models\Operations\GetInboundEmailEventsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -120,7 +120,7 @@ class InboundParsing
      * @return \test\BREVO\Models\Operations\GetInboundEmailEventsByUuidResponse
      */
 	public function getInboundEmailEventsByUuid(
-        \test\BREVO\Models\Operations\GetInboundEmailEventsByUuidRequest $request,
+        ?\test\BREVO\Models\Operations\GetInboundEmailEventsByUuidRequest $request,
     ): \test\BREVO\Models\Operations\GetInboundEmailEventsByUuidResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

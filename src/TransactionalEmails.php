@@ -122,7 +122,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\DeleteBlockedDomainResponse
      */
 	public function deleteBlockedDomain(
-        \test\BREVO\Models\Operations\DeleteBlockedDomainRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteBlockedDomainRequest $request,
     ): \test\BREVO\Models\Operations\DeleteBlockedDomainResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -162,7 +162,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\DeleteHardbouncesResponse
      */
 	public function deleteHardbounces(
-        \test\BREVO\Models\Shared\DeleteHardbounces $request,
+        ?\test\BREVO\Models\Shared\DeleteHardbounces $request,
     ): \test\BREVO\Models\Operations\DeleteHardbouncesResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -170,7 +170,9 @@ class TransactionalEmails
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "request", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
@@ -204,7 +206,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\DeleteScheduledEmailByIdResponse
      */
 	public function deleteScheduledEmailById(
-        \test\BREVO\Models\Operations\DeleteScheduledEmailByIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteScheduledEmailByIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteScheduledEmailByIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -242,7 +244,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\DeleteSmtpTemplateResponse
      */
 	public function deleteSmtpTemplate(
-        \test\BREVO\Models\Operations\DeleteSmtpTemplateRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteSmtpTemplateRequest $request,
     ): \test\BREVO\Models\Operations\DeleteSmtpTemplateResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -280,7 +282,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\DeleteSmtpBlockedContactsEmailResponse
      */
 	public function deleteSmtpBlockedContactsEmail(
-        \test\BREVO\Models\Operations\DeleteSmtpBlockedContactsEmailRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteSmtpBlockedContactsEmailRequest $request,
     ): \test\BREVO\Models\Operations\DeleteSmtpBlockedContactsEmailResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -318,7 +320,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\DeleteSmtpLogMessageIdResponse
      */
 	public function deleteSmtpLogMessageId(
-        \test\BREVO\Models\Operations\DeleteSmtpLogMessageIdRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteSmtpLogMessageIdRequest $request,
     ): \test\BREVO\Models\Operations\DeleteSmtpLogMessageIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -358,7 +360,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\GetAggregatedSmtpReportResponse
      */
 	public function getAggregatedSmtpReport(
-        \test\BREVO\Models\Operations\GetAggregatedSmtpReportRequest $request,
+        ?\test\BREVO\Models\Operations\GetAggregatedSmtpReportRequest $request,
     ): \test\BREVO\Models\Operations\GetAggregatedSmtpReportResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -439,7 +441,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\GetEmailEventReportResponse
      */
 	public function getEmailEventReport(
-        \test\BREVO\Models\Operations\GetEmailEventReportRequest $request,
+        ?\test\BREVO\Models\Operations\GetEmailEventReportRequest $request,
     ): \test\BREVO\Models\Operations\GetEmailEventReportResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -484,7 +486,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\GetScheduledEmailByIdResponse
      */
 	public function getScheduledEmailById(
-        \test\BREVO\Models\Operations\GetScheduledEmailByIdRequest $request,
+        ?\test\BREVO\Models\Operations\GetScheduledEmailByIdRequest $request,
     ): \test\BREVO\Models\Operations\GetScheduledEmailByIdResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -527,7 +529,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\GetSmtpReportResponse
      */
 	public function getSmtpReport(
-        \test\BREVO\Models\Operations\GetSmtpReportRequest $request,
+        ?\test\BREVO\Models\Operations\GetSmtpReportRequest $request,
     ): \test\BREVO\Models\Operations\GetSmtpReportResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -570,7 +572,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\GetSmtpTemplateResponse
      */
 	public function getSmtpTemplate(
-        \test\BREVO\Models\Operations\GetSmtpTemplateRequest $request,
+        ?\test\BREVO\Models\Operations\GetSmtpTemplateRequest $request,
     ): \test\BREVO\Models\Operations\GetSmtpTemplateResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -612,7 +614,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\GetSmtpTemplatesResponse
      */
 	public function getSmtpTemplates(
-        \test\BREVO\Models\Operations\GetSmtpTemplatesRequest $request,
+        ?\test\BREVO\Models\Operations\GetSmtpTemplatesRequest $request,
     ): \test\BREVO\Models\Operations\GetSmtpTemplatesResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -655,7 +657,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\GetTransacBlockedContactsResponse
      */
 	public function getTransacBlockedContacts(
-        \test\BREVO\Models\Operations\GetTransacBlockedContactsRequest $request,
+        ?\test\BREVO\Models\Operations\GetTransacBlockedContactsRequest $request,
     ): \test\BREVO\Models\Operations\GetTransacBlockedContactsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -698,7 +700,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\GetTransacEmailContentResponse
      */
 	public function getTransacEmailContent(
-        \test\BREVO\Models\Operations\GetTransacEmailContentRequest $request,
+        ?\test\BREVO\Models\Operations\GetTransacEmailContentRequest $request,
     ): \test\BREVO\Models\Operations\GetTransacEmailContentResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -736,7 +738,7 @@ class TransactionalEmails
      * @return \test\BREVO\Models\Operations\GetTransacEmailsListResponse
      */
 	public function getTransacEmailsList(
-        \test\BREVO\Models\Operations\GetTransacEmailsListRequest $request,
+        ?\test\BREVO\Models\Operations\GetTransacEmailsListRequest $request,
     ): \test\BREVO\Models\Operations\GetTransacEmailsListResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

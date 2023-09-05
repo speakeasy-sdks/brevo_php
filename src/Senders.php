@@ -28,7 +28,7 @@ class Senders
      * @return \test\BREVO\Models\Operations\CreateSenderResponse
      */
 	public function createSender(
-        \test\BREVO\Models\Shared\CreateSender $request,
+        ?\test\BREVO\Models\Shared\CreateSender $request,
     ): \test\BREVO\Models\Operations\CreateSenderResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -36,7 +36,9 @@ class Senders
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "request", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
@@ -72,7 +74,7 @@ class Senders
      * @return \test\BREVO\Models\Operations\DeleteSenderResponse
      */
 	public function deleteSender(
-        \test\BREVO\Models\Operations\DeleteSenderRequest $request,
+        ?\test\BREVO\Models\Operations\DeleteSenderRequest $request,
     ): \test\BREVO\Models\Operations\DeleteSenderResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -144,7 +146,7 @@ class Senders
      * @return \test\BREVO\Models\Operations\GetIpsFromSenderResponse
      */
 	public function getIpsFromSender(
-        \test\BREVO\Models\Operations\GetIpsFromSenderRequest $request,
+        ?\test\BREVO\Models\Operations\GetIpsFromSenderRequest $request,
     ): \test\BREVO\Models\Operations\GetIpsFromSenderResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -186,7 +188,7 @@ class Senders
      * @return \test\BREVO\Models\Operations\GetSendersResponse
      */
 	public function getSenders(
-        \test\BREVO\Models\Operations\GetSendersRequest $request,
+        ?\test\BREVO\Models\Operations\GetSendersRequest $request,
     ): \test\BREVO\Models\Operations\GetSendersResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -229,7 +231,7 @@ class Senders
      * @return \test\BREVO\Models\Operations\UpdateSenderResponse
      */
 	public function updateSender(
-        \test\BREVO\Models\Operations\UpdateSenderRequest $request,
+        ?\test\BREVO\Models\Operations\UpdateSenderRequest $request,
     ): \test\BREVO\Models\Operations\UpdateSenderResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -237,7 +239,9 @@ class Senders
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "updateSender", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
@@ -269,7 +273,7 @@ class Senders
      * @return \test\BREVO\Models\Operations\ValidateSenderByOTPResponse
      */
 	public function validateSenderByOTP(
-        \test\BREVO\Models\Operations\ValidateSenderByOTPRequest $request,
+        ?\test\BREVO\Models\Operations\ValidateSenderByOTPRequest $request,
     ): \test\BREVO\Models\Operations\ValidateSenderByOTPResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -277,7 +281,9 @@ class Senders
         
         $options = ['http_errors' => false];
         $body = Utils\Utils::serializeRequestBody($request, "otp", "json");
-        $options = array_merge_recursive($options, $body);
+        if ($body !== null) {
+            $options = array_merge_recursive($options, $body);
+        }
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         

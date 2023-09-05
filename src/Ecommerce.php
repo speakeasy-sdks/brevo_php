@@ -314,7 +314,7 @@ class Ecommerce
      * @return \test\BREVO\Models\Operations\GetCategoriesResponse
      */
 	public function getCategories(
-        \test\BREVO\Models\Operations\GetCategoriesRequest $request,
+        ?\test\BREVO\Models\Operations\GetCategoriesRequest $request,
     ): \test\BREVO\Models\Operations\GetCategoriesResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -357,7 +357,7 @@ class Ecommerce
      * @return \test\BREVO\Models\Operations\GetCategoryInfoResponse
      */
 	public function getCategoryInfo(
-        \test\BREVO\Models\Operations\GetCategoryInfoRequest $request,
+        ?\test\BREVO\Models\Operations\GetCategoryInfoRequest $request,
     ): \test\BREVO\Models\Operations\GetCategoryInfoResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -399,7 +399,7 @@ class Ecommerce
      * @return \test\BREVO\Models\Operations\GetProductInfoResponse
      */
 	public function getProductInfo(
-        \test\BREVO\Models\Operations\GetProductInfoRequest $request,
+        ?\test\BREVO\Models\Operations\GetProductInfoRequest $request,
     ): \test\BREVO\Models\Operations\GetProductInfoResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
@@ -441,7 +441,7 @@ class Ecommerce
      * @return \test\BREVO\Models\Operations\GetProductsResponse
      */
 	public function getProducts(
-        \test\BREVO\Models\Operations\GetProductsRequest $request,
+        ?\test\BREVO\Models\Operations\GetProductsRequest $request,
     ): \test\BREVO\Models\Operations\GetProductsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
