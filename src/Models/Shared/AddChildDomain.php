@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * AddChildDomain - Sender domain to add for a specific child account. This will not be displayed to the parent account.
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class AddChildDomain
 {
     /**

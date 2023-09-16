@@ -1,7 +1,5 @@
 # UploadImageToGallery
 
-Parameters to upload an image
-
 
 ## Fields
 

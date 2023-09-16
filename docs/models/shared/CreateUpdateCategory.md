@@ -1,7 +1,5 @@
 # CreateUpdateCategory
 
-Values to create/update a category
-
 
 ## Fields
 

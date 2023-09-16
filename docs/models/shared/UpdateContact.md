@@ -1,7 +1,5 @@
 # UpdateContact
 
-Values to update a contact
-
 
 ## Fields
 

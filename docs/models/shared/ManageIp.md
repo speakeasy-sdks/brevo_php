@@ -1,7 +1,5 @@
 # ManageIp
 
-IP to associate
-
 
 ## Fields
 

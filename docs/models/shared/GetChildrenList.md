@@ -1,7 +1,5 @@
 # GetChildrenList
 
-list of children
-
 
 ## Fields
 

@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * RequestContactExport - Values to request a contact export
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class RequestContactExport
 {
     /**

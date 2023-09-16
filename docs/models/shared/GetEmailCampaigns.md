@@ -1,7 +1,5 @@
 # GetEmailCampaigns
 
-Email campaigns informations
-
 
 ## Fields
 

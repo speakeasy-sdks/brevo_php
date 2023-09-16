@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * CreateContact - Values to create a contact
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class CreateContact
 {
     /**

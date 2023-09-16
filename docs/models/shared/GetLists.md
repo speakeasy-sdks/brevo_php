@@ -1,7 +1,5 @@
 # GetLists
 
-Lists informations
-
 
 ## Fields
 

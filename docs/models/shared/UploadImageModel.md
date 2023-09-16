@@ -1,7 +1,5 @@
 # UploadImageModel
 
-Image has been successfully uploaded
-
 
 ## Fields
 

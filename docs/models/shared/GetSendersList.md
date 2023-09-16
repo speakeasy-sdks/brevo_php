@@ -1,7 +1,5 @@
 # GetSendersList
 
-list of senders
-
 
 ## Fields
 

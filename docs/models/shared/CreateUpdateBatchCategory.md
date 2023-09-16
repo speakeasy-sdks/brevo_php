@@ -1,7 +1,5 @@
 # CreateUpdateBatchCategory
 
-Values to create a batch of categories
-
 
 ## Fields
 

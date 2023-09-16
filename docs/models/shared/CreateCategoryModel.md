@@ -1,7 +1,5 @@
 # CreateCategoryModel
 
-Category created
-
 
 ## Fields
 

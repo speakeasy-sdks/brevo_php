@@ -1,7 +1,5 @@
 # CreateUpdateFolder
 
-Name of the folder
-
 
 ## Fields
 

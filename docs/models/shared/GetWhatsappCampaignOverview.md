@@ -1,7 +1,5 @@
 # GetWhatsappCampaignOverview
 
-Get WhatsApp campaign information on the basis of campaignId
-
 
 ## Fields
 

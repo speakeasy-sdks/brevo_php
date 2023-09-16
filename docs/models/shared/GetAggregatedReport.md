@@ -1,7 +1,5 @@
 # GetAggregatedReport
 
-Aggregated report informations
-
 
 ## Fields
 

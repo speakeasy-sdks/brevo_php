@@ -1,7 +1,5 @@
 # CreateSmtpEmail
 
-transactional email sent
-
 
 ## Fields
 

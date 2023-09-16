@@ -1,7 +1,5 @@
 # GetSmsEventReport
 
-Sms events report informations
-
 
 ## Fields
 

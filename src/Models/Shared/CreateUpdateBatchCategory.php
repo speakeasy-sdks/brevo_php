@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * CreateUpdateBatchCategory - Values to create a batch of categories
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class CreateUpdateBatchCategory
 {
     /**

@@ -1,7 +1,5 @@
 # SendSmtpEmail
 
-Values to send a transactional email
-
 
 ## Fields
 

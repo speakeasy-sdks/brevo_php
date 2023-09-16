@@ -1,7 +1,5 @@
 # GetInboundEmailEvents
 
-List of events for received emails.
-
 
 ## Fields
 

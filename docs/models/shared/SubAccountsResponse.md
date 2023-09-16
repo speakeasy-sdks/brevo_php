@@ -1,7 +1,5 @@
 # SubAccountsResponse
 
-Sub-accounts list
-
 
 ## Fields
 

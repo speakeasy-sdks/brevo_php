@@ -1,7 +1,5 @@
 # CreateWebhook
 
-Values to create a webhook
-
 
 ## Fields
 

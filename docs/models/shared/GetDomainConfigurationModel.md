@@ -1,7 +1,5 @@
 # GetDomainConfigurationModel
 
-domain configuration
-
 
 ## Fields
 

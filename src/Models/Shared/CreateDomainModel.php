@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * CreateDomainModel - domain created
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class CreateDomainModel
 {
 	#[\JMS\Serializer\Annotation\SerializedName('dns_records')]

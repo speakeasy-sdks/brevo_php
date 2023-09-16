@@ -1,7 +1,5 @@
 # SendSms
 
-SMS has been sent successfully to the recipient
-
 
 ## Fields
 

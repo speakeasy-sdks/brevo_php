@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetInvitedUsersList - list of all your users
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetInvitedUsersList
 {
     /**

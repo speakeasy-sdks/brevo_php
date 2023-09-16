@@ -1,7 +1,5 @@
 # CreateApiKeyResponse
 
-API key
-
 
 ## Fields
 

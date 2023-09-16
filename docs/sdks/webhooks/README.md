@@ -1,4 +1,4 @@
-# webhooks
+# Webhooks
 
 ### Available Operations
 
@@ -35,7 +35,6 @@ try {
     $request->description = 'Webhook triggered on unsubscription';
     $request->domain = 'example.com';
     $request->events = [
-        CreateWebhookEvents::Unsubscribed,
         CreateWebhookEvents::Unsubscribed,
     ];
     $request->type = CreateWebhookType::Marketing;
@@ -84,7 +83,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteWebhookRequest();
-    $request->webhookId = 571844;
+    $request->webhookId = 405373;
 
     $response = $sdk->webhooks->deleteWebhook($request);
 
@@ -122,6 +121,8 @@ require_once 'vendor/autoload.php';
 
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
+use \test\BREVO\Models\Shared\ExportWebhooksHistory;
+use \test\BREVO\Models\Shared\ExportWebhooksHistoryEvent;
 
 $sdk = Brevo::builder()
     ->build();
@@ -150,9 +151,9 @@ try {
 
 ### Parameters
 
-| Parameter                                  | Type                                       | Required                                   | Description                                |
-| ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
-| `$request`                                 | [mixed](../../models//.md)                 | :heavy_check_mark:                         | The request object to use for the request. |
+| Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `$request`                                                                                      | [\test\BREVO\Models\Shared\ExportWebhooksHistory](../../models/shared/ExportWebhooksHistory.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
 
 
 ### Response
@@ -181,7 +182,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetWebhookRequest();
-    $request->webhookId = 880679;
+    $request->webhookId = 281153;
 
     $response = $sdk->webhooks->getWebhook($request);
 
@@ -228,7 +229,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetWebhooksRequest();
-    $request->sort = GetWebhooksSort::Desc;
+    $request->sort = GetWebhooksSort::Asc;
     $request->type = GetWebhooksType::Inbound;
 
     $response = $sdk->webhooks->getWebhooks($request);
@@ -281,12 +282,9 @@ try {
     $request->updateWebhook->domain = 'example.com';
     $request->updateWebhook->events = [
         UpdateWebhookEvents::HardBounce,
-        UpdateWebhookEvents::HardBounce,
-        UpdateWebhookEvents::HardBounce,
-        UpdateWebhookEvents::HardBounce,
     ];
     $request->updateWebhook->url = 'http://requestb.in/173lyyx1';
-    $request->webhookId = 991891;
+    $request->webhookId = 29950;
 
     $response = $sdk->webhooks->updateWebhook($request);
 

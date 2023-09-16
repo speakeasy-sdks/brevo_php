@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * RemoveCredits - Values to post to remove email or SMS credits from a specific child account
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class RemoveCredits
 {
     /**

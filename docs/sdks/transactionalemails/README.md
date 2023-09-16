@@ -1,4 +1,4 @@
-# transactionalEmails
+# TransactionalEmails
 
 ### Available Operations
 
@@ -148,7 +148,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteBlockedDomainRequest();
-    $request->domain = 'deleniti';
+    $request->domain = 'cumque';
 
     $response = $sdk->transactionalEmails->deleteBlockedDomain($request);
 
@@ -240,7 +240,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteScheduledEmailByIdRequest();
-    $request->identifier = 'veritatis';
+    $request->identifier = 'vitae';
 
     $response = $sdk->transactionalEmails->deleteScheduledEmailById($request);
 
@@ -285,7 +285,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteSmtpTemplateRequest();
-    $request->templateId = 274575;
+    $request->templateId = 698249;
 
     $response = $sdk->transactionalEmails->deleteSmtpTemplate($request);
 
@@ -330,7 +330,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteSmtpBlockedContactsEmailRequest();
-    $request->email = 'Adela26@gmail.com';
+    $request->email = 'Etha76@gmail.com';
 
     $response = $sdk->transactionalEmails->deleteSmtpBlockedContactsEmail($request);
 
@@ -375,7 +375,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteSmtpLogMessageIdRequest();
-    $request->messageId = 'fugit';
+    $request->messageId = 'quae';
 
     $response = $sdk->transactionalEmails->deleteSmtpLogMessageId($request);
 
@@ -420,10 +420,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetAggregatedSmtpReportRequest();
-    $request->days = 66149;
-    $request->endDate = 'laudantium';
-    $request->startDate = 'quae';
-    $request->tag = 'dolor';
+    $request->days = 21688;
+    $request->endDate = 'velit';
+    $request->startDate = 'aspernatur';
+    $request->tag = 'eum';
 
     $response = $sdk->transactionalEmails->getAggregatedSmtpReport($request);
 
@@ -505,17 +505,17 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetEmailEventReportRequest();
-    $request->days = 856277;
-    $request->email = 'Carrie_Bednar@yahoo.com';
-    $request->endDate = 'impedit';
-    $request->event = GetEmailEventReportEvent::Error;
-    $request->limit = 456410;
-    $request->messageId = 'necessitatibus';
-    $request->offset = 153369;
-    $request->sort = GetEmailEventReportSort::Asc;
-    $request->startDate = 'nesciunt';
-    $request->tags = 'expedita';
-    $request->templateId = 432984;
+    $request->days = 260628;
+    $request->email = 'Sasha95@yahoo.com';
+    $request->endDate = 'eum';
+    $request->event = GetEmailEventReportEvent::HardBounces;
+    $request->limit = 325118;
+    $request->messageId = 'beatae';
+    $request->offset = 583404;
+    $request->sort = GetEmailEventReportSort::Desc;
+    $request->startDate = 'earum';
+    $request->tags = 'soluta';
+    $request->templateId = 940782;
 
     $response = $sdk->transactionalEmails->getEmailEventReport($request);
 
@@ -562,12 +562,12 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetScheduledEmailByIdRequest();
-    $request->endDate = DateTime::createFromFormat('Y-m-d', '2022-06-22');
-    $request->identifier = 'magnam';
-    $request->limit = 349440;
-    $request->offset = 70410;
+    $request->endDate = DateTime::createFromFormat('Y-m-d', '2022-11-04');
+    $request->identifier = 'earum';
+    $request->limit = 596211;
+    $request->offset = 983427;
     $request->sort = GetScheduledEmailByIdSort::Desc;
-    $request->startDate = DateTime::createFromFormat('Y-m-d', '2022-04-01');
+    $request->startDate = DateTime::createFromFormat('Y-m-d', '2022-03-21');
     $request->status = GetScheduledEmailByIdStatus::InProgress;
 
     $response = $sdk->transactionalEmails->getScheduledEmailById($request);
@@ -614,13 +614,13 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSmtpReportRequest();
-    $request->days = 927212;
-    $request->endDate = 'consequuntur';
-    $request->limit = 28952;
-    $request->offset = 350207;
-    $request->sort = GetSmtpReportSort::Desc;
-    $request->startDate = 'quasi';
-    $request->tag = 'nisi';
+    $request->days = 211534;
+    $request->endDate = 'fugit';
+    $request->limit = 764995;
+    $request->offset = 684935;
+    $request->sort = GetSmtpReportSort::Asc;
+    $request->startDate = 'animi';
+    $request->tag = 'necessitatibus';
 
     $response = $sdk->transactionalEmails->getSmtpReport($request);
 
@@ -665,7 +665,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSmtpTemplateRequest();
-    $request->templateId = 871103;
+    $request->templateId = 862063;
 
     $response = $sdk->transactionalEmails->getSmtpTemplate($request);
 
@@ -711,9 +711,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSmtpTemplatesRequest();
-    $request->limit = 878373;
-    $request->offset = 667593;
-    $request->sort = GetSmtpTemplatesSort::Desc;
+    $request->limit = 8931;
+    $request->offset = 97258;
+    $request->sort = GetSmtpTemplatesSort::Asc;
     $request->templateStatus = false;
 
     $response = $sdk->transactionalEmails->getSmtpTemplates($request);
@@ -760,17 +760,14 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetTransacBlockedContactsRequest();
-    $request->endDate = 'sequi';
-    $request->limit = 987349;
-    $request->offset = 918092;
+    $request->endDate = 'ducimus';
+    $request->limit = 619183;
+    $request->offset = 581082;
     $request->senders = [
-        'occaecati',
-        'nemo',
-        'voluptate',
-        'blanditiis',
+        'suscipit',
     ];
-    $request->sort = GetTransacBlockedContactsSort::Desc;
-    $request->startDate = 'voluptas';
+    $request->sort = GetTransacBlockedContactsSort::Asc;
+    $request->startDate = 'quasi';
 
     $response = $sdk->transactionalEmails->getTransacBlockedContacts($request);
 
@@ -815,7 +812,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetTransacEmailContentRequest();
-    $request->uuid = '4584273a-8418-4d16-a309-fb0929921aef';
+    $request->uuid = '2fde0477-1778-4ff6-9d01-7476360a15db';
 
     $response = $sdk->transactionalEmails->getTransacEmailContent($request);
 
@@ -861,14 +858,14 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetTransacEmailsListRequest();
-    $request->email = 'Leola50@hotmail.com';
-    $request->endDate = 'maxime';
-    $request->limit = 300403;
-    $request->messageId = 'temporibus';
-    $request->offset = 549501;
+    $request->email = 'Lucas.Homenick@yahoo.com';
+    $request->endDate = 'eum';
+    $request->limit = 374753;
+    $request->messageId = 'iste';
+    $request->offset = 661607;
     $request->sort = GetTransacEmailsListSort::Asc;
-    $request->startDate = 'itaque';
-    $request->templateId = 415608;
+    $request->startDate = 'error';
+    $request->templateId = 822407;
 
     $response = $sdk->transactionalEmails->getTransacEmailsList($request);
 
@@ -917,10 +914,8 @@ try {
     $request->sendTestEmail = new SendTestEmail();
     $request->sendTestEmail->emailTo = [
         'helen.jurger@example.com',
-        'helen.jurger@example.com',
-        'helen.jurger@example.com',
     ];
-    $request->templateId = 936618;
+    $request->templateId = 913992;
 
     $response = $sdk->transactionalEmails->sendTestTemplate($request);
 
@@ -978,29 +973,23 @@ try {
     $request = new SendSmtpEmail();
     $request->attachment = [
         new SendSmtpEmailAttachment(),
-        new SendSmtpEmailAttachment(),
     ];
     $request->batchId = '5c6cfa04-eed9-42c2-8b5c-6d470d978e9d';
     $request->bcc = [
         new SendSmtpEmailBcc(),
-        new SendSmtpEmailBcc(),
-        new SendSmtpEmailBcc(),
     ];
     $request->cc = [
         new SendSmtpEmailCc(),
-        new SendSmtpEmailCc(),
-        new SendSmtpEmailCc(),
-        new SendSmtpEmailCc(),
     ];
     $request->headers = [
-        'ipsam' => 'vel',
+        'mollitia' => 'laborum',
     ];
     $request->htmlContent = '<!DOCTYPE html> <html> <body> <h1>Confirm you email</h1> <p>Please confirm your email address by clicking on the link below</p> </body> </html>';
     $request->messageVersions = [
         new SendSmtpEmailMessageVersions(),
     ];
     $request->params = [
-        'non' => 'maiores',
+        'libero' => 'ad',
     ];
     $request->replyTo = new SendSmtpEmailReplyTo();
     $request->replyTo->email = 'ann6533@example.com';
@@ -1013,13 +1002,10 @@ try {
     $request->subject = 'Login Email confirmation';
     $request->tags = [
         'tag1',
-        'tag1',
     ];
     $request->templateId = 2;
     $request->textContent = 'Please confirm your email address by clicking on the link https://text.domain.com';
     $request->to = [
-        new SendSmtpEmailTo(),
-        new SendSmtpEmailTo(),
         new SendSmtpEmailTo(),
     ];
 
@@ -1068,7 +1054,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateSmtpTemplateRequest();
-    $request->templateId = 858778;
+    $request->templateId = 536923;
     $request->updateSmtpTemplate = new UpdateSmtpTemplate();
     $request->updateSmtpTemplate->attachmentUrl = 'https://attachment.domain.com';
     $request->updateSmtpTemplate->htmlContent = 'The order n°xxxxx has been confirmed. Thanks for your purchase';

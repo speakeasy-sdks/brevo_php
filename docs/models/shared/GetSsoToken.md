@@ -1,7 +1,5 @@
 # GetSsoToken
 
-Session token
-
 
 ## Fields
 

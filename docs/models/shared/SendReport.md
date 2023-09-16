@@ -1,7 +1,5 @@
 # SendReport
 
-Values for send a report
-
 
 ## Fields
 

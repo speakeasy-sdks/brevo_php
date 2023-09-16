@@ -1,7 +1,5 @@
 # RemainingCreditModel
 
-Credits added
-
 
 ## Fields
 

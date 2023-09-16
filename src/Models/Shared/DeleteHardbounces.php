@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * DeleteHardbounces - values to delete hardbounces
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class DeleteHardbounces
 {
     /**

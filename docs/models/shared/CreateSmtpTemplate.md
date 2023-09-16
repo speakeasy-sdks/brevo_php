@@ -1,7 +1,5 @@
 # CreateSmtpTemplate
 
-values to update in transactional email template
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # CreatedBatchId
 
-batch id created
-
 
 ## Fields
 

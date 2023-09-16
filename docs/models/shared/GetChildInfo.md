@@ -1,7 +1,5 @@
 # GetChildInfo
 
-Information for the child
-
 
 ## Fields
 

@@ -1,4 +1,4 @@
-# notes
+# Notes
 
 ### Available Operations
 
@@ -29,7 +29,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteCrmNotesIdRequest();
-    $request->id = '862065e9-04f3-4b11-94b8-abf603a79f9d';
+    $request->id = '8f5c0b2f-2fb7-4b19-8a27-6b26916fe1f0';
 
     $response = $sdk->notes->deleteCrmNotesId($request);
 
@@ -76,12 +76,12 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmNotesRequest();
-    $request->dateFrom = 962771;
-    $request->dateTo = 914791;
+    $request->dateFrom = 546885;
+    $request->dateTo = 979574;
     $request->entity = GetCrmNotesEntity::Companies;
-    $request->entityIds = 'est';
-    $request->limit = 696483;
-    $request->offset = 440666;
+    $request->entityIds = 'sed';
+    $request->limit = 592231;
+    $request->offset = 258702;
     $request->sort = GetCrmNotesSort::Desc;
 
     $response = $sdk->notes->getCrmNotes($request);
@@ -127,7 +127,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmNotesIdRequest();
-    $request->id = 'a8a50ce1-87f8-46bc-973d-689eee9526f8';
+    $request->id = '3698f447-f603-4e8b-845e-80ca55efd20e';
 
     $response = $sdk->notes->getCrmNotesId($request);
 
@@ -175,23 +175,16 @@ try {
     $request = new PatchCrmNotesIdRequest();
     $request->noteData = new NoteData();
     $request->noteData->companyIds = [
-        'error',
-        'blanditiis',
-        'suscipit',
-        'repudiandae',
+        'numquam',
     ];
     $request->noteData->contactIds = [
-        541381,
-        120919,
-        923306,
+        329935,
     ];
     $request->noteData->dealIds = [
-        'repellendus',
-        'labore',
-        'reiciendis',
+        'in',
     ];
     $request->noteData->text = 'In communication with client for resolution of queries.';
-    $request->id = '0e101256-3f94-4e29-a973-e922a57a15be';
+    $request->id = 'e1858b6a-89fb-4e3a-9aa8-e4824d0ab407';
 
     $response = $sdk->notes->patchCrmNotesId($request);
 
@@ -237,13 +230,13 @@ $sdk = Brevo::builder()
 try {
     $request = new NoteData();
     $request->companyIds = [
-        'vero',
+        'ipsam',
     ];
     $request->contactIds = [
-        434156,
+        24527,
     ];
     $request->dealIds = [
-        'totam',
+        'voluptatum',
     ];
     $request->text = 'In communication with client for resolution of queries.';
 

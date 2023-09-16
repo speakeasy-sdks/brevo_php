@@ -1,7 +1,5 @@
 # GetSharedTemplateUrl
 
-Shared template URL information
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # BlockDomain
 
-Name of the domain to be blocked
-
 
 ## Fields
 

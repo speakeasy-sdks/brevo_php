@@ -1,7 +1,5 @@
 # CreateUpdateBatchProducts
 
-Values to create a batch of products
-
 
 ## Fields
 

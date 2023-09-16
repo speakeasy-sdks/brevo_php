@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * RequestSmsRecipientExport - Values to send for a recipient export request
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class RequestSmsRecipientExport
 {
     /**

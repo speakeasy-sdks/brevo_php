@@ -1,4 +1,4 @@
-# externalFeeds
+# ExternalFeeds
 
 ### Available Operations
 
@@ -31,11 +31,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new CreateExternalFeed();
-    $request->authType = CreateExternalFeedAuthType::NoAuth;
+    $request->authType = CreateExternalFeedAuthType::Basic;
     $request->cache = true;
     $request->headers = [
-        new CreateExternalFeedHeaders(),
-        new CreateExternalFeedHeaders(),
         new CreateExternalFeedHeaders(),
     ];
     $request->maxRetries = 5;
@@ -88,7 +86,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteExternalFeedRequest();
-    $request->uuid = '04f15756-082d-468e-a19f-1d17051339d0';
+    $request->uuid = '4e523c7e-0bc7-4178-a479-6f2a70c68828';
 
     $response = $sdk->externalFeeds->deleteExternalFeed($request);
 
@@ -135,13 +133,13 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetAllExternalFeedsRequest();
-    $request->authType = GetAllExternalFeedsAuthType::Token;
-    $request->endDate = DateTime::createFromFormat('Y-m-d', '2022-06-27');
-    $request->limit = 428796;
-    $request->offset = 649832;
-    $request->search = 'ab';
-    $request->sort = GetAllExternalFeedsSort::Desc;
-    $request->startDate = DateTime::createFromFormat('Y-m-d', '2022-12-20');
+    $request->authType = GetAllExternalFeedsAuthType::Basic;
+    $request->endDate = DateTime::createFromFormat('Y-m-d', '2021-09-13');
+    $request->limit = 277596;
+    $request->offset = 539224;
+    $request->search = 'explicabo';
+    $request->sort = GetAllExternalFeedsSort::Asc;
+    $request->startDate = DateTime::createFromFormat('Y-m-d', '2022-11-08');
 
     $response = $sdk->externalFeeds->getAllExternalFeeds($request);
 
@@ -186,7 +184,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetExternalFeedByUUIDRequest();
-    $request->uuid = '394c2607-1f93-4f5f-8642-dac7af515cc4';
+    $request->uuid = 'f222e981-7ee1-47cb-a61e-6b7b95bc0ab3';
 
     $response = $sdk->externalFeeds->getExternalFeedByUUID($request);
 
@@ -235,7 +233,7 @@ $sdk = Brevo::builder()
 try {
     $request = new UpdateExternalFeedRequest();
     $request->updateExternalFeed = new UpdateExternalFeed();
-    $request->updateExternalFeed->authType = UpdateExternalFeedAuthType::Basic;
+    $request->updateExternalFeed->authType = UpdateExternalFeedAuthType::NoAuth;
     $request->updateExternalFeed->cache = true;
     $request->updateExternalFeed->headers = [
         new UpdateExternalFeedHeaders(),
@@ -246,7 +244,7 @@ try {
     $request->updateExternalFeed->token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c';
     $request->updateExternalFeed->url = 'http://requestb.in/173lyyx1';
     $request->updateExternalFeed->username = 'user';
-    $request->uuid = 'aa63aae8-d678-464d-bb67-5fd5e60b375e';
+    $request->uuid = '20c4f378-9fd8-471f-99dd-2efd121aa6f1';
 
     $response = $sdk->externalFeeds->updateExternalFeed($request);
 

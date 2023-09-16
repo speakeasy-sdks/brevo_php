@@ -1,7 +1,5 @@
 # GetProducts
 
-All products listed
-
 
 ## Fields
 

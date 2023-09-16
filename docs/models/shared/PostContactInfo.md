@@ -1,7 +1,5 @@
 # PostContactInfo
 
-All contacts have been added successfully to the list with details of failed ones
-
 
 ## Fields
 

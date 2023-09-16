@@ -1,7 +1,5 @@
 # CreateReseller
 
-child created
-
 
 ## Fields
 

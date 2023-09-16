@@ -1,4 +1,4 @@
-# tasks
+# Tasks
 
 ### Available Operations
 
@@ -30,7 +30,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteCrmTasksIdRequest();
-    $request->id = '251a5a9d-a660-4ff5-bbfa-ad4f9efc1b45';
+    $request->id = '8a50ce18-7f86-4bc1-b3d6-89eee9526f8d';
 
     $response = $sdk->tasks->deleteCrmTasksId($request);
 
@@ -78,19 +78,19 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmTasksRequest();
-    $request->dateFrom = 82057;
-    $request->dateTo = 147685;
-    $request->filterAssignTo = 'cumque';
-    $request->filterCompanies = 'quae';
-    $request->filterContacts = 'perferendis';
-    $request->filterDate = GetCrmTasksFilterDate::Today;
-    $request->filterDeals = 'aspernatur';
-    $request->filterStatus = GetCrmTasksFilterStatus::Done;
-    $request->filterType = 'eius';
-    $request->limit = 521996;
-    $request->offset = 871083;
+    $request->dateFrom = 621693;
+    $request->dateTo = 502721;
+    $request->filterAssignTo = 'suscipit';
+    $request->filterCompanies = 'repudiandae';
+    $request->filterContacts = 'atque';
+    $request->filterDate = GetCrmTasksFilterDate::Tomorrow;
+    $request->filterDeals = 'sunt';
+    $request->filterStatus = GetCrmTasksFilterStatus::Undone;
+    $request->filterType = 'dolorum';
+    $request->limit = 829898;
+    $request->offset = 287119;
     $request->sort = GetCrmTasksSort::Desc;
-    $request->sortBy = 'eos';
+    $request->sortBy = 'doloremque';
 
     $response = $sdk->tasks->getCrmTasks($request);
 
@@ -135,7 +135,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmTasksIdRequest();
-    $request->id = 'f615199e-bfd0-4e9f-a6c6-32ca3aed0117';
+    $request->id = 'e1012563-f94e-429e-973e-922a57a15be3';
 
     $response = $sdk->tasks->getCrmTasksId($request);
 
@@ -222,19 +222,14 @@ try {
     $request->requestBody = new PatchCrmTasksIdRequestBody();
     $request->requestBody->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->requestBody->companiesIds = [
-        'occaecati',
-        'suscipit',
-        'adipisci',
+        'vero',
     ];
     $request->requestBody->contactsIds = [
-        169025,
+        39615,
     ];
     $request->requestBody->date = DateTime::createFromFormat('Y-m-d\TH:i:sP', '2021-11-01T17:44:54.668Z');
     $request->requestBody->dealsIds = [
-        'nulla',
-        'necessitatibus',
-        'ipsa',
-        'tempora',
+        'iure',
     ];
     $request->requestBody->done = false;
     $request->requestBody->duration = 600000;
@@ -243,12 +238,11 @@ try {
     $request->requestBody->reminder = new TaskReminder();
     $request->requestBody->reminder->types = [
         TaskReminderTypes::Email,
-        TaskReminderTypes::Email,
     ];
-    $request->requestBody->reminder->unit = TaskReminderUnit::Hours;
+    $request->requestBody->reminder->unit = TaskReminderUnit::Weeks;
     $request->requestBody->reminder->value = 10;
     $request->requestBody->taskTypeId = '61a5cd07ca1347c82306ad09';
-    $request->id = '78ff61d0-1747-4636-8a15-db6a660659a1';
+    $request->id = '07e2b6e3-ab88-445f-8597-a60ff2a54a31';
 
     $response = $sdk->tasks->patchCrmTasksId($request);
 
@@ -298,19 +292,14 @@ try {
     $request = new PostCrmTasksRequestBody();
     $request->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->companiesIds = [
-        'possimus',
-        'voluptates',
-        'mollitia',
+        'recusandae',
     ];
     $request->contactsIds = [
-        726343,
-        324083,
-        536923,
+        607249,
     ];
     $request->date = DateTime::createFromFormat('Y-m-d\TH:i:sP', '2021-11-01T17:44:54.668Z');
     $request->dealsIds = [
-        'vitae',
-        'repellendus',
+        'quaerat',
     ];
     $request->done = false;
     $request->duration = 600000;
@@ -318,7 +307,6 @@ try {
     $request->notes = 'In communication with client for resolution of queries.';
     $request->reminder = new TaskReminder();
     $request->reminder->types = [
-        TaskReminderTypes::Push,
         TaskReminderTypes::Email,
     ];
     $request->reminder->unit = TaskReminderUnit::Hours;

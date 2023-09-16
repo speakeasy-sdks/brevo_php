@@ -1,7 +1,5 @@
 # GetAccount
 
-account informations
-
 
 ## Fields
 

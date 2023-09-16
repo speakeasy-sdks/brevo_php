@@ -1,4 +1,4 @@
-# ecommerce
+# Ecommerce
 
 ### Available Operations
 
@@ -40,8 +40,6 @@ try {
     $request = new OrderBatch();
     $request->notifyUrl = 'https://en.wikipedia.org/wiki/Webhook';
     $request->orders = [
-        new Order(),
-        new Order(),
         new Order(),
     ];
 
@@ -100,15 +98,12 @@ try {
     $request->billing->postCode = '4052';
     $request->billing->region = 'Northwestern Switzerland';
     $request->coupons = [
-        'placeat',
-        'velit',
-        'eum',
+        'similique',
     ];
     $request->createdAt = '2021-07-29T20:59:23.383Z';
     $request->email = 'example@brevo.com';
     $request->id = '14';
     $request->products = [
-        new OrderProducts(),
         new OrderProducts(),
     ];
     $request->status = 'completed';
@@ -160,9 +155,6 @@ try {
     $request = new CreateUpdateBatchCategory();
     $request->categories = [
         new CreateUpdateCategories(),
-        new CreateUpdateCategories(),
-        new CreateUpdateCategories(),
-        new CreateUpdateCategories(),
     ];
     $request->updateEnabled = false;
 
@@ -211,8 +203,6 @@ $sdk = Brevo::builder()
 try {
     $request = new CreateUpdateBatchProducts();
     $request->products = [
-        new CreateUpdateProducts(),
-        new CreateUpdateProducts(),
         new CreateUpdateProducts(),
     ];
     $request->updateEnabled = false;
@@ -310,22 +300,18 @@ $sdk = Brevo::builder()
 try {
     $request = new CreateUpdateProduct();
     $request->categories = [
-        'nulla',
-        'voluptas',
-        'libero',
-        'quasi',
+        'facilis',
     ];
-    $request->deletedAt = 'tempora';
+    $request->deletedAt = 'vero';
     $request->id = 'P11';
     $request->imageUrl = 'http://mydomain.com/product-absoulte-url/img.jpeg';
     $request->metaInfo = [
-        'explicabo' => 'provident',
-        'ipsa' => 'molestiae',
+        'ducimus' => 'dolore',
     ];
     $request->name = 'Iphone 11';
-    $request->parentId = 'magnam';
-    $request->price = 4879.35;
-    $request->sku = 'eius';
+    $request->parentId = 'quibusdam';
+    $request->price = 8489.44;
+    $request->sku = 'sequi';
     $request->updateEnabled = false;
     $request->url = 'http://mydomain.com/product/electronics/product1';
 
@@ -374,12 +360,11 @@ $sdk = Brevo::builder()
 try {
     $request = new GetCategoriesRequest();
     $request->ids = [
-        'esse',
-        'rem',
+        'natus',
     ];
-    $request->limit = 683282;
-    $request->name = 'Yvette Stehr';
-    $request->offset = 379927;
+    $request->limit = 773326;
+    $request->name = 'Camille Heidenreich';
+    $request->offset = 780427;
     $request->sort = GetCategoriesSort::Desc;
 
     $response = $sdk->ecommerce->getCategories($request);
@@ -425,7 +410,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCategoryInfoRequest();
-    $request->id = '28c10ab3-cdca-4425-9904-e523c7e0bc71';
+    $request->id = 'f7c70a45-626d-4436-813f-16d9f5fce6c5';
 
     $response = $sdk->ecommerce->getCategoryInfo($request);
 
@@ -470,7 +455,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetProductInfoRequest();
-    $request->id = '78e4796f-2a70-4c68-8282-aa482562f222';
+    $request->id = '56146c3e-250f-4b00-8c42-e141aac366c8';
 
     $response = $sdk->ecommerce->getProductInfo($request);
 
@@ -517,26 +502,20 @@ $sdk = Brevo::builder()
 try {
     $request = new GetProductsRequest();
     $request->categories = [
-        'occaecati',
-        'atque',
-        'et',
-        'esse',
+        'assumenda',
     ];
     $request->ids = [
-        'accusamus',
-        'veritatis',
-        'esse',
-        'quod',
+        'nulla',
     ];
-    $request->limit = 724168;
-    $request->name = 'Gene Botsford';
-    $request->offset = 690025;
-    $request->priceEq = 4732.21;
-    $request->priceGt = 6996.22;
-    $request->priceGte = 5801.97;
-    $request->priceLt = 3277.2;
-    $request->priceLte = 7162.44;
-    $request->priceNe = 7567.79;
+    $request->limit = 379034;
+    $request->name = 'Ryan Glover';
+    $request->offset = 591935;
+    $request->priceEq = 553.74;
+    $request->priceGt = 4764.77;
+    $request->priceGte = 3015.98;
+    $request->priceLt = 4879.35;
+    $request->priceLte = 2621.18;
+    $request->priceNe = 4585.15;
     $request->sort = GetProductsSort::Asc;
 
     $response = $sdk->ecommerce->getProducts($request);

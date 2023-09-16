@@ -1,7 +1,5 @@
 # GetContacts
 
-All contacts listed
-
 
 ## Fields
 

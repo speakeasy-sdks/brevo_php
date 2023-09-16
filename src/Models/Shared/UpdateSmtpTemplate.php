@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateSmtpTemplate - values to update in transactional email template
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateSmtpTemplate
 {
     /**

@@ -1,7 +1,5 @@
 # UpdateBatchContacts
 
-Values to update multiple contacts
-
 
 ## Fields
 

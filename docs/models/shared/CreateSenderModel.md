@@ -1,7 +1,5 @@
 # CreateSenderModel
 
-sender created
-
 
 ## Fields
 

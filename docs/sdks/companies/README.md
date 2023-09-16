@@ -1,4 +1,4 @@
-# companies
+# Companies
 
 ### Available Operations
 
@@ -211,22 +211,18 @@ try {
     $request = new PatchCompaniesLinkUnlinkIdRequest();
     $request->requestBody = new PatchCompaniesLinkUnlinkIdRequestBody();
     $request->requestBody->linkContactIds = [
-        616934,
+        222321,
     ];
     $request->requestBody->linkDealsIds = [
-        'hic',
-        'saepe',
+        'natus',
     ];
     $request->requestBody->unlinkContactIds = [
-        449950,
-        359508,
-        613064,
+        386489,
     ];
     $request->requestBody->unlinkDealsIds = [
-        'saepe',
-        'quidem',
+        'hic',
     ];
-    $request->id = '10faaa23-52c5-4955-907a-ff1a3a2fa946';
+    $request->id = 'ea7596eb-10fa-4aa2-b52c-5955907aff1a';
 
     $response = $sdk->companies->patchCompaniesLinkUnlinkId($request);
 
@@ -277,7 +273,7 @@ try {
     $request->requestBody->attributes = new PatchCompaniesIdRequestBodyAttributes();
     $request->requestBody->countryCode = 91;
     $request->requestBody->name = 'company';
-    $request->id = '7739251a-a52c-43f5-ad01-9da1ffe78f09';
+    $request->id = '3a2fa946-7739-4251-aa52-c3f5ad019da1';
 
     $response = $sdk->companies->patchCompaniesId($request);
 

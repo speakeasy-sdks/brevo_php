@@ -1,7 +1,5 @@
 # AuthenticateDomainModel
 
-domain authenticated
-
 
 ## Fields
 

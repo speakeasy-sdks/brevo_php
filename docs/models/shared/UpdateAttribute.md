@@ -1,7 +1,5 @@
 # UpdateAttribute
 
-Values to update an attribute
-
 
 ## Fields
 

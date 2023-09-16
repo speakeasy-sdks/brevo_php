@@ -1,4 +1,4 @@
-# emailCampaigns
+# EmailCampaigns
 
 ### Available Operations
 
@@ -53,20 +53,14 @@ try {
     $request->mirrorActive = true;
     $request->name = 'Newsletter - May 2017';
     $request->params = [
-        'tempore' => 'adipisci',
-        'cumque' => 'consequuntur',
-        'consequatur' => 'minus',
+        'rem' => 'fuga',
     ];
     $request->previewText = 'Thanks for your order!';
     $request->recipients = new CreateEmailCampaignRecipients();
     $request->recipients->exclusionListIds = [
         8,
-        8,
     ];
     $request->recipients->listIds = [
-        32,
-        32,
-        32,
         32,
     ];
     $request->recipients->segmentIds = [
@@ -84,7 +78,7 @@ try {
     $request->subjectA = 'Discover the New Collection!';
     $request->subjectB = 'Want to discover the New Collection?';
     $request->tag = 'Newsletter';
-    $request->templateId = 458139;
+    $request->templateId = 442015;
     $request->toField = '{FNAME} {LNAME}';
     $request->unsubscriptionPageId = '62cbb7fabbe85021021aac52';
     $request->updateFormId = '6313436b9ad40e23b371d095';
@@ -135,7 +129,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteEmailCampaignRequest();
-    $request->campaignId = 503427;
+    $request->campaignId = 695626;
 
     $response = $sdk->emailCampaigns->deleteEmailCampaign($request);
 
@@ -182,7 +176,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new EmailExportRecipientsRequest();
-    $request->campaignId = 590984;
+    $request->campaignId = 852635;
     $request->emailExportRecipients = new EmailExportRecipients();
     $request->emailExportRecipients->notifyURL = 'http://requestb.in/173lyyx1';
     $request->emailExportRecipients->recipientsType = EmailExportRecipientsRecipientsType::Openers;
@@ -230,7 +224,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetAbTestCampaignResultRequest();
-    $request->campaignId = 953722;
+    $request->campaignId = 283519;
 
     $response = $sdk->emailCampaigns->getAbTestCampaignResult($request);
 
@@ -276,8 +270,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetEmailCampaignRequest();
-    $request->campaignId = 857723;
-    $request->statistics = GetEmailCampaignStatistics::StatsByDomain;
+    $request->campaignId = 433439;
+    $request->statistics = GetEmailCampaignStatistics::LinksStats;
 
     $response = $sdk->emailCampaigns->getEmailCampaign($request);
 
@@ -327,15 +321,15 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetEmailCampaignsRequest();
-    $request->endDate = 'esse';
+    $request->endDate = 'assumenda';
     $request->excludeHtmlContent = GetEmailCampaignsExcludeHTMLContent::True;
-    $request->limit = 951875;
-    $request->offset = 621679;
-    $request->sort = GetEmailCampaignsSort::Desc;
-    $request->startDate = 'pariatur';
-    $request->statistics = GetEmailCampaignsStatistics::StatsByDomain;
-    $request->status = GetEmailCampaignsStatus::Suspended;
-    $request->type = GetEmailCampaignsType::Trigger;
+    $request->limit = 509342;
+    $request->offset = 788546;
+    $request->sort = GetEmailCampaignsSort::Asc;
+    $request->startDate = 'ipsa';
+    $request->statistics = GetEmailCampaignsStatistics::LinksStats;
+    $request->status = GetEmailCampaignsStatus::Draft;
+    $request->type = GetEmailCampaignsType::Classic;
 
     $response = $sdk->emailCampaigns->getEmailCampaigns($request);
 
@@ -380,7 +374,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSharedTemplateUrlRequest();
-    $request->campaignId = 992430;
+    $request->campaignId = 778696;
 
     $response = $sdk->emailCampaigns->getSharedTemplateUrl($request);
 
@@ -425,7 +419,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendEmailCampaignNowRequest();
-    $request->campaignId = 815524;
+    $request->campaignId = 847276;
 
     $response = $sdk->emailCampaigns->sendEmailCampaignNow($request);
 
@@ -473,7 +467,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendReportRequest();
-    $request->campaignId = 85001;
+    $request->campaignId = 777408;
     $request->sendReport = new SendReport();
     $request->sendReport->email = new SendReportEmail();
     $request->sendReport->email->body = 'Please find attached the report of our last email campaign.';
@@ -526,11 +520,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendTestEmailRequest();
-    $request->campaignId = 94458;
+    $request->campaignId = 681359;
     $request->sendTestEmail = new SendTestEmail();
     $request->sendTestEmail->emailTo = [
-        'helen.jurger@example.com',
-        'helen.jurger@example.com',
         'helen.jurger@example.com',
     ];
 
@@ -579,9 +571,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateCampaignStatusRequest();
-    $request->campaignId = 633608;
+    $request->campaignId = 259422;
     $request->updateCampaignStatus = new UpdateCampaignStatus();
-    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::Sent;
+    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::Archive;
 
     $response = $sdk->emailCampaigns->updateCampaignStatus($request);
 
@@ -630,7 +622,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateEmailCampaignRequest();
-    $request->campaignId = 949298;
+    $request->campaignId = 373813;
     $request->updateEmailCampaign = new UpdateEmailCampaign();
     $request->updateEmailCampaign->abTesting = true;
     $request->updateEmailCampaign->attachmentUrl = 'https://attachment.domain.com';
@@ -645,21 +637,17 @@ try {
     $request->updateEmailCampaign->mirrorActive = true;
     $request->updateEmailCampaign->name = 'Newsletter - May 2017';
     $request->updateEmailCampaign->params = [
-        'earum' => 'vel',
+        'ab' => 'cupiditate',
     ];
     $request->updateEmailCampaign->previewText = 'Thanks for your order!';
     $request->updateEmailCampaign->recipients = new UpdateEmailCampaignRecipients();
     $request->updateEmailCampaign->recipients->exclusionListIds = [
         8,
-        8,
     ];
     $request->updateEmailCampaign->recipients->listIds = [
         32,
-        32,
     ];
     $request->updateEmailCampaign->recipients->segmentIds = [
-        23,
-        23,
         23,
     ];
     $request->updateEmailCampaign->recurring = false;

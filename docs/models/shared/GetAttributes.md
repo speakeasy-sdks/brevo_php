@@ -1,7 +1,5 @@
 # GetAttributes
 
-Attributes listed
-
 
 ## Fields
 

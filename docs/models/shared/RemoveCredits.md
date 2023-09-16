@@ -1,7 +1,5 @@
 # RemoveCredits
 
-Values to post to remove email or SMS credits from a specific child account
-
 
 ## Fields
 

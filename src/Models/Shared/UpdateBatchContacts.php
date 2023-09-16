@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateBatchContacts - Values to update multiple contacts
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateBatchContacts
 {
     /**

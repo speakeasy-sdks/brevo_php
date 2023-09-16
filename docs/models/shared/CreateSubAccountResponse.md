@@ -1,7 +1,5 @@
 # CreateSubAccountResponse
 
-Created sub-account ID
-
 
 ## Fields
 

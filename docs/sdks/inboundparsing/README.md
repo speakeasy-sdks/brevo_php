@@ -1,4 +1,4 @@
-# inboundParsing
+# InboundParsing
 
 ### Available Operations
 
@@ -27,7 +27,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetInboundEmailAttachmentRequest();
-    $request->downloadToken = 'officiis';
+    $request->downloadToken = 'aperiam';
 
     $response = $sdk->inboundParsing->getInboundEmailAttachment($request);
 
@@ -73,12 +73,12 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetInboundEmailEventsRequest();
-    $request->endDate = 'praesentium';
-    $request->limit = 708609;
-    $request->offset = 310381;
-    $request->sender = 'incidunt';
-    $request->sort = GetInboundEmailEventsSort::Asc;
-    $request->startDate = 'debitis';
+    $request->endDate = 'cum';
+    $request->limit = 232627;
+    $request->offset = 449083;
+    $request->sender = 'exercitationem';
+    $request->sort = GetInboundEmailEventsSort::Desc;
+    $request->startDate = 'facere';
 
     $response = $sdk->inboundParsing->getInboundEmailEvents($request);
 
@@ -123,7 +123,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetInboundEmailEventsByUuidRequest();
-    $request->uuid = '80ca55ef-d20e-4457-a185-8b6a89fbe3a5';
+    $request->uuid = '4f6fbee4-1f33-4317-be35-b60eb1ea4265';
 
     $response = $sdk->inboundParsing->getInboundEmailEventsByUuid($request);
 

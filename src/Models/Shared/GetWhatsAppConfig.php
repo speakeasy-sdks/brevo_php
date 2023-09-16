@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetWhatsAppConfig - Get all the information of your WhatsApp API account
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetWhatsAppConfig
 {
     /**

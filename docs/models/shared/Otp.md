@@ -1,7 +1,5 @@
 # Otp
 
-otp
-
 
 ## Fields
 

@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetWhatsappCampaigns - WhatsApp campaigns information
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetWhatsappCampaigns
 {
     /**

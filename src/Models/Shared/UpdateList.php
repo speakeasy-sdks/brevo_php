@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateList - Values to update a list
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateList
 {
     /**

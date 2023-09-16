@@ -1,7 +1,5 @@
 # UpdateSmsCampaign
 
-Values to update an SMS Campaign
-
 
 ## Fields
 

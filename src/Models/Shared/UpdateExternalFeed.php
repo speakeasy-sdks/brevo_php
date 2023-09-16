@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateExternalFeed - Values to update a feed
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateExternalFeed
 {
     /**

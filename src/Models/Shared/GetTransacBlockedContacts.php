@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetTransacBlockedContacts - List of blocked or unsubscribed transactional contacts
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetTransacBlockedContacts
 {
     /**

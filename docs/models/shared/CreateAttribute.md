@@ -1,7 +1,5 @@
 # CreateAttribute
 
-Values to create an attribute
-
 
 ## Fields
 

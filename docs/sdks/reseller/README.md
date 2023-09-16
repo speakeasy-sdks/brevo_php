@@ -1,4 +1,4 @@
-# reseller
+# Reseller
 
 ### Available Operations
 
@@ -44,7 +44,7 @@ try {
     $request->addCredits = new AddCredits();
     $request->addCredits->email = 1200;
     $request->addCredits->sms = 450;
-    $request->childIdentifier = 'cum';
+    $request->childIdentifier = 'blanditiis';
 
     $response = $sdk->reseller->addCredits($request);
 
@@ -90,7 +90,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new AssociateIpToChildRequest();
-    $request->childIdentifier = 'iure';
+    $request->childIdentifier = 'ex';
     $request->manageIp = new ManageIp();
     $request->manageIp->ip = '123.65.8.22';
 
@@ -140,7 +140,7 @@ try {
     $request = new CreateChildDomainRequest();
     $request->addChildDomain = new AddChildDomain();
     $request->addChildDomain->domain = 'mychilddomain.com';
-    $request->childIdentifier = 'necessitatibus';
+    $request->childIdentifier = 'sed';
 
     $response = $sdk->reseller->createChildDomain($request);
 
@@ -236,8 +236,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteChildDomainRequest();
-    $request->childIdentifier = 'ratione';
-    $request->domainName = 'laborum';
+    $request->childIdentifier = 'sit';
+    $request->domainName = 'vel';
 
     $response = $sdk->reseller->deleteChildDomain($request);
 
@@ -282,7 +282,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteResellerChildRequest();
-    $request->childIdentifier = 'distinctio';
+    $request->childIdentifier = 'nostrum';
 
     $response = $sdk->reseller->deleteResellerChild($request);
 
@@ -328,7 +328,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DissociateIpFromChildRequest();
-    $request->childIdentifier = 'voluptatum';
+    $request->childIdentifier = 'saepe';
     $request->manageIp = new ManageIp();
     $request->manageIp->ip = '123.65.8.22';
 
@@ -375,7 +375,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetChildAccountCreationStatusRequest();
-    $request->childIdentifier = 'rem';
+    $request->childIdentifier = 'error';
 
     $response = $sdk->reseller->getChildAccountCreationStatus($request);
 
@@ -420,7 +420,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetChildDomainsRequest();
-    $request->childIdentifier = 'aliquam';
+    $request->childIdentifier = 'consequatur';
 
     $response = $sdk->reseller->getChildDomains($request);
 
@@ -465,7 +465,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetChildInfoRequest();
-    $request->childIdentifier = 'ad';
+    $request->childIdentifier = 'incidunt';
 
     $response = $sdk->reseller->getChildInfo($request);
 
@@ -510,8 +510,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetResellerChildsRequest();
-    $request->limit = 997963;
-    $request->offset = 3099;
+    $request->limit = 968865;
+    $request->offset = 209750;
 
     $response = $sdk->reseller->getResellerChilds($request);
 
@@ -556,7 +556,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSsoTokenRequest();
-    $request->childIdentifier = 'corporis';
+    $request->childIdentifier = 'harum';
 
     $response = $sdk->reseller->getSsoToken($request);
 
@@ -602,7 +602,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new RemoveCreditsRequest();
-    $request->childIdentifier = 'perspiciatis';
+    $request->childIdentifier = 'dicta';
     $request->removeCredits = new RemoveCredits();
     $request->removeCredits->email = 500;
     $request->removeCredits->sms = 300;
@@ -651,7 +651,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateChildAccountStatusRequest();
-    $request->childIdentifier = 'nihil';
+    $request->childIdentifier = 'architecto';
     $request->updateChildAccountStatus = new UpdateChildAccountStatus();
     $request->updateChildAccountStatus->marketingAutomation = true;
     $request->updateChildAccountStatus->smsCampaign = true;
@@ -702,8 +702,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateChildDomainRequest();
-    $request->childIdentifier = 'mollitia';
-    $request->domainName = 'voluptas';
+    $request->childIdentifier = 'occaecati';
+    $request->domainName = 'labore';
     $request->updateChildDomain = new UpdateChildDomain();
     $request->updateChildDomain->domain = 'myupdateddomain.com';
 
@@ -751,7 +751,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateResellerChildRequest();
-    $request->childIdentifier = 'alias';
+    $request->childIdentifier = 'quidem';
     $request->updateChild = new UpdateChild();
     $request->updateChild->companyName = 'Your Company';
     $request->updateChild->email = 'josh.cruise@example.com';

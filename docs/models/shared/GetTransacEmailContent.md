@@ -1,7 +1,5 @@
 # GetTransacEmailContent
 
-Transactional email content
-
 
 ## Fields
 

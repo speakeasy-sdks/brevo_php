@@ -1,7 +1,5 @@
 # CreateContact
 
-Values to create a contact
-
 
 ## Fields
 

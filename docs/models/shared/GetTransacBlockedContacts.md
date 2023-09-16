@@ -1,7 +1,5 @@
 # GetTransacBlockedContacts
 
-List of blocked or unsubscribed transactional contacts
-
 
 ## Fields
 

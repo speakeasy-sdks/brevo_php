@@ -1,7 +1,5 @@
 # UpdateChildDomain
 
-value to update for sender domain
-
 
 ## Fields
 

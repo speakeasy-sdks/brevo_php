@@ -1,4 +1,4 @@
-# masterAccount
+# MasterAccount
 
 ### Available Operations
 
@@ -34,7 +34,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteCorporateSubAccountIdRequest();
-    $request->id = 639028;
+    $request->id = 374296;
 
     $response = $sdk->masterAccount->deleteCorporateSubAccountId($request);
 
@@ -79,10 +79,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetAccountActivityRequest();
-    $request->endDate = 'dolorum';
-    $request->limit = 548361;
-    $request->offset = 879235;
-    $request->startDate = 'tempora';
+    $request->endDate = 'minima';
+    $request->limit = 748789;
+    $request->offset = 680116;
+    $request->startDate = 'adipisci';
 
     $response = $sdk->masterAccount->getAccountActivity($request);
 
@@ -162,8 +162,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCorporateSubAccountRequest();
-    $request->limit = 543678;
-    $request->offset = 148268;
+    $request->limit = 795535;
+    $request->offset = 171853;
 
     $response = $sdk->masterAccount->getCorporateSubAccount($request);
 
@@ -208,7 +208,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCorporateSubAccountIdRequest();
-    $request->id = 282699;
+    $request->id = 503934;
 
     $response = $sdk->masterAccount->getCorporateSubAccountId($request);
 
@@ -254,10 +254,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new CreateSubAccount();
-    $request->companyName = 'fugiat';
-    $request->email = 'Lorine0@gmail.com';
-    $request->language = CreateSubAccountLanguage::It;
-    $request->timezone = 'ipsam';
+    $request->companyName = 'in';
+    $request->email = 'Elliott.Torphy23@gmail.com';
+    $request->language = CreateSubAccountLanguage::Pt;
+    $request->timezone = 'blanditiis';
 
     $response = $sdk->masterAccount->postCorporateSubAccount($request);
 
@@ -398,7 +398,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new PutCorporateSubAccountIdApplicationsToggleRequest();
-    $request->id = 24527;
+    $request->id = 555361;
     $request->subAccountAppsToggleRequest = new SubAccountAppsToggleRequest();
     $request->subAccountAppsToggleRequest->automation = false;
     $request->subAccountAppsToggleRequest->conversations = false;
@@ -460,14 +460,14 @@ $sdk = Brevo::builder()
 
 try {
     $request = new PutCorporateSubAccountIdPlanRequest();
-    $request->id = 530537;
+    $request->id = 942584;
     $request->subAccountUpdatePlanRequest = new SubAccountUpdatePlanRequest();
     $request->subAccountUpdatePlanRequest->credits = new SubAccountUpdatePlanRequestCredits();
-    $request->subAccountUpdatePlanRequest->credits->email = 558065;
+    $request->subAccountUpdatePlanRequest->credits->email = 201517;
     $request->subAccountUpdatePlanRequest->features = new SubAccountUpdatePlanRequestFeatures();
-    $request->subAccountUpdatePlanRequest->features->inbox = 922112;
-    $request->subAccountUpdatePlanRequest->features->landingPage = 361151;
-    $request->subAccountUpdatePlanRequest->features->users = 89494;
+    $request->subAccountUpdatePlanRequest->features->inbox = 633998;
+    $request->subAccountUpdatePlanRequest->features->landingPage = 548519;
+    $request->subAccountUpdatePlanRequest->features->users = 867290;
 
     $response = $sdk->masterAccount->putCorporateSubAccountIdPlan($request);
 

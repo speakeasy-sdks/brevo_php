@@ -1,7 +1,5 @@
 # GetCouponCollection
 
-Coupon collections
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # CreateUpdateBatchProductsModel
 
-Products created and updated
-
 
 ## Fields
 

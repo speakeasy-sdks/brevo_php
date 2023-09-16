@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetInboundEmailEventsByUuid - Email campaign informations
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetInboundEmailEventsByUuid
 {
     /**

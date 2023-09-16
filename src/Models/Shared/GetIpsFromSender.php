@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetIpsFromSender - list of dedicated IPs
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetIpsFromSender
 {
     /**

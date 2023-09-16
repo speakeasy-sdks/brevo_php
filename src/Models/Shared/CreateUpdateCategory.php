@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * CreateUpdateCategory - Values to create/update a category
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class CreateUpdateCategory
 {
     /**

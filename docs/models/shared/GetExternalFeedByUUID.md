@@ -1,7 +1,5 @@
 # GetExternalFeedByUUID
 
-External feed
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # GetCategories
 
-All categories listed
-
 
 ## Fields
 

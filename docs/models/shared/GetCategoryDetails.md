@@ -1,7 +1,5 @@
 # GetCategoryDetails
 
-Category informations
-
 
 ## Fields
 

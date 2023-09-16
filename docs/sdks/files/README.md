@@ -1,4 +1,4 @@
-# files
+# Files
 
 ### Available Operations
 
@@ -29,7 +29,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteCrmFilesIdRequest();
-    $request->id = 'd4f6fbee-41f3-4331-bfe3-5b60eb1ea426';
+    $request->id = 'e674bdb0-4f15-4756-882d-68ea19f1d170';
 
     $response = $sdk->files->deleteCrmFilesId($request);
 
@@ -76,13 +76,13 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmFilesRequest();
-    $request->dateFrom = 374244;
-    $request->dateTo = 374296;
+    $request->dateFrom = 326701;
+    $request->dateTo = 86532;
     $request->entity = GetCrmFilesEntity::Companies;
-    $request->entityIds = 'nobis';
-    $request->limit = 680116;
-    $request->offset = 237807;
-    $request->sort = GetCrmFilesSort::Desc;
+    $request->entityIds = 'adipisci';
+    $request->limit = 614465;
+    $request->offset = 839513;
+    $request->sort = GetCrmFilesSort::Asc;
 
     $response = $sdk->files->getCrmFiles($request);
 
@@ -127,7 +127,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmFilesIdRequest();
-    $request->id = '28744ed5-3b88-4f3a-8d8f-5c0b2f2fb7b1';
+    $request->id = '8086a184-0394-4c26-871f-93f5f0642dac';
 
     $response = $sdk->files->getCrmFilesId($request);
 
@@ -172,7 +172,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmFilesIdDataRequest();
-    $request->id = '94a276b2-6916-4fe1-b08f-4294e3698f44';
+    $request->id = '7af515cc-413a-4a63-aae8-d67864dbb675';
 
     $response = $sdk->files->getCrmFilesIdData($request);
 
@@ -218,12 +218,12 @@ $sdk = Brevo::builder()
 
 try {
     $request = new PostCrmFilesRequestBody();
-    $request->companyId = 'voluptate';
-    $request->contactId = 970076;
-    $request->dealId = 'ex';
+    $request->companyId = 'reiciendis';
+    $request->contactId = 828657;
+    $request->dealId = 'nemo';
     $request->file = new PostCrmFilesRequestBodyFile();
-    $request->file->content = 'sit';
-    $request->file->file = 'non';
+    $request->file->content = 'recusandae';
+    $request->file->file = 'aliquid';
 
     $response = $sdk->files->postCrmFiles($request);
 

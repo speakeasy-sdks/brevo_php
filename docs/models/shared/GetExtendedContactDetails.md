@@ -1,7 +1,5 @@
 # GetExtendedContactDetails
 
-Contact informations
-
 
 ## Fields
 

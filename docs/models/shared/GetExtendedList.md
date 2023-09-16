@@ -1,7 +1,5 @@
 # GetExtendedList
 
-List informations
-
 
 ## Fields
 

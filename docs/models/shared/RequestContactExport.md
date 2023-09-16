@@ -1,7 +1,5 @@
 # RequestContactExport
 
-Values to request a contact export
-
 
 ## Fields
 

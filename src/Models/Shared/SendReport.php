@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * SendReport - Values for send a report
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class SendReport
 {
     /**

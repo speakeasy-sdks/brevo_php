@@ -1,7 +1,5 @@
 # GetTransacEmailsList
 
-List of transactional emails
-
 
 ## Fields
 

@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateWebhook - Values to update a webhook
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateWebhook
 {
     /**

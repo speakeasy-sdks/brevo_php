@@ -1,7 +1,5 @@
 # GetSmtpTemplateOverview
 
-Email template informations
-
 
 ## Fields
 

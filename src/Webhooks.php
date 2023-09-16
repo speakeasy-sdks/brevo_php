@@ -111,11 +111,11 @@ class Webhooks
      * 
      * This endpoint will submit a request to get the history of webhooks in the CSV file. The link to download that CSV file will send to the webhook link provided in notifyURL of the body payload.
      * 
-     * @param mixed $request
+     * @param \test\BREVO\Models\Shared\ExportWebhooksHistory $request
      * @return \test\BREVO\Models\Operations\ExportWebhooksHistoryResponse
      */
 	public function exportWebhooksHistory(
-        mixed $request,
+        \test\BREVO\Models\Shared\ExportWebhooksHistory $request,
     ): \test\BREVO\Models\Operations\ExportWebhooksHistoryResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();

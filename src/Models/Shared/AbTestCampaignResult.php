@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * AbTestCampaignResult - A/B test email campaign Result
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class AbTestCampaignResult
 {
     /**

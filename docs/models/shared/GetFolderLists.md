@@ -1,7 +1,5 @@
 # GetFolderLists
 
-Folder's Lists details
-
 
 ## Fields
 

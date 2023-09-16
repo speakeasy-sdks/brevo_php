@@ -1,4 +1,4 @@
-# smsCampaigns
+# SMSCampaigns
 
 ### Available Operations
 
@@ -41,14 +41,8 @@ try {
     $request->recipients = new CreateSmsCampaignRecipients();
     $request->recipients->exclusionListIds = [
         15,
-        15,
-        15,
-        15,
     ];
     $request->recipients->listIds = [
-        54,
-        54,
-        54,
         54,
     ];
     $request->scheduledAt = '2017-05-05T12:30:00+02:00';
@@ -99,7 +93,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteSmsCampaignRequest();
-    $request->campaignId = 174658;
+    $request->campaignId = 539074;
 
     $response = $sdk->smsCampaigns->deleteSmsCampaign($request);
 
@@ -144,7 +138,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSmsCampaignRequest();
-    $request->campaignId = 663866;
+    $request->campaignId = 671957;
 
     $response = $sdk->smsCampaigns->getSmsCampaign($request);
 
@@ -191,12 +185,12 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSmsCampaignsRequest();
-    $request->endDate = 'minima';
-    $request->limit = 293144;
-    $request->offset = 680349;
+    $request->endDate = 'nam';
+    $request->limit = 948861;
+    $request->offset = 388867;
     $request->sort = GetSmsCampaignsSort::Asc;
-    $request->startDate = 'quae';
-    $request->status = GetSmsCampaignsStatus::InProcess;
+    $request->startDate = 'amet';
+    $request->status = GetSmsCampaignsStatus::Queued;
 
     $response = $sdk->smsCampaigns->getSmsCampaigns($request);
 
@@ -243,7 +237,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new RequestSmsRecipientExportRequest();
-    $request->campaignId = 607249;
+    $request->campaignId = 454860;
     $request->requestSmsRecipientExport = new RequestSmsRecipientExport();
     $request->requestSmsRecipientExport->notifyURL = 'http://requestb.in/173lyyx1';
     $request->requestSmsRecipientExport->recipientsType = RequestSmsRecipientExportRecipientsType::Answered;
@@ -291,7 +285,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendSmsCampaignNowRequest();
-    $request->campaignId = 309251;
+    $request->campaignId = 600392;
 
     $response = $sdk->smsCampaigns->sendSmsCampaignNow($request);
 
@@ -339,12 +333,11 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendSmsReportRequest();
-    $request->campaignId = 477646;
+    $request->campaignId = 972083;
     $request->sendReport = new SendReport();
     $request->sendReport->email = new SendReportEmail();
     $request->sendReport->email->body = 'Please find attached the report of our last email campaign.';
     $request->sendReport->email->to = [
-        'jim.suehan@example.com',
         'jim.suehan@example.com',
     ];
     $request->sendReport->language = SendReportLanguage::En;
@@ -393,7 +386,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendTestSmsRequest();
-    $request->campaignId = 284000;
+    $request->campaignId = 588740;
     $request->sendTestSms = new SendTestSms();
     $request->sendTestSms->phoneNumber = '33689965433';
 
@@ -442,7 +435,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateSmsCampaignRequest();
-    $request->campaignId = 633062;
+    $request->campaignId = 833819;
     $request->updateSmsCampaign = new UpdateSmsCampaign();
     $request->updateSmsCampaign->content = 'Get a discount by visiting our NY store and saying : Happy Spring!';
     $request->updateSmsCampaign->name = 'Spring Promo Code';
@@ -452,9 +445,6 @@ try {
         15,
     ];
     $request->updateSmsCampaign->recipients->listIds = [
-        54,
-        54,
-        54,
         54,
     ];
     $request->updateSmsCampaign->scheduledAt = '2017-05-05T12:30:00+02:00';
@@ -507,9 +497,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateSmsCampaignStatusRequest();
-    $request->campaignId = 514513;
+    $request->campaignId = 962771;
     $request->updateCampaignStatus = new UpdateCampaignStatus();
-    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::Sent;
+    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::Draft;
 
     $response = $sdk->smsCampaigns->updateSmsCampaignStatus($request);
 

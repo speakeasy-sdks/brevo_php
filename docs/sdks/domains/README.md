@@ -1,4 +1,4 @@
-# domains
+# Domains
 
 ### Available Operations
 
@@ -29,7 +29,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new AuthenticateDomainRequest();
-    $request->domainName = 'inventore';
+    $request->domainName = 'distinctio';
 
     $response = $sdk->domains->authenticateDomain($request);
 
@@ -119,7 +119,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteDomainRequest();
-    $request->domainName = 'non';
+    $request->domainName = 'quod';
 
     $response = $sdk->domains->deleteDomain($request);
 
@@ -164,7 +164,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetDomainConfigurationRequest();
-    $request->domainName = 'et';
+    $request->domainName = 'odio';
 
     $response = $sdk->domains->getDomainConfiguration($request);
 

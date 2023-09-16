@@ -1,7 +1,5 @@
 # GetSmsCampaigns
 
-SMS campaigns informations
-
 
 ## Fields
 

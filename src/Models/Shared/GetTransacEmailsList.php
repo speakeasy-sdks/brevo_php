@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetTransacEmailsList - List of transactional emails
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetTransacEmailsList
 {
     /**

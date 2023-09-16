@@ -1,4 +1,4 @@
-# whatsAppCampaigns
+# WhatsAppCampaigns
 
 ### Available Operations
 
@@ -38,16 +38,11 @@ try {
     $request->recipients = new CreateWhatsAppCampaignRecipients();
     $request->recipients->excludedListIds = [
         8,
-        8,
     ];
     $request->recipients->listIds = [
         32,
-        32,
     ];
     $request->recipients->segments = [
-        23,
-        23,
-        23,
         23,
     ];
     $request->scheduledAt = '2017-06-01T12:30:00+02:00';
@@ -147,7 +142,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteWhatsAppCampaignRequest();
-    $request->campaignId = 966148;
+    $request->campaignId = 561577;
 
     $response = $sdk->whatsAppCampaigns->deleteWhatsAppCampaign($request);
 
@@ -192,7 +187,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetWhatsAppCampaignRequest();
-    $request->campaignId = 65082;
+    $request->campaignId = 737254;
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppCampaign($request);
 
@@ -238,11 +233,11 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetWhatsAppCampaignsRequest();
-    $request->endDate = 'minus';
-    $request->limit = 685478;
-    $request->offset = 675689;
-    $request->sort = GetWhatsAppCampaignsSort::Asc;
-    $request->startDate = 'velit';
+    $request->endDate = 'aliquid';
+    $request->limit = 109784;
+    $request->offset = 530860;
+    $request->sort = GetWhatsAppCampaignsSort::Desc;
+    $request->startDate = 'veritatis';
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppCampaigns($request);
 
@@ -323,11 +318,11 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetWhatsAppTemplatesRequest();
-    $request->endDate = 'atque';
-    $request->limit = 216457;
-    $request->offset = 773035;
+    $request->endDate = 'rerum';
+    $request->limit = 665678;
+    $request->offset = 634786;
     $request->sort = GetWhatsAppTemplatesSort::Asc;
-    $request->startDate = 'soluta';
+    $request->startDate = 'sapiente';
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppTemplates($request);
 
@@ -372,7 +367,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendWhatsAppTemplateApprovalRequest();
-    $request->templateId = 922757;
+    $request->templateId = 889288;
 
     $response = $sdk->whatsAppCampaigns->sendWhatsAppTemplateApproval($request);
 
@@ -420,21 +415,18 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateWhatsAppCampaignRequest();
-    $request->campaignId = 721430;
+    $request->campaignId = 103298;
     $request->updateWhatsAppCampaign = new UpdateWhatsAppCampaign();
     $request->updateWhatsAppCampaign->campaignName = 'Test WhatsApp';
     $request->updateWhatsAppCampaign->campaignStatus = UpdateWhatsAppCampaignCampaignStatus::Scheduled;
     $request->updateWhatsAppCampaign->recipients = new UpdateWhatsAppCampaignRecipients();
     $request->updateWhatsAppCampaign->recipients->excludedListIds = [
         8,
-        8,
     ];
     $request->updateWhatsAppCampaign->recipients->listIds = [
         32,
-        32,
     ];
     $request->updateWhatsAppCampaign->recipients->segments = [
-        23,
         23,
     ];
     $request->updateWhatsAppCampaign->rescheduleFor = '2017-06-01T12:30:00+02:00';

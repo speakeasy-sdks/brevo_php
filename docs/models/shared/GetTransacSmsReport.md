@@ -1,7 +1,5 @@
 # GetTransacSmsReport
 
-Aggregated SMS report informations
-
 
 ## Fields
 

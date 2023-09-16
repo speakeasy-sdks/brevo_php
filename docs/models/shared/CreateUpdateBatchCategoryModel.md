@@ -1,7 +1,5 @@
 # CreateUpdateBatchCategoryModel
 
-Category created and updated
-
 
 ## Fields
 

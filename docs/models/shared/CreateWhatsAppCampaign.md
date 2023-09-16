@@ -1,7 +1,5 @@
 # CreateWhatsAppCampaign
 
-Values to create a WhatsApp Campaign
-
 
 ## Fields
 

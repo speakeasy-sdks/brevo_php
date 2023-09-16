@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * CreateSenderModel - sender created
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class CreateSenderModel
 {
     /**

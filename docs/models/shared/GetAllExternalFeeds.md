@@ -1,7 +1,5 @@
 # GetAllExternalFeeds
 
-External feeds
-
 
 ## Fields
 

@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UploadImageModel - Image has been successfully uploaded
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UploadImageModel
 {
     /**

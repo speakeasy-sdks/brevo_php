@@ -1,7 +1,5 @@
 # CreateSender
 
-sender's name
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # GetProductDetails
 
-Product informations
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # GetWhatsappTemplates
 
-WhatsApp templates informations
-
 
 ## Fields
 

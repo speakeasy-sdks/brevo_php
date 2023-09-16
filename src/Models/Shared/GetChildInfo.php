@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetChildInfo - Information for the child
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetChildInfo
 {
     /**

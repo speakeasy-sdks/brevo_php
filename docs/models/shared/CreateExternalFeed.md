@@ -1,7 +1,5 @@
 # CreateExternalFeed
 
-Values to create a feed
-
 
 ## Fields
 

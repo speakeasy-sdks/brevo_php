@@ -1,7 +1,5 @@
 # GetFolder
 
-Folder details
-
 
 ## Fields
 

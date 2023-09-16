@@ -1,7 +1,5 @@
 # UpdateWhatsAppCampaign
 
-Values to update a WhatsApp Campaign
-
 
 ## Fields
 

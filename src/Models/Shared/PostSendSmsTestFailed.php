@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * PostSendSmsTestFailed - Test SMS could not be sent to the following email addresses
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class PostSendSmsTestFailed
 {
     /**

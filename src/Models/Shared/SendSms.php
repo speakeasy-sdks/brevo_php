@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * SendSms - SMS has been sent successfully to the recipient
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class SendSms
 {
 	#[\JMS\Serializer\Annotation\SerializedName('messageId')]

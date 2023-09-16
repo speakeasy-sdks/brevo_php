@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateSmsCampaign - Values to update an SMS Campaign
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateSmsCampaign
 {
     /**

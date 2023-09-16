@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * SendSmtpEmail - Values to send a transactional email
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class SendSmtpEmail
 {
     /**

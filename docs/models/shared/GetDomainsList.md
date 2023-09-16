@@ -1,7 +1,5 @@
 # GetDomainsList
 
-list of domains
-
 
 ## Fields
 

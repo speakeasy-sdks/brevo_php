@@ -1,7 +1,5 @@
 # GetEmailEventReport
 
-Email events report informations
-
 
 ## Fields
 

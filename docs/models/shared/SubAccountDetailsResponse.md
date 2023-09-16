@@ -1,7 +1,5 @@
 # SubAccountDetailsResponse
 
-Sub-account organization details
-
 
 ## Fields
 

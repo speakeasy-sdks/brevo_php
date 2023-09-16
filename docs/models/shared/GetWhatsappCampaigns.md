@@ -1,7 +1,5 @@
 # GetWhatsappCampaigns
 
-WhatsApp campaigns information
-
 
 ## Fields
 

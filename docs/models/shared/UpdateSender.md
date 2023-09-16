@@ -1,7 +1,5 @@
 # UpdateSender
 
-sender's name
-
 
 ## Fields
 

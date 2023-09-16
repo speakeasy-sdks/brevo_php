@@ -1,7 +1,5 @@
 # GetIpsFromSender
 
-list of dedicated IPs
-
 
 ## Fields
 

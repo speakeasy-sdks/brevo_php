@@ -1,7 +1,5 @@
 # AddCredits
 
-Values to post to add credit to a specific child account
-
 
 ## Fields
 

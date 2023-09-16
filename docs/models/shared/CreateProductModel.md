@@ -1,7 +1,5 @@
 # CreateProductModel
 
-Product created
-
 
 ## Fields
 

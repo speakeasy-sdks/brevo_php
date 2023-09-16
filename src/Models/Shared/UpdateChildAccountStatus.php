@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateChildAccountStatus - values to update in child account status
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateChildAccountStatus
 {
     /**

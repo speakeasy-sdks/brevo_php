@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateContact - Values to update a contact
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateContact
 {
     /**

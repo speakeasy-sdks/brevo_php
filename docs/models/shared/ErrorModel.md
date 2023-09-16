@@ -1,7 +1,5 @@
 # ErrorModel
 
-bad request
-
 
 ## Fields
 

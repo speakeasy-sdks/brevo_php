@@ -1,7 +1,5 @@
 # GetBlockedDomains
 
-List of blocked domains
-
 
 ## Fields
 

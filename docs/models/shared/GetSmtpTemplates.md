@@ -1,7 +1,5 @@
 # GetSmtpTemplates
 
-transactional email templates informations
-
 
 ## Fields
 

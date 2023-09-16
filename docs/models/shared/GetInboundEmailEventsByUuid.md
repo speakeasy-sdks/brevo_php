@@ -1,7 +1,5 @@
 # GetInboundEmailEventsByUuid
 
-Email campaign informations
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # GetAccountActivity
 
-list of user activity logs
-
 
 ## Fields
 

@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateChild - values to update in child profile
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateChild
 {
     /**

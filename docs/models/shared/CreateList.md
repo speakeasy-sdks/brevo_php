@@ -1,7 +1,5 @@
 # CreateList
 
-Values to create a list
-
 
 ## Fields
 

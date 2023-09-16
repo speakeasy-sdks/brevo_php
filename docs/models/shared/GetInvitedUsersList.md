@@ -1,7 +1,5 @@
 # GetInvitedUsersList
 
-list of all your users
-
 
 ## Fields
 

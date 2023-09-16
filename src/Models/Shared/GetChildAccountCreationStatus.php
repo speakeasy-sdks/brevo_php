@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetChildAccountCreationStatus - status of reseller's child account
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetChildAccountCreationStatus
 {
     /**

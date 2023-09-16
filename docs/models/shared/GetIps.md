@@ -1,7 +1,5 @@
 # GetIps
 
-list of dedicated IPs
-
 
 ## Fields
 

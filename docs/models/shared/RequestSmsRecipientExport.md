@@ -1,7 +1,5 @@
 # RequestSmsRecipientExport
 
-Values to send for a recipient export request
-
 
 ## Fields
 

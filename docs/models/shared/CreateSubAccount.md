@@ -1,7 +1,5 @@
 # CreateSubAccount
 
-Request body with sub-account organization name
-
 
 ## Fields
 

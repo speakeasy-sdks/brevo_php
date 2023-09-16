@@ -1,7 +1,5 @@
 # UpdateExternalFeed
 
-Values to update a feed
-
 
 ## Fields
 

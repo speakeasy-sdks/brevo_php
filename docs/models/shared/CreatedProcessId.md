@@ -1,7 +1,5 @@
 # CreatedProcessId
 
-process id created
-
 
 ## Fields
 

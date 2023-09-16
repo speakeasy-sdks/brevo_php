@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetSharedTemplateUrl - Shared template URL information
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetSharedTemplateUrl
 {
     /**

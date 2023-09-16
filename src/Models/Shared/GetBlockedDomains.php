@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * GetBlockedDomains - List of blocked domains
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class GetBlockedDomains
 {
     /**

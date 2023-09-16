@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateChildDomain - value to update for sender domain
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateChildDomain
 {
     /**

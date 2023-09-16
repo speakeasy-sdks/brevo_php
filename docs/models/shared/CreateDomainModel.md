@@ -1,7 +1,5 @@
 # CreateDomainModel
 
-domain created
-
 
 ## Fields
 

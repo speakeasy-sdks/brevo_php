@@ -1,7 +1,5 @@
 # SendTransacSms
 
-Values to send a transactional SMS
-
 
 ## Fields
 

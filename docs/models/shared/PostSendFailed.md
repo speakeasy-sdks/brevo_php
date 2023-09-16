@@ -1,7 +1,5 @@
 # PostSendFailed
 
-Test email could not be sent to the following email addresses
-
 
 ## Fields
 

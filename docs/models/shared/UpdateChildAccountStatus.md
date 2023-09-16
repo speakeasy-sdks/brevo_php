@@ -1,7 +1,5 @@
 # UpdateChildAccountStatus
 
-values to update in child account status
-
 
 ## Fields
 

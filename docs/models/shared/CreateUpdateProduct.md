@@ -1,7 +1,5 @@
 # CreateUpdateProduct
 
-Values to create/update a product
-
 
 ## Fields
 

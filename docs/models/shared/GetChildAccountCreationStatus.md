@@ -1,7 +1,5 @@
 # GetChildAccountCreationStatus
 
-status of reseller's child account
-
 
 ## Fields
 

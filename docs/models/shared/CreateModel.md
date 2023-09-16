@@ -1,7 +1,5 @@
 # CreateModel
 
-successfully created
-
 
 ## Fields
 

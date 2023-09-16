@@ -1,7 +1,5 @@
 # GetWhatsappEventReport
 
-WhatsApp events report
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # ScheduleSmtpEmail
 
-transactional email scheduled
-
 
 ## Fields
 

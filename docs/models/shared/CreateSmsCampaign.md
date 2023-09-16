@@ -1,7 +1,5 @@
 # CreateSmsCampaign
 
-Values to create an SMS Campaign
-
 
 ## Fields
 

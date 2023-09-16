@@ -1,7 +1,5 @@
 # GetWebhook
 
-Webhook informations
-
 
 ## Fields
 

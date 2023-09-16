@@ -1,7 +1,5 @@
 # GetProcesses
 
-processes informations
-
 
 ## Fields
 

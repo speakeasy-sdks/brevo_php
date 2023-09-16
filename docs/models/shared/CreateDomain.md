@@ -1,7 +1,5 @@
 # CreateDomain
 
-domain's name
-
 
 ## Fields
 

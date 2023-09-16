@@ -1,7 +1,5 @@
 # DeleteHardbounces
 
-values to delete hardbounces
-
 
 ## Fields
 

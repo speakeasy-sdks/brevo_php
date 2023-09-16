@@ -1,7 +1,5 @@
 # CreateWhatsAppTemplate
 
-Values to create a WhatsApp template
-
 
 ## Fields
 

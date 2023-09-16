@@ -1,4 +1,4 @@
-# process
+# Process
 
 ### Available Operations
 
@@ -26,7 +26,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetProcessRequest();
-    $request->processId = 61078;
+    $request->processId = 558065;
 
     $response = $sdk->process->getProcess($request);
 
@@ -72,8 +72,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetProcessesRequest();
-    $request->limit = 474668;
-    $request->offset = 907733;
+    $request->limit = 922112;
+    $request->offset = 361151;
     $request->sort = GetProcessesSort::Asc;
 
     $response = $sdk->process->getProcesses($request);

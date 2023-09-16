@@ -1,7 +1,5 @@
 # GetSegments
 
-Segments informations
-
 
 ## Fields
 

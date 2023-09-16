@@ -1,4 +1,4 @@
-# deals
+# Deals
 
 ### Available Operations
 
@@ -34,7 +34,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteCrmDealsIdRequest();
-    $request->id = '29cdb1a8-422b-4b67-9d23-22715bf0cbb1';
+    $request->id = 'ebf737ae-4203-4ce5-a6a9-5d8a0d446ce2';
 
     $response = $sdk->deals->deleteCrmDealsId($request);
 
@@ -115,12 +115,12 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmDealsRequest();
-    $request->filtersAttributesDealName = 'saepe';
-    $request->filtersLinkedCompaniesIds = 'ipsum';
-    $request->filtersLinkedContactsIds = 'veritatis';
-    $request->limit = 749255;
-    $request->offset = 552193;
-    $request->sort = GetCrmDealsSort::Desc;
+    $request->filtersAttributesDealName = 'dolorum';
+    $request->filtersLinkedCompaniesIds = 'a';
+    $request->filtersLinkedContactsIds = 'esse';
+    $request->limit = 687488;
+    $request->offset = 483409;
+    $request->sort = GetCrmDealsSort::Asc;
 
     $response = $sdk->deals->getCrmDeals($request);
 
@@ -165,7 +165,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmDealsIdRequest();
-    $request->id = '90f3443a-1108-4e0a-9cf4-b921879fce95';
+    $request->id = 'cf3be453-f870-4b32-ab5a-73429cdb1a84';
 
     $response = $sdk->deals->getCrmDealsId($request);
 
@@ -282,7 +282,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmPipelineDetailsPipelineIDRequest();
-    $request->pipelineID = 'ipsum';
+    $request->pipelineID = 'aspernatur';
 
     $response = $sdk->deals->getCrmPipelineDetailsPipelineID($request);
 
@@ -330,26 +330,18 @@ try {
     $request = new PatchCrmDealsLinkUnlinkIdRequest();
     $request->requestBody = new PatchCrmDealsLinkUnlinkIdRequestBody();
     $request->requestBody->linkCompanyIds = [
-        'voluptate',
-        'consectetur',
-        'vero',
-        'tenetur',
+        'dolores',
     ];
     $request->requestBody->linkContactIds = [
-        941378,
-        715561,
+        716860,
     ];
     $request->requestBody->unlinkCompanyIds = [
-        'odio',
-        'similique',
         'facilis',
-        'vero',
     ];
     $request->requestBody->unlinkContactIds = [
-        293020,
-        844550,
+        396060,
     ];
-    $request->id = 'd39c0f5d-2cff-47c7-8a45-626d436813f1';
+    $request->id = '79d23227-15bf-40cb-b1e3-1b8b90f3443a';
 
     $response = $sdk->deals->patchCrmDealsLinkUnlinkId($request);
 
@@ -399,7 +391,7 @@ try {
     $request->requestBody = new PatchCrmDealsIdRequestBody();
     $request->requestBody->attributes = new PatchCrmDealsIdRequestBodyAttributes();
     $request->requestBody->name = 'Deal: Connect with client';
-    $request->id = '6d9f5fce-6c55-4614-ac3e-250fb008c42e';
+    $request->id = '1108e0ad-cf4b-4921-879f-ce953f73ef7f';
 
     $response = $sdk->deals->patchCrmDealsId($request);
 

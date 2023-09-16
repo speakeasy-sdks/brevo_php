@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * AddCredits - Values to post to add credit to a specific child account
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class AddCredits
 {
     /**

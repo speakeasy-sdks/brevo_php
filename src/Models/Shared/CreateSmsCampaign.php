@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * CreateSmsCampaign - Values to create an SMS Campaign
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class CreateSmsCampaign
 {
     /**

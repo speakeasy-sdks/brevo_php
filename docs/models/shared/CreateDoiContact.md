@@ -1,7 +1,5 @@
 # CreateDoiContact
 
-Values to create the Double opt-in (DOI) contact
-
 
 ## Fields
 

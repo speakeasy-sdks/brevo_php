@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * CreateUpdateProduct - Values to create/update a product
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class CreateUpdateProduct
 {
     /**

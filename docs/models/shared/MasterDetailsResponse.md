@@ -1,7 +1,5 @@
 # MasterDetailsResponse
 
-Master account details
-
 
 ## Fields
 

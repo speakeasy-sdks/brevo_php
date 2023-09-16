@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * UpdateWhatsAppCampaign - Values to update a WhatsApp Campaign
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class UpdateWhatsAppCampaign
 {
     /**

@@ -1,7 +1,5 @@
 # PostSendSmsTestFailed
 
-Test SMS could not be sent to the following email addresses
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # CreateUpdateContactModel
 
-Contact created
-
 
 ## Fields
 

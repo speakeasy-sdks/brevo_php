@@ -1,7 +1,5 @@
 # UpdateEmailCampaign
 
-Values to update a campaign
-
 
 ## Fields
 

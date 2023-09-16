@@ -9,12 +9,6 @@ declare(strict_types=1);
 namespace test\BREVO\Models\Shared;
 
 
-/**
- * CreateDoiContact - Values to create the Double opt-in (DOI) contact
- * 
- * @package test\BREVO\Models\Shared
- * @access public
- */
 class CreateDoiContact
 {
     /**

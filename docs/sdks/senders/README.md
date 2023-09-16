@@ -1,4 +1,4 @@
-# senders
+# Senders
 
 ### Available Operations
 
@@ -34,7 +34,6 @@ try {
     $request = new CreateSender();
     $request->email = 'newsletter@mycompany.com';
     $request->ips = [
-        new CreateSenderIps(),
         new CreateSenderIps(),
     ];
     $request->name = 'Newsletter';
@@ -82,7 +81,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteSenderRequest();
-    $request->senderId = 928219;
+    $request->senderId = 16871;
 
     $response = $sdk->senders->deleteSender($request);
 
@@ -162,7 +161,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetIpsFromSenderRequest();
-    $request->senderId = 456520;
+    $request->senderId = 667285;
 
     $response = $sdk->senders->getIpsFromSender($request);
 
@@ -207,8 +206,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSendersRequest();
-    $request->domain = 'provident';
-    $request->ip = 'quis';
+    $request->domain = 'quidem';
+    $request->ip = 'reprehenderit';
 
     $response = $sdk->senders->getSenders($request);
 
@@ -255,13 +254,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateSenderRequest();
-    $request->senderId = 431785;
+    $request->senderId = 813679;
     $request->updateSender = new UpdateSender();
     $request->updateSender->email = 'newsletter@mycompany.com';
     $request->updateSender->ips = [
-        new UpdateSenderIps(),
-        new UpdateSenderIps(),
-        new UpdateSenderIps(),
         new UpdateSenderIps(),
     ];
     $request->updateSender->name = 'Newsletter';
@@ -312,7 +308,7 @@ try {
     $request = new ValidateSenderByOTPRequest();
     $request->otp = new Otp();
     $request->otp->otp = 123456;
-    $request->senderId = 592780;
+    $request->senderId = 685092;
 
     $response = $sdk->senders->validateSenderByOTP($request);
 

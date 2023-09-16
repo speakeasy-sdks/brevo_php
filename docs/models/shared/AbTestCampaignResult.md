@@ -1,7 +1,5 @@
 # AbTestCampaignResult
 
-A/B test email campaign Result
-
 
 ## Fields
 

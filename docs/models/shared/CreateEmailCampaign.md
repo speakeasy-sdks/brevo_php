@@ -1,7 +1,5 @@
 # CreateEmailCampaign
 
-Values to create a campaign
-
 
 ## Fields
 

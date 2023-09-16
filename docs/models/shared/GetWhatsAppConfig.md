@@ -1,7 +1,5 @@
 # GetWhatsAppConfig
 
-Get all the information of your WhatsApp API account
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # CreateChild
 
-reseller child to add
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # UpdateWebhook
 
-Values to update a webhook
-
 
 ## Fields
 
