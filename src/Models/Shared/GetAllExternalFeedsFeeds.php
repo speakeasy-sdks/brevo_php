@@ -61,11 +61,12 @@ class GetAllExternalFeedsFeeds
     /**
      * Maximum number of retries on the feed url
      * 
-     * @var int $maxRetries
+     * @var ?int $maxRetries
      */
 	#[\JMS\Serializer\Annotation\SerializedName('maxRetries')]
     #[\JMS\Serializer\Annotation\Type('int')]
-    public int $maxRetries;
+    #[\JMS\Serializer\Annotation\SkipWhenEmpty]
+    public ?int $maxRetries = null;
     
     /**
      * Datetime on which the feed was modified
@@ -131,7 +132,7 @@ class GetAllExternalFeedsFeeds
 		$this->createdAt = new \DateTime();
 		$this->headers = [];
 		$this->id = "";
-		$this->maxRetries = 0;
+		$this->maxRetries = null;
 		$this->modifiedAt = new \DateTime();
 		$this->name = "";
 		$this->password = null;
