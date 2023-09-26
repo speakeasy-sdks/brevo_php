@@ -30,8 +30,6 @@ composer update
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```php
 <?php
 
@@ -339,6 +337,18 @@ try {
 * [sendWhatsAppTemplateApproval](docs/sdks/whatsappcampaigns/README.md#sendwhatsapptemplateapproval) - Send your WhatsApp template for approval
 * [updateWhatsAppCampaign](docs/sdks/whatsappcampaigns/README.md#updatewhatsappcampaign) - Update a WhatsApp campaign
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 
