@@ -1,4 +1,5 @@
 # ExternalFeeds
+(*externalFeeds*)
 
 ### Available Operations
 
@@ -31,7 +32,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new CreateExternalFeed();
-    $request->authType = CreateExternalFeedAuthType::Basic;
+    $request->authType = CreateExternalFeedAuthType::Token;
     $request->cache = true;
     $request->headers = [
         new CreateExternalFeedHeaders(),
@@ -86,7 +87,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteExternalFeedRequest();
-    $request->uuid = '4e523c7e-0bc7-4178-a479-6f2a70c68828';
+    $request->uuid = 'b0692cb8-a6d8-42d5-9923-10ace67bc974';
 
     $response = $sdk->externalFeeds->deleteExternalFeed($request);
 
@@ -133,13 +134,13 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetAllExternalFeedsRequest();
-    $request->authType = GetAllExternalFeedsAuthType::Basic;
-    $request->endDate = DateTime::createFromFormat('Y-m-d', '2021-09-13');
-    $request->limit = 277596;
-    $request->offset = 539224;
-    $request->search = 'explicabo';
-    $request->sort = GetAllExternalFeedsSort::Asc;
-    $request->startDate = DateTime::createFromFormat('Y-m-d', '2022-11-08');
+    $request->authType = GetAllExternalFeedsAuthType::NoAuth;
+    $request->endDate = DateTime::createFromFormat('Y-m-d', '2022-12-17');
+    $request->limit = 611577;
+    $request->offset = 408687;
+    $request->search = 'Bentley';
+    $request->sort = GetAllExternalFeedsSort::Desc;
+    $request->startDate = DateTime::createFromFormat('Y-m-d', '2021-02-23');
 
     $response = $sdk->externalFeeds->getAllExternalFeeds($request);
 
@@ -184,7 +185,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetExternalFeedByUUIDRequest();
-    $request->uuid = 'f222e981-7ee1-47cb-a61e-6b7b95bc0ab3';
+    $request->uuid = 'fa819eb0-857b-463d-ad10-39975748ac59';
 
     $response = $sdk->externalFeeds->getExternalFeedByUUID($request);
 
@@ -244,7 +245,7 @@ try {
     $request->updateExternalFeed->token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c';
     $request->updateExternalFeed->url = 'http://requestb.in/173lyyx1';
     $request->updateExternalFeed->username = 'user';
-    $request->uuid = '20c4f378-9fd8-471f-99dd-2efd121aa6f1';
+    $request->uuid = '5fe6c802-73af-494b-8891-280ca7739cb6';
 
     $response = $sdk->externalFeeds->updateExternalFeed($request);
 

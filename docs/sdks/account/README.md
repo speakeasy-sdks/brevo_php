@@ -1,4 +1,5 @@
 # Account
+(*account*)
 
 ### Available Operations
 
@@ -61,10 +62,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetAccountActivityRequest();
-    $request->endDate = 'corrupti';
-    $request->limit = 592845;
-    $request->offset = 715190;
-    $request->startDate = 'quibusdam';
+    $request->endDate = 'sexy';
+    $request->limit = 934904;
+    $request->offset = 840801;
+    $request->startDate = 'VGA';
 
     $response = $sdk->account->getAccountActivity($request);
 

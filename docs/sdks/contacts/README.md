@@ -1,4 +1,5 @@
 # Contacts
+(*contacts*)
 
 ### Available Operations
 
@@ -53,11 +54,11 @@ $sdk = Brevo::builder()
 
 try {
     $request = new AddContactToListRequest();
-    $request->requestBody = new AddContactToListByIDs();
-    $request->requestBody->ids = [
-        10,
+    $request->requestBody = new AddContactToListByEmails();
+    $request->requestBody->emails = [
+        'john.smith@contact.com',
     ];
-    $request->listId = 976460;
+    $request->listId = 286881;
 
     $response = $sdk->contacts->addContactToList($request);
 
@@ -106,8 +107,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new CreateAttributeRequest();
-    $request->attributeCategory = CreateAttributeAttributeCategory::Global;
-    $request->attributeName = 'nihil';
+    $request->attributeCategory = CreateAttributeAttributeCategory::Calculated;
+    $request->attributeName = 'Seamless Electric but';
     $request->createAttribute = new CreateAttribute();
     $request->createAttribute->enumeration = [
         new CreateAttributeEnumeration(),
@@ -160,7 +161,7 @@ $sdk = Brevo::builder()
 try {
     $request = new CreateContact();
     $request->attributes = [
-        'praesentium' => 'voluptatibus',
+        'assumenda' => 'Architect',
     ];
     $request->email = 'elly@example.com';
     $request->emailBlacklisted = false;
@@ -170,7 +171,7 @@ try {
     ];
     $request->smsBlacklisted = false;
     $request->smtpBlacklistSender = [
-        'Lelah.Klein3@gmail.com',
+        'Seamus_Kemmer13@yahoo.com',
     ];
     $request->updateEnabled = false;
 
@@ -218,7 +219,7 @@ $sdk = Brevo::builder()
 try {
     $request = new CreateDoiContact();
     $request->attributes = [
-        'reprehenderit' => 'ut',
+        'esse' => 'legitimate',
     ];
     $request->email = 'elly@example.com';
     $request->excludeListIds = [
@@ -365,8 +366,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteAttributeRequest();
-    $request->attributeCategory = DeleteAttributeAttributeCategory::Global;
-    $request->attributeName = 'dicta';
+    $request->attributeCategory = DeleteAttributeAttributeCategory::Normal;
+    $request->attributeName = 'East ugh Representative';
 
     $response = $sdk->contacts->deleteAttribute($request);
 
@@ -411,7 +412,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteContactRequest();
-    $request->identifier = 'dolore';
+    $request->identifier = 704827;
 
     $response = $sdk->contacts->deleteContact($request);
 
@@ -456,7 +457,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteFolderRequest();
-    $request->folderId = 480894;
+    $request->folderId = 225818;
 
     $response = $sdk->contacts->deleteFolder($request);
 
@@ -501,7 +502,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteListRequest();
-    $request->listId = 118727;
+    $request->listId = 231491;
 
     $response = $sdk->contacts->deleteList($request);
 
@@ -581,9 +582,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetContactInfoRequest();
-    $request->endDate = 'harum';
-    $request->identifier = 'accusamus';
-    $request->startDate = 'commodi';
+    $request->endDate = 'array Cayman up';
+    $request->identifier = 'Recycled';
+    $request->startDate = 'Arkansas Imani';
 
     $response = $sdk->contacts->getContactInfo($request);
 
@@ -628,9 +629,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetContactStatsRequest();
-    $request->endDate = 'repudiandae';
-    $request->identifier = 'ipsum';
-    $request->startDate = 'quidem';
+    $request->endDate = 'Bicycle North bluetooth';
+    $request->identifier = 857458;
+    $request->startDate = 'North';
 
     $response = $sdk->contacts->getContactStats($request);
 
@@ -676,11 +677,11 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetContactsRequest();
-    $request->createdSince = 'molestias';
-    $request->limit = 566602;
-    $request->modifiedSince = 'pariatur';
-    $request->offset = 265389;
-    $request->sort = GetContactsSort::Desc;
+    $request->createdSince = 'Hip Shirt orange';
+    $request->limit = 120432;
+    $request->modifiedSince = 'incubate';
+    $request->offset = 609746;
+    $request->sort = GetContactsSort::Asc;
 
     $response = $sdk->contacts->getContacts($request);
 
@@ -726,11 +727,11 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetContactsFromListRequest();
-    $request->limit = 523248;
-    $request->listId = 916723;
-    $request->modifiedSince = 'quasi';
-    $request->offset = 921158;
-    $request->sort = GetContactsFromListSort::Desc;
+    $request->limit = 164358;
+    $request->listId = 721707;
+    $request->modifiedSince = 'monitor';
+    $request->offset = 980962;
+    $request->sort = GetContactsFromListSort::Asc;
 
     $response = $sdk->contacts->getContactsFromList($request);
 
@@ -775,7 +776,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetFolderRequest();
-    $request->folderId = 83112;
+    $request->folderId = 867135;
 
     $response = $sdk->contacts->getFolder($request);
 
@@ -821,9 +822,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetFolderListsRequest();
-    $request->folderId = 929297;
-    $request->limit = 277718;
-    $request->offset = 318569;
+    $request->folderId = 790110;
+    $request->limit = 468056;
+    $request->offset = 270959;
     $request->sort = GetFolderListsSort::Asc;
 
     $response = $sdk->contacts->getFolderLists($request);
@@ -870,8 +871,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetFoldersRequest();
-    $request->limit = 667411;
-    $request->offset = 842342;
+    $request->limit = 846820;
+    $request->offset = 320424;
     $request->sort = GetFoldersSort::Asc;
 
     $response = $sdk->contacts->getFolders($request);
@@ -917,7 +918,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetListRequest();
-    $request->listId = 647174;
+    $request->listId = 451512;
 
     $response = $sdk->contacts->getList($request);
 
@@ -963,9 +964,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetListsRequest();
-    $request->limit = 716327;
-    $request->offset = 841386;
-    $request->sort = GetListsSort::Asc;
+    $request->limit = 919382;
+    $request->offset = 383011;
+    $request->sort = GetListsSort::Desc;
 
     $response = $sdk->contacts->getLists($request);
 
@@ -1011,9 +1012,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSegmentsRequest();
-    $request->limit = 264730;
-    $request->offset = 183191;
-    $request->sort = GetSegmentsSort::Asc;
+    $request->limit = 904899;
+    $request->offset = 703723;
+    $request->sort = GetSegmentsSort::Desc;
 
     $response = $sdk->contacts->getSegments($request);
 
@@ -1122,11 +1123,11 @@ $sdk = Brevo::builder()
 
 try {
     $request = new RemoveContactFromListRequest();
-    $request->requestBody = new RemoveContactFromListByIDs();
-    $request->requestBody->ids = [
-        10,
+    $request->requestBody = new RemoveContactFromListByEmails();
+    $request->requestBody->emails = [
+        'john.smith@contact.com',
     ];
-    $request->listId = 552822;
+    $request->listId = 502622;
 
     $response = $sdk->contacts->removeContactFromList($request);
 
@@ -1176,9 +1177,9 @@ $sdk = Brevo::builder()
 try {
     $request = new RequestContactExport();
     $request->customContactFilter = new RequestContactExportCustomContactFilter();
-    $request->customContactFilter->actionForContacts = RequestContactExportCustomContactFilterActionForContacts::AllContacts;
-    $request->customContactFilter->actionForEmailCampaigns = RequestContactExportCustomContactFilterActionForEmailCampaigns::NonOpeners;
-    $request->customContactFilter->actionForSmsCampaigns = RequestContactExportCustomContactFilterActionForSmsCampaigns::Unsubscribed;
+    $request->customContactFilter->actionForContacts = RequestContactExportCustomContactFilterActionForContacts::Subscribed;
+    $request->customContactFilter->actionForEmailCampaigns = RequestContactExportCustomContactFilterActionForEmailCampaigns::NonClickers;
+    $request->customContactFilter->actionForSmsCampaigns = RequestContactExportCustomContactFilterActionForSmsCampaigns::SoftBounces;
     $request->customContactFilter->emailCampaignId = 12;
     $request->customContactFilter->listId = 2;
     $request->customContactFilter->smsCampaignId = 12;
@@ -1234,7 +1235,7 @@ $sdk = Brevo::builder()
 try {
     $request = new UpdateAttributeRequest();
     $request->attributeCategory = UpdateAttributeAttributeCategory::Calculated;
-    $request->attributeName = 'alias';
+    $request->attributeName = 'sensor';
     $request->updateAttribute = new UpdateAttribute();
     $request->updateAttribute->enumeration = [
         new UpdateAttributeEnumeration(),
@@ -1333,10 +1334,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateContactRequest();
-    $request->identifier = 'dolorum';
+    $request->identifier = 'overriding intranet';
     $request->updateContact = new UpdateContact();
     $request->updateContact->attributes = [
-        'excepturi' => 'tempora',
+        'modi' => 'nor',
     ];
     $request->updateContact->emailBlacklisted = false;
     $request->updateContact->extId = 'updateExternalId';
@@ -1345,7 +1346,7 @@ try {
     ];
     $request->updateContact->smsBlacklisted = true;
     $request->updateContact->smtpBlacklistSender = [
-        'Mustafa.Green24@hotmail.com',
+        'Maryse35@hotmail.com',
     ];
     $request->updateContact->unlinkListIds = [
         36,
@@ -1397,7 +1398,7 @@ try {
     $request = new UpdateFolderRequest();
     $request->createUpdateFolder = new CreateUpdateFolder();
     $request->createUpdateFolder->name = 'Wordpress Contacts';
-    $request->folderId = 756107;
+    $request->folderId = 317879;
 
     $response = $sdk->contacts->updateFolder($request);
 
@@ -1443,7 +1444,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateListRequest();
-    $request->listId = 576157;
+    $request->listId = 549225;
     $request->updateList = new UpdateList();
     $request->updateList->folderId = 2;
     $request->updateList->name = 'Magento Customer - ES';

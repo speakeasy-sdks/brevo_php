@@ -1,4 +1,5 @@
 # Webhooks
+(*webhooks*)
 
 ### Available Operations
 
@@ -83,7 +84,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteWebhookRequest();
-    $request->webhookId = 405373;
+    $request->webhookId = 594215;
 
     $response = $sdk->webhooks->deleteWebhook($request);
 
@@ -182,7 +183,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetWebhookRequest();
-    $request->webhookId = 281153;
+    $request->webhookId = 841269;
 
     $response = $sdk->webhooks->getWebhook($request);
 
@@ -230,7 +231,7 @@ $sdk = Brevo::builder()
 try {
     $request = new GetWebhooksRequest();
     $request->sort = GetWebhooksSort::Asc;
-    $request->type = GetWebhooksType::Inbound;
+    $request->type = GetWebhooksType::Marketing;
 
     $response = $sdk->webhooks->getWebhooks($request);
 
@@ -284,7 +285,7 @@ try {
         UpdateWebhookEvents::HardBounce,
     ];
     $request->updateWebhook->url = 'http://requestb.in/173lyyx1';
-    $request->webhookId = 29950;
+    $request->webhookId = 520428;
 
     $response = $sdk->webhooks->updateWebhook($request);
 

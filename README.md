@@ -58,12 +58,12 @@ try {
 ## Available Resources and Operations
 
 
-### [Account](docs/sdks/account/README.md)
+### [account](docs/sdks/account/README.md)
 
 * [getAccount](docs/sdks/account/README.md#getaccount) - Get your account information, plan and credits details
 * [getAccountActivity](docs/sdks/account/README.md#getaccountactivity) - Get user activity logs
 
-### [Companies](docs/sdks/companies/README.md)
+### [companies](docs/sdks/companies/README.md)
 
 * [deleteCompaniesId](docs/sdks/companies/README.md#deletecompaniesid) - Delete a company
 * [getCompanies](docs/sdks/companies/README.md#getcompanies) - Get all Companies
@@ -73,7 +73,7 @@ try {
 * [patchCompaniesId](docs/sdks/companies/README.md#patchcompaniesid) - Update a company
 * [postCompanies](docs/sdks/companies/README.md#postcompanies) - Create a company
 
-### [Contacts](docs/sdks/contacts/README.md)
+### [contacts](docs/sdks/contacts/README.md)
 
 * [addContactToList](docs/sdks/contacts/README.md#addcontacttolist) - Add existing contacts to a list
 * [createAttribute](docs/sdks/contacts/README.md#createattribute) - Create contact attribute
@@ -105,7 +105,7 @@ try {
 * [updateFolder](docs/sdks/contacts/README.md#updatefolder) - Update a folder
 * [updateList](docs/sdks/contacts/README.md#updatelist) - Update a list
 
-### [Conversations](docs/sdks/conversations/README.md)
+### [conversations](docs/sdks/conversations/README.md)
 
 * [deleteConversationsMessagesId](docs/sdks/conversations/README.md#deleteconversationsmessagesid) - Delete a message sent by an agent
 * [deleteConversationsPushedMessagesId](docs/sdks/conversations/README.md#deleteconversationspushedmessagesid) - Delete an automated message
@@ -117,7 +117,7 @@ try {
 * [putConversationsMessagesId](docs/sdks/conversations/README.md#putconversationsmessagesid) - Update a message sent by an agent
 * [putConversationsPushedMessagesId](docs/sdks/conversations/README.md#putconversationspushedmessagesid) - Update an automated message
 
-### [Coupons](docs/sdks/coupons/README.md)
+### [coupons](docs/sdks/coupons/README.md)
 
 * [createCouponCollection](docs/sdks/coupons/README.md#createcouponcollection) - Create а coupon collection
 * [createCoupons](docs/sdks/coupons/README.md#createcoupons) - Create coupons for a coupon collection
@@ -125,7 +125,7 @@ try {
 * [getCouponCollections](docs/sdks/coupons/README.md#getcouponcollections) - Get all your coupon collections
 * [updateCouponCollection](docs/sdks/coupons/README.md#updatecouponcollection) - Update a coupon collection by id
 
-### [Deals](docs/sdks/deals/README.md)
+### [deals](docs/sdks/deals/README.md)
 
 * [deleteCrmDealsId](docs/sdks/deals/README.md#deletecrmdealsid) - Delete a deal
 * [getCrmAttributesDeals](docs/sdks/deals/README.md#getcrmattributesdeals) - Get deal attributes
@@ -138,7 +138,7 @@ try {
 * [patchCrmDealsId](docs/sdks/deals/README.md#patchcrmdealsid) - Update a deal
 * [postCrmDeals](docs/sdks/deals/README.md#postcrmdeals) - Create a deal
 
-### [Domains](docs/sdks/domains/README.md)
+### [domains](docs/sdks/domains/README.md)
 
 * [authenticateDomain](docs/sdks/domains/README.md#authenticatedomain) - Authenticate a domain
 * [createDomain](docs/sdks/domains/README.md#createdomain) - Create a new domain
@@ -146,7 +146,7 @@ try {
 * [getDomainConfiguration](docs/sdks/domains/README.md#getdomainconfiguration) - Validate domain configuration
 * [getDomains](docs/sdks/domains/README.md#getdomains) - Get the list of all your domains
 
-### [Ecommerce](docs/sdks/ecommerce/README.md)
+### [ecommerce](docs/sdks/ecommerce/README.md)
 
 * [createBatchOrder](docs/sdks/ecommerce/README.md#createbatchorder) - Create orders in batch
 * [createOrder](docs/sdks/ecommerce/README.md#createorder) - Managing the status of the order
@@ -160,7 +160,7 @@ try {
 * [getProducts](docs/sdks/ecommerce/README.md#getproducts) - Return all your products
 * [postEcommerceActivate](docs/sdks/ecommerce/README.md#postecommerceactivate) - Activate the eCommerce app
 
-### [EmailCampaigns](docs/sdks/emailcampaigns/README.md)
+### [emailCampaigns](docs/sdks/emailcampaigns/README.md)
 
 * [createEmailCampaign](docs/sdks/emailcampaigns/README.md#createemailcampaign) - Create an email campaign
 * [deleteEmailCampaign](docs/sdks/emailcampaigns/README.md#deleteemailcampaign) - Delete an email campaign
@@ -176,7 +176,7 @@ try {
 * [updateEmailCampaign](docs/sdks/emailcampaigns/README.md#updateemailcampaign) - Update an email campaign
 * [uploadImageToGallery](docs/sdks/emailcampaigns/README.md#uploadimagetogallery) - Upload an image to your account's image gallery
 
-### [ExternalFeeds](docs/sdks/externalfeeds/README.md)
+### [externalFeeds](docs/sdks/externalfeeds/README.md)
 
 * [createExternalFeed](docs/sdks/externalfeeds/README.md#createexternalfeed) - Create an external feed
 * [deleteExternalFeed](docs/sdks/externalfeeds/README.md#deleteexternalfeed) - Delete an external feed
@@ -184,7 +184,7 @@ try {
 * [getExternalFeedByUUID](docs/sdks/externalfeeds/README.md#getexternalfeedbyuuid) - Get an external feed by UUID
 * [updateExternalFeed](docs/sdks/externalfeeds/README.md#updateexternalfeed) - Update an external feed
 
-### [Files](docs/sdks/files/README.md)
+### [files](docs/sdks/files/README.md)
 
 * [deleteCrmFilesId](docs/sdks/files/README.md#deletecrmfilesid) - Delete a file
 * [getCrmFiles](docs/sdks/files/README.md#getcrmfiles) - Get all files
@@ -192,13 +192,13 @@ try {
 * [getCrmFilesIdData](docs/sdks/files/README.md#getcrmfilesiddata) - Get file details
 * [postCrmFiles](docs/sdks/files/README.md#postcrmfiles) - Upload a file
 
-### [InboundParsing](docs/sdks/inboundparsing/README.md)
+### [inboundParsing](docs/sdks/inboundparsing/README.md)
 
 * [getInboundEmailAttachment](docs/sdks/inboundparsing/README.md#getinboundemailattachment) - Retrieve inbound attachment with download token.
 * [getInboundEmailEvents](docs/sdks/inboundparsing/README.md#getinboundemailevents) - Get the list of all the events for the received emails.
 * [getInboundEmailEventsByUuid](docs/sdks/inboundparsing/README.md#getinboundemaileventsbyuuid) - Fetch all events history for one particular received email.
 
-### [MasterAccount](docs/sdks/masteraccount/README.md)
+### [masterAccount](docs/sdks/masteraccount/README.md)
 
 * [deleteCorporateSubAccountId](docs/sdks/masteraccount/README.md#deletecorporatesubaccountid) - Delete a sub-account
 * [getAccountActivity](docs/sdks/masteraccount/README.md#getaccountactivity) - Get user activity logs
@@ -211,7 +211,7 @@ try {
 * [putCorporateSubAccountIdApplicationsToggle](docs/sdks/masteraccount/README.md#putcorporatesubaccountidapplicationstoggle) - Enable/disable sub-account application(s)
 * [putCorporateSubAccountIdPlan](docs/sdks/masteraccount/README.md#putcorporatesubaccountidplan) - Update sub-account plan
 
-### [Notes](docs/sdks/notes/README.md)
+### [notes](docs/sdks/notes/README.md)
 
 * [deleteCrmNotesId](docs/sdks/notes/README.md#deletecrmnotesid) - Delete a note
 * [getCrmNotes](docs/sdks/notes/README.md#getcrmnotes) - Get all notes
@@ -219,12 +219,12 @@ try {
 * [patchCrmNotesId](docs/sdks/notes/README.md#patchcrmnotesid) - Update a note
 * [postCrmNotes](docs/sdks/notes/README.md#postcrmnotes) - Create a note
 
-### [Process](docs/sdks/process/README.md)
+### [process](docs/sdks/process/README.md)
 
 * [getProcess](docs/sdks/process/README.md#getprocess) - Return the informations for a process
 * [getProcesses](docs/sdks/process/README.md#getprocesses) - Return all the processes for your account
 
-### [Reseller](docs/sdks/reseller/README.md)
+### [reseller](docs/sdks/reseller/README.md)
 
 * [addCredits](docs/sdks/reseller/README.md#addcredits) - Add Email and/or SMS credits to a specific child account
 * [associateIpToChild](docs/sdks/reseller/README.md#associateiptochild) - Associate a dedicated IP to the child
@@ -243,7 +243,7 @@ try {
 * [updateChildDomain](docs/sdks/reseller/README.md#updatechilddomain) - Update the sender domain of reseller's child based on the childIdentifier and domainName passed
 * [updateResellerChild](docs/sdks/reseller/README.md#updateresellerchild) - Update info of reseller's child based on the child identifier supplied
 
-### [SMSCampaigns](docs/sdks/smscampaigns/README.md)
+### [smsCampaigns](docs/sdks/smscampaigns/README.md)
 
 * [createSmsCampaign](docs/sdks/smscampaigns/README.md#createsmscampaign) - Creates an SMS campaign
 * [deleteSmsCampaign](docs/sdks/smscampaigns/README.md#deletesmscampaign) - Delete an SMS campaign
@@ -256,7 +256,7 @@ try {
 * [updateSmsCampaign](docs/sdks/smscampaigns/README.md#updatesmscampaign) - Update an SMS campaign
 * [updateSmsCampaignStatus](docs/sdks/smscampaigns/README.md#updatesmscampaignstatus) - Update a campaign's status
 
-### [Senders](docs/sdks/senders/README.md)
+### [senders](docs/sdks/senders/README.md)
 
 * [createSender](docs/sdks/senders/README.md#createsender) - Create a new sender
 * [deleteSender](docs/sdks/senders/README.md#deletesender) - Delete a sender
@@ -266,7 +266,7 @@ try {
 * [updateSender](docs/sdks/senders/README.md#updatesender) - Update a sender
 * [validateSenderByOTP](docs/sdks/senders/README.md#validatesenderbyotp) - Validate Sender using OTP
 
-### [Tasks](docs/sdks/tasks/README.md)
+### [tasks](docs/sdks/tasks/README.md)
 
 * [deleteCrmTasksId](docs/sdks/tasks/README.md#deletecrmtasksid) - Delete a task
 * [getCrmTasks](docs/sdks/tasks/README.md#getcrmtasks) - Get all tasks
@@ -275,19 +275,19 @@ try {
 * [patchCrmTasksId](docs/sdks/tasks/README.md#patchcrmtasksid) - Update a task
 * [postCrmTasks](docs/sdks/tasks/README.md#postcrmtasks) - Create a task
 
-### [TransactionalSMS](docs/sdks/transactionalsms/README.md)
+### [transactionalSMS](docs/sdks/transactionalsms/README.md)
 
 * [getSmsEvents](docs/sdks/transactionalsms/README.md#getsmsevents) - Get all your SMS activity (unaggregated events)
 * [getTransacAggregatedSmsReport](docs/sdks/transactionalsms/README.md#gettransacaggregatedsmsreport) - Get your SMS activity aggregated over a period of time
 * [getTransacSmsReport](docs/sdks/transactionalsms/README.md#gettransacsmsreport) - Get your SMS activity aggregated per day
 * [sendTransacSms](docs/sdks/transactionalsms/README.md#sendtransacsms) - Send SMS message to a mobile number
 
-### [TransactionalWhatsApp](docs/sdks/transactionalwhatsapp/README.md)
+### [transactionalWhatsApp](docs/sdks/transactionalwhatsapp/README.md)
 
 * [getWhatsappEventReport](docs/sdks/transactionalwhatsapp/README.md#getwhatsappeventreport) - Get all your WhatsApp activity (unaggregated events)
 * [sendWhatsappMessage](docs/sdks/transactionalwhatsapp/README.md#sendwhatsappmessage) - Send a WhatsApp message
 
-### [TransactionalEmails](docs/sdks/transactionalemails/README.md)
+### [transactionalEmails](docs/sdks/transactionalemails/README.md)
 
 * [blockNewDomain](docs/sdks/transactionalemails/README.md#blocknewdomain) - Add a new domain to the list of blocked domains
 * [createSmtpTemplate](docs/sdks/transactionalemails/README.md#createsmtptemplate) - Create an email template
@@ -311,12 +311,12 @@ try {
 * [sendTransacEmail](docs/sdks/transactionalemails/README.md#sendtransacemail) - Send a transactional email
 * [updateSmtpTemplate](docs/sdks/transactionalemails/README.md#updatesmtptemplate) - Update an email template
 
-### [User](docs/sdks/user/README.md)
+### [user](docs/sdks/user/README.md)
 
 * [getInvitedUsersList](docs/sdks/user/README.md#getinviteduserslist) - Get the list of all your users
 * [getUserPermission](docs/sdks/user/README.md#getuserpermission) - Check user permission
 
-### [Webhooks](docs/sdks/webhooks/README.md)
+### [webhooks](docs/sdks/webhooks/README.md)
 
 * [createWebhook](docs/sdks/webhooks/README.md#createwebhook) - Create a webhook
 * [deleteWebhook](docs/sdks/webhooks/README.md#deletewebhook) - Delete a webhook
@@ -325,7 +325,7 @@ try {
 * [getWebhooks](docs/sdks/webhooks/README.md#getwebhooks) - Get all webhooks
 * [updateWebhook](docs/sdks/webhooks/README.md#updatewebhook) - Update a webhook
 
-### [WhatsAppCampaigns](docs/sdks/whatsappcampaigns/README.md)
+### [whatsAppCampaigns](docs/sdks/whatsappcampaigns/README.md)
 
 * [createWhatsAppCampaign](docs/sdks/whatsappcampaigns/README.md#createwhatsappcampaign) - Create and Send a WhatsApp campaign
 * [createWhatsAppTemplate](docs/sdks/whatsappcampaigns/README.md#createwhatsapptemplate) - Create a WhatsApp template
@@ -341,8 +341,6 @@ try {
 
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 

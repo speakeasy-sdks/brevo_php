@@ -1,4 +1,5 @@
 # Companies
+(*companies*)
 
 ### Available Operations
 
@@ -31,7 +32,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteCompaniesIdRequest();
-    $request->id = '9d8d69a6-74e0-4f46-bcc8-796ed151a05d';
+    $request->id = '<ID>';
 
     $response = $sdk->companies->deleteCompaniesId($request);
 
@@ -77,13 +78,13 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCompaniesRequest();
-    $request->filters = 'sapiente';
-    $request->limit = 778157;
-    $request->linkedContactsIds = 140350;
-    $request->linkedDealsIds = 'at';
-    $request->page = 870088;
+    $request->filters = 'ab circuit Ouguiya';
+    $request->limit = 997249;
+    $request->linkedContactsIds = 328034;
+    $request->linkedDealsIds = 'factory Bicycle';
+    $request->page = 8002;
     $request->sort = GetCompaniesSort::Desc;
-    $request->sortBy = 'molestiae';
+    $request->sortBy = 'Loan Awesome JBOD';
 
     $response = $sdk->companies->getCompanies($request);
 
@@ -163,7 +164,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCompaniesIdRequest();
-    $request->id = 'cc78ca1b-a928-4fc8-9674-2cb739205929';
+    $request->id = '<ID>';
 
     $response = $sdk->companies->getCompaniesId($request);
 
@@ -211,18 +212,18 @@ try {
     $request = new PatchCompaniesLinkUnlinkIdRequest();
     $request->requestBody = new PatchCompaniesLinkUnlinkIdRequestBody();
     $request->requestBody->linkContactIds = [
-        222321,
+        478673,
     ];
     $request->requestBody->linkDealsIds = [
-        'natus',
+        'calculating',
     ];
     $request->requestBody->unlinkContactIds = [
-        386489,
+        820744,
     ];
     $request->requestBody->unlinkDealsIds = [
-        'hic',
+        'West',
     ];
-    $request->id = 'ea7596eb-10fa-4aa2-b52c-5955907aff1a';
+    $request->id = '<ID>';
 
     $response = $sdk->companies->patchCompaniesLinkUnlinkId($request);
 
@@ -273,7 +274,7 @@ try {
     $request->requestBody->attributes = new PatchCompaniesIdRequestBodyAttributes();
     $request->requestBody->countryCode = 91;
     $request->requestBody->name = 'company';
-    $request->id = '3a2fa946-7739-4251-aa52-c3f5ad019da1';
+    $request->id = '<ID>';
 
     $response = $sdk->companies->patchCompaniesId($request);
 

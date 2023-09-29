@@ -1,4 +1,5 @@
 # TransactionalWhatsApp
+(*transactionalWhatsApp*)
 
 ### Available Operations
 
@@ -28,14 +29,14 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetWhatsappEventReportRequest();
-    $request->contactNumber = '(758) 743-0993 x479';
-    $request->days = 637583;
-    $request->endDate = 'laborum';
+    $request->contactNumber = '217-450-0860 x3202';
+    $request->days = 322054;
+    $request->endDate = 'Associate';
     $request->event = GetWhatsappEventReportEvent::Reply;
-    $request->limit = 266697;
-    $request->offset = 976226;
-    $request->sort = GetWhatsappEventReportSort::Desc;
-    $request->startDate = 'officiis';
+    $request->limit = 584529;
+    $request->offset = 461097;
+    $request->sort = GetWhatsappEventReportSort::Asc;
+    $request->startDate = 'Response manager';
 
     $response = $sdk->transactionalWhatsApp->getWhatsappEventReport($request);
 

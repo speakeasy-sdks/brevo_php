@@ -1,4 +1,5 @@
 # Coupons
+(*coupons*)
 
 ### Available Operations
 
@@ -123,7 +124,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCouponCollectionRequest();
-    $request->id = 'iusto';
+    $request->id = 'silver why';
 
     $response = $sdk->coupons->getCouponCollection($request);
 
@@ -169,9 +170,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCouponCollectionsRequest();
-    $request->limit = 453697;
-    $request->offset = 677082;
-    $request->sort = GetCouponCollectionsSort::Desc;
+    $request->limit = 928542;
+    $request->offset = 507488;
+    $request->sort = GetCouponCollectionsSort::Asc;
 
     $response = $sdk->coupons->getCouponCollections($request);
 
@@ -219,7 +220,7 @@ try {
     $request = new UpdateCouponCollectionRequest();
     $request->requestBody = new UpdateCouponCollectionRequestBody();
     $request->requestBody->defaultCoupon = '10 OFF';
-    $request->id = 'omnis';
+    $request->id = 'spice Maud driver';
 
     $response = $sdk->coupons->updateCouponCollection($request);
 

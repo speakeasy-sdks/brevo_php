@@ -1,4 +1,5 @@
 # Ecommerce
+(*ecommerce*)
 
 ### Available Operations
 
@@ -98,7 +99,7 @@ try {
     $request->billing->postCode = '4052';
     $request->billing->region = 'Northwestern Switzerland';
     $request->coupons = [
-        'similique',
+        'Marketing',
     ];
     $request->createdAt = '2021-07-29T20:59:23.383Z';
     $request->email = 'example@brevo.com';
@@ -300,18 +301,18 @@ $sdk = Brevo::builder()
 try {
     $request = new CreateUpdateProduct();
     $request->categories = [
-        'facilis',
+        'content',
     ];
-    $request->deletedAt = 'vero';
+    $request->deletedAt = 'Tactics zero Chromium';
     $request->id = 'P11';
     $request->imageUrl = 'http://mydomain.com/product-absoulte-url/img.jpeg';
     $request->metaInfo = [
-        'ducimus' => 'dolore',
+        'assumenda' => 'heuristic',
     ];
     $request->name = 'Iphone 11';
-    $request->parentId = 'quibusdam';
-    $request->price = 8489.44;
-    $request->sku = 'sequi';
+    $request->parentId = 'input Hybrid inconvenience';
+    $request->price = 9598.67;
+    $request->sku = 'port psst';
     $request->updateEnabled = false;
     $request->url = 'http://mydomain.com/product/electronics/product1';
 
@@ -360,12 +361,12 @@ $sdk = Brevo::builder()
 try {
     $request = new GetCategoriesRequest();
     $request->ids = [
-        'natus',
+        'Diesel',
     ];
-    $request->limit = 773326;
-    $request->name = 'Camille Heidenreich';
-    $request->offset = 780427;
-    $request->sort = GetCategoriesSort::Desc;
+    $request->limit = 585980;
+    $request->name = 'red Fluorine Cisgender';
+    $request->offset = 165902;
+    $request->sort = GetCategoriesSort::Asc;
 
     $response = $sdk->ecommerce->getCategories($request);
 
@@ -410,7 +411,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCategoryInfoRequest();
-    $request->id = 'f7c70a45-626d-4436-813f-16d9f5fce6c5';
+    $request->id = '<ID>';
 
     $response = $sdk->ecommerce->getCategoryInfo($request);
 
@@ -455,7 +456,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetProductInfoRequest();
-    $request->id = '56146c3e-250f-4b00-8c42-e141aac366c8';
+    $request->id = '<ID>';
 
     $response = $sdk->ecommerce->getProductInfo($request);
 
@@ -502,21 +503,21 @@ $sdk = Brevo::builder()
 try {
     $request = new GetProductsRequest();
     $request->categories = [
-        'assumenda',
+        'transmitter',
     ];
     $request->ids = [
-        'nulla',
+        'candela',
     ];
-    $request->limit = 379034;
-    $request->name = 'Ryan Glover';
-    $request->offset = 591935;
-    $request->priceEq = 553.74;
-    $request->priceGt = 4764.77;
-    $request->priceGte = 3015.98;
-    $request->priceLt = 4879.35;
-    $request->priceLte = 2621.18;
-    $request->priceNe = 4585.15;
-    $request->sort = GetProductsSort::Asc;
+    $request->limit = 356174;
+    $request->name = 'Computer sky Hyundai';
+    $request->offset = 151059;
+    $request->priceEq = 1139.39;
+    $request->priceGt = 344.76;
+    $request->priceGte = 2976.54;
+    $request->priceLt = 3895.87;
+    $request->priceLte = 1974.67;
+    $request->priceNe = 5782.43;
+    $request->sort = GetProductsSort::Desc;
 
     $response = $sdk->ecommerce->getProducts($request);
 

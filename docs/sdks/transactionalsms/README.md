@@ -1,4 +1,5 @@
 # TransactionalSMS
+(*transactionalSMS*)
 
 ### Available Operations
 
@@ -30,15 +31,15 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSmsEventsRequest();
-    $request->days = 284000;
-    $request->endDate = 'culpa';
-    $request->event = GetSmsEventsEvent::SoftBounces;
-    $request->limit = 890653;
-    $request->offset = 514513;
-    $request->phoneNumber = 'eum';
+    $request->days = 922986;
+    $request->endDate = 'Central Officer Integration';
+    $request->event = GetSmsEventsEvent::Replies;
+    $request->limit = 58787;
+    $request->offset = 817473;
+    $request->phoneNumber = 'software female';
     $request->sort = GetSmsEventsSort::Asc;
-    $request->startDate = 'recusandae';
-    $request->tags = 'esse';
+    $request->startDate = 'solutions group';
+    $request->tags = 'boo';
 
     $response = $sdk->transactionalSMS->getSmsEvents($request);
 
@@ -83,10 +84,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetTransacAggregatedSmsReportRequest();
-    $request->days = 592081;
-    $request->endDate = 'quis';
-    $request->startDate = 'eum';
-    $request->tag = 'reiciendis';
+    $request->days = 40533;
+    $request->endDate = 'applications';
+    $request->startDate = 'circa embryo Land';
+    $request->tag = 'Loan';
 
     $response = $sdk->transactionalSMS->getTransacAggregatedSmsReport($request);
 
@@ -132,11 +133,11 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetTransacSmsReportRequest();
-    $request->days = 592780;
-    $request->endDate = 'aspernatur';
-    $request->sort = GetTransacSmsReportSort::Asc;
-    $request->startDate = 'quasi';
-    $request->tag = 'animi';
+    $request->days = 183250;
+    $request->endDate = 'merrily Applications';
+    $request->sort = GetTransacSmsReportSort::Desc;
+    $request->startDate = 'executive';
+    $request->tag = 'Ramp Developer while';
 
     $response = $sdk->transactionalSMS->getTransacSmsReport($request);
 

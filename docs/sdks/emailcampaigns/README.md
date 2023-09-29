@@ -1,4 +1,5 @@
 # EmailCampaigns
+(*emailCampaigns*)
 
 ### Available Operations
 
@@ -53,7 +54,7 @@ try {
     $request->mirrorActive = true;
     $request->name = 'Newsletter - May 2017';
     $request->params = [
-        'rem' => 'fuga',
+        'doloribus' => 'ladder',
     ];
     $request->previewText = 'Thanks for your order!';
     $request->recipients = new CreateEmailCampaignRecipients();
@@ -78,7 +79,7 @@ try {
     $request->subjectA = 'Discover the New Collection!';
     $request->subjectB = 'Want to discover the New Collection?';
     $request->tag = 'Newsletter';
-    $request->templateId = 442015;
+    $request->templateId = 488220;
     $request->toField = '{FNAME} {LNAME}';
     $request->unsubscriptionPageId = '62cbb7fabbe85021021aac52';
     $request->updateFormId = '6313436b9ad40e23b371d095';
@@ -129,7 +130,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteEmailCampaignRequest();
-    $request->campaignId = 695626;
+    $request->campaignId = 413690;
 
     $response = $sdk->emailCampaigns->deleteEmailCampaign($request);
 
@@ -176,7 +177,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new EmailExportRecipientsRequest();
-    $request->campaignId = 852635;
+    $request->campaignId = 116313;
     $request->emailExportRecipients = new EmailExportRecipients();
     $request->emailExportRecipients->notifyURL = 'http://requestb.in/173lyyx1';
     $request->emailExportRecipients->recipientsType = EmailExportRecipientsRecipientsType::Openers;
@@ -224,7 +225,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetAbTestCampaignResultRequest();
-    $request->campaignId = 283519;
+    $request->campaignId = 968439;
 
     $response = $sdk->emailCampaigns->getAbTestCampaignResult($request);
 
@@ -270,8 +271,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetEmailCampaignRequest();
-    $request->campaignId = 433439;
-    $request->statistics = GetEmailCampaignStatistics::LinksStats;
+    $request->campaignId = 715666;
+    $request->statistics = GetEmailCampaignStatistics::GlobalStats;
 
     $response = $sdk->emailCampaigns->getEmailCampaign($request);
 
@@ -321,15 +322,15 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetEmailCampaignsRequest();
-    $request->endDate = 'assumenda';
-    $request->excludeHtmlContent = GetEmailCampaignsExcludeHTMLContent::True;
-    $request->limit = 509342;
-    $request->offset = 788546;
+    $request->endDate = 'Gorgeous';
+    $request->excludeHtmlContent = GetEmailCampaignsExcludeHTMLContent::False;
+    $request->limit = 729461;
+    $request->offset = 686479;
     $request->sort = GetEmailCampaignsSort::Asc;
-    $request->startDate = 'ipsa';
-    $request->statistics = GetEmailCampaignsStatistics::LinksStats;
-    $request->status = GetEmailCampaignsStatus::Draft;
-    $request->type = GetEmailCampaignsType::Classic;
+    $request->startDate = 'Dynamic metrics';
+    $request->statistics = GetEmailCampaignsStatistics::StatsByDomain;
+    $request->status = GetEmailCampaignsStatus::Suspended;
+    $request->type = GetEmailCampaignsType::Trigger;
 
     $response = $sdk->emailCampaigns->getEmailCampaigns($request);
 
@@ -374,7 +375,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSharedTemplateUrlRequest();
-    $request->campaignId = 778696;
+    $request->campaignId = 374812;
 
     $response = $sdk->emailCampaigns->getSharedTemplateUrl($request);
 
@@ -419,7 +420,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendEmailCampaignNowRequest();
-    $request->campaignId = 847276;
+    $request->campaignId = 666463;
 
     $response = $sdk->emailCampaigns->sendEmailCampaignNow($request);
 
@@ -467,7 +468,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendReportRequest();
-    $request->campaignId = 777408;
+    $request->campaignId = 349447;
     $request->sendReport = new SendReport();
     $request->sendReport->email = new SendReportEmail();
     $request->sendReport->email->body = 'Please find attached the report of our last email campaign.';
@@ -520,7 +521,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendTestEmailRequest();
-    $request->campaignId = 681359;
+    $request->campaignId = 634623;
     $request->sendTestEmail = new SendTestEmail();
     $request->sendTestEmail->emailTo = [
         'helen.jurger@example.com',
@@ -571,9 +572,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateCampaignStatusRequest();
-    $request->campaignId = 259422;
+    $request->campaignId = 859791;
     $request->updateCampaignStatus = new UpdateCampaignStatus();
-    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::Archive;
+    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::ReplicateTemplate;
 
     $response = $sdk->emailCampaigns->updateCampaignStatus($request);
 
@@ -622,7 +623,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateEmailCampaignRequest();
-    $request->campaignId = 373813;
+    $request->campaignId = 130470;
     $request->updateEmailCampaign = new UpdateEmailCampaign();
     $request->updateEmailCampaign->abTesting = true;
     $request->updateEmailCampaign->attachmentUrl = 'https://attachment.domain.com';
@@ -637,7 +638,7 @@ try {
     $request->updateEmailCampaign->mirrorActive = true;
     $request->updateEmailCampaign->name = 'Newsletter - May 2017';
     $request->updateEmailCampaign->params = [
-        'ab' => 'cupiditate',
+        'quo' => 'transmitting',
     ];
     $request->updateEmailCampaign->previewText = 'Thanks for your order!';
     $request->updateEmailCampaign->recipients = new UpdateEmailCampaignRecipients();

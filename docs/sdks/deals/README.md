@@ -1,4 +1,5 @@
 # Deals
+(*deals*)
 
 ### Available Operations
 
@@ -34,7 +35,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteCrmDealsIdRequest();
-    $request->id = 'ebf737ae-4203-4ce5-a6a9-5d8a0d446ce2';
+    $request->id = '<ID>';
 
     $response = $sdk->deals->deleteCrmDealsId($request);
 
@@ -115,11 +116,11 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmDealsRequest();
-    $request->filtersAttributesDealName = 'dolorum';
-    $request->filtersLinkedCompaniesIds = 'a';
-    $request->filtersLinkedContactsIds = 'esse';
-    $request->limit = 687488;
-    $request->offset = 483409;
+    $request->filtersAttributesDealName = 'green Research definition';
+    $request->filtersLinkedCompaniesIds = 'gorilla qui Maryland';
+    $request->filtersLinkedContactsIds = 'Amarillo Spring';
+    $request->limit = 75516;
+    $request->offset = 219145;
     $request->sort = GetCrmDealsSort::Asc;
 
     $response = $sdk->deals->getCrmDeals($request);
@@ -165,7 +166,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmDealsIdRequest();
-    $request->id = 'cf3be453-f870-4b32-ab5a-73429cdb1a84';
+    $request->id = '<ID>';
 
     $response = $sdk->deals->getCrmDealsId($request);
 
@@ -282,7 +283,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmPipelineDetailsPipelineIDRequest();
-    $request->pipelineID = 'aspernatur';
+    $request->pipelineID = 'Avon Executive indexing';
 
     $response = $sdk->deals->getCrmPipelineDetailsPipelineID($request);
 
@@ -330,18 +331,18 @@ try {
     $request = new PatchCrmDealsLinkUnlinkIdRequest();
     $request->requestBody = new PatchCrmDealsLinkUnlinkIdRequestBody();
     $request->requestBody->linkCompanyIds = [
-        'dolores',
+        'seize',
     ];
     $request->requestBody->linkContactIds = [
-        716860,
+        634052,
     ];
     $request->requestBody->unlinkCompanyIds = [
-        'facilis',
+        'Garden',
     ];
     $request->requestBody->unlinkContactIds = [
-        396060,
+        525413,
     ];
-    $request->id = '79d23227-15bf-40cb-b1e3-1b8b90f3443a';
+    $request->id = '<ID>';
 
     $response = $sdk->deals->patchCrmDealsLinkUnlinkId($request);
 
@@ -391,7 +392,7 @@ try {
     $request->requestBody = new PatchCrmDealsIdRequestBody();
     $request->requestBody->attributes = new PatchCrmDealsIdRequestBodyAttributes();
     $request->requestBody->name = 'Deal: Connect with client';
-    $request->id = '1108e0ad-cf4b-4921-879f-ce953f73ef7f';
+    $request->id = '<ID>';
 
     $response = $sdk->deals->patchCrmDealsId($request);
 

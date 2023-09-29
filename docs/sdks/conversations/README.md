@@ -1,4 +1,5 @@
 # Conversations
+(*conversations*)
 
 ### Available Operations
 
@@ -33,7 +34,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteConversationsMessagesIdRequest();
-    $request->id = '69e9a3ef-a77d-4fb1-8cd6-6ae395efb9ba';
+    $request->id = '<ID>';
 
     $response = $sdk->conversations->deleteConversationsMessagesId($request);
 
@@ -78,7 +79,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteConversationsPushedMessagesIdRequest();
-    $request->id = '88f3a669-9707-44ba-8469-b6e214195989';
+    $request->id = '<ID>';
 
     $response = $sdk->conversations->deleteConversationsPushedMessagesId($request);
 
@@ -123,7 +124,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetConversationsMessagesIdRequest();
-    $request->id = '0afa563e-2516-4fe4-88b7-11e5b7fd2ed0';
+    $request->id = '<ID>';
 
     $response = $sdk->conversations->getConversationsMessagesId($request);
 
@@ -168,7 +169,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetConversationsPushedMessagesIdRequest();
-    $request->id = '28921cdd-c692-4601-bb57-6b0d5f0d30c5';
+    $request->id = '<ID>';
 
     $response = $sdk->conversations->getConversationsPushedMessagesId($request);
 
@@ -213,10 +214,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new PostConversationsAgentOnlinePingRequestBody();
-    $request->agentEmail = 'hic';
-    $request->agentId = 'libero';
-    $request->agentName = 'nobis';
-    $request->receivedFrom = 'dolores';
+    $request->agentEmail = 'joule';
+    $request->agentId = 'Southwest';
+    $request->agentName = 'up';
+    $request->receivedFrom = 'Hybrid';
 
     $response = $sdk->conversations->postConversationsAgentOnlinePing($request);
 
@@ -261,12 +262,12 @@ $sdk = Brevo::builder()
 
 try {
     $request = new PostConversationsMessagesRequestBody();
-    $request->agentEmail = 'quis';
-    $request->agentId = 'totam';
-    $request->agentName = 'dignissimos';
-    $request->receivedFrom = 'eaque';
-    $request->text = 'quis';
-    $request->visitorId = 'nesciunt';
+    $request->agentEmail = 'Loan';
+    $request->agentId = 'bikini';
+    $request->agentName = 'Interface';
+    $request->receivedFrom = 'Electric';
+    $request->text = 'teal';
+    $request->visitorId = 'port';
 
     $response = $sdk->conversations->postConversationsMessages($request);
 
@@ -311,10 +312,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new PostConversationsPushedMessagesRequestBody();
-    $request->agentId = 'eos';
-    $request->groupId = 'perferendis';
-    $request->text = 'dolores';
-    $request->visitorId = 'minus';
+    $request->agentId = 'Fiat';
+    $request->groupId = 'Malta';
+    $request->text = 'fuchsia';
+    $request->visitorId = 'humongous';
 
     $response = $sdk->conversations->postConversationsPushedMessages($request);
 
@@ -361,8 +362,8 @@ $sdk = Brevo::builder()
 try {
     $request = new PutConversationsMessagesIdRequest();
     $request->requestBody = new PutConversationsMessagesIdRequestBody();
-    $request->requestBody->text = 'quam';
-    $request->id = '3d5fe9b9-0c28-4909-b3fe-49a8d9cbf486';
+    $request->requestBody->text = '4th';
+    $request->id = '<ID>';
 
     $response = $sdk->conversations->putConversationsMessagesId($request);
 
@@ -409,8 +410,8 @@ $sdk = Brevo::builder()
 try {
     $request = new PutConversationsPushedMessagesIdRequest();
     $request->requestBody = new PutConversationsPushedMessagesIdRequestBody();
-    $request->requestBody->text = 'dolorem';
-    $request->id = '3323f9b7-7f3a-4410-8674-ebf69280d1ba';
+    $request->requestBody->text = 'from unhappy North';
+    $request->id = '<ID>';
 
     $response = $sdk->conversations->putConversationsPushedMessagesId($request);
 

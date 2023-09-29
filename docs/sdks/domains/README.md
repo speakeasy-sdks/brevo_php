@@ -1,4 +1,5 @@
 # Domains
+(*domains*)
 
 ### Available Operations
 
@@ -29,7 +30,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new AuthenticateDomainRequest();
-    $request->domainName = 'distinctio';
+    $request->domainName = 'sparkling-awareness.biz';
 
     $response = $sdk->domains->authenticateDomain($request);
 
@@ -119,7 +120,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteDomainRequest();
-    $request->domainName = 'quod';
+    $request->domainName = 'sturdy-supper.net';
 
     $response = $sdk->domains->deleteDomain($request);
 
@@ -164,7 +165,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetDomainConfigurationRequest();
-    $request->domainName = 'odio';
+    $request->domainName = 'slight-county.net';
 
     $response = $sdk->domains->getDomainConfiguration($request);
 

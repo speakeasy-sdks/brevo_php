@@ -1,4 +1,5 @@
 # Notes
+(*notes*)
 
 ### Available Operations
 
@@ -29,7 +30,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteCrmNotesIdRequest();
-    $request->id = '8f5c0b2f-2fb7-4b19-8a27-6b26916fe1f0';
+    $request->id = '<ID>';
 
     $response = $sdk->notes->deleteCrmNotesId($request);
 
@@ -76,13 +77,13 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmNotesRequest();
-    $request->dateFrom = 546885;
-    $request->dateTo = 979574;
-    $request->entity = GetCrmNotesEntity::Companies;
-    $request->entityIds = 'sed';
-    $request->limit = 592231;
-    $request->offset = 258702;
-    $request->sort = GetCrmNotesSort::Desc;
+    $request->dateFrom = 734797;
+    $request->dateTo = 292043;
+    $request->entity = GetCrmNotesEntity::Contacts;
+    $request->entityIds = 'Gender quantify dicta';
+    $request->limit = 473993;
+    $request->offset = 141964;
+    $request->sort = GetCrmNotesSort::Asc;
 
     $response = $sdk->notes->getCrmNotes($request);
 
@@ -127,7 +128,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmNotesIdRequest();
-    $request->id = '3698f447-f603-4e8b-845e-80ca55efd20e';
+    $request->id = '<ID>';
 
     $response = $sdk->notes->getCrmNotesId($request);
 
@@ -175,16 +176,16 @@ try {
     $request = new PatchCrmNotesIdRequest();
     $request->noteData = new NoteData();
     $request->noteData->companyIds = [
-        'numquam',
+        'circuit',
     ];
     $request->noteData->contactIds = [
-        329935,
+        232473,
     ];
     $request->noteData->dealIds = [
-        'in',
+        'et',
     ];
     $request->noteData->text = 'In communication with client for resolution of queries.';
-    $request->id = 'e1858b6a-89fb-4e3a-9aa8-e4824d0ab407';
+    $request->id = '<ID>';
 
     $response = $sdk->notes->patchCrmNotesId($request);
 
@@ -230,13 +231,13 @@ $sdk = Brevo::builder()
 try {
     $request = new NoteData();
     $request->companyIds = [
-        'ipsam',
+        'Supervisor',
     ];
     $request->contactIds = [
-        24527,
+        468322,
     ];
     $request->dealIds = [
-        'voluptatum',
+        'Organized',
     ];
     $request->text = 'In communication with client for resolution of queries.';
 

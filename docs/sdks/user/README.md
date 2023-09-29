@@ -1,4 +1,5 @@
 # User
+(*user*)
 
 ### Available Operations
 
@@ -61,7 +62,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetUserPermissionRequest();
-    $request->email = 'Bernie_Skiles@gmail.com';
+    $request->email = 'Brycen.Kirlin81@hotmail.com';
 
     $response = $sdk->user->getUserPermission($request);
 

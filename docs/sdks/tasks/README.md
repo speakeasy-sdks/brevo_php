@@ -1,4 +1,5 @@
 # Tasks
+(*tasks*)
 
 ### Available Operations
 
@@ -30,7 +31,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteCrmTasksIdRequest();
-    $request->id = '8a50ce18-7f86-4bc1-b3d6-89eee9526f8d';
+    $request->id = '<ID>';
 
     $response = $sdk->tasks->deleteCrmTasksId($request);
 
@@ -78,19 +79,19 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmTasksRequest();
-    $request->dateFrom = 621693;
-    $request->dateTo = 502721;
-    $request->filterAssignTo = 'suscipit';
-    $request->filterCompanies = 'repudiandae';
-    $request->filterContacts = 'atque';
-    $request->filterDate = GetCrmTasksFilterDate::Tomorrow;
-    $request->filterDeals = 'sunt';
-    $request->filterStatus = GetCrmTasksFilterStatus::Undone;
-    $request->filterType = 'dolorum';
-    $request->limit = 829898;
-    $request->offset = 287119;
-    $request->sort = GetCrmTasksSort::Desc;
-    $request->sortBy = 'doloremque';
+    $request->dateFrom = 347707;
+    $request->dateTo = 258884;
+    $request->filterAssignTo = 'API transparent';
+    $request->filterCompanies = 'JSON';
+    $request->filterContacts = 'Gasoline coulomb Industrial';
+    $request->filterDate = GetCrmTasksFilterDate::Week;
+    $request->filterDeals = 'Jaguar Handcrafted Analyst';
+    $request->filterStatus = GetCrmTasksFilterStatus::Done;
+    $request->filterType = 'monitor Latin Doral';
+    $request->limit = 594385;
+    $request->offset = 854904;
+    $request->sort = GetCrmTasksSort::Asc;
+    $request->sortBy = 'eyeballs facere';
 
     $response = $sdk->tasks->getCrmTasks($request);
 
@@ -135,7 +136,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetCrmTasksIdRequest();
-    $request->id = 'e1012563-f94e-429e-973e-922a57a15be3';
+    $request->id = '<ID>';
 
     $response = $sdk->tasks->getCrmTasksId($request);
 
@@ -222,14 +223,14 @@ try {
     $request->requestBody = new PatchCrmTasksIdRequestBody();
     $request->requestBody->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->requestBody->companiesIds = [
-        'vero',
+        'Tugrik',
     ];
     $request->requestBody->contactsIds = [
-        39615,
+        570569,
     ];
-    $request->requestBody->date = DateTime::createFromFormat('Y-m-d\TH:i:sP', '2021-11-01T17:44:54.668Z');
+    $request->requestBody->date = DateTime::createFromFormat('Y-m-d\TH:i:s+', '2021-11-01T17:44:54.668Z');
     $request->requestBody->dealsIds = [
-        'iure',
+        'Creative',
     ];
     $request->requestBody->done = false;
     $request->requestBody->duration = 600000;
@@ -237,12 +238,12 @@ try {
     $request->requestBody->notes = 'In communication with client for resolution of queries.';
     $request->requestBody->reminder = new TaskReminder();
     $request->requestBody->reminder->types = [
-        TaskReminderTypes::Email,
+        TaskReminderTypes::Push,
     ];
-    $request->requestBody->reminder->unit = TaskReminderUnit::Weeks;
+    $request->requestBody->reminder->unit = TaskReminderUnit::Days;
     $request->requestBody->reminder->value = 10;
     $request->requestBody->taskTypeId = '61a5cd07ca1347c82306ad09';
-    $request->id = '07e2b6e3-ab88-445f-8597-a60ff2a54a31';
+    $request->id = '<ID>';
 
     $response = $sdk->tasks->patchCrmTasksId($request);
 
@@ -292,14 +293,14 @@ try {
     $request = new PostCrmTasksRequestBody();
     $request->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->companiesIds = [
-        'recusandae',
+        'Beauty',
     ];
     $request->contactsIds = [
-        607249,
+        741484,
     ];
-    $request->date = DateTime::createFromFormat('Y-m-d\TH:i:sP', '2021-11-01T17:44:54.668Z');
+    $request->date = DateTime::createFromFormat('Y-m-d\TH:i:s+', '2021-11-01T17:44:54.668Z');
     $request->dealsIds = [
-        'quaerat',
+        'disintermediate',
     ];
     $request->done = false;
     $request->duration = 600000;

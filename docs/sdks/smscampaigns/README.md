@@ -1,4 +1,5 @@
 # SMSCampaigns
+(*smsCampaigns*)
 
 ### Available Operations
 
@@ -93,7 +94,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteSmsCampaignRequest();
-    $request->campaignId = 539074;
+    $request->campaignId = 225721;
 
     $response = $sdk->smsCampaigns->deleteSmsCampaign($request);
 
@@ -138,7 +139,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSmsCampaignRequest();
-    $request->campaignId = 671957;
+    $request->campaignId = 704072;
 
     $response = $sdk->smsCampaigns->getSmsCampaign($request);
 
@@ -185,12 +186,12 @@ $sdk = Brevo::builder()
 
 try {
     $request = new GetSmsCampaignsRequest();
-    $request->endDate = 'nam';
-    $request->limit = 948861;
-    $request->offset = 388867;
+    $request->endDate = 'Transgender';
+    $request->limit = 254166;
+    $request->offset = 682896;
     $request->sort = GetSmsCampaignsSort::Asc;
-    $request->startDate = 'amet';
-    $request->status = GetSmsCampaignsStatus::Queued;
+    $request->startDate = 'circa';
+    $request->status = GetSmsCampaignsStatus::Suspended;
 
     $response = $sdk->smsCampaigns->getSmsCampaigns($request);
 
@@ -237,7 +238,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new RequestSmsRecipientExportRequest();
-    $request->campaignId = 454860;
+    $request->campaignId = 946569;
     $request->requestSmsRecipientExport = new RequestSmsRecipientExport();
     $request->requestSmsRecipientExport->notifyURL = 'http://requestb.in/173lyyx1';
     $request->requestSmsRecipientExport->recipientsType = RequestSmsRecipientExportRecipientsType::Answered;
@@ -285,7 +286,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendSmsCampaignNowRequest();
-    $request->campaignId = 600392;
+    $request->campaignId = 697931;
 
     $response = $sdk->smsCampaigns->sendSmsCampaignNow($request);
 
@@ -333,7 +334,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendSmsReportRequest();
-    $request->campaignId = 972083;
+    $request->campaignId = 786011;
     $request->sendReport = new SendReport();
     $request->sendReport->email = new SendReportEmail();
     $request->sendReport->email->body = 'Please find attached the report of our last email campaign.';
@@ -386,7 +387,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new SendTestSmsRequest();
-    $request->campaignId = 588740;
+    $request->campaignId = 562258;
     $request->sendTestSms = new SendTestSms();
     $request->sendTestSms->phoneNumber = '33689965433';
 
@@ -435,7 +436,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateSmsCampaignRequest();
-    $request->campaignId = 833819;
+    $request->campaignId = 537860;
     $request->updateSmsCampaign = new UpdateSmsCampaign();
     $request->updateSmsCampaign->content = 'Get a discount by visiting our NY store and saying : Happy Spring!';
     $request->updateSmsCampaign->name = 'Spring Promo Code';
@@ -497,9 +498,9 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateSmsCampaignStatusRequest();
-    $request->campaignId = 962771;
+    $request->campaignId = 258044;
     $request->updateCampaignStatus = new UpdateCampaignStatus();
-    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::Draft;
+    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::Suspended;
 
     $response = $sdk->smsCampaigns->updateSmsCampaignStatus($request);
 
