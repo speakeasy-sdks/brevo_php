@@ -11,10 +11,15 @@ namespace test\BREVO\Models\Shared;
 
 class PostContactInfoContacts
 {
+    /**
+     * $failure
+     * 
+     * @var ?array<string> $failure
+     */
 	#[\JMS\Serializer\Annotation\SerializedName('failure')]
-    #[\JMS\Serializer\Annotation\Type('mixed')]
+    #[\JMS\Serializer\Annotation\Type('array<string>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public mixed $failure = null;
+    public ?array $failure = null;
     
     /**
      * Id of the process created to remove contacts from list when user opts for "all" option.
@@ -26,10 +31,15 @@ class PostContactInfoContacts
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?int $processId = null;
     
+    /**
+     * $success
+     * 
+     * @var ?array<string> $success
+     */
 	#[\JMS\Serializer\Annotation\SerializedName('success')]
-    #[\JMS\Serializer\Annotation\Type('mixed')]
+    #[\JMS\Serializer\Annotation\Type('array<string>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public mixed $success = null;
+    public ?array $success = null;
     
     /**
      * Displays the count of total number of contacts removed from list when user opts for "all" option.

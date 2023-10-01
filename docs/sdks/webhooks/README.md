@@ -122,8 +122,6 @@ require_once 'vendor/autoload.php';
 
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\ExportWebhooksHistory;
-use \test\BREVO\Models\Shared\ExportWebhooksHistoryEvent;
 
 $sdk = Brevo::builder()
     ->build();
@@ -152,9 +150,9 @@ try {
 
 ### Parameters
 
-| Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `$request`                                                                                      | [\test\BREVO\Models\Shared\ExportWebhooksHistory](../../models/shared/ExportWebhooksHistory.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
+| Parameter                                  | Type                                       | Required                                   | Description                                |
+| ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| `$request`                                 | [mixed](../../models//.md)                 | :heavy_check_mark:                         | The request object to use for the request. |
 
 
 ### Response
