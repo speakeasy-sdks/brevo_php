@@ -54,7 +54,7 @@ try {
     $request->mirrorActive = true;
     $request->name = 'Newsletter - May 2017';
     $request->params = [
-        'doloribus' => 'ladder',
+        'wield' => 'online',
     ];
     $request->previewText = 'Thanks for your order!';
     $request->recipients = new CreateEmailCampaignRecipients();
@@ -79,7 +79,7 @@ try {
     $request->subjectA = 'Discover the New Collection!';
     $request->subjectB = 'Want to discover the New Collection?';
     $request->tag = 'Newsletter';
-    $request->templateId = 488220;
+    $request->templateId = 449692;
     $request->toField = '{FNAME} {LNAME}';
     $request->unsubscriptionPageId = '62cbb7fabbe85021021aac52';
     $request->updateFormId = '6313436b9ad40e23b371d095';
@@ -638,7 +638,7 @@ try {
     $request->updateEmailCampaign->mirrorActive = true;
     $request->updateEmailCampaign->name = 'Newsletter - May 2017';
     $request->updateEmailCampaign->params = [
-        'quo' => 'transmitting',
+        'Bicycle' => 'gah',
     ];
     $request->updateEmailCampaign->previewText = 'Thanks for your order!';
     $request->updateEmailCampaign->recipients = new UpdateEmailCampaignRecipients();

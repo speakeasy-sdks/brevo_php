@@ -3,7 +3,7 @@
 
 ## Fields
 
-| Field              | Type               | Required           | Description        |
-| ------------------ | ------------------ | ------------------ | ------------------ |
-| `exclusionLists`   | array<*int*>       | :heavy_check_mark: | N/A                |
-| `lists`            | array<*int*>       | :heavy_check_mark: | N/A                |
+| Field              | Type               | Required           | Description        | Example            |
+| ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
+| `exclusionLists`   | array<*int*>       | :heavy_check_mark: | N/A                | 13                 |
+| `lists`            | array<*int*>       | :heavy_check_mark: | N/A                | 21                 |

@@ -79,12 +79,7 @@ $sdk = Brevo::builder()
     ->build();
 
 try {
-    $request = new SendWhatsappMessageText();
-    $request->contactNumbers = [
-        '919876543210',
-    ];
-    $request->senderNumber = '919876543210';
-    $request->text = 'Hi! There i am a message';
+'however'
 
     $response = $sdk->transactionalWhatsApp->sendWhatsappMessage($request);
 

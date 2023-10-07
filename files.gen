@@ -493,8 +493,6 @@ src/Models/Shared/Company.php
 src/Models/Shared/CompanyAttributesAttributeOptions.php
 src/Models/Shared/PostContactInfoContacts.php
 src/Models/Shared/PostContactInfo.php
-src/Models/Shared/AddContactToListByEmails.php
-src/Models/Shared/AddContactToListByIDs.php
 src/Models/Shared/CreateAttributeEnumeration.php
 src/Models/Shared/CreateAttributeType.php
 src/Models/Shared/CreateAttribute.php
@@ -556,9 +554,6 @@ src/Models/Shared/CreatedProcessId.php
 src/Models/Shared/RequestContactImportJsonBody.php
 src/Models/Shared/RequestContactImportNewList.php
 src/Models/Shared/RequestContactImport.php
-src/Models/Shared/RemoveContactFromListByEmails.php
-src/Models/Shared/RemoveContactFromListByIDs.php
-src/Models/Shared/RemoveContactFromListByAll.php
 src/Models/Shared/RequestContactExportCustomContactFilterActionForContacts.php
 src/Models/Shared/RequestContactExportCustomContactFilterActionForEmailCampaigns.php
 src/Models/Shared/RequestContactExportCustomContactFilterActionForSmsCampaigns.php
@@ -794,8 +789,6 @@ src/Models/Shared/SendTransacSms.php
 src/Models/Shared/GetWhatsappEventReportEventsEvent.php
 src/Models/Shared/GetWhatsappEventReportEvents.php
 src/Models/Shared/GetWhatsappEventReport.php
-src/Models/Shared/SendWhatsappMessageTemplate.php
-src/Models/Shared/SendWhatsappMessageText.php
 src/Models/Shared/BlockDomain.php
 src/Models/Shared/CreateSmtpTemplateSender.php
 src/Models/Shared/CreateSmtpTemplate.php
@@ -805,11 +798,6 @@ src/Models/Shared/GetBlockedDomains.php
 src/Models/Shared/GetEmailEventReportEventsEvent.php
 src/Models/Shared/GetEmailEventReportEvents.php
 src/Models/Shared/GetEmailEventReport.php
-src/Models/Shared/GetScheduledEmailByBatchIdBatchesStatus.php
-src/Models/Shared/GetScheduledEmailByBatchIdBatches.php
-src/Models/Shared/GetScheduledEmailByBatchId.php
-src/Models/Shared/GetScheduledEmailByMessageIdStatus.php
-src/Models/Shared/GetScheduledEmailByMessageId.php
 src/Models/Shared/GetReportsReports.php
 src/Models/Shared/GetReports.php
 src/Models/Shared/GetSmtpTemplateOverviewSender.php
@@ -847,8 +835,6 @@ src/Models/Shared/GetUserPermission.php
 src/Models/Shared/CreateWebhookEvents.php
 src/Models/Shared/CreateWebhookType.php
 src/Models/Shared/CreateWebhook.php
-src/Models/Shared/ExportWebhooksHistoryEvent.php
-src/Models/Shared/ExportWebhooksHistory.php
 src/Models/Shared/GetWebhookType.php
 src/Models/Shared/GetWebhook.php
 src/Models/Shared/GetWebhooksWebhooksType.php
@@ -1329,8 +1315,6 @@ docs/models/shared/Company.md
 docs/models/shared/CompanyAttributesAttributeOptions.md
 docs/models/shared/PostContactInfoContacts.md
 docs/models/shared/PostContactInfo.md
-docs/models/shared/AddContactToListByEmails.md
-docs/models/shared/AddContactToListByIDs.md
 docs/models/shared/CreateAttributeEnumeration.md
 docs/models/shared/CreateAttributeType.md
 docs/models/shared/CreateAttribute.md
@@ -1392,9 +1376,6 @@ docs/models/shared/CreatedProcessId.md
 docs/models/shared/RequestContactImportJsonBody.md
 docs/models/shared/RequestContactImportNewList.md
 docs/models/shared/RequestContactImport.md
-docs/models/shared/RemoveContactFromListByEmails.md
-docs/models/shared/RemoveContactFromListByIDs.md
-docs/models/shared/RemoveContactFromListByAll.md
 docs/models/shared/RequestContactExportCustomContactFilterActionForContacts.md
 docs/models/shared/RequestContactExportCustomContactFilterActionForEmailCampaigns.md
 docs/models/shared/RequestContactExportCustomContactFilterActionForSmsCampaigns.md
@@ -1630,8 +1611,6 @@ docs/models/shared/SendTransacSms.md
 docs/models/shared/GetWhatsappEventReportEventsEvent.md
 docs/models/shared/GetWhatsappEventReportEvents.md
 docs/models/shared/GetWhatsappEventReport.md
-docs/models/shared/SendWhatsappMessageTemplate.md
-docs/models/shared/SendWhatsappMessageText.md
 docs/models/shared/BlockDomain.md
 docs/models/shared/CreateSmtpTemplateSender.md
 docs/models/shared/CreateSmtpTemplate.md
@@ -1641,11 +1620,6 @@ docs/models/shared/GetBlockedDomains.md
 docs/models/shared/GetEmailEventReportEventsEvent.md
 docs/models/shared/GetEmailEventReportEvents.md
 docs/models/shared/GetEmailEventReport.md
-docs/models/shared/GetScheduledEmailByBatchIdBatchesStatus.md
-docs/models/shared/GetScheduledEmailByBatchIdBatches.md
-docs/models/shared/GetScheduledEmailByBatchId.md
-docs/models/shared/GetScheduledEmailByMessageIdStatus.md
-docs/models/shared/GetScheduledEmailByMessageId.md
 docs/models/shared/GetReportsReports.md
 docs/models/shared/GetReports.md
 docs/models/shared/GetSmtpTemplateOverviewSender.md
@@ -1683,8 +1657,6 @@ docs/models/shared/GetUserPermission.md
 docs/models/shared/CreateWebhookEvents.md
 docs/models/shared/CreateWebhookType.md
 docs/models/shared/CreateWebhook.md
-docs/models/shared/ExportWebhooksHistoryEvent.md
-docs/models/shared/ExportWebhooksHistory.md
 docs/models/shared/GetWebhookType.md
 docs/models/shared/GetWebhook.md
 docs/models/shared/GetWebhooksWebhooksType.md

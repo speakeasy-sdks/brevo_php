@@ -54,11 +54,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new AddContactToListRequest();
-    $request->requestBody = new AddContactToListByEmails();
-    $request->requestBody->emails = [
-        'john.smith@contact.com',
-    ];
-    $request->listId = 286881;
+    $request->requestBody = 'Bedfordshire';
+    $request->listId = 189543;
 
     $response = $sdk->contacts->addContactToList($request);
 
@@ -161,7 +158,7 @@ $sdk = Brevo::builder()
 try {
     $request = new CreateContact();
     $request->attributes = [
-        'assumenda' => 'Architect',
+        'Mercedes' => 'vero',
     ];
     $request->email = 'elly@example.com';
     $request->emailBlacklisted = false;
@@ -171,7 +168,7 @@ try {
     ];
     $request->smsBlacklisted = false;
     $request->smtpBlacklistSender = [
-        'Seamus_Kemmer13@yahoo.com',
+        'Riley4@yahoo.com',
     ];
     $request->updateEnabled = false;
 
@@ -219,7 +216,7 @@ $sdk = Brevo::builder()
 try {
     $request = new CreateDoiContact();
     $request->attributes = [
-        'esse' => 'legitimate',
+        'UDP' => 'online',
     ];
     $request->email = 'elly@example.com';
     $request->excludeListIds = [
@@ -412,7 +409,7 @@ $sdk = Brevo::builder()
 
 try {
     $request = new DeleteContactRequest();
-    $request->identifier = 704827;
+    $request->identifier = 'synthesize';
 
     $response = $sdk->contacts->deleteContact($request);
 
@@ -583,8 +580,8 @@ $sdk = Brevo::builder()
 try {
     $request = new GetContactInfoRequest();
     $request->endDate = 'array Cayman up';
-    $request->identifier = 'Recycled';
-    $request->startDate = 'Arkansas Imani';
+    $request->identifier = '24/7';
+    $request->startDate = 'Croatia';
 
     $response = $sdk->contacts->getContactInfo($request);
 
@@ -630,7 +627,7 @@ $sdk = Brevo::builder()
 try {
     $request = new GetContactStatsRequest();
     $request->endDate = 'Bicycle North bluetooth';
-    $request->identifier = 857458;
+    $request->identifier = 'whether';
     $request->startDate = 'North';
 
     $response = $sdk->contacts->getContactStats($request);
@@ -1123,11 +1120,8 @@ $sdk = Brevo::builder()
 
 try {
     $request = new RemoveContactFromListRequest();
-    $request->requestBody = new RemoveContactFromListByEmails();
-    $request->requestBody->emails = [
-        'john.smith@contact.com',
-    ];
-    $request->listId = 502622;
+    $request->requestBody = 'Northeast';
+    $request->listId = 572650;
 
     $response = $sdk->contacts->removeContactFromList($request);
 
@@ -1334,10 +1328,10 @@ $sdk = Brevo::builder()
 
 try {
     $request = new UpdateContactRequest();
-    $request->identifier = 'overriding intranet';
+    $request->identifier = 'Jewell';
     $request->updateContact = new UpdateContact();
     $request->updateContact->attributes = [
-        'modi' => 'nor',
+        'compress' => 'nor',
     ];
     $request->updateContact->emailBlacklisted = false;
     $request->updateContact->extId = 'updateExternalId';

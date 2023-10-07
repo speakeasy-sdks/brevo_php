@@ -307,11 +307,11 @@ try {
     $request->id = 'P11';
     $request->imageUrl = 'http://mydomain.com/product-absoulte-url/img.jpeg';
     $request->metaInfo = [
-        'assumenda' => 'heuristic',
+        'Honda' => 'invoice',
     ];
     $request->name = 'Iphone 11';
-    $request->parentId = 'input Hybrid inconvenience';
-    $request->price = 9598.67;
+    $request->parentId = 'steradian bandwidth';
+    $request->price = 9504.18;
     $request->sku = 'port psst';
     $request->updateEnabled = false;
     $request->url = 'http://mydomain.com/product/electronics/product1';

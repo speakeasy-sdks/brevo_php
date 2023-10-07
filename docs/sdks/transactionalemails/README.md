@@ -983,14 +983,14 @@ try {
         new SendSmtpEmailCc(),
     ];
     $request->headers = [
-        'eaque' => 'Toys',
+        'voluptatem' => 'Northwest',
     ];
     $request->htmlContent = '<!DOCTYPE html> <html> <body> <h1>Confirm you email</h1> <p>Please confirm your email address by clicking on the link below</p> </body> </html>';
     $request->messageVersions = [
         new SendSmtpEmailMessageVersions(),
     ];
     $request->params = [
-        'voluptatem' => 'Northwest',
+        'Weber' => 'Sedan',
     ];
     $request->replyTo = new SendSmtpEmailReplyTo();
     $request->replyTo->email = 'ann6533@example.com';

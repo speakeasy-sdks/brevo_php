@@ -127,16 +127,7 @@ $sdk = Brevo::builder()
     ->build();
 
 try {
-    $request = new ExportWebhooksHistory();
-    $request->days = 7;
-    $request->email = 'example@brevo.com';
-    $request->endDate = '2023-02-17';
-    $request->event = ExportWebhooksHistoryEvent::Request;
-    $request->messageId = <23befbae-1505-47a8-bd27-e30ef739f32c@fr.sib>;
-    $request->notifyURL = 'https://brevo.com';
-    $request->sort = 'desc';
-    $request->startDate = '2023-02-13';
-    $request->webhookId = 2345;
+'female'
 
     $response = $sdk->webhooks->exportWebhooksHistory($request);
 
