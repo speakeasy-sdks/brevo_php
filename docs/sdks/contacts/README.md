@@ -49,13 +49,17 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\AddContactToListRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new AddContactToListRequest();
-    $request->requestBody = 'Bedfordshire';
-    $request->listId = 189543;
+    $request->requestBody = 'string';
+    $request->listId = 77706;
 
     $response = $sdk->contacts->addContactToList($request);
 
@@ -99,13 +103,17 @@ use \test\BREVO\Models\Shared\CreateAttribute;
 use \test\BREVO\Models\Shared\CreateAttributeEnumeration;
 use \test\BREVO\Models\Shared\CreateAttributeType;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new CreateAttributeRequest();
     $request->attributeCategory = CreateAttributeAttributeCategory::Calculated;
-    $request->attributeName = 'Seamless Electric but';
+    $request->attributeName = 'string';
     $request->createAttribute = new CreateAttribute();
     $request->createAttribute->enumeration = [
         new CreateAttributeEnumeration(),
@@ -152,13 +160,17 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateContact;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new CreateContact();
     $request->attributes = [
-        'Mercedes' => 'vero',
+        'Mercedes' => 'string',
     ];
     $request->email = 'elly@example.com';
     $request->emailBlacklisted = false;
@@ -168,7 +180,7 @@ try {
     ];
     $request->smsBlacklisted = false;
     $request->smtpBlacklistSender = [
-        'Riley4@yahoo.com',
+        'Seamus_Kemmer13@yahoo.com',
     ];
     $request->updateEnabled = false;
 
@@ -210,13 +222,17 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateDoiContact;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new CreateDoiContact();
     $request->attributes = [
-        'UDP' => 'online',
+        'UDP' => 'string',
     ];
     $request->email = 'elly@example.com';
     $request->excludeListIds = [
@@ -266,7 +282,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateUpdateFolder;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -311,7 +331,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateList;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -358,13 +382,17 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteAttributeRequest;
 use \test\BREVO\Models\Operations\DeleteAttributeAttributeCategory;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new DeleteAttributeRequest();
     $request->attributeCategory = DeleteAttributeAttributeCategory::Normal;
-    $request->attributeName = 'East ugh Representative';
+    $request->attributeName = 'string';
 
     $response = $sdk->contacts->deleteAttribute($request);
 
@@ -404,12 +432,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteContactRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new DeleteContactRequest();
-    $request->identifier = 'synthesize';
+    $request->identifier = 'string';
 
     $response = $sdk->contacts->deleteContact($request);
 
@@ -449,7 +481,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteFolderRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -494,7 +530,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteListRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -538,7 +578,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -574,14 +618,18 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetContactInfoRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetContactInfoRequest();
-    $request->endDate = 'array Cayman up';
-    $request->identifier = '24/7';
-    $request->startDate = 'Croatia';
+    $request->endDate = 'string';
+    $request->identifier = 'string';
+    $request->startDate = 'string';
 
     $response = $sdk->contacts->getContactInfo($request);
 
@@ -621,14 +669,18 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetContactStatsRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetContactStatsRequest();
-    $request->endDate = 'Bicycle North bluetooth';
-    $request->identifier = 'whether';
-    $request->startDate = 'North';
+    $request->endDate = 'string';
+    $request->identifier = 'string';
+    $request->startDate = 'string';
 
     $response = $sdk->contacts->getContactStats($request);
 
@@ -669,16 +721,20 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetContactsRequest;
 use \test\BREVO\Models\Operations\GetContactsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetContactsRequest();
-    $request->createdSince = 'Hip Shirt orange';
-    $request->limit = 120432;
-    $request->modifiedSince = 'incubate';
-    $request->offset = 609746;
-    $request->sort = GetContactsSort::Asc;
+    $request->createdSince = 'string';
+    $request->limit = 883763;
+    $request->modifiedSince = 'string';
+    $request->offset = 587699;
+    $request->sort = GetContactsSort::Desc;
 
     $response = $sdk->contacts->getContacts($request);
 
@@ -719,16 +775,20 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetContactsFromListRequest;
 use \test\BREVO\Models\Operations\GetContactsFromListSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetContactsFromListRequest();
     $request->limit = 164358;
     $request->listId = 721707;
-    $request->modifiedSince = 'monitor';
-    $request->offset = 980962;
-    $request->sort = GetContactsFromListSort::Asc;
+    $request->modifiedSince = 'string';
+    $request->offset = 221058;
+    $request->sort = GetContactsFromListSort::Desc;
 
     $response = $sdk->contacts->getContactsFromList($request);
 
@@ -768,7 +828,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetFolderRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -814,7 +878,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetFolderListsRequest;
 use \test\BREVO\Models\Operations\GetFolderListsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -863,7 +931,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetFoldersRequest;
 use \test\BREVO\Models\Operations\GetFoldersSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -910,7 +982,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetListRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -956,7 +1032,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetListsRequest;
 use \test\BREVO\Models\Operations\GetListsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -1004,7 +1084,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetSegmentsRequest;
 use \test\BREVO\Models\Operations\GetSegmentsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -1053,7 +1137,11 @@ use \test\BREVO\Models\Shared\RequestContactImport;
 use \test\BREVO\Models\Shared\RequestContactImportJsonBody;
 use \test\BREVO\Models\Shared\RequestContactImportNewList;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -1115,13 +1203,17 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\RemoveContactFromListRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new RemoveContactFromListRequest();
-    $request->requestBody = 'Northeast';
-    $request->listId = 572650;
+    $request->requestBody = 'string';
+    $request->listId = 85992;
 
     $response = $sdk->contacts->removeContactFromList($request);
 
@@ -1165,7 +1257,11 @@ use \test\BREVO\Models\Shared\RequestContactExportCustomContactFilterActionForCo
 use \test\BREVO\Models\Shared\RequestContactExportCustomContactFilterActionForEmailCampaigns;
 use \test\BREVO\Models\Shared\RequestContactExportCustomContactFilterActionForSmsCampaigns;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -1223,13 +1319,17 @@ use \test\BREVO\Models\Operations\UpdateAttributeAttributeCategory;
 use \test\BREVO\Models\Shared\UpdateAttribute;
 use \test\BREVO\Models\Shared\UpdateAttributeEnumeration;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new UpdateAttributeRequest();
     $request->attributeCategory = UpdateAttributeAttributeCategory::Calculated;
-    $request->attributeName = 'sensor';
+    $request->attributeName = 'string';
     $request->updateAttribute = new UpdateAttribute();
     $request->updateAttribute->enumeration = [
         new UpdateAttributeEnumeration(),
@@ -1275,7 +1375,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\UpdateBatchContacts;
 use \test\BREVO\Models\Shared\UpdateBatchContactsContacts;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -1323,15 +1427,19 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\UpdateContactRequest;
 use \test\BREVO\Models\Shared\UpdateContact;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new UpdateContactRequest();
-    $request->identifier = 'Jewell';
+    $request->identifier = 'string';
     $request->updateContact = new UpdateContact();
     $request->updateContact->attributes = [
-        'compress' => 'nor',
+        'Jewell' => 'string',
     ];
     $request->updateContact->emailBlacklisted = false;
     $request->updateContact->extId = 'updateExternalId';
@@ -1340,7 +1448,7 @@ try {
     ];
     $request->updateContact->smsBlacklisted = true;
     $request->updateContact->smtpBlacklistSender = [
-        'Maryse35@hotmail.com',
+        'Domenic_Ullrich@yahoo.com',
     ];
     $request->updateContact->unlinkListIds = [
         36,
@@ -1385,7 +1493,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\UpdateFolderRequest;
 use \test\BREVO\Models\Shared\CreateUpdateFolder;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -1433,7 +1545,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\UpdateListRequest;
 use \test\BREVO\Models\Shared\UpdateList;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

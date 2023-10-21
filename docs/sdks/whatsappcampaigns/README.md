@@ -30,7 +30,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateWhatsAppCampaign;
 use \test\BREVO\Models\Shared\CreateWhatsAppCampaignRecipients;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -88,7 +92,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateWhatsAppTemplate;
 use \test\BREVO\Models\Shared\CreateWhatsAppTemplateCategory;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -138,7 +146,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteWhatsAppCampaignRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -183,7 +195,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetWhatsAppCampaignRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -229,16 +245,20 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetWhatsAppCampaignsRequest;
 use \test\BREVO\Models\Operations\GetWhatsAppCampaignsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetWhatsAppCampaignsRequest();
-    $request->endDate = 'pascal Coupe';
-    $request->limit = 624419;
-    $request->offset = 680058;
+    $request->endDate = 'string';
+    $request->limit = 452266;
+    $request->offset = 758325;
     $request->sort = GetWhatsAppCampaignsSort::Asc;
-    $request->startDate = 'calculate';
+    $request->startDate = 'string';
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppCampaigns($request);
 
@@ -277,7 +297,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -314,16 +338,20 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetWhatsAppTemplatesRequest;
 use \test\BREVO\Models\Operations\GetWhatsAppTemplatesSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetWhatsAppTemplatesRequest();
-    $request->endDate = 'Computers';
-    $request->limit = 791901;
-    $request->offset = 79454;
-    $request->sort = GetWhatsAppTemplatesSort::Desc;
-    $request->startDate = 'Magnesium Pickup Selenium';
+    $request->endDate = 'string';
+    $request->limit = 39819;
+    $request->offset = 185489;
+    $request->sort = GetWhatsAppTemplatesSort::Asc;
+    $request->startDate = 'string';
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppTemplates($request);
 
@@ -363,7 +391,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\SendWhatsAppTemplateApprovalRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -411,7 +443,11 @@ use \test\BREVO\Models\Shared\UpdateWhatsAppCampaign;
 use \test\BREVO\Models\Shared\UpdateWhatsAppCampaignCampaignStatus;
 use \test\BREVO\Models\Shared\UpdateWhatsAppCampaignRecipients;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

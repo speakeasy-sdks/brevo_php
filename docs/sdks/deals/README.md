@@ -30,7 +30,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteCrmDealsIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -74,7 +78,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -111,16 +119,20 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCrmDealsRequest;
 use \test\BREVO\Models\Operations\GetCrmDealsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetCrmDealsRequest();
-    $request->filtersAttributesDealName = 'green Research definition';
-    $request->filtersLinkedCompaniesIds = 'gorilla qui Maryland';
-    $request->filtersLinkedContactsIds = 'Amarillo Spring';
-    $request->limit = 75516;
-    $request->offset = 219145;
+    $request->filtersAttributesDealName = 'string';
+    $request->filtersLinkedCompaniesIds = 'string';
+    $request->filtersLinkedContactsIds = 'string';
+    $request->limit = 851588;
+    $request->offset = 163297;
     $request->sort = GetCrmDealsSort::Asc;
 
     $response = $sdk->deals->getCrmDeals($request);
@@ -161,7 +173,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCrmDealsIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -207,7 +223,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -242,7 +262,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -278,12 +302,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetCrmPipelineDetailsPipelineIDRequest();
-    $request->pipelineID = 'Avon Executive indexing';
+    $request->pipelineID = 'string';
 
     $response = $sdk->deals->getCrmPipelineDetailsPipelineID($request);
 
@@ -324,23 +352,27 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PatchCrmDealsLinkUnlinkIdRequest;
 use \test\BREVO\Models\Operations\PatchCrmDealsLinkUnlinkIdRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new PatchCrmDealsLinkUnlinkIdRequest();
     $request->requestBody = new PatchCrmDealsLinkUnlinkIdRequestBody();
     $request->requestBody->linkCompanyIds = [
-        'seize',
+        'string',
     ];
     $request->requestBody->linkContactIds = [
-        634052,
+        314896,
     ];
     $request->requestBody->unlinkCompanyIds = [
-        'Garden',
+        'string',
     ];
     $request->requestBody->unlinkContactIds = [
-        525413,
+        381340,
     ];
     $request->id = '<ID>';
 
@@ -384,7 +416,11 @@ use \test\BREVO\Models\Operations\PatchCrmDealsIdRequest;
 use \test\BREVO\Models\Operations\PatchCrmDealsIdRequestBody;
 use \test\BREVO\Models\Operations\PatchCrmDealsIdRequestBodyAttributes;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -433,7 +469,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PostCrmDealsRequestBody;
 use \test\BREVO\Models\Operations\PostCrmDealsRequestBodyAttributes;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

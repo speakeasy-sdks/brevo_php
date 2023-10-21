@@ -27,7 +27,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteCompaniesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -73,18 +77,22 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCompaniesRequest;
 use \test\BREVO\Models\Operations\GetCompaniesSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetCompaniesRequest();
-    $request->filters = 'ab circuit Ouguiya';
-    $request->limit = 997249;
-    $request->linkedContactsIds = 328034;
-    $request->linkedDealsIds = 'factory Bicycle';
-    $request->page = 8002;
+    $request->filters = 'string';
+    $request->limit = 817302;
+    $request->linkedContactsIds = 571205;
+    $request->linkedDealsIds = 'string';
+    $request->page = 66234;
     $request->sort = GetCompaniesSort::Desc;
-    $request->sortBy = 'Loan Awesome JBOD';
+    $request->sortBy = 'string';
 
     $response = $sdk->companies->getCompanies($request);
 
@@ -123,7 +131,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -159,7 +171,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCompaniesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -205,7 +221,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PatchCompaniesLinkUnlinkIdRequest;
 use \test\BREVO\Models\Operations\PatchCompaniesLinkUnlinkIdRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -215,13 +235,13 @@ try {
         478673,
     ];
     $request->requestBody->linkDealsIds = [
-        'calculating',
+        'string',
     ];
     $request->requestBody->unlinkContactIds = [
-        820744,
+        514435,
     ];
     $request->requestBody->unlinkDealsIds = [
-        'West',
+        'string',
     ];
     $request->id = '<ID>';
 
@@ -265,7 +285,11 @@ use \test\BREVO\Models\Operations\PatchCompaniesIdRequest;
 use \test\BREVO\Models\Operations\PatchCompaniesIdRequestBody;
 use \test\BREVO\Models\Operations\PatchCompaniesIdRequestBodyAttributes;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -315,7 +339,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PostCompaniesRequestBody;
 use \test\BREVO\Models\Operations\PostCompaniesRequestBodyAttributes;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

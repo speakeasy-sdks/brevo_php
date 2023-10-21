@@ -34,7 +34,11 @@ use \test\BREVO\Models\Shared\Order;
 use \test\BREVO\Models\Shared\OrderBilling;
 use \test\BREVO\Models\Shared\OrderProducts;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -84,7 +88,11 @@ use \test\BREVO\Models\Shared\Order;
 use \test\BREVO\Models\Shared\OrderBilling;
 use \test\BREVO\Models\Shared\OrderProducts;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -99,7 +107,7 @@ try {
     $request->billing->postCode = '4052';
     $request->billing->region = 'Northwestern Switzerland';
     $request->coupons = [
-        'Marketing',
+        'string',
     ];
     $request->createdAt = '2021-07-29T20:59:23.383Z';
     $request->email = 'example@brevo.com';
@@ -149,7 +157,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateUpdateBatchCategory;
 use \test\BREVO\Models\Shared\CreateUpdateCategories;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -198,7 +210,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateUpdateBatchProducts;
 use \test\BREVO\Models\Shared\CreateUpdateProducts;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -246,7 +262,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateUpdateCategory;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -295,24 +315,28 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateUpdateProduct;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new CreateUpdateProduct();
     $request->categories = [
-        'content',
+        'string',
     ];
-    $request->deletedAt = 'Tactics zero Chromium';
+    $request->deletedAt = 'string';
     $request->id = 'P11';
     $request->imageUrl = 'http://mydomain.com/product-absoulte-url/img.jpeg';
     $request->metaInfo = [
-        'Honda' => 'invoice',
+        'content' => 'string',
     ];
     $request->name = 'Iphone 11';
-    $request->parentId = 'steradian bandwidth';
-    $request->price = 9504.18;
-    $request->sku = 'port psst';
+    $request->parentId = 'string';
+    $request->price = 7600.86;
+    $request->sku = 'string';
     $request->updateEnabled = false;
     $request->url = 'http://mydomain.com/product/electronics/product1';
 
@@ -355,18 +379,22 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCategoriesRequest;
 use \test\BREVO\Models\Operations\GetCategoriesSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetCategoriesRequest();
     $request->ids = [
-        'Diesel',
+        'string',
     ];
-    $request->limit = 585980;
-    $request->name = 'red Fluorine Cisgender';
-    $request->offset = 165902;
-    $request->sort = GetCategoriesSort::Asc;
+    $request->limit = 806522;
+    $request->name = 'string';
+    $request->offset = 152083;
+    $request->sort = GetCategoriesSort::Desc;
 
     $response = $sdk->ecommerce->getCategories($request);
 
@@ -406,7 +434,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCategoryInfoRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -451,7 +483,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetProductInfoRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -497,26 +533,30 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetProductsRequest;
 use \test\BREVO\Models\Operations\GetProductsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetProductsRequest();
     $request->categories = [
-        'transmitter',
+        'string',
     ];
     $request->ids = [
-        'candela',
+        'string',
     ];
-    $request->limit = 356174;
-    $request->name = 'Computer sky Hyundai';
-    $request->offset = 151059;
-    $request->priceEq = 1139.39;
-    $request->priceGt = 344.76;
-    $request->priceGte = 2976.54;
-    $request->priceLt = 3895.87;
-    $request->priceLte = 1974.67;
-    $request->priceNe = 5782.43;
+    $request->limit = 530985;
+    $request->name = 'string';
+    $request->offset = 818885;
+    $request->priceEq = 7490.81;
+    $request->priceGt = 1751.87;
+    $request->priceGte = 3561.74;
+    $request->priceLt = 6920.07;
+    $request->priceLte = 2190.35;
+    $request->priceNe = 849.64;
     $request->sort = GetProductsSort::Desc;
 
     $response = $sdk->ecommerce->getProducts($request);
@@ -556,7 +596,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

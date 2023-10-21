@@ -23,12 +23,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetInboundEmailAttachmentRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetInboundEmailAttachmentRequest();
-    $request->downloadToken = 'Trans';
+    $request->downloadToken = 'string';
 
     $response = $sdk->inboundParsing->getInboundEmailAttachment($request);
 
@@ -69,17 +73,21 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetInboundEmailEventsRequest;
 use \test\BREVO\Models\Operations\GetInboundEmailEventsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetInboundEmailEventsRequest();
-    $request->endDate = 'Home disappointment Specialist';
-    $request->limit = 772189;
-    $request->offset = 827566;
-    $request->sender = 'RSS Taylor';
+    $request->endDate = 'string';
+    $request->limit = 717459;
+    $request->offset = 401477;
+    $request->sender = 'string';
     $request->sort = GetInboundEmailEventsSort::Desc;
-    $request->startDate = 'unleash Bicycle Oregon';
+    $request->startDate = 'string';
 
     $response = $sdk->inboundParsing->getInboundEmailEvents($request);
 
@@ -119,7 +127,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetInboundEmailEventsByUuidRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

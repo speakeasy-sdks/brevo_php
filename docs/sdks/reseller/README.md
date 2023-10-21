@@ -37,7 +37,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\AddCreditsRequest;
 use \test\BREVO\Models\Shared\AddCredits;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -45,7 +49,7 @@ try {
     $request->addCredits = new AddCredits();
     $request->addCredits->email = 1200;
     $request->addCredits->sms = 450;
-    $request->childIdentifier = 'female';
+    $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->addCredits($request);
 
@@ -86,12 +90,16 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\AssociateIpToChildRequest;
 use \test\BREVO\Models\Shared\ManageIp;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new AssociateIpToChildRequest();
-    $request->childIdentifier = 'over as Assistant';
+    $request->childIdentifier = 'string';
     $request->manageIp = new ManageIp();
     $request->manageIp->ip = '123.65.8.22';
 
@@ -134,14 +142,18 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\CreateChildDomainRequest;
 use \test\BREVO\Models\Shared\AddChildDomain;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new CreateChildDomainRequest();
     $request->addChildDomain = new AddChildDomain();
     $request->addChildDomain->domain = 'mychilddomain.com';
-    $request->childIdentifier = 'Bedfordshire Kuwait';
+    $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->createChildDomain($request);
 
@@ -182,7 +194,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateChild;
 use \test\BREVO\Models\Shared\CreateChildLanguage;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -232,13 +248,17 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteChildDomainRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new DeleteChildDomainRequest();
-    $request->childIdentifier = 'Seaborgium Books Mouse';
-    $request->domainName = 'clumsy-bloodflow.info';
+    $request->childIdentifier = 'string';
+    $request->domainName = 'silver-redesign.org';
 
     $response = $sdk->reseller->deleteChildDomain($request);
 
@@ -278,12 +298,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteResellerChildRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new DeleteResellerChildRequest();
-    $request->childIdentifier = 'Southeast Facilitator impactful';
+    $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->deleteResellerChild($request);
 
@@ -324,12 +348,16 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DissociateIpFromChildRequest;
 use \test\BREVO\Models\Shared\ManageIp;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new DissociateIpFromChildRequest();
-    $request->childIdentifier = 'Northeast Buckinghamshire';
+    $request->childIdentifier = 'string';
     $request->manageIp = new ManageIp();
     $request->manageIp->ip = '123.65.8.22';
 
@@ -371,12 +399,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetChildAccountCreationStatusRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetChildAccountCreationStatusRequest();
-    $request->childIdentifier = 'Erbium major ugh';
+    $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->getChildAccountCreationStatus($request);
 
@@ -416,12 +448,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetChildDomainsRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetChildDomainsRequest();
-    $request->childIdentifier = '1080p Chair Convertible';
+    $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->getChildDomains($request);
 
@@ -461,12 +497,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetChildInfoRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetChildInfoRequest();
-    $request->childIdentifier = 'Circle';
+    $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->getChildInfo($request);
 
@@ -506,7 +546,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetResellerChildsRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -552,12 +596,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetSsoTokenRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetSsoTokenRequest();
-    $request->childIdentifier = 'capacitor Hybrid';
+    $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->getSsoToken($request);
 
@@ -598,12 +646,16 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\RemoveCreditsRequest;
 use \test\BREVO\Models\Shared\RemoveCredits;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new RemoveCreditsRequest();
-    $request->childIdentifier = 'Northeast Sedan';
+    $request->childIdentifier = 'string';
     $request->removeCredits = new RemoveCredits();
     $request->removeCredits->email = 500;
     $request->removeCredits->sms = 300;
@@ -647,12 +699,16 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\UpdateChildAccountStatusRequest;
 use \test\BREVO\Models\Shared\UpdateChildAccountStatus;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new UpdateChildAccountStatusRequest();
-    $request->childIdentifier = 'past teal Shreveport';
+    $request->childIdentifier = 'string';
     $request->updateChildAccountStatus = new UpdateChildAccountStatus();
     $request->updateChildAccountStatus->marketingAutomation = true;
     $request->updateChildAccountStatus->smsCampaign = true;
@@ -698,13 +754,17 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\UpdateChildDomainRequest;
 use \test\BREVO\Models\Shared\UpdateChildDomain;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new UpdateChildDomainRequest();
-    $request->childIdentifier = 'female perspiciatis Polestar';
-    $request->domainName = 'rough-sense.com';
+    $request->childIdentifier = 'string';
+    $request->domainName = 'turbulent-quotation.biz';
     $request->updateChildDomain = new UpdateChildDomain();
     $request->updateChildDomain->domain = 'myupdateddomain.com';
 
@@ -747,12 +807,16 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\UpdateResellerChildRequest;
 use \test\BREVO\Models\Shared\UpdateChild;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new UpdateResellerChildRequest();
-    $request->childIdentifier = 'Loan lavender';
+    $request->childIdentifier = 'string';
     $request->updateChild = new UpdateChild();
     $request->updateChild->companyName = 'Your Company';
     $request->updateChild->email = 'josh.cruise@example.com';

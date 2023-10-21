@@ -26,7 +26,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteCrmTasksIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -74,24 +78,28 @@ use \test\BREVO\Models\Operations\GetCrmTasksFilterDate;
 use \test\BREVO\Models\Operations\GetCrmTasksFilterStatus;
 use \test\BREVO\Models\Operations\GetCrmTasksSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetCrmTasksRequest();
     $request->dateFrom = 347707;
     $request->dateTo = 258884;
-    $request->filterAssignTo = 'API transparent';
-    $request->filterCompanies = 'JSON';
-    $request->filterContacts = 'Gasoline coulomb Industrial';
+    $request->filterAssignTo = 'string';
+    $request->filterCompanies = 'string';
+    $request->filterContacts = 'string';
     $request->filterDate = GetCrmTasksFilterDate::Week;
-    $request->filterDeals = 'Jaguar Handcrafted Analyst';
+    $request->filterDeals = 'string';
     $request->filterStatus = GetCrmTasksFilterStatus::Done;
-    $request->filterType = 'monitor Latin Doral';
-    $request->limit = 594385;
-    $request->offset = 854904;
-    $request->sort = GetCrmTasksSort::Asc;
-    $request->sortBy = 'eyeballs facere';
+    $request->filterType = 'string';
+    $request->limit = 92194;
+    $request->offset = 295949;
+    $request->sort = GetCrmTasksSort::Desc;
+    $request->sortBy = 'string';
 
     $response = $sdk->tasks->getCrmTasks($request);
 
@@ -131,7 +139,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCrmTasksIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -175,7 +187,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -215,7 +231,11 @@ use \test\BREVO\Models\Shared\TaskReminder;
 use \test\BREVO\Models\Shared\TaskReminderTypes;
 use \test\BREVO\Models\Shared\TaskReminderUnit;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -223,14 +243,14 @@ try {
     $request->requestBody = new PatchCrmTasksIdRequestBody();
     $request->requestBody->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->requestBody->companiesIds = [
-        'Tugrik',
+        'string',
     ];
     $request->requestBody->contactsIds = [
-        570569,
+        426328,
     ];
     $request->requestBody->date = DateTime::createFromFormat('Y-m-d\TH:i:s+', '2021-11-01T17:44:54.668Z');
     $request->requestBody->dealsIds = [
-        'Creative',
+        'string',
     ];
     $request->requestBody->done = false;
     $request->requestBody->duration = 600000;
@@ -240,7 +260,7 @@ try {
     $request->requestBody->reminder->types = [
         TaskReminderTypes::Push,
     ];
-    $request->requestBody->reminder->unit = TaskReminderUnit::Days;
+    $request->requestBody->reminder->unit = TaskReminderUnit::Weeks;
     $request->requestBody->reminder->value = 10;
     $request->requestBody->taskTypeId = '61a5cd07ca1347c82306ad09';
     $request->id = '<ID>';
@@ -286,21 +306,25 @@ use \test\BREVO\Models\Shared\TaskReminder;
 use \test\BREVO\Models\Shared\TaskReminderTypes;
 use \test\BREVO\Models\Shared\TaskReminderUnit;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new PostCrmTasksRequestBody();
     $request->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->companiesIds = [
-        'Beauty',
+        'string',
     ];
     $request->contactsIds = [
-        741484,
+        185663,
     ];
     $request->date = DateTime::createFromFormat('Y-m-d\TH:i:s+', '2021-11-01T17:44:54.668Z');
     $request->dealsIds = [
-        'disintermediate',
+        'string',
     ];
     $request->done = false;
     $request->duration = 600000;
@@ -308,9 +332,9 @@ try {
     $request->notes = 'In communication with client for resolution of queries.';
     $request->reminder = new TaskReminder();
     $request->reminder->types = [
-        TaskReminderTypes::Email,
+        TaskReminderTypes::Push,
     ];
-    $request->reminder->unit = TaskReminderUnit::Hours;
+    $request->reminder->unit = TaskReminderUnit::Weeks;
     $request->reminder->value = 10;
     $request->taskTypeId = '61a5cd07ca1347c82306ad09';
 

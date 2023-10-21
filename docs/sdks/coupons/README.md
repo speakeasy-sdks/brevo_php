@@ -25,7 +25,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\CreateCouponCollectionRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -71,7 +75,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\CreateCouponsRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -119,12 +127,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCouponCollectionRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetCouponCollectionRequest();
-    $request->id = 'silver why';
+    $request->id = 'string';
 
     $response = $sdk->coupons->getCouponCollection($request);
 
@@ -165,7 +177,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCouponCollectionsRequest;
 use \test\BREVO\Models\Operations\GetCouponCollectionsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -213,14 +229,18 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\UpdateCouponCollectionRequest;
 use \test\BREVO\Models\Operations\UpdateCouponCollectionRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new UpdateCouponCollectionRequest();
     $request->requestBody = new UpdateCouponCollectionRequestBody();
     $request->requestBody->defaultCoupon = '10 OFF';
-    $request->id = 'spice Maud driver';
+    $request->id = 'string';
 
     $response = $sdk->coupons->updateCouponCollection($request);
 

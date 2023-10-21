@@ -25,7 +25,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteCrmNotesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -72,7 +76,11 @@ use \test\BREVO\Models\Operations\GetCrmNotesRequest;
 use \test\BREVO\Models\Operations\GetCrmNotesEntity;
 use \test\BREVO\Models\Operations\GetCrmNotesSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -80,9 +88,9 @@ try {
     $request->dateFrom = 734797;
     $request->dateTo = 292043;
     $request->entity = GetCrmNotesEntity::Contacts;
-    $request->entityIds = 'Gender quantify dicta';
-    $request->limit = 473993;
-    $request->offset = 141964;
+    $request->entityIds = 'string';
+    $request->limit = 672070;
+    $request->offset = 601102;
     $request->sort = GetCrmNotesSort::Asc;
 
     $response = $sdk->notes->getCrmNotes($request);
@@ -123,7 +131,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCrmNotesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -169,20 +181,24 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PatchCrmNotesIdRequest;
 use \test\BREVO\Models\Shared\NoteData;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new PatchCrmNotesIdRequest();
     $request->noteData = new NoteData();
     $request->noteData->companyIds = [
-        'circuit',
+        'string',
     ];
     $request->noteData->contactIds = [
-        232473,
+        535017,
     ];
     $request->noteData->dealIds = [
-        'et',
+        'string',
     ];
     $request->noteData->text = 'In communication with client for resolution of queries.';
     $request->id = '<ID>';
@@ -225,19 +241,23 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\NoteData;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new NoteData();
     $request->companyIds = [
-        'Supervisor',
+        'string',
     ];
     $request->contactIds = [
-        468322,
+        684262,
     ];
     $request->dealIds = [
-        'Organized',
+        'string',
     ];
     $request->text = 'In communication with client for resolution of queries.';
 

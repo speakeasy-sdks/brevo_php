@@ -30,7 +30,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteCorporateSubAccountIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -75,15 +79,19 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetAccountActivityRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetAccountActivityRequest();
-    $request->endDate = 'sexy';
-    $request->limit = 934904;
-    $request->offset = 840801;
-    $request->startDate = 'VGA';
+    $request->endDate = 'string';
+    $request->limit = 87824;
+    $request->offset = 280117;
+    $request->startDate = 'string';
 
     $response = $sdk->masterAccount->getAccountActivity($request);
 
@@ -122,7 +130,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -158,7 +170,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCorporateSubAccountRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -204,7 +220,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCorporateSubAccountIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -250,7 +270,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateSubAccount;
 use \test\BREVO\Models\Shared\CreateSubAccountLanguage;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -298,7 +322,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PostCorporateSubAccountKeyRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -345,7 +373,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBody;
 use \test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBodyTarget;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -394,7 +426,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PutCorporateSubAccountIdApplicationsToggleRequest;
 use \test\BREVO\Models\Shared\SubAccountAppsToggleRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -456,7 +492,11 @@ use \test\BREVO\Models\Shared\SubAccountUpdatePlanRequest;
 use \test\BREVO\Models\Shared\SubAccountUpdatePlanRequestCredits;
 use \test\BREVO\Models\Shared\SubAccountUpdatePlanRequestFeatures;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

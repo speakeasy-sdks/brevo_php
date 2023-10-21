@@ -27,7 +27,11 @@ use \test\BREVO\Models\Shared\CreateExternalFeed;
 use \test\BREVO\Models\Shared\CreateExternalFeedAuthType;
 use \test\BREVO\Models\Shared\CreateExternalFeedHeaders;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -82,7 +86,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteExternalFeedRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -129,7 +137,11 @@ use \test\BREVO\Models\Operations\GetAllExternalFeedsRequest;
 use \test\BREVO\Models\Operations\GetAllExternalFeedsAuthType;
 use \test\BREVO\Models\Operations\GetAllExternalFeedsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -138,9 +150,9 @@ try {
     $request->endDate = DateTime::createFromFormat('Y-m-d', '2022-12-17');
     $request->limit = 611577;
     $request->offset = 408687;
-    $request->search = 'Bentley';
-    $request->sort = GetAllExternalFeedsSort::Desc;
-    $request->startDate = DateTime::createFromFormat('Y-m-d', '2021-02-23');
+    $request->search = 'string';
+    $request->sort = GetAllExternalFeedsSort::Asc;
+    $request->startDate = DateTime::createFromFormat('Y-m-d', '2023-06-18');
 
     $response = $sdk->externalFeeds->getAllExternalFeeds($request);
 
@@ -180,7 +192,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetExternalFeedByUUIDRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -228,7 +244,11 @@ use \test\BREVO\Models\Shared\UpdateExternalFeed;
 use \test\BREVO\Models\Shared\UpdateExternalFeedAuthType;
 use \test\BREVO\Models\Shared\UpdateExternalFeedHeaders;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

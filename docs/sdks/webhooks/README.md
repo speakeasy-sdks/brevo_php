@@ -28,7 +28,11 @@ use \test\BREVO\Models\Shared\CreateWebhook;
 use \test\BREVO\Models\Shared\CreateWebhookEvents;
 use \test\BREVO\Models\Shared\CreateWebhookType;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -79,7 +83,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteWebhookRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -123,11 +131,15 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
-'female'
+'string'
 
     $response = $sdk->webhooks->exportWebhooksHistory($request);
 
@@ -167,7 +179,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetWebhookRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -214,7 +230,11 @@ use \test\BREVO\Models\Operations\GetWebhooksRequest;
 use \test\BREVO\Models\Operations\GetWebhooksSort;
 use \test\BREVO\Models\Operations\GetWebhooksType;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -262,7 +282,11 @@ use \test\BREVO\Models\Operations\UpdateWebhookRequest;
 use \test\BREVO\Models\Shared\UpdateWebhook;
 use \test\BREVO\Models\Shared\UpdateWebhookEvents;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

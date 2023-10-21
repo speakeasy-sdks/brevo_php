@@ -31,7 +31,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateSmsCampaign;
 use \test\BREVO\Models\Shared\CreateSmsCampaignRecipients;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -89,7 +93,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteSmsCampaignRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -134,7 +142,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetSmsCampaignRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -181,16 +193,20 @@ use \test\BREVO\Models\Operations\GetSmsCampaignsRequest;
 use \test\BREVO\Models\Operations\GetSmsCampaignsSort;
 use \test\BREVO\Models\Operations\GetSmsCampaignsStatus;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetSmsCampaignsRequest();
-    $request->endDate = 'Transgender';
-    $request->limit = 254166;
-    $request->offset = 682896;
-    $request->sort = GetSmsCampaignsSort::Asc;
-    $request->startDate = 'circa';
+    $request->endDate = 'string';
+    $request->limit = 200697;
+    $request->offset = 609082;
+    $request->sort = GetSmsCampaignsSort::Desc;
+    $request->startDate = 'string';
     $request->status = GetSmsCampaignsStatus::Suspended;
 
     $response = $sdk->smsCampaigns->getSmsCampaigns($request);
@@ -233,7 +249,11 @@ use \test\BREVO\Models\Operations\RequestSmsRecipientExportRequest;
 use \test\BREVO\Models\Shared\RequestSmsRecipientExport;
 use \test\BREVO\Models\Shared\RequestSmsRecipientExportRecipientsType;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -281,7 +301,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\SendSmsCampaignNowRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -329,7 +353,11 @@ use \test\BREVO\Models\Shared\SendReport;
 use \test\BREVO\Models\Shared\SendReportEmail;
 use \test\BREVO\Models\Shared\SendReportLanguage;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -382,7 +410,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\SendTestSmsRequest;
 use \test\BREVO\Models\Shared\SendTestSms;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -431,7 +463,11 @@ use \test\BREVO\Models\Operations\UpdateSmsCampaignRequest;
 use \test\BREVO\Models\Shared\UpdateSmsCampaign;
 use \test\BREVO\Models\Shared\UpdateSmsCampaignRecipients;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -493,7 +529,11 @@ use \test\BREVO\Models\Operations\UpdateSmsCampaignStatusRequest;
 use \test\BREVO\Models\Shared\UpdateCampaignStatus;
 use \test\BREVO\Models\Shared\UpdateCampaignStatusStatus;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

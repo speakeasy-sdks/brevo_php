@@ -36,7 +36,11 @@ use \test\BREVO\Models\Shared\CreateEmailCampaignRecipients;
 use \test\BREVO\Models\Shared\CreateEmailCampaignSender;
 use \test\BREVO\Models\Shared\CreateEmailCampaignWinnerCriteria;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -54,7 +58,7 @@ try {
     $request->mirrorActive = true;
     $request->name = 'Newsletter - May 2017';
     $request->params = [
-        'wield' => 'online',
+        'wield' => 'string',
     ];
     $request->previewText = 'Thanks for your order!';
     $request->recipients = new CreateEmailCampaignRecipients();
@@ -79,7 +83,7 @@ try {
     $request->subjectA = 'Discover the New Collection!';
     $request->subjectB = 'Want to discover the New Collection?';
     $request->tag = 'Newsletter';
-    $request->templateId = 449692;
+    $request->templateId = 487466;
     $request->toField = '{FNAME} {LNAME}';
     $request->unsubscriptionPageId = '62cbb7fabbe85021021aac52';
     $request->updateFormId = '6313436b9ad40e23b371d095';
@@ -125,7 +129,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteEmailCampaignRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -172,7 +180,11 @@ use \test\BREVO\Models\Operations\EmailExportRecipientsRequest;
 use \test\BREVO\Models\Shared\EmailExportRecipients;
 use \test\BREVO\Models\Shared\EmailExportRecipientsRecipientsType;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -220,7 +232,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetAbTestCampaignResultRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -266,7 +282,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetEmailCampaignRequest;
 use \test\BREVO\Models\Operations\GetEmailCampaignStatistics;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -317,19 +337,23 @@ use \test\BREVO\Models\Operations\GetEmailCampaignsStatistics;
 use \test\BREVO\Models\Operations\GetEmailCampaignsStatus;
 use \test\BREVO\Models\Operations\GetEmailCampaignsType;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetEmailCampaignsRequest();
-    $request->endDate = 'Gorgeous';
-    $request->excludeHtmlContent = GetEmailCampaignsExcludeHTMLContent::False;
-    $request->limit = 729461;
-    $request->offset = 686479;
+    $request->endDate = 'string';
+    $request->excludeHtmlContent = GetEmailCampaignsExcludeHTMLContent::True;
+    $request->limit = 276251;
+    $request->offset = 238074;
     $request->sort = GetEmailCampaignsSort::Asc;
-    $request->startDate = 'Dynamic metrics';
-    $request->statistics = GetEmailCampaignsStatistics::StatsByDomain;
-    $request->status = GetEmailCampaignsStatus::Suspended;
+    $request->startDate = 'string';
+    $request->statistics = GetEmailCampaignsStatistics::LinksStats;
+    $request->status = GetEmailCampaignsStatus::Archive;
     $request->type = GetEmailCampaignsType::Trigger;
 
     $response = $sdk->emailCampaigns->getEmailCampaigns($request);
@@ -370,7 +394,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetSharedTemplateUrlRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -415,7 +443,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\SendEmailCampaignNowRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -463,7 +495,11 @@ use \test\BREVO\Models\Shared\SendReport;
 use \test\BREVO\Models\Shared\SendReportEmail;
 use \test\BREVO\Models\Shared\SendReportLanguage;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -516,7 +552,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\SendTestEmailRequest;
 use \test\BREVO\Models\Shared\SendTestEmail;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -567,7 +607,11 @@ use \test\BREVO\Models\Operations\UpdateCampaignStatusRequest;
 use \test\BREVO\Models\Shared\UpdateCampaignStatus;
 use \test\BREVO\Models\Shared\UpdateCampaignStatusStatus;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -618,7 +662,11 @@ use \test\BREVO\Models\Shared\UpdateEmailCampaignRecipients;
 use \test\BREVO\Models\Shared\UpdateEmailCampaignSender;
 use \test\BREVO\Models\Shared\UpdateEmailCampaignWinnerCriteria;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -638,7 +686,7 @@ try {
     $request->updateEmailCampaign->mirrorActive = true;
     $request->updateEmailCampaign->name = 'Newsletter - May 2017';
     $request->updateEmailCampaign->params = [
-        'Bicycle' => 'gah',
+        'Bicycle' => 'string',
     ];
     $request->updateEmailCampaign->previewText = 'Thanks for your order!';
     $request->updateEmailCampaign->recipients = new UpdateEmailCampaignRecipients();
@@ -709,7 +757,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\UploadImageToGallery;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

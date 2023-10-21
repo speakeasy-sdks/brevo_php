@@ -21,7 +21,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -57,15 +61,19 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetAccountActivityRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetAccountActivityRequest();
-    $request->endDate = 'sexy';
-    $request->limit = 934904;
-    $request->offset = 840801;
-    $request->startDate = 'VGA';
+    $request->endDate = 'string';
+    $request->limit = 87824;
+    $request->offset = 280117;
+    $request->startDate = 'string';
 
     $response = $sdk->account->getAccountActivity($request);
 

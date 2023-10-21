@@ -24,19 +24,23 @@ use \test\BREVO\Models\Operations\GetWhatsappEventReportRequest;
 use \test\BREVO\Models\Operations\GetWhatsappEventReportEvent;
 use \test\BREVO\Models\Operations\GetWhatsappEventReportSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetWhatsappEventReportRequest();
     $request->contactNumber = '217-450-0860 x3202';
     $request->days = 322054;
-    $request->endDate = 'Associate';
-    $request->event = GetWhatsappEventReportEvent::Reply;
-    $request->limit = 584529;
-    $request->offset = 461097;
-    $request->sort = GetWhatsappEventReportSort::Asc;
-    $request->startDate = 'Response manager';
+    $request->endDate = 'string';
+    $request->event = GetWhatsappEventReportEvent::Sent;
+    $request->limit = 686968;
+    $request->offset = 60200;
+    $request->sort = GetWhatsappEventReportSort::Desc;
+    $request->startDate = 'string';
 
     $response = $sdk->transactionalWhatsApp->getWhatsappEventReport($request);
 
@@ -75,11 +79,15 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
-'however'
+'string'
 
     $response = $sdk->transactionalWhatsApp->sendWhatsappMessage($request);
 

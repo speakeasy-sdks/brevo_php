@@ -22,7 +22,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetProcessRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -68,7 +72,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetProcessesRequest;
 use \test\BREVO\Models\Operations\GetProcessesSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

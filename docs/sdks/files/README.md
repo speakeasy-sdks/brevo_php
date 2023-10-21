@@ -25,7 +25,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteCrmFilesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -72,7 +76,11 @@ use \test\BREVO\Models\Operations\GetCrmFilesRequest;
 use \test\BREVO\Models\Operations\GetCrmFilesEntity;
 use \test\BREVO\Models\Operations\GetCrmFilesSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -80,10 +88,10 @@ try {
     $request->dateFrom = 736297;
     $request->dateTo = 40718;
     $request->entity = GetCrmFilesEntity::Deals;
-    $request->entityIds = 'Northwest';
-    $request->limit = 166880;
-    $request->offset = 912552;
-    $request->sort = GetCrmFilesSort::Desc;
+    $request->entityIds = 'string';
+    $request->limit = 240606;
+    $request->offset = 115165;
+    $request->sort = GetCrmFilesSort::Asc;
 
     $response = $sdk->files->getCrmFiles($request);
 
@@ -123,7 +131,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCrmFilesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -168,7 +180,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetCrmFilesIdDataRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -214,17 +230,21 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PostCrmFilesRequestBody;
 use \test\BREVO\Models\Operations\PostCrmFilesRequestBodyFile;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new PostCrmFilesRequestBody();
-    $request->companyId = 'teal';
-    $request->contactId = 105729;
-    $request->dealId = 'white withdrawal invoice';
+    $request->companyId = 'string';
+    $request->contactId = 256288;
+    $request->dealId = 'string';
     $request->file = new PostCrmFilesRequestBodyFile();
-    $request->file->content = 'na2x]k.caf';
-    $request->file->file = 'Genderflux';
+    $request->file->content = 'k3*ek8J:Kt';
+    $request->file->file = 'string';
 
     $response = $sdk->files->postCrmFiles($request);
 

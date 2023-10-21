@@ -41,7 +41,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\BlockDomain;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -87,7 +91,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\CreateSmtpTemplate;
 use \test\BREVO\Models\Shared\CreateSmtpTemplateSender;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -144,7 +152,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteBlockedDomainRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -189,7 +201,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\DeleteHardbounces;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -236,12 +252,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteScheduledEmailByIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new DeleteScheduledEmailByIdRequest();
-    $request->identifier = 'Representative';
+    $request->identifier = 'string';
 
     $response = $sdk->transactionalEmails->deleteScheduledEmailById($request);
 
@@ -281,7 +301,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteSmtpTemplateRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -326,7 +350,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteSmtpBlockedContactsEmailRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -371,12 +399,16 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteSmtpLogMessageIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new DeleteSmtpLogMessageIdRequest();
-    $request->messageId = 'North';
+    $request->messageId = 'string';
 
     $response = $sdk->transactionalEmails->deleteSmtpLogMessageId($request);
 
@@ -416,15 +448,19 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetAggregatedSmtpReportRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetAggregatedSmtpReportRequest();
     $request->days = 49808;
-    $request->endDate = 'Electric solution Lillie';
-    $request->startDate = 'similar Northwest Passenger';
-    $request->tag = 'Gloves';
+    $request->endDate = 'string';
+    $request->startDate = 'string';
+    $request->tag = 'string';
 
     $response = $sdk->transactionalEmails->getAggregatedSmtpReport($request);
 
@@ -463,7 +499,11 @@ require_once 'vendor/autoload.php';
 use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -501,22 +541,26 @@ use \test\BREVO\Models\Operations\GetEmailEventReportRequest;
 use \test\BREVO\Models\Operations\GetEmailEventReportEvent;
 use \test\BREVO\Models\Operations\GetEmailEventReportSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetEmailEventReportRequest();
     $request->days = 140058;
     $request->email = 'Saige.Keebler63@yahoo.com';
-    $request->endDate = 'Bronze till';
-    $request->event = GetEmailEventReportEvent::Spam;
-    $request->limit = 476032;
-    $request->messageId = 'Chief';
-    $request->offset = 406264;
+    $request->endDate = 'string';
+    $request->event = GetEmailEventReportEvent::Clicks;
+    $request->limit = 265644;
+    $request->messageId = 'string';
+    $request->offset = 736837;
     $request->sort = GetEmailEventReportSort::Asc;
-    $request->startDate = 'Bacon Meta';
-    $request->tags = 'lavender grey Loan';
-    $request->templateId = 981263;
+    $request->startDate = 'string';
+    $request->tags = 'string';
+    $request->templateId = 427801;
 
     $response = $sdk->transactionalEmails->getEmailEventReport($request);
 
@@ -558,17 +602,21 @@ use \test\BREVO\Models\Operations\GetScheduledEmailByIdRequest;
 use \test\BREVO\Models\Operations\GetScheduledEmailByIdSort;
 use \test\BREVO\Models\Operations\GetScheduledEmailByIdStatus;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetScheduledEmailByIdRequest();
     $request->endDate = DateTime::createFromFormat('Y-m-d', '2021-10-03');
-    $request->identifier = 'South';
-    $request->limit = 151127;
-    $request->offset = 37388;
+    $request->identifier = 'string';
+    $request->limit = 169392;
+    $request->offset = 19100;
     $request->sort = GetScheduledEmailByIdSort::Desc;
-    $request->startDate = DateTime::createFromFormat('Y-m-d', '2021-11-17');
+    $request->startDate = DateTime::createFromFormat('Y-m-d', '2021-06-15');
     $request->status = GetScheduledEmailByIdStatus::Processed;
 
     $response = $sdk->transactionalEmails->getScheduledEmailById($request);
@@ -610,18 +658,22 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetSmtpReportRequest;
 use \test\BREVO\Models\Operations\GetSmtpReportSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetSmtpReportRequest();
     $request->days = 6474;
-    $request->endDate = 'gold';
-    $request->limit = 576771;
-    $request->offset = 123325;
+    $request->endDate = 'string';
+    $request->limit = 183433;
+    $request->offset = 786117;
     $request->sort = GetSmtpReportSort::Desc;
-    $request->startDate = 'Gorgeous';
-    $request->tag = 'reboot';
+    $request->startDate = 'string';
+    $request->tag = 'string';
 
     $response = $sdk->transactionalEmails->getSmtpReport($request);
 
@@ -661,7 +713,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetSmtpTemplateRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -707,7 +763,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetSmtpTemplatesRequest;
 use \test\BREVO\Models\Operations\GetSmtpTemplatesSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -756,19 +816,23 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetTransacBlockedContactsRequest;
 use \test\BREVO\Models\Operations\GetTransacBlockedContactsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetTransacBlockedContactsRequest();
-    $request->endDate = 'Kong';
-    $request->limit = 101472;
-    $request->offset = 745130;
+    $request->endDate = 'string';
+    $request->limit = 309106;
+    $request->offset = 420163;
     $request->senders = [
-        'Director',
+        'string',
     ];
     $request->sort = GetTransacBlockedContactsSort::Asc;
-    $request->startDate = 'Country Other Saint';
+    $request->startDate = 'string';
 
     $response = $sdk->transactionalEmails->getTransacBlockedContacts($request);
 
@@ -808,7 +872,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetTransacEmailContentRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -854,19 +922,23 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetTransacEmailsListRequest;
 use \test\BREVO\Models\Operations\GetTransacEmailsListSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetTransacEmailsListRequest();
     $request->email = 'Carmel_McLaughlin64@hotmail.com';
-    $request->endDate = 'male';
-    $request->limit = 839474;
-    $request->messageId = 'Bronze';
-    $request->offset = 914843;
-    $request->sort = GetTransacEmailsListSort::Asc;
-    $request->startDate = 'derby';
-    $request->templateId = 613938;
+    $request->endDate = 'string';
+    $request->limit = 16086;
+    $request->messageId = 'string';
+    $request->offset = 704759;
+    $request->sort = GetTransacEmailsListSort::Desc;
+    $request->startDate = 'string';
+    $request->templateId = 839474;
 
     $response = $sdk->transactionalEmails->getTransacEmailsList($request);
 
@@ -907,7 +979,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\SendTestTemplateRequest;
 use \test\BREVO\Models\Shared\SendTestEmail;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -967,7 +1043,11 @@ use \test\BREVO\Models\Shared\SendSmtpEmailReplyTo;
 use \test\BREVO\Models\Shared\SendSmtpEmailSender;
 use \test\BREVO\Models\Shared\SendSmtpEmailTo;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -983,14 +1063,14 @@ try {
         new SendSmtpEmailCc(),
     ];
     $request->headers = [
-        'voluptatem' => 'Northwest',
+        'voluptatem' => 'string',
     ];
     $request->htmlContent = '<!DOCTYPE html> <html> <body> <h1>Confirm you email</h1> <p>Please confirm your email address by clicking on the link below</p> </body> </html>';
     $request->messageVersions = [
         new SendSmtpEmailMessageVersions(),
     ];
     $request->params = [
-        'Weber' => 'Sedan',
+        'Northwest' => 'string',
     ];
     $request->replyTo = new SendSmtpEmailReplyTo();
     $request->replyTo->email = 'ann6533@example.com';
@@ -1050,7 +1130,11 @@ use \test\BREVO\Models\Operations\UpdateSmtpTemplateRequest;
 use \test\BREVO\Models\Shared\UpdateSmtpTemplate;
 use \test\BREVO\Models\Shared\UpdateSmtpTemplateSender;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

@@ -29,7 +29,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteConversationsMessagesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -74,7 +78,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -119,7 +127,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetConversationsMessagesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -164,7 +176,11 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetConversationsPushedMessagesIdRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -209,15 +225,19 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PostConversationsAgentOnlinePingRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new PostConversationsAgentOnlinePingRequestBody();
-    $request->agentEmail = 'joule';
-    $request->agentId = 'Southwest';
-    $request->agentName = 'up';
-    $request->receivedFrom = 'Hybrid';
+    $request->agentEmail = 'string';
+    $request->agentId = 'string';
+    $request->agentName = 'string';
+    $request->receivedFrom = 'string';
 
     $response = $sdk->conversations->postConversationsAgentOnlinePing($request);
 
@@ -257,17 +277,21 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PostConversationsMessagesRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new PostConversationsMessagesRequestBody();
-    $request->agentEmail = 'Loan';
-    $request->agentId = 'bikini';
-    $request->agentName = 'Interface';
-    $request->receivedFrom = 'Electric';
-    $request->text = 'teal';
-    $request->visitorId = 'port';
+    $request->agentEmail = 'string';
+    $request->agentId = 'string';
+    $request->agentName = 'string';
+    $request->receivedFrom = 'string';
+    $request->text = 'string';
+    $request->visitorId = 'string';
 
     $response = $sdk->conversations->postConversationsMessages($request);
 
@@ -307,15 +331,19 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PostConversationsPushedMessagesRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new PostConversationsPushedMessagesRequestBody();
-    $request->agentId = 'Fiat';
-    $request->groupId = 'Malta';
-    $request->text = 'fuchsia';
-    $request->visitorId = 'humongous';
+    $request->agentId = 'string';
+    $request->groupId = 'string';
+    $request->text = 'string';
+    $request->visitorId = 'string';
 
     $response = $sdk->conversations->postConversationsPushedMessages($request);
 
@@ -356,13 +384,17 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PutConversationsMessagesIdRequest;
 use \test\BREVO\Models\Operations\PutConversationsMessagesIdRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new PutConversationsMessagesIdRequest();
     $request->requestBody = new PutConversationsMessagesIdRequestBody();
-    $request->requestBody->text = '4th';
+    $request->requestBody->text = 'string';
     $request->id = '<ID>';
 
     $response = $sdk->conversations->putConversationsMessagesId($request);
@@ -404,13 +436,17 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\PutConversationsPushedMessagesIdRequest;
 use \test\BREVO\Models\Operations\PutConversationsPushedMessagesIdRequestBody;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new PutConversationsPushedMessagesIdRequest();
     $request->requestBody = new PutConversationsPushedMessagesIdRequestBody();
-    $request->requestBody->text = 'from unhappy North';
+    $request->requestBody->text = 'string';
     $request->id = '<ID>';
 
     $response = $sdk->conversations->putConversationsPushedMessagesId($request);

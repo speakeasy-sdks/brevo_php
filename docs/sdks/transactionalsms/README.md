@@ -26,20 +26,24 @@ use \test\BREVO\Models\Operations\GetSmsEventsRequest;
 use \test\BREVO\Models\Operations\GetSmsEventsEvent;
 use \test\BREVO\Models\Operations\GetSmsEventsSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetSmsEventsRequest();
     $request->days = 922986;
-    $request->endDate = 'Central Officer Integration';
-    $request->event = GetSmsEventsEvent::Replies;
-    $request->limit = 58787;
-    $request->offset = 817473;
-    $request->phoneNumber = 'software female';
-    $request->sort = GetSmsEventsSort::Asc;
-    $request->startDate = 'solutions group';
-    $request->tags = 'boo';
+    $request->endDate = 'string';
+    $request->event = GetSmsEventsEvent::Blocked;
+    $request->limit = 648983;
+    $request->offset = 491120;
+    $request->phoneNumber = 'string';
+    $request->sort = GetSmsEventsSort::Desc;
+    $request->startDate = 'string';
+    $request->tags = 'string';
 
     $response = $sdk->transactionalSMS->getSmsEvents($request);
 
@@ -79,15 +83,19 @@ use \test\BREVO\Brevo;
 use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetTransacAggregatedSmsReportRequest;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetTransacAggregatedSmsReportRequest();
     $request->days = 40533;
-    $request->endDate = 'applications';
-    $request->startDate = 'circa embryo Land';
-    $request->tag = 'Loan';
+    $request->endDate = 'string';
+    $request->startDate = 'string';
+    $request->tag = 'string';
 
     $response = $sdk->transactionalSMS->getTransacAggregatedSmsReport($request);
 
@@ -128,16 +136,20 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Operations\GetTransacSmsReportRequest;
 use \test\BREVO\Models\Operations\GetTransacSmsReportSort;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
     $request = new GetTransacSmsReportRequest();
     $request->days = 183250;
-    $request->endDate = 'merrily Applications';
+    $request->endDate = 'string';
     $request->sort = GetTransacSmsReportSort::Desc;
-    $request->startDate = 'executive';
-    $request->tag = 'Ramp Developer while';
+    $request->startDate = 'string';
+    $request->tag = 'string';
 
     $response = $sdk->transactionalSMS->getTransacSmsReport($request);
 
@@ -178,7 +190,11 @@ use \test\BREVO\Models\Shared\Security;
 use \test\BREVO\Models\Shared\SendTransacSms;
 use \test\BREVO\Models\Shared\SendTransacSmsType;
 
+$security = new Security();
+$security->apiKey = '';
+
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {

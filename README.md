@@ -36,10 +36,14 @@ composer update
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use test\BREVO\Brevo;
+use test\BREVO\Models\Shared\Security;
+
+$security = new Security();
+$security->apiKey = '';
 
 $sdk = Brevo::builder()
+    ->setSecurity($security)
     ->build();
 
 try {
@@ -51,6 +55,7 @@ try {
 } catch (Exception $e) {
     // handle exception
 }
+
 ```
 <!-- End SDK Example Usage -->
 
