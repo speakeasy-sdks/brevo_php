@@ -24,22 +24,22 @@ class GetWhatsAppConfig
     /**
      * Status of the name associated with WhatsApp Phone number
      * 
-     * @var ?\test\BREVO\Models\Shared\GetWhatsAppConfigPhoneNumberNameStatus $phoneNumberNameStatus
+     * @var ?\test\BREVO\Models\Shared\PhoneNumberNameStatus $phoneNumberNameStatus
      */
 	#[\JMS\Serializer\Annotation\SerializedName('phoneNumberNameStatus')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetWhatsAppConfigPhoneNumberNameStatus>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\PhoneNumberNameStatus>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetWhatsAppConfigPhoneNumberNameStatus $phoneNumberNameStatus = null;
+    public ?PhoneNumberNameStatus $phoneNumberNameStatus = null;
     
     /**
      * Quality status of phone number associated with WhatsApp account. There are three quality ratings. example - **High (GREEN) , Medium (YELLOW) and Low(RED)**
      * 
-     * @var ?\test\BREVO\Models\Shared\GetWhatsAppConfigPhoneNumberQuality $phoneNumberQuality
+     * @var ?\test\BREVO\Models\Shared\PhoneNumberQuality $phoneNumberQuality
      */
 	#[\JMS\Serializer\Annotation\SerializedName('phoneNumberQuality')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetWhatsAppConfigPhoneNumberQuality>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\PhoneNumberQuality>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetWhatsAppConfigPhoneNumberQuality $phoneNumberQuality = null;
+    public ?PhoneNumberQuality $phoneNumberQuality = null;
     
     /**
      * Sending limit Information of the WhatsApp API account
@@ -64,12 +64,12 @@ class GetWhatsAppConfig
     /**
      * Status information related to WhatsApp API account
      * 
-     * @var ?\test\BREVO\Models\Shared\GetWhatsAppConfigWhatsappBusinessAccountStatus $whatsappBusinessAccountStatus
+     * @var ?\test\BREVO\Models\Shared\WhatsappBusinessAccountStatus $whatsappBusinessAccountStatus
      */
 	#[\JMS\Serializer\Annotation\SerializedName('whatsappBusinessAccountStatus')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetWhatsAppConfigWhatsappBusinessAccountStatus>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\WhatsappBusinessAccountStatus>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetWhatsAppConfigWhatsappBusinessAccountStatus $whatsappBusinessAccountStatus = null;
+    public ?WhatsappBusinessAccountStatus $whatsappBusinessAccountStatus = null;
     
 	public function __construct()
 	{

@@ -23,11 +23,11 @@ class CreateWhatsAppTemplate
     /**
      * Category of the template
      * 
-     * @var \test\BREVO\Models\Shared\CreateWhatsAppTemplateCategory $category
+     * @var \test\BREVO\Models\Shared\Category $category
      */
 	#[\JMS\Serializer\Annotation\SerializedName('category')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\CreateWhatsAppTemplateCategory>')]
-    public CreateWhatsAppTemplateCategory $category;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\Category>')]
+    public Category $category;
     
     /**
      * Text content of the header in the template. **Maximum allowed characters are 45**
@@ -80,7 +80,7 @@ class CreateWhatsAppTemplate
 	public function __construct()
 	{
 		$this->bodyText = "";
-		$this->category = \test\BREVO\Models\Shared\CreateWhatsAppTemplateCategory::Marketing;
+		$this->category = \test\BREVO\Models\Shared\Category::Marketing;
 		$this->headerText = null;
 		$this->language = "";
 		$this->mediaUrl = null;

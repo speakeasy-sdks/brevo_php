@@ -47,15 +47,17 @@ class Coupons
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\CreateCouponCollectionResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
         if ($httpResponse->getStatusCode() === 201) {
             if (Utils\Utils::matchContentType($contentType, 'application/json')) {
                 $serializer = Utils\JSON::createSerializer();
-                $response->createCouponCollection201ApplicationJSONObject = $serializer->deserialize((string)$httpResponse->getBody(), 'test\BREVO\Models\Operations\CreateCouponCollection201ApplicationJSON', 'json');
+                $response->object = $serializer->deserialize((string)$httpResponse->getBody(), 'test\BREVO\Models\Operations\CreateCouponCollectionResponseBody', 'json');
             }
         }
         else if ($httpResponse->getStatusCode() === 400 or $httpResponse->getStatusCode() === 401) {
@@ -94,8 +96,10 @@ class Coupons
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\CreateCouponsResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
@@ -132,8 +136,10 @@ class Coupons
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\GetCouponCollectionResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
@@ -175,8 +181,10 @@ class Coupons
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\GetCouponCollectionsResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
@@ -222,15 +230,17 @@ class Coupons
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\UpdateCouponCollectionResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
         if ($httpResponse->getStatusCode() === 200) {
             if (Utils\Utils::matchContentType($contentType, 'application/json')) {
                 $serializer = Utils\JSON::createSerializer();
-                $response->updateCouponCollection200ApplicationJSONObject = $serializer->deserialize((string)$httpResponse->getBody(), 'test\BREVO\Models\Operations\UpdateCouponCollection200ApplicationJSON', 'json');
+                $response->object = $serializer->deserialize((string)$httpResponse->getBody(), 'test\BREVO\Models\Operations\UpdateCouponCollectionResponseBody', 'json');
             }
         }
         else if ($httpResponse->getStatusCode() === 400 or $httpResponse->getStatusCode() === 401) {

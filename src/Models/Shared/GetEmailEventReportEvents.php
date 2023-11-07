@@ -32,11 +32,11 @@ class GetEmailEventReportEvents
     /**
      * Event which occurred
      * 
-     * @var \test\BREVO\Models\Shared\GetEmailEventReportEventsEvent $event
+     * @var \test\BREVO\Models\Shared\Event $event
      */
 	#[\JMS\Serializer\Annotation\SerializedName('event')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetEmailEventReportEventsEvent>')]
-    public GetEmailEventReportEventsEvent $event;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\Event>')]
+    public Event $event;
     
     /**
      * Sender email from which the emails are sent
@@ -121,7 +121,7 @@ class GetEmailEventReportEvents
 	{
 		$this->date = "";
 		$this->email = "";
-		$this->event = \test\BREVO\Models\Shared\GetEmailEventReportEventsEvent::Bounces;
+		$this->event = \test\BREVO\Models\Shared\Event::Bounces;
 		$this->from = null;
 		$this->ip = null;
 		$this->link = null;

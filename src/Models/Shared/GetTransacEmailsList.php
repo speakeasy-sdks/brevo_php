@@ -24,10 +24,10 @@ class GetTransacEmailsList
     /**
      * $transactionalEmails
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetTransacEmailsListTransactionalEmails> $transactionalEmails
+     * @var ?array<\test\BREVO\Models\Shared\TransactionalEmails> $transactionalEmails
      */
 	#[\JMS\Serializer\Annotation\SerializedName('transactionalEmails')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetTransacEmailsListTransactionalEmails>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\TransactionalEmails>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $transactionalEmails = null;
     

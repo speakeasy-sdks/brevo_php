@@ -30,10 +30,10 @@ class GetProcessesRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetProcessesSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetProcessesQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetProcessesSort $sort = null;
+    public ?GetProcessesQueryParamSort $sort = null;
     
 	public function __construct()
 	{

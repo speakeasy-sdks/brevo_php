@@ -20,20 +20,20 @@ class TaskReminder
     /**
      * Type of task reminder e.g email, push
      * 
-     * @var array<\test\BREVO\Models\Shared\TaskReminderTypes> $types
+     * @var array<\test\BREVO\Models\Shared\Types> $types
      */
 	#[\JMS\Serializer\Annotation\SerializedName('types')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<test\BREVO\Models\Shared\TaskReminderTypes>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<test\BREVO\Models\Shared\Types>>')]
     public array $types;
     
     /**
      * Unit of time before reminder is to be sent
      * 
-     * @var \test\BREVO\Models\Shared\TaskReminderUnit $unit
+     * @var \test\BREVO\Models\Shared\Unit $unit
      */
 	#[\JMS\Serializer\Annotation\SerializedName('unit')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\TaskReminderUnit>')]
-    public TaskReminderUnit $unit;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\Unit>')]
+    public Unit $unit;
     
     /**
      * Value of time unit before reminder is to be sent
@@ -47,7 +47,7 @@ class TaskReminder
 	public function __construct()
 	{
 		$this->types = [];
-		$this->unit = \test\BREVO\Models\Shared\TaskReminderUnit::Minutes;
+		$this->unit = \test\BREVO\Models\Shared\Unit::Minutes;
 		$this->value = 0;
 	}
 }

@@ -45,8 +45,10 @@ class TransactionalWhatsApp
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\GetWhatsappEventReportResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
@@ -94,15 +96,17 @@ class TransactionalWhatsApp
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\SendWhatsappMessageResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
         if ($httpResponse->getStatusCode() === 201) {
             if (Utils\Utils::matchContentType($contentType, 'application/json')) {
                 $serializer = Utils\JSON::createSerializer();
-                $response->sendWhatsappMessage201ApplicationJSONObject = $serializer->deserialize((string)$httpResponse->getBody(), 'test\BREVO\Models\Operations\SendWhatsappMessage201ApplicationJSON', 'json');
+                $response->object = $serializer->deserialize((string)$httpResponse->getBody(), 'test\BREVO\Models\Operations\SendWhatsappMessageResponseBody', 'json');
             }
         }
         else if ($httpResponse->getStatusCode() === 400) {

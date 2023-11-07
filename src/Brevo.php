@@ -45,51 +45,51 @@ class Brevo
   	
 	public Account $account;
 	
+	public Ecommerce $ecommerce;
+	
 	public Companies $companies;
 	
 	public Contacts $contacts;
 	
 	public Conversations $conversations;
 	
+	public MasterAccount $masterAccount;
+	
 	public Coupons $coupons;
 	
 	public Deals $deals;
 	
-	public Domains $domains;
+	public Files $files;
 	
-	public Ecommerce $ecommerce;
+	public Notes $notes;
+	
+	public Tasks $tasks;
 	
 	public EmailCampaigns $emailCampaigns;
 	
 	public ExternalFeeds $externalFeeds;
 	
-	public Files $files;
-	
 	public InboundParsing $inboundParsing;
 	
-	public MasterAccount $masterAccount;
-	
-	public Notes $notes;
+	public User $user;
 	
 	public Process $process;
 	
 	public Reseller $reseller;
 	
-	public SMSCampaigns $smsCampaigns;
-	
 	public Senders $senders;
 	
-	public Tasks $tasks;
+	public Domains $domains;
 	
-	public TransactionalSMS $transactionalSMS;
-	
-	public TransactionalWhatsApp $transactionalWhatsApp;
+	public SMSCampaigns $smsCampaigns;
 	
 	public TransactionalEmails $transactionalEmails;
 	
-	public User $user;
+	public TransactionalSMS $transactionalSMS;
 	
 	public Webhooks $webhooks;
+	
+	public TransactionalWhatsApp $transactionalWhatsApp;
 	
 	public WhatsAppCampaigns $whatsAppCampaigns;
 		
@@ -114,51 +114,51 @@ class Brevo
 		
 		$this->account = new Account($this->sdkConfiguration);
 		
+		$this->ecommerce = new Ecommerce($this->sdkConfiguration);
+		
 		$this->companies = new Companies($this->sdkConfiguration);
 		
 		$this->contacts = new Contacts($this->sdkConfiguration);
 		
 		$this->conversations = new Conversations($this->sdkConfiguration);
 		
+		$this->masterAccount = new MasterAccount($this->sdkConfiguration);
+		
 		$this->coupons = new Coupons($this->sdkConfiguration);
 		
 		$this->deals = new Deals($this->sdkConfiguration);
 		
-		$this->domains = new Domains($this->sdkConfiguration);
+		$this->files = new Files($this->sdkConfiguration);
 		
-		$this->ecommerce = new Ecommerce($this->sdkConfiguration);
+		$this->notes = new Notes($this->sdkConfiguration);
+		
+		$this->tasks = new Tasks($this->sdkConfiguration);
 		
 		$this->emailCampaigns = new EmailCampaigns($this->sdkConfiguration);
 		
 		$this->externalFeeds = new ExternalFeeds($this->sdkConfiguration);
 		
-		$this->files = new Files($this->sdkConfiguration);
-		
 		$this->inboundParsing = new InboundParsing($this->sdkConfiguration);
 		
-		$this->masterAccount = new MasterAccount($this->sdkConfiguration);
-		
-		$this->notes = new Notes($this->sdkConfiguration);
+		$this->user = new User($this->sdkConfiguration);
 		
 		$this->process = new Process($this->sdkConfiguration);
 		
 		$this->reseller = new Reseller($this->sdkConfiguration);
 		
-		$this->smsCampaigns = new SMSCampaigns($this->sdkConfiguration);
-		
 		$this->senders = new Senders($this->sdkConfiguration);
 		
-		$this->tasks = new Tasks($this->sdkConfiguration);
+		$this->domains = new Domains($this->sdkConfiguration);
 		
-		$this->transactionalSMS = new TransactionalSMS($this->sdkConfiguration);
-		
-		$this->transactionalWhatsApp = new TransactionalWhatsApp($this->sdkConfiguration);
+		$this->smsCampaigns = new SMSCampaigns($this->sdkConfiguration);
 		
 		$this->transactionalEmails = new TransactionalEmails($this->sdkConfiguration);
 		
-		$this->user = new User($this->sdkConfiguration);
+		$this->transactionalSMS = new TransactionalSMS($this->sdkConfiguration);
 		
 		$this->webhooks = new Webhooks($this->sdkConfiguration);
+		
+		$this->transactionalWhatsApp = new TransactionalWhatsApp($this->sdkConfiguration);
 		
 		$this->whatsAppCampaigns = new WhatsAppCampaigns($this->sdkConfiguration);
 	}

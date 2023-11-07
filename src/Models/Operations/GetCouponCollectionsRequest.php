@@ -30,10 +30,10 @@ class GetCouponCollectionsRequest
     /**
      * Sort the results by creation time in ascending/descending order
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCouponCollectionsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetCouponCollectionsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetCouponCollectionsSort $sort = null;
+    public ?GetCouponCollectionsQueryParamSort $sort = null;
     
 	public function __construct()
 	{

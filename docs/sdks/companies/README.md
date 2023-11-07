@@ -1,5 +1,5 @@
 # Companies
-(*companies*)
+
 
 ### Available Operations
 
@@ -23,19 +23,19 @@ Delete a company
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteCompaniesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteCompaniesIdRequest();
+    $request = new Operations\DeleteCompaniesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->companies->deleteCompaniesId($request);
@@ -72,26 +72,25 @@ Get all Companies
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCompaniesRequest;
-use \test\BREVO\Models\Operations\GetCompaniesSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCompaniesRequest();
+    $request = new Operations\GetCompaniesRequest();
     $request->filters = 'string';
     $request->limit = 817302;
     $request->linkedContactsIds = 571205;
     $request->linkedDealsIds = 'string';
     $request->page = 66234;
-    $request->sort = GetCompaniesSort::Desc;
+    $request->sort = Operations\Sort::Desc;
     $request->sortBy = 'string';
 
     $response = $sdk->companies->getCompanies($request);
@@ -128,13 +127,13 @@ Get company attributes
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -167,19 +166,19 @@ Get a company
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCompaniesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCompaniesIdRequest();
+    $request = new Operations\GetCompaniesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->companies->getCompaniesId($request);
@@ -216,21 +215,20 @@ Link and Unlink company with contact and deal
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PatchCompaniesLinkUnlinkIdRequest;
-use \test\BREVO\Models\Operations\PatchCompaniesLinkUnlinkIdRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PatchCompaniesLinkUnlinkIdRequest();
-    $request->requestBody = new PatchCompaniesLinkUnlinkIdRequestBody();
+    $request = new Operations\PatchCompaniesLinkUnlinkIdRequest();
+    $request->requestBody = new Operations\PatchCompaniesLinkUnlinkIdRequestBody();
     $request->requestBody->linkContactIds = [
         478673,
     ];
@@ -279,23 +277,21 @@ Update a company
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PatchCompaniesIdRequest;
-use \test\BREVO\Models\Operations\PatchCompaniesIdRequestBody;
-use \test\BREVO\Models\Operations\PatchCompaniesIdRequestBodyAttributes;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PatchCompaniesIdRequest();
-    $request->requestBody = new PatchCompaniesIdRequestBody();
-    $request->requestBody->attributes = new PatchCompaniesIdRequestBodyAttributes();
+    $request = new Operations\PatchCompaniesIdRequest();
+    $request->requestBody = new Operations\PatchCompaniesIdRequestBody();
+    $request->requestBody->attributes = new Operations\Attributes();
     $request->requestBody->countryCode = 91;
     $request->requestBody->name = 'company';
     $request->id = '<ID>';
@@ -334,27 +330,26 @@ Create a company
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PostCompaniesRequestBody;
-use \test\BREVO\Models\Operations\PostCompaniesRequestBodyAttributes;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PostCompaniesRequestBody();
-    $request->attributes = new PostCompaniesRequestBodyAttributes();
+    $request = new Operations\PostCompaniesRequestBody();
+    $request->attributes = new Operations\PostCompaniesAttributes();
     $request->countryCode = 91;
     $request->name = 'company';
 
     $response = $sdk->companies->postCompanies($request);
 
-    if ($response->postCompanies200ApplicationJSONObject !== null) {
+    if ($response->object !== null) {
         // handle response
     }
 } catch (Exception $e) {

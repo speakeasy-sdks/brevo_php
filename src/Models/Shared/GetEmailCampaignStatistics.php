@@ -14,29 +14,29 @@ class GetEmailCampaignStatistics
     /**
      * List-wise statistics of the campaign.
      * 
-     * @var array<\test\BREVO\Models\Shared\GetEmailCampaignStatisticsCampaignStats> $campaignStats
+     * @var array<\test\BREVO\Models\Shared\GetEmailCampaignCampaignStats> $campaignStats
      */
 	#[\JMS\Serializer\Annotation\SerializedName('campaignStats')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetEmailCampaignStatisticsCampaignStats>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetEmailCampaignCampaignStats>')]
     public array $campaignStats;
     
     /**
      * Overall statistics of the campaign
      * 
-     * @var \test\BREVO\Models\Shared\GetEmailCampaignStatisticsGlobalStats $globalStats
+     * @var \test\BREVO\Models\Shared\GlobalStats $globalStats
      */
 	#[\JMS\Serializer\Annotation\SerializedName('globalStats')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetEmailCampaignStatisticsGlobalStats')]
-    public GetEmailCampaignStatisticsGlobalStats $globalStats;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GlobalStats')]
+    public GlobalStats $globalStats;
     
     /**
      * Statistics about the number of clicks for the links
      * 
-     * @var \test\BREVO\Models\Shared\GetEmailCampaignStatisticsLinksStats $linksStats
+     * @var \test\BREVO\Models\Shared\LinksStats $linksStats
      */
 	#[\JMS\Serializer\Annotation\SerializedName('linksStats')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetEmailCampaignStatisticsLinksStats')]
-    public GetEmailCampaignStatisticsLinksStats $linksStats;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\LinksStats')]
+    public LinksStats $linksStats;
     
     /**
      * Number of clicks on mirror link
@@ -81,8 +81,8 @@ class GetEmailCampaignStatistics
 	public function __construct()
 	{
 		$this->campaignStats = [];
-		$this->globalStats = new \test\BREVO\Models\Shared\GetEmailCampaignStatisticsGlobalStats();
-		$this->linksStats = new \test\BREVO\Models\Shared\GetEmailCampaignStatisticsLinksStats();
+		$this->globalStats = new \test\BREVO\Models\Shared\GlobalStats();
+		$this->linksStats = new \test\BREVO\Models\Shared\LinksStats();
 		$this->mirrorClick = 0;
 		$this->remaining = 0;
 		$this->statsByBrowser = [];

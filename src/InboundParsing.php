@@ -44,8 +44,10 @@ class InboundParsing
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\GetInboundEmailAttachmentResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
@@ -53,7 +55,7 @@ class InboundParsing
             $response->headers = $httpResponse->getHeaders();
             
             if (Utils\Utils::matchContentType($contentType, 'application/octet-stream')) {
-                $response->getInboundEmailAttachment200ApplicationOctetStreamBinaryString = $httpResponse->getBody()->getContents();
+                $response->bytes = $httpResponse->getBody()->getContents();
             }
         }
         else if ($httpResponse->getStatusCode() === 400 or $httpResponse->getStatusCode() === 404) {
@@ -90,8 +92,10 @@ class InboundParsing
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\GetInboundEmailEventsResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         
@@ -134,8 +138,10 @@ class InboundParsing
         
         $contentType = $httpResponse->getHeader('Content-Type')[0] ?? '';
 
+        $statusCode = $httpResponse->getStatusCode();
+
         $response = new \test\BREVO\Models\Operations\GetInboundEmailEventsByUuidResponse();
-        $response->statusCode = $httpResponse->getStatusCode();
+        $response->statusCode = $statusCode;
         $response->contentType = $contentType;
         $response->rawResponse = $httpResponse;
         

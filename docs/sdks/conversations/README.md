@@ -1,5 +1,5 @@
 # Conversations
-(*conversations*)
+
 
 ### Available Operations
 
@@ -25,19 +25,19 @@ Only agents’ messages can be deleted.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteConversationsMessagesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteConversationsMessagesIdRequest();
+    $request = new Operations\DeleteConversationsMessagesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->conversations->deleteConversationsMessagesId($request);
@@ -74,19 +74,19 @@ Delete an automated message
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteConversationsPushedMessagesIdRequest();
+    $request = new Operations\DeleteConversationsPushedMessagesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->conversations->deleteConversationsPushedMessagesId($request);
@@ -123,19 +123,19 @@ Get a message
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetConversationsMessagesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetConversationsMessagesIdRequest();
+    $request = new Operations\GetConversationsMessagesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->conversations->getConversationsMessagesId($request);
@@ -172,19 +172,19 @@ Get an automated message
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetConversationsPushedMessagesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetConversationsPushedMessagesIdRequest();
+    $request = new Operations\GetConversationsPushedMessagesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->conversations->getConversationsPushedMessagesId($request);
@@ -221,19 +221,19 @@ We recommend pinging this endpoint every minute for as long as the agent has to 
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PostConversationsAgentOnlinePingRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PostConversationsAgentOnlinePingRequestBody();
+    $request = new Operations\PostConversationsAgentOnlinePingRequestBody();
     $request->agentEmail = 'string';
     $request->agentId = 'string';
     $request->agentName = 'string';
@@ -273,19 +273,19 @@ Send a message as an agent
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PostConversationsMessagesRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PostConversationsMessagesRequestBody();
+    $request = new Operations\PostConversationsMessagesRequestBody();
     $request->agentEmail = 'string';
     $request->agentId = 'string';
     $request->agentName = 'string';
@@ -327,19 +327,19 @@ Example of automated messages: order status, announce new features in your web a
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PostConversationsPushedMessagesRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PostConversationsPushedMessagesRequestBody();
+    $request = new Operations\PostConversationsPushedMessagesRequestBody();
     $request->agentId = 'string';
     $request->groupId = 'string';
     $request->text = 'string';
@@ -379,21 +379,20 @@ Only agents’ messages can be edited.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PutConversationsMessagesIdRequest;
-use \test\BREVO\Models\Operations\PutConversationsMessagesIdRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PutConversationsMessagesIdRequest();
-    $request->requestBody = new PutConversationsMessagesIdRequestBody();
+    $request = new Operations\PutConversationsMessagesIdRequest();
+    $request->requestBody = new Operations\PutConversationsMessagesIdRequestBody();
     $request->requestBody->text = 'string';
     $request->id = '<ID>';
 
@@ -431,21 +430,20 @@ Update an automated message
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PutConversationsPushedMessagesIdRequest;
-use \test\BREVO\Models\Operations\PutConversationsPushedMessagesIdRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PutConversationsPushedMessagesIdRequest();
-    $request->requestBody = new PutConversationsPushedMessagesIdRequestBody();
+    $request = new Operations\PutConversationsPushedMessagesIdRequest();
+    $request->requestBody = new Operations\PutConversationsPushedMessagesIdRequestBody();
     $request->requestBody->text = 'string';
     $request->id = '<ID>';
 

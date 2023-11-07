@@ -24,10 +24,10 @@ class GetFolders
     /**
      * $folders
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetFoldersFolders> $folders
+     * @var ?array<\test\BREVO\Models\Shared\Folders> $folders
      */
 	#[\JMS\Serializer\Annotation\SerializedName('folders')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetFoldersFolders>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Folders>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $folders = null;
     

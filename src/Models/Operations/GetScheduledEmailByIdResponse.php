@@ -46,10 +46,10 @@ class GetScheduledEmailByIdResponse
     /**
      * Scheduled email batches
      * 
-     * @var mixed $getScheduledEmailById200ApplicationJSONOneOf
+     * @var mixed $oneOf
      */
 	
-    public mixed $getScheduledEmailById200ApplicationJSONOneOf = null;
+    public mixed $oneOf = null;
     
 	public function __construct()
 	{
@@ -57,6 +57,6 @@ class GetScheduledEmailByIdResponse
 		$this->statusCode = 0;
 		$this->rawResponse = null;
 		$this->errorModel = null;
-		$this->getScheduledEmailById200ApplicationJSONOneOf = null;
+		$this->oneOf = null;
 	}
 }

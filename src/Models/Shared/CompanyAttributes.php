@@ -20,10 +20,10 @@ class CompanyAttributes
     /**
      * $attributeOptions
      * 
-     * @var ?array<\test\BREVO\Models\Shared\CompanyAttributesAttributeOptions> $attributeOptions
+     * @var ?array<\test\BREVO\Models\Shared\AttributeOptions> $attributeOptions
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attributeOptions')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\CompanyAttributesAttributeOptions>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\AttributeOptions>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $attributeOptions = null;
     

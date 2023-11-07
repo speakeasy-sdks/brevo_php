@@ -43,12 +43,12 @@ class PostCorporateSubAccountSsoTokenRequestBody
      * * **sms_transactional** - Redirect to Sms Transactional after login
      * 
      * 
-     * @var ?\test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBodyTarget $target
+     * @var ?\test\BREVO\Models\Operations\Target $target
      */
 	#[\JMS\Serializer\Annotation\SerializedName('target')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBodyTarget>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Operations\Target>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?PostCorporateSubAccountSsoTokenRequestBodyTarget $target = null;
+    public ?Target $target = null;
     
     /**
      * Set the full target URL after login success. The user will land directly on this target URL after login

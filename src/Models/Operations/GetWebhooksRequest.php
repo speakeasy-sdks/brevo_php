@@ -14,18 +14,18 @@ class GetWebhooksRequest
     /**
      * Sort the results in the ascending/descending order of webhook creation
      * 
-     * @var ?\test\BREVO\Models\Operations\GetWebhooksSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetWebhooksQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetWebhooksSort $sort = null;
+    public ?GetWebhooksQueryParamSort $sort = null;
     
     /**
      * Filter on webhook type
      * 
-     * @var ?\test\BREVO\Models\Operations\GetWebhooksType $type
+     * @var ?\test\BREVO\Models\Operations\QueryParamType $type
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=type')]
-    public ?GetWebhooksType $type = null;
+    public ?QueryParamType $type = null;
     
 	public function __construct()
 	{

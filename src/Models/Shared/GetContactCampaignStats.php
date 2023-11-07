@@ -20,87 +20,87 @@ class GetContactCampaignStats
     /**
      * $clicked
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetContactCampaignStatsClicked> $clicked
+     * @var ?array<\test\BREVO\Models\Shared\Clicked> $clicked
      */
 	#[\JMS\Serializer\Annotation\SerializedName('clicked')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetContactCampaignStatsClicked>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Clicked>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $clicked = null;
     
     /**
      * $complaints
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetContactCampaignStatsComplaints> $complaints
+     * @var ?array<\test\BREVO\Models\Shared\Complaints> $complaints
      */
 	#[\JMS\Serializer\Annotation\SerializedName('complaints')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetContactCampaignStatsComplaints>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Complaints>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $complaints = null;
     
     /**
      * $delivered
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetContactCampaignStatsDelivered> $delivered
+     * @var ?array<\test\BREVO\Models\Shared\Delivered> $delivered
      */
 	#[\JMS\Serializer\Annotation\SerializedName('delivered')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetContactCampaignStatsDelivered>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Delivered>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $delivered = null;
     
     /**
      * $hardBounces
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetContactCampaignStatsHardBounces> $hardBounces
+     * @var ?array<\test\BREVO\Models\Shared\HardBounces> $hardBounces
      */
 	#[\JMS\Serializer\Annotation\SerializedName('hardBounces')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetContactCampaignStatsHardBounces>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\HardBounces>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $hardBounces = null;
     
     /**
      * $messagesSent
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetContactCampaignStatsMessagesSent> $messagesSent
+     * @var ?array<\test\BREVO\Models\Shared\MessagesSent> $messagesSent
      */
 	#[\JMS\Serializer\Annotation\SerializedName('messagesSent')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetContactCampaignStatsMessagesSent>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\MessagesSent>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $messagesSent = null;
     
     /**
      * $opened
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetContactCampaignStatsOpened> $opened
+     * @var ?array<\test\BREVO\Models\Shared\Opened> $opened
      */
 	#[\JMS\Serializer\Annotation\SerializedName('opened')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetContactCampaignStatsOpened>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Opened>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $opened = null;
     
     /**
      * $softBounces
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetContactCampaignStatsSoftBounces> $softBounces
+     * @var ?array<\test\BREVO\Models\Shared\SoftBounces> $softBounces
      */
 	#[\JMS\Serializer\Annotation\SerializedName('softBounces')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetContactCampaignStatsSoftBounces>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\SoftBounces>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $softBounces = null;
     
     /**
      * $transacAttributes
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetContactCampaignStatsTransacAttributes> $transacAttributes
+     * @var ?array<\test\BREVO\Models\Shared\TransacAttributes> $transacAttributes
      */
 	#[\JMS\Serializer\Annotation\SerializedName('transacAttributes')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetContactCampaignStatsTransacAttributes>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\TransacAttributes>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $transacAttributes = null;
     
 	#[\JMS\Serializer\Annotation\SerializedName('unsubscriptions')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetContactCampaignStatsUnsubscriptions')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Unsubscriptions')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetContactCampaignStatsUnsubscriptions $unsubscriptions = null;
+    public ?Unsubscriptions $unsubscriptions = null;
     
 	public function __construct()
 	{

@@ -1,5 +1,5 @@
 # Deals
-(*deals*)
+
 
 ### Available Operations
 
@@ -26,19 +26,19 @@ Delete a deal
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteCrmDealsIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteCrmDealsIdRequest();
+    $request = new Operations\DeleteCrmDealsIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->deals->deleteCrmDealsId($request);
@@ -75,13 +75,13 @@ Get deal attributes
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -114,26 +114,25 @@ Get all deals
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmDealsRequest;
-use \test\BREVO\Models\Operations\GetCrmDealsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmDealsRequest();
+    $request = new Operations\GetCrmDealsRequest();
     $request->filtersAttributesDealName = 'string';
     $request->filtersLinkedCompaniesIds = 'string';
     $request->filtersLinkedContactsIds = 'string';
     $request->limit = 851588;
     $request->offset = 163297;
-    $request->sort = GetCrmDealsSort::Asc;
+    $request->sort = Operations\GetCrmDealsQueryParamSort::Asc;
 
     $response = $sdk->deals->getCrmDeals($request);
 
@@ -169,19 +168,19 @@ Get a deal
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmDealsIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmDealsIdRequest();
+    $request = new Operations\GetCrmDealsIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->deals->getCrmDealsId($request);
@@ -220,13 +219,13 @@ This endpoint is deprecated. Prefer /crm/pipeline/details/{pipelineID} instead.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -259,13 +258,13 @@ Get all pipelines
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -298,19 +297,19 @@ Get a pipeline
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmPipelineDetailsPipelineIDRequest();
+    $request = new Operations\GetCrmPipelineDetailsPipelineIDRequest();
     $request->pipelineID = 'string';
 
     $response = $sdk->deals->getCrmPipelineDetailsPipelineID($request);
@@ -347,21 +346,20 @@ Link and Unlink a deal with contacts and companies
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PatchCrmDealsLinkUnlinkIdRequest;
-use \test\BREVO\Models\Operations\PatchCrmDealsLinkUnlinkIdRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PatchCrmDealsLinkUnlinkIdRequest();
-    $request->requestBody = new PatchCrmDealsLinkUnlinkIdRequestBody();
+    $request = new Operations\PatchCrmDealsLinkUnlinkIdRequest();
+    $request->requestBody = new Operations\PatchCrmDealsLinkUnlinkIdRequestBody();
     $request->requestBody->linkCompanyIds = [
         'string',
     ];
@@ -410,23 +408,21 @@ Update a deal
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PatchCrmDealsIdRequest;
-use \test\BREVO\Models\Operations\PatchCrmDealsIdRequestBody;
-use \test\BREVO\Models\Operations\PatchCrmDealsIdRequestBodyAttributes;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PatchCrmDealsIdRequest();
-    $request->requestBody = new PatchCrmDealsIdRequestBody();
-    $request->requestBody->attributes = new PatchCrmDealsIdRequestBodyAttributes();
+    $request = new Operations\PatchCrmDealsIdRequest();
+    $request->requestBody = new Operations\PatchCrmDealsIdRequestBody();
+    $request->requestBody->attributes = new Operations\PatchCrmDealsIdAttributes();
     $request->requestBody->name = 'Deal: Connect with client';
     $request->id = '<ID>';
 
@@ -464,26 +460,25 @@ Create a deal
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PostCrmDealsRequestBody;
-use \test\BREVO\Models\Operations\PostCrmDealsRequestBodyAttributes;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PostCrmDealsRequestBody();
-    $request->attributes = new PostCrmDealsRequestBodyAttributes();
+    $request = new Operations\PostCrmDealsRequestBody();
+    $request->attributes = new Operations\PostCrmDealsAttributes();
     $request->name = 'Deal: Connect with company';
 
     $response = $sdk->deals->postCrmDeals($request);
 
-    if ($response->postCrmDeals201ApplicationJSONObject !== null) {
+    if ($response->object !== null) {
         // handle response
     }
 } catch (Exception $e) {

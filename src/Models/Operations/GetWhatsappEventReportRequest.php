@@ -42,10 +42,10 @@ class GetWhatsappEventReportRequest
     /**
      * Filter the report for a specific event type
      * 
-     * @var ?\test\BREVO\Models\Operations\GetWhatsappEventReportEvent $event
+     * @var ?\test\BREVO\Models\Operations\QueryParamEvent $event
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=event')]
-    public ?GetWhatsappEventReportEvent $event = null;
+    public ?QueryParamEvent $event = null;
     
     /**
      * Number limitation for the result returned
@@ -66,10 +66,10 @@ class GetWhatsappEventReportRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetWhatsappEventReportSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetWhatsappEventReportQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetWhatsappEventReportSort $sort = null;
+    public ?GetWhatsappEventReportQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used.** Starting date of the report (YYYY-MM-DD). Must be lower than equal to endDate

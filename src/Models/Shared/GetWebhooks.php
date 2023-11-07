@@ -14,10 +14,10 @@ class GetWebhooks
     /**
      * $webhooks
      * 
-     * @var array<\test\BREVO\Models\Shared\GetWebhooksWebhooks> $webhooks
+     * @var array<\test\BREVO\Models\Shared\Webhooks> $webhooks
      */
 	#[\JMS\Serializer\Annotation\SerializedName('webhooks')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetWebhooksWebhooks>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Webhooks>')]
     public array $webhooks;
     
 	public function __construct()

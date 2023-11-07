@@ -23,11 +23,11 @@ class GetWhatsappCampaignsCampaigns
     /**
      * Status of the WhatsApp Campaign
      * 
-     * @var \test\BREVO\Models\Shared\GetWhatsappCampaignsCampaignsCampaignStatus $campaignStatus
+     * @var \test\BREVO\Models\Shared\GetWhatsappCampaignsCampaignStatus $campaignStatus
      */
 	#[\JMS\Serializer\Annotation\SerializedName('campaignStatus')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetWhatsappCampaignsCampaignsCampaignStatus>')]
-    public GetWhatsappCampaignsCampaignsCampaignStatus $campaignStatus;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetWhatsappCampaignsCampaignStatus>')]
+    public GetWhatsappCampaignsCampaignStatus $campaignStatus;
     
     /**
      * Creation UTC date-time of the WhatsApp template (YYYY-MM-DDTHH:mm:ss.SSSZ)
@@ -112,7 +112,7 @@ class GetWhatsappCampaignsCampaigns
 	public function __construct()
 	{
 		$this->campaignName = "";
-		$this->campaignStatus = \test\BREVO\Models\Shared\GetWhatsappCampaignsCampaignsCampaignStatus::Draft;
+		$this->campaignStatus = \test\BREVO\Models\Shared\GetWhatsappCampaignsCampaignStatus::Draft;
 		$this->createdAt = "";
 		$this->errorReason = null;
 		$this->id = 0;

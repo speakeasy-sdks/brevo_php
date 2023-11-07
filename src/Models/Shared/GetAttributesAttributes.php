@@ -24,19 +24,19 @@ class GetAttributesAttributes
     /**
      * Category of the attribute
      * 
-     * @var \test\BREVO\Models\Shared\GetAttributesAttributesCategory $category
+     * @var \test\BREVO\Models\Shared\GetAttributesCategory $category
      */
 	#[\JMS\Serializer\Annotation\SerializedName('category')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetAttributesAttributesCategory>')]
-    public GetAttributesAttributesCategory $category;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetAttributesCategory>')]
+    public GetAttributesCategory $category;
     
     /**
      * Parameter only available for "category" type attributes.
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetAttributesAttributesEnumeration> $enumeration
+     * @var ?array<\test\BREVO\Models\Shared\GetAttributesEnumeration> $enumeration
      */
 	#[\JMS\Serializer\Annotation\SerializedName('enumeration')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetAttributesAttributesEnumeration>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetAttributesEnumeration>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $enumeration = null;
     
@@ -52,17 +52,17 @@ class GetAttributesAttributes
     /**
      * Type of the attribute
      * 
-     * @var ?\test\BREVO\Models\Shared\GetAttributesAttributesType $type
+     * @var ?\test\BREVO\Models\Shared\GetAttributesType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetAttributesAttributesType>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetAttributesType>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetAttributesAttributesType $type = null;
+    public ?GetAttributesType $type = null;
     
 	public function __construct()
 	{
 		$this->calculatedValue = null;
-		$this->category = \test\BREVO\Models\Shared\GetAttributesAttributesCategory::Normal;
+		$this->category = \test\BREVO\Models\Shared\GetAttributesCategory::Normal;
 		$this->enumeration = null;
 		$this->name = "";
 		$this->type = null;

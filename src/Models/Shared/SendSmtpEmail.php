@@ -20,10 +20,10 @@ class SendSmtpEmail
      * If `templateId` is passed and is in New Template Language format then both attachment url and content are accepted. If template is in Old template Language format, then `attachment` is ignored
      * 
      * 
-     * @var ?array<\test\BREVO\Models\Shared\SendSmtpEmailAttachment> $attachment
+     * @var ?array<\test\BREVO\Models\Shared\Attachment> $attachment
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attachment')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\SendSmtpEmailAttachment>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Attachment>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $attachment = null;
     
@@ -42,10 +42,10 @@ class SendSmtpEmail
      * 
      * 
      * 
-     * @var ?array<\test\BREVO\Models\Shared\SendSmtpEmailBcc> $bcc
+     * @var ?array<\test\BREVO\Models\Shared\Bcc> $bcc
      */
 	#[\JMS\Serializer\Annotation\SerializedName('bcc')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\SendSmtpEmailBcc>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Bcc>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $bcc = null;
     
@@ -54,10 +54,10 @@ class SendSmtpEmail
      * 
      * 
      * 
-     * @var ?array<\test\BREVO\Models\Shared\SendSmtpEmailCc> $cc
+     * @var ?array<\test\BREVO\Models\Shared\Cc> $cc
      */
 	#[\JMS\Serializer\Annotation\SerializedName('cc')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\SendSmtpEmailCc>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Cc>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $cc = null;
     
@@ -94,10 +94,10 @@ class SendSmtpEmail
      * You can follow this **step-by-step guide** on how to use **messageVersions** to batch send emails - **https://developers.brevo.com/docs/batch-send-transactional-emails**
      * 
      * 
-     * @var ?array<\test\BREVO\Models\Shared\SendSmtpEmailMessageVersions> $messageVersions
+     * @var ?array<\test\BREVO\Models\Shared\MessageVersions> $messageVersions
      */
 	#[\JMS\Serializer\Annotation\SerializedName('messageVersions')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\SendSmtpEmailMessageVersions>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\MessageVersions>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $messageVersions = null;
     
@@ -119,12 +119,12 @@ class SendSmtpEmail
      * **{"email":"ann6533@example.com", "name":"Ann"}**
      * 
      * 
-     * @var ?\test\BREVO\Models\Shared\SendSmtpEmailReplyTo $replyTo
+     * @var ?\test\BREVO\Models\Shared\ReplyTo $replyTo
      */
 	#[\JMS\Serializer\Annotation\SerializedName('replyTo')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\SendSmtpEmailReplyTo')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\ReplyTo')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?SendSmtpEmailReplyTo $replyTo = null;
+    public ?ReplyTo $replyTo = null;
     
     /**
      * UTC date-time on which the email has to schedule (YYYY-MM-DDTHH:mm:ss.SSSZ). Prefer to pass your timezone in date-time format for scheduling. There can be an expected delay of +5 minutes in scheduled email delivery. **Please note this feature is currently a public beta**.
@@ -201,10 +201,10 @@ class SendSmtpEmail
      * **[{"name":"Jimmy", "email":"jimmy98@example.com"}, {"name":"Joe", "email":"joe@example.com"}]**
      * 
      * 
-     * @var ?array<\test\BREVO\Models\Shared\SendSmtpEmailTo> $to
+     * @var ?array<\test\BREVO\Models\Shared\To> $to
      */
 	#[\JMS\Serializer\Annotation\SerializedName('to')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\SendSmtpEmailTo>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\To>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $to = null;
     

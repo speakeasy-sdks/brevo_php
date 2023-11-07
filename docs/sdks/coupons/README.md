@@ -1,5 +1,5 @@
 # Coupons
-(*coupons*)
+
 
 ### Available Operations
 
@@ -21,25 +21,25 @@ Create а coupon collection
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\CreateCouponCollectionRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateCouponCollectionRequestBody();
+    $request = new Operations\CreateCouponCollectionRequestBody();
     $request->defaultCoupon = '10 OFF';
     $request->name = 'SummerPromotions';
 
     $response = $sdk->coupons->createCouponCollection($request);
 
-    if ($response->createCouponCollection201ApplicationJSONObject !== null) {
+    if ($response->object !== null) {
         // handle response
     }
 } catch (Exception $e) {
@@ -71,19 +71,19 @@ Create coupons for a coupon collection
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\CreateCouponsRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateCouponsRequestBody();
+    $request = new Operations\CreateCouponsRequestBody();
     $request->collectionId = '23befbae-1505-47a8-bd27-e30ef739f32c';
     $request->coupons = [
         'Uf12AF',
@@ -123,19 +123,19 @@ Get a coupon collection by id
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCouponCollectionRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCouponCollectionRequest();
+    $request = new Operations\GetCouponCollectionRequest();
     $request->id = 'string';
 
     $response = $sdk->coupons->getCouponCollection($request);
@@ -172,23 +172,22 @@ Get all your coupon collections
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCouponCollectionsRequest;
-use \test\BREVO\Models\Operations\GetCouponCollectionsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCouponCollectionsRequest();
+    $request = new Operations\GetCouponCollectionsRequest();
     $request->limit = 928542;
     $request->offset = 507488;
-    $request->sort = GetCouponCollectionsSort::Asc;
+    $request->sort = Operations\GetCouponCollectionsQueryParamSort::Asc;
 
     $response = $sdk->coupons->getCouponCollections($request);
 
@@ -224,27 +223,26 @@ Update a coupon collection by id
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateCouponCollectionRequest;
-use \test\BREVO\Models\Operations\UpdateCouponCollectionRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateCouponCollectionRequest();
-    $request->requestBody = new UpdateCouponCollectionRequestBody();
+    $request = new Operations\UpdateCouponCollectionRequest();
+    $request->requestBody = new Operations\UpdateCouponCollectionRequestBody();
     $request->requestBody->defaultCoupon = '10 OFF';
     $request->id = 'string';
 
     $response = $sdk->coupons->updateCouponCollection($request);
 
-    if ($response->updateCouponCollection200ApplicationJSONObject !== null) {
+    if ($response->object !== null) {
         // handle response
     }
 } catch (Exception $e) {

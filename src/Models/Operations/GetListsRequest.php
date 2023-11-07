@@ -30,10 +30,10 @@ class GetListsRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetListsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetListsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetListsSort $sort = null;
+    public ?GetListsQueryParamSort $sort = null;
     
 	public function __construct()
 	{

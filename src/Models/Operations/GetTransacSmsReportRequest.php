@@ -34,10 +34,10 @@ class GetTransacSmsReportRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetTransacSmsReportSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetTransacSmsReportQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetTransacSmsReportSort $sort = null;
+    public ?GetTransacSmsReportQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used.** Starting date (YYYY-MM-DD) of the report

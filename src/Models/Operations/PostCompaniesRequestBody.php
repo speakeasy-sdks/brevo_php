@@ -20,12 +20,12 @@ class PostCompaniesRequestBody
     /**
      * Attributes for company creation
      * 
-     * @var ?\test\BREVO\Models\Operations\PostCompaniesRequestBodyAttributes $attributes
+     * @var ?\test\BREVO\Models\Operations\PostCompaniesAttributes $attributes
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attributes')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Operations\PostCompaniesRequestBodyAttributes')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Operations\PostCompaniesAttributes')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?PostCompaniesRequestBodyAttributes $attributes = null;
+    public ?PostCompaniesAttributes $attributes = null;
     
     /**
      * Country code if phone_number is passed in attributes.

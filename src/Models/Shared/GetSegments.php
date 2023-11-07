@@ -24,10 +24,10 @@ class GetSegments
     /**
      * Listing of all the segments available in your account
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetSegmentsSegments> $segments
+     * @var ?array<\test\BREVO\Models\Shared\Segments> $segments
      */
 	#[\JMS\Serializer\Annotation\SerializedName('segments')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetSegmentsSegments>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Segments>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $segments = null;
     

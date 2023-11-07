@@ -19,12 +19,12 @@ class CreateExternalFeed
      *  * `noAuth`
      * 
      * 
-     * @var ?\test\BREVO\Models\Shared\CreateExternalFeedAuthType $authType
+     * @var ?\test\BREVO\Models\Shared\AuthType $authType
      */
 	#[\JMS\Serializer\Annotation\SerializedName('authType')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\CreateExternalFeedAuthType>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\AuthType>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?CreateExternalFeedAuthType $authType = null;
+    public ?AuthType $authType = null;
     
     /**
      * Toggle caching of feed url response
@@ -39,10 +39,10 @@ class CreateExternalFeed
     /**
      * Custom headers for the feed
      * 
-     * @var ?array<\test\BREVO\Models\Shared\CreateExternalFeedHeaders> $headers
+     * @var ?array<\test\BREVO\Models\Shared\Headers> $headers
      */
 	#[\JMS\Serializer\Annotation\SerializedName('headers')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\CreateExternalFeedHeaders>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Headers>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $headers = null;
     

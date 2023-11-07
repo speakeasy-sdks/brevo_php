@@ -14,10 +14,10 @@ class GetDomainsList
     /**
      * List of the domains available in your account
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetDomainsListDomains> $domains
+     * @var ?array<\test\BREVO\Models\Shared\Domains> $domains
      */
 	#[\JMS\Serializer\Annotation\SerializedName('domains')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetDomainsListDomains>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Domains>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $domains = null;
     

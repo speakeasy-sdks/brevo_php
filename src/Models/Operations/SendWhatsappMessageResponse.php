@@ -46,10 +46,10 @@ class SendWhatsappMessageResponse
     /**
      * successfully created
      * 
-     * @var ?\test\BREVO\Models\Operations\SendWhatsappMessage201ApplicationJSON $sendWhatsappMessage201ApplicationJSONObject
+     * @var ?\test\BREVO\Models\Operations\SendWhatsappMessageResponseBody $object
      */
 	
-    public ?SendWhatsappMessage201ApplicationJSON $sendWhatsappMessage201ApplicationJSONObject = null;
+    public ?SendWhatsappMessageResponseBody $object = null;
     
 	public function __construct()
 	{
@@ -57,6 +57,6 @@ class SendWhatsappMessageResponse
 		$this->statusCode = 0;
 		$this->rawResponse = null;
 		$this->errorModel = null;
-		$this->sendWhatsappMessage201ApplicationJSONObject = null;
+		$this->object = null;
 	}
 }

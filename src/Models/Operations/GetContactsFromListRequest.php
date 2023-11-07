@@ -48,10 +48,10 @@ class GetContactsFromListRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetContactsFromListSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetContactsFromListQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetContactsFromListSort $sort = null;
+    public ?GetContactsFromListQueryParamSort $sort = null;
     
 	public function __construct()
 	{

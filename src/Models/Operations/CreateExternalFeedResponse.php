@@ -36,14 +36,6 @@ class CreateExternalFeedResponse
     public ?\Psr\Http\Message\ResponseInterface $rawResponse = null;
     
     /**
-     * successfully created
-     * 
-     * @var ?\test\BREVO\Models\Operations\CreateExternalFeed201ApplicationJSON $createExternalFeed201ApplicationJSONObject
-     */
-	
-    public ?CreateExternalFeed201ApplicationJSON $createExternalFeed201ApplicationJSONObject = null;
-    
-    /**
      * bad request
      * 
      * @var ?\test\BREVO\Models\Shared\ErrorModel $errorModel
@@ -51,12 +43,20 @@ class CreateExternalFeedResponse
 	
     public ?\test\BREVO\Models\Shared\ErrorModel $errorModel = null;
     
+    /**
+     * successfully created
+     * 
+     * @var ?\test\BREVO\Models\Operations\CreateExternalFeedResponseBody $object
+     */
+	
+    public ?CreateExternalFeedResponseBody $object = null;
+    
 	public function __construct()
 	{
 		$this->contentType = "";
 		$this->statusCode = 0;
 		$this->rawResponse = null;
-		$this->createExternalFeed201ApplicationJSONObject = null;
 		$this->errorModel = null;
+		$this->object = null;
 	}
 }

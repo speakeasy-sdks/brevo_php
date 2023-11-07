@@ -1,5 +1,5 @@
 # Contacts
-(*contacts*)
+
 
 ### Available Operations
 
@@ -45,19 +45,19 @@ Add existing contacts to a list
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\AddContactToListRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new AddContactToListRequest();
+    $request = new Operations\AddContactToListRequest();
     $request->requestBody = 'string';
     $request->listId = 77706;
 
@@ -95,31 +95,27 @@ Create contact attribute
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\CreateAttributeRequest;
-use \test\BREVO\Models\Operations\CreateAttributeAttributeCategory;
-use \test\BREVO\Models\Shared\CreateAttribute;
-use \test\BREVO\Models\Shared\CreateAttributeEnumeration;
-use \test\BREVO\Models\Shared\CreateAttributeType;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateAttributeRequest();
-    $request->attributeCategory = CreateAttributeAttributeCategory::Calculated;
+    $request = new Operations\CreateAttributeRequest();
+    $request->attributeCategory = Operations\AttributeCategory::Calculated;
     $request->attributeName = 'string';
-    $request->createAttribute = new CreateAttribute();
+    $request->createAttribute = new Shared\CreateAttribute();
     $request->createAttribute->enumeration = [
-        new CreateAttributeEnumeration(),
+        new Shared\Enumeration(),
     ];
     $request->createAttribute->isRecurring = true;
-    $request->createAttribute->type = CreateAttributeType::Text;
+    $request->createAttribute->type = Shared\CreateAttributeType::Text;
     $request->createAttribute->value = 'COUNT[BLACKLISTED,BLACKLISTED,<,NOW()]';
 
     $response = $sdk->contacts->createAttribute($request);
@@ -156,19 +152,18 @@ Create a contact
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateContact;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateContact();
+    $request = new Shared\CreateContact();
     $request->attributes = [
         'Mercedes' => 'string',
     ];
@@ -218,19 +213,18 @@ Create Contact via DOI (Double-Opt-In) Flow
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateDoiContact;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateDoiContact();
+    $request = new Shared\CreateDoiContact();
     $request->attributes = [
         'UDP' => 'string',
     ];
@@ -278,19 +272,18 @@ Create a folder
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateUpdateFolder;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateUpdateFolder();
+    $request = new Shared\CreateUpdateFolder();
     $request->name = 'Wordpress Contacts';
 
     $response = $sdk->contacts->createFolder($request);
@@ -327,19 +320,18 @@ Create a list
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateList;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateList();
+    $request = new Shared\CreateList();
     $request->folderId = 2;
     $request->name = 'Magento Customer - ES';
 
@@ -377,21 +369,20 @@ Delete an attribute
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteAttributeRequest;
-use \test\BREVO\Models\Operations\DeleteAttributeAttributeCategory;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteAttributeRequest();
-    $request->attributeCategory = DeleteAttributeAttributeCategory::Normal;
+    $request = new Operations\DeleteAttributeRequest();
+    $request->attributeCategory = Operations\PathParamAttributeCategory::Normal;
     $request->attributeName = 'string';
 
     $response = $sdk->contacts->deleteAttribute($request);
@@ -428,19 +419,19 @@ Delete a contact
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteContactRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteContactRequest();
+    $request = new Operations\DeleteContactRequest();
     $request->identifier = 'string';
 
     $response = $sdk->contacts->deleteContact($request);
@@ -477,19 +468,19 @@ Delete a folder (and all its lists)
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteFolderRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteFolderRequest();
+    $request = new Operations\DeleteFolderRequest();
     $request->folderId = 225818;
 
     $response = $sdk->contacts->deleteFolder($request);
@@ -526,19 +517,19 @@ Delete a list
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteListRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteListRequest();
+    $request = new Operations\DeleteListRequest();
     $request->listId = 231491;
 
     $response = $sdk->contacts->deleteList($request);
@@ -575,13 +566,13 @@ List all attributes
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -614,19 +605,19 @@ Along with the contact details, this endpoint will show the statistics of contac
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetContactInfoRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetContactInfoRequest();
+    $request = new Operations\GetContactInfoRequest();
     $request->endDate = 'string';
     $request->identifier = 'string';
     $request->startDate = 'string';
@@ -665,19 +656,19 @@ Get email campaigns' statistics for a contact
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetContactStatsRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetContactStatsRequest();
+    $request = new Operations\GetContactStatsRequest();
     $request->endDate = 'string';
     $request->identifier = 'string';
     $request->startDate = 'string';
@@ -716,25 +707,24 @@ Get all the contacts
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetContactsRequest;
-use \test\BREVO\Models\Operations\GetContactsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetContactsRequest();
+    $request = new Operations\GetContactsRequest();
     $request->createdSince = 'string';
     $request->limit = 883763;
     $request->modifiedSince = 'string';
     $request->offset = 587699;
-    $request->sort = GetContactsSort::Desc;
+    $request->sort = Operations\QueryParamSort::Desc;
 
     $response = $sdk->contacts->getContacts($request);
 
@@ -770,25 +760,24 @@ Get contacts in a list
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetContactsFromListRequest;
-use \test\BREVO\Models\Operations\GetContactsFromListSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetContactsFromListRequest();
+    $request = new Operations\GetContactsFromListRequest();
     $request->limit = 164358;
     $request->listId = 721707;
     $request->modifiedSince = 'string';
     $request->offset = 221058;
-    $request->sort = GetContactsFromListSort::Desc;
+    $request->sort = Operations\GetContactsFromListQueryParamSort::Desc;
 
     $response = $sdk->contacts->getContactsFromList($request);
 
@@ -824,19 +813,19 @@ Returns a folder's details
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetFolderRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetFolderRequest();
+    $request = new Operations\GetFolderRequest();
     $request->folderId = 867135;
 
     $response = $sdk->contacts->getFolder($request);
@@ -873,24 +862,23 @@ Get lists in a folder
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetFolderListsRequest;
-use \test\BREVO\Models\Operations\GetFolderListsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetFolderListsRequest();
+    $request = new Operations\GetFolderListsRequest();
     $request->folderId = 790110;
     $request->limit = 468056;
     $request->offset = 270959;
-    $request->sort = GetFolderListsSort::Asc;
+    $request->sort = Operations\GetFolderListsQueryParamSort::Asc;
 
     $response = $sdk->contacts->getFolderLists($request);
 
@@ -926,23 +914,22 @@ Get all folders
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetFoldersRequest;
-use \test\BREVO\Models\Operations\GetFoldersSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetFoldersRequest();
+    $request = new Operations\GetFoldersRequest();
     $request->limit = 846820;
     $request->offset = 320424;
-    $request->sort = GetFoldersSort::Asc;
+    $request->sort = Operations\GetFoldersQueryParamSort::Asc;
 
     $response = $sdk->contacts->getFolders($request);
 
@@ -978,19 +965,19 @@ Get a list's details
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetListRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetListRequest();
+    $request = new Operations\GetListRequest();
     $request->listId = 451512;
 
     $response = $sdk->contacts->getList($request);
@@ -1027,23 +1014,22 @@ Get all the lists
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetListsRequest;
-use \test\BREVO\Models\Operations\GetListsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetListsRequest();
+    $request = new Operations\GetListsRequest();
     $request->limit = 919382;
     $request->offset = 383011;
-    $request->sort = GetListsSort::Desc;
+    $request->sort = Operations\GetListsQueryParamSort::Desc;
 
     $response = $sdk->contacts->getLists($request);
 
@@ -1079,23 +1065,22 @@ Get all the segments
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetSegmentsRequest;
-use \test\BREVO\Models\Operations\GetSegmentsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetSegmentsRequest();
+    $request = new Operations\GetSegmentsRequest();
     $request->limit = 904899;
     $request->offset = 703723;
-    $request->sort = GetSegmentsSort::Desc;
+    $request->sort = Operations\GetSegmentsQueryParamSort::Desc;
 
     $response = $sdk->contacts->getSegments($request);
 
@@ -1131,21 +1116,18 @@ It returns the background process ID which on completion calls the notify URL th
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\RequestContactImport;
-use \test\BREVO\Models\Shared\RequestContactImportJsonBody;
-use \test\BREVO\Models\Shared\RequestContactImportNewList;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new RequestContactImport();
+    $request = new Shared\RequestContactImport();
     $request->emailBlacklist = false;
     $request->emptyContactsAttributes = true;
     $request->fileBody = 'NAME;SURNAME;EMAIL
@@ -1153,12 +1135,12 @@ try {
     Roger;Ellie;ellie36@example.com';
     $request->fileUrl = 'https://importfile.domain.com';
     $request->jsonBody = [
-        new RequestContactImportJsonBody(),
+        new Shared\JsonBody(),
     ];
     $request->listIds = [
         76,
     ];
-    $request->newList = new RequestContactImportNewList();
+    $request->newList = new Shared\NewList();
     $request->newList->folderId = 2;
     $request->newList->listName = 'ContactImport - 2017-05';
     $request->notifyUrl = 'http://requestb.in/173lyyx1';
@@ -1199,19 +1181,19 @@ Delete a contact from a list
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\RemoveContactFromListRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new RemoveContactFromListRequest();
+    $request = new Operations\RemoveContactFromListRequest();
     $request->requestBody = 'string';
     $request->listId = 85992;
 
@@ -1249,27 +1231,22 @@ It returns the background process ID which on completion calls the notify URL th
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\RequestContactExport;
-use \test\BREVO\Models\Shared\RequestContactExportCustomContactFilter;
-use \test\BREVO\Models\Shared\RequestContactExportCustomContactFilterActionForContacts;
-use \test\BREVO\Models\Shared\RequestContactExportCustomContactFilterActionForEmailCampaigns;
-use \test\BREVO\Models\Shared\RequestContactExportCustomContactFilterActionForSmsCampaigns;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new RequestContactExport();
-    $request->customContactFilter = new RequestContactExportCustomContactFilter();
-    $request->customContactFilter->actionForContacts = RequestContactExportCustomContactFilterActionForContacts::Subscribed;
-    $request->customContactFilter->actionForEmailCampaigns = RequestContactExportCustomContactFilterActionForEmailCampaigns::NonClickers;
-    $request->customContactFilter->actionForSmsCampaigns = RequestContactExportCustomContactFilterActionForSmsCampaigns::SoftBounces;
+    $request = new Shared\RequestContactExport();
+    $request->customContactFilter = new Shared\CustomContactFilter();
+    $request->customContactFilter->actionForContacts = Shared\ActionForContacts::Subscribed;
+    $request->customContactFilter->actionForEmailCampaigns = Shared\ActionForEmailCampaigns::NonClickers;
+    $request->customContactFilter->actionForSmsCampaigns = Shared\ActionForSmsCampaigns::SoftBounces;
     $request->customContactFilter->emailCampaignId = 12;
     $request->customContactFilter->listId = 2;
     $request->customContactFilter->smsCampaignId = 12;
@@ -1312,27 +1289,24 @@ Update contact attribute
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateAttributeRequest;
-use \test\BREVO\Models\Operations\UpdateAttributeAttributeCategory;
-use \test\BREVO\Models\Shared\UpdateAttribute;
-use \test\BREVO\Models\Shared\UpdateAttributeEnumeration;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateAttributeRequest();
-    $request->attributeCategory = UpdateAttributeAttributeCategory::Calculated;
+    $request = new Operations\UpdateAttributeRequest();
+    $request->attributeCategory = Operations\UpdateAttributePathParamAttributeCategory::Calculated;
     $request->attributeName = 'string';
-    $request->updateAttribute = new UpdateAttribute();
+    $request->updateAttribute = new Shared\UpdateAttribute();
     $request->updateAttribute->enumeration = [
-        new UpdateAttributeEnumeration(),
+        new Shared\UpdateAttributeEnumeration(),
     ];
     $request->updateAttribute->value = 'COUNT[BLACKLISTED,BLACKLISTED,<,NOW()]';
 
@@ -1370,22 +1344,20 @@ Update multiple contacts
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\UpdateBatchContacts;
-use \test\BREVO\Models\Shared\UpdateBatchContactsContacts;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateBatchContacts();
+    $request = new Shared\UpdateBatchContacts();
     $request->contacts = [
-        new UpdateBatchContactsContacts(),
+        new Shared\UpdateBatchContactsContacts(),
     ];
 
     $response = $sdk->contacts->updateBatchContacts($request);
@@ -1422,22 +1394,21 @@ Update a contact
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateContactRequest;
-use \test\BREVO\Models\Shared\UpdateContact;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateContactRequest();
+    $request = new Operations\UpdateContactRequest();
     $request->identifier = 'string';
-    $request->updateContact = new UpdateContact();
+    $request->updateContact = new Shared\UpdateContact();
     $request->updateContact->attributes = [
         'Jewell' => 'string',
     ];
@@ -1488,21 +1459,20 @@ Update a folder
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateFolderRequest;
-use \test\BREVO\Models\Shared\CreateUpdateFolder;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateFolderRequest();
-    $request->createUpdateFolder = new CreateUpdateFolder();
+    $request = new Operations\UpdateFolderRequest();
+    $request->createUpdateFolder = new Shared\CreateUpdateFolder();
     $request->createUpdateFolder->name = 'Wordpress Contacts';
     $request->folderId = 317879;
 
@@ -1540,22 +1510,21 @@ Update a list
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateListRequest;
-use \test\BREVO\Models\Shared\UpdateList;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateListRequest();
+    $request = new Operations\UpdateListRequest();
     $request->listId = 549225;
-    $request->updateList = new UpdateList();
+    $request->updateList = new Shared\UpdateList();
     $request->updateList->folderId = 2;
     $request->updateList->name = 'Magento Customer - ES';
 

@@ -7,13 +7,13 @@
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use test\BREVO\Brevo;
-use test\BREVO\Models\Shared\Security;
+use test\BREVO;
+use test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 

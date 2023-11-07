@@ -20,12 +20,12 @@ class Note
     /**
      * Account details of user which created the note
      * 
-     * @var ?\test\BREVO\Models\Shared\NoteAuthorId $authorId
+     * @var ?\test\BREVO\Models\Shared\AuthorId $authorId
      */
 	#[\JMS\Serializer\Annotation\SerializedName('authorId')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\NoteAuthorId')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\AuthorId')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?NoteAuthorId $authorId = null;
+    public ?AuthorId $authorId = null;
     
     /**
      * Contact ids linked to a note

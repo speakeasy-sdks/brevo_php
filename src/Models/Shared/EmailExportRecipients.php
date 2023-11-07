@@ -24,15 +24,15 @@ class EmailExportRecipients
     /**
      * Type of recipients to export for a campaign
      * 
-     * @var \test\BREVO\Models\Shared\EmailExportRecipientsRecipientsType $recipientsType
+     * @var \test\BREVO\Models\Shared\RecipientsType $recipientsType
      */
 	#[\JMS\Serializer\Annotation\SerializedName('recipientsType')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\EmailExportRecipientsRecipientsType>')]
-    public EmailExportRecipientsRecipientsType $recipientsType;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\RecipientsType>')]
+    public RecipientsType $recipientsType;
     
 	public function __construct()
 	{
 		$this->notifyURL = null;
-		$this->recipientsType = \test\BREVO\Models\Shared\EmailExportRecipientsRecipientsType::All;
+		$this->recipientsType = \test\BREVO\Models\Shared\RecipientsType::All;
 	}
 }

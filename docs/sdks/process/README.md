@@ -1,5 +1,5 @@
 # Process
-(*process*)
+
 
 ### Available Operations
 
@@ -18,19 +18,19 @@ Return the informations for a process
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetProcessRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetProcessRequest();
+    $request = new Operations\GetProcessRequest();
     $request->processId = 220156;
 
     $response = $sdk->process->getProcess($request);
@@ -67,23 +67,22 @@ Return all the processes for your account
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetProcessesRequest;
-use \test\BREVO\Models\Operations\GetProcessesSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetProcessesRequest();
+    $request = new Operations\GetProcessesRequest();
     $request->limit = 441197;
     $request->offset = 705753;
-    $request->sort = GetProcessesSort::Asc;
+    $request->sort = Operations\GetProcessesQueryParamSort::Asc;
 
     $response = $sdk->process->getProcesses($request);
 

@@ -14,12 +14,12 @@ class MasterDetailsResponse
     /**
      * Billing details of the master account organization
      * 
-     * @var ?\test\BREVO\Models\Shared\MasterDetailsResponseBillingInfo $billingInfo
+     * @var ?\test\BREVO\Models\Shared\BillingInfo $billingInfo
      */
 	#[\JMS\Serializer\Annotation\SerializedName('billingInfo')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\MasterDetailsResponseBillingInfo')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\BillingInfo')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?MasterDetailsResponseBillingInfo $billingInfo = null;
+    public ?BillingInfo $billingInfo = null;
     
     /**
      * Company name of master account organization
@@ -64,12 +64,12 @@ class MasterDetailsResponse
     /**
      * Plan details
      * 
-     * @var ?\test\BREVO\Models\Shared\MasterDetailsResponsePlanInfo $planInfo
+     * @var ?\test\BREVO\Models\Shared\PlanInfo $planInfo
      */
 	#[\JMS\Serializer\Annotation\SerializedName('planInfo')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\MasterDetailsResponsePlanInfo')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\PlanInfo')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?MasterDetailsResponsePlanInfo $planInfo = null;
+    public ?PlanInfo $planInfo = null;
     
     /**
      * Timezone of the master account organization

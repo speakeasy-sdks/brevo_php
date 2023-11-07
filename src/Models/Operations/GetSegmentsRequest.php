@@ -30,10 +30,10 @@ class GetSegmentsRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetSegmentsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetSegmentsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetSegmentsSort $sort = null;
+    public ?GetSegmentsQueryParamSort $sort = null;
     
 	public function __construct()
 	{

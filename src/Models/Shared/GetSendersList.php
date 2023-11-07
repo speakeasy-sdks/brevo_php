@@ -14,10 +14,10 @@ class GetSendersList
     /**
      * List of the senders available in your account
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetSendersListSenders> $senders
+     * @var ?array<\test\BREVO\Models\Shared\Senders> $senders
      */
 	#[\JMS\Serializer\Annotation\SerializedName('senders')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetSendersListSenders>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Senders>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $senders = null;
     

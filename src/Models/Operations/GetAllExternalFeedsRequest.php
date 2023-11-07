@@ -14,10 +14,10 @@ class GetAllExternalFeedsRequest
     /**
      * Filter the records by `authType` of the feed.
      * 
-     * @var ?\test\BREVO\Models\Operations\GetAllExternalFeedsAuthType $authType
+     * @var ?\test\BREVO\Models\Operations\AuthType $authType
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=authType')]
-    public ?GetAllExternalFeedsAuthType $authType = null;
+    public ?AuthType $authType = null;
     
     /**
      * Mandatory if `startDate` is used. Ending date (YYYY-MM-DD) till which you want to fetch the list. Maximum time period that can be selected is one month.
@@ -54,10 +54,10 @@ class GetAllExternalFeedsRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed.
      * 
-     * @var ?\test\BREVO\Models\Operations\GetAllExternalFeedsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetAllExternalFeedsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetAllExternalFeedsSort $sort = null;
+    public ?GetAllExternalFeedsQueryParamSort $sort = null;
     
     /**
      * Mandatory if `endDate` is used. Starting date (YYYY-MM-DD) from which you want to fetch the list. Can be maximum 30 days older than current date.

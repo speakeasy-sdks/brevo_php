@@ -24,10 +24,10 @@ class GetWhatsappTemplates
     /**
      * $templates
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetWhatsappTemplatesTemplates> $templates
+     * @var ?array<\test\BREVO\Models\Shared\Templates> $templates
      */
 	#[\JMS\Serializer\Annotation\SerializedName('templates')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetWhatsappTemplatesTemplates>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Templates>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $templates = null;
     

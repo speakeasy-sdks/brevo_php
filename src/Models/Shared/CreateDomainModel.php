@@ -12,9 +12,9 @@ namespace test\BREVO\Models\Shared;
 class CreateDomainModel
 {
 	#[\JMS\Serializer\Annotation\SerializedName('dns_records')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\CreateDomainModelDnsRecords')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\DnsRecords')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?CreateDomainModelDnsRecords $dnsRecords = null;
+    public ?DnsRecords $dnsRecords = null;
     
     /**
      * Domain

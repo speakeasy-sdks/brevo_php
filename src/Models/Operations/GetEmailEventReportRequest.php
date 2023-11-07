@@ -42,10 +42,10 @@ class GetEmailEventReportRequest
     /**
      * Filter the report for a specific event type
      * 
-     * @var ?\test\BREVO\Models\Operations\GetEmailEventReportEvent $event
+     * @var ?\test\BREVO\Models\Operations\GetEmailEventReportQueryParamEvent $event
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=event')]
-    public ?GetEmailEventReportEvent $event = null;
+    public ?GetEmailEventReportQueryParamEvent $event = null;
     
     /**
      * Number limitation for the result returned
@@ -74,10 +74,10 @@ class GetEmailEventReportRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetEmailEventReportSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetEmailEventReportQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetEmailEventReportSort $sort = null;
+    public ?GetEmailEventReportQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used.** Starting date of the report (YYYY-MM-DD). Must be lower than equal to endDate

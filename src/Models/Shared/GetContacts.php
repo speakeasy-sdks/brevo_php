@@ -14,10 +14,10 @@ class GetContacts
     /**
      * $contacts
      * 
-     * @var array<\test\BREVO\Models\Shared\GetContactsContacts> $contacts
+     * @var array<\test\BREVO\Models\Shared\Contacts> $contacts
      */
 	#[\JMS\Serializer\Annotation\SerializedName('contacts')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetContactsContacts>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Contacts>')]
     public array $contacts;
     
     /**

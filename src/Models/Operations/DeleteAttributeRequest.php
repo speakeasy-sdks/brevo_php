@@ -14,10 +14,10 @@ class DeleteAttributeRequest
     /**
      * Category of the attribute
      * 
-     * @var \test\BREVO\Models\Operations\DeleteAttributeAttributeCategory $attributeCategory
+     * @var \test\BREVO\Models\Operations\PathParamAttributeCategory $attributeCategory
      */
 	#[SpeakeasyMetadata('pathParam:style=simple,explode=false,name=attributeCategory')]
-    public DeleteAttributeAttributeCategory $attributeCategory;
+    public PathParamAttributeCategory $attributeCategory;
     
     /**
      * Name of the existing attribute
@@ -29,7 +29,7 @@ class DeleteAttributeRequest
     
 	public function __construct()
 	{
-		$this->attributeCategory = \test\BREVO\Models\Operations\DeleteAttributeAttributeCategory::Normal;
+		$this->attributeCategory = \test\BREVO\Models\Operations\PathParamAttributeCategory::Normal;
 		$this->attributeName = "";
 	}
 }

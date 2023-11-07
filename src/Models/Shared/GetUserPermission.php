@@ -29,10 +29,10 @@ class GetUserPermission
     /**
      * Granular feature permissions given to the user.
      * 
-     * @var array<\test\BREVO\Models\Shared\GetUserPermissionPrivileges> $privileges
+     * @var array<\test\BREVO\Models\Shared\Privileges> $privileges
      */
 	#[\JMS\Serializer\Annotation\SerializedName('privileges')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetUserPermissionPrivileges>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Privileges>')]
     public array $privileges;
     
     /**

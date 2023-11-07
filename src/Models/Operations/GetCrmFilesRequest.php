@@ -30,10 +30,10 @@ class GetCrmFilesRequest
     /**
      * Filter by file entity type
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCrmFilesEntity $entity
+     * @var ?\test\BREVO\Models\Operations\Entity $entity
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=entity')]
-    public ?GetCrmFilesEntity $entity = null;
+    public ?Entity $entity = null;
     
     /**
      * Filter by file entity IDs
@@ -62,10 +62,10 @@ class GetCrmFilesRequest
     /**
      * Sort the results in the ascending/descending order. Default order is **descending** by creation if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCrmFilesSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetCrmFilesQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetCrmFilesSort $sort = null;
+    public ?GetCrmFilesQueryParamSort $sort = null;
     
 	public function __construct()
 	{

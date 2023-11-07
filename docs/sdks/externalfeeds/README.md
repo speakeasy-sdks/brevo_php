@@ -1,5 +1,5 @@
 # ExternalFeeds
-(*externalFeeds*)
+
 
 ### Available Operations
 
@@ -21,25 +21,22 @@ This endpoint will create an external feed.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateExternalFeed;
-use \test\BREVO\Models\Shared\CreateExternalFeedAuthType;
-use \test\BREVO\Models\Shared\CreateExternalFeedHeaders;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateExternalFeed();
-    $request->authType = CreateExternalFeedAuthType::Token;
+    $request = new Shared\CreateExternalFeed();
+    $request->authType = Shared\AuthType::Token;
     $request->cache = true;
     $request->headers = [
-        new CreateExternalFeedHeaders(),
+        new Shared\Headers(),
     ];
     $request->maxRetries = 5;
     $request->name = 'New feed';
@@ -50,7 +47,7 @@ try {
 
     $response = $sdk->externalFeeds->createExternalFeed($request);
 
-    if ($response->createExternalFeed201ApplicationJSONObject !== null) {
+    if ($response->object !== null) {
         // handle response
     }
 } catch (Exception $e) {
@@ -82,19 +79,19 @@ This endpoint will delete an external feed.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteExternalFeedRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteExternalFeedRequest();
+    $request = new Operations\DeleteExternalFeedRequest();
     $request->uuid = 'b0692cb8-a6d8-42d5-9923-10ace67bc974';
 
     $response = $sdk->externalFeeds->deleteExternalFeed($request);
@@ -131,27 +128,25 @@ This endpoint can fetch all created external feeds.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetAllExternalFeedsRequest;
-use \test\BREVO\Models\Operations\GetAllExternalFeedsAuthType;
-use \test\BREVO\Models\Operations\GetAllExternalFeedsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetAllExternalFeedsRequest();
-    $request->authType = GetAllExternalFeedsAuthType::NoAuth;
+    $request = new Operations\GetAllExternalFeedsRequest();
+    $request->authType = Operations\AuthType::NoAuth;
     $request->endDate = DateTime::createFromFormat('Y-m-d', '2022-12-17');
     $request->limit = 611577;
     $request->offset = 408687;
     $request->search = 'string';
-    $request->sort = GetAllExternalFeedsSort::Asc;
+    $request->sort = Operations\GetAllExternalFeedsQueryParamSort::Asc;
     $request->startDate = DateTime::createFromFormat('Y-m-d', '2023-06-18');
 
     $response = $sdk->externalFeeds->getAllExternalFeeds($request);
@@ -188,19 +183,19 @@ This endpoint will update an external feed.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetExternalFeedByUUIDRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetExternalFeedByUUIDRequest();
+    $request = new Operations\GetExternalFeedByUUIDRequest();
     $request->uuid = 'fa819eb0-857b-463d-ad10-39975748ac59';
 
     $response = $sdk->externalFeeds->getExternalFeedByUUID($request);
@@ -237,27 +232,24 @@ This endpoint will update an external feed.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateExternalFeedRequest;
-use \test\BREVO\Models\Shared\UpdateExternalFeed;
-use \test\BREVO\Models\Shared\UpdateExternalFeedAuthType;
-use \test\BREVO\Models\Shared\UpdateExternalFeedHeaders;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateExternalFeedRequest();
-    $request->updateExternalFeed = new UpdateExternalFeed();
-    $request->updateExternalFeed->authType = UpdateExternalFeedAuthType::NoAuth;
+    $request = new Operations\UpdateExternalFeedRequest();
+    $request->updateExternalFeed = new Shared\UpdateExternalFeed();
+    $request->updateExternalFeed->authType = Shared\UpdateExternalFeedAuthType::NoAuth;
     $request->updateExternalFeed->cache = true;
     $request->updateExternalFeed->headers = [
-        new UpdateExternalFeedHeaders(),
+        new Shared\UpdateExternalFeedHeaders(),
     ];
     $request->updateExternalFeed->maxRetries = 5;
     $request->updateExternalFeed->name = 'New feed';

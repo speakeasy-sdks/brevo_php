@@ -46,10 +46,10 @@ class GetInboundEmailEventsRequest
     /**
      * Sort the results in the ascending/descending order of record creation
      * 
-     * @var ?\test\BREVO\Models\Operations\GetInboundEmailEventsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetInboundEmailEventsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetInboundEmailEventsSort $sort = null;
+    public ?GetInboundEmailEventsQueryParamSort $sort = null;
     
     /**
      * Mandatory if endDate is used. Starting date (YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss.SSSZ) from which you want to fetch the list. Maximum time period that can be selected is one month.

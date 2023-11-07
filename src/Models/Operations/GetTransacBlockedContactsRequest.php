@@ -48,10 +48,10 @@ class GetTransacBlockedContactsRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetTransacBlockedContactsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetTransacBlockedContactsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetTransacBlockedContactsSort $sort = null;
+    public ?GetTransacBlockedContactsQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used.** Starting date (YYYY-MM-DD) from which you want to fetch the blocked or unsubscribed contacts

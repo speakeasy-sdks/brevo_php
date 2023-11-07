@@ -14,10 +14,10 @@ class GetInvitedUsersList
     /**
      * Get invited users list
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetInvitedUsersListUsers> $users
+     * @var ?array<\test\BREVO\Models\Shared\Users> $users
      */
 	#[\JMS\Serializer\Annotation\SerializedName('users')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetInvitedUsersListUsers>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Users>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $users = null;
     

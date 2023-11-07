@@ -24,12 +24,12 @@ class GetSmsEventReportEvents
     /**
      * Event which occurred
      * 
-     * @var ?\test\BREVO\Models\Shared\GetSmsEventReportEventsEvent $event
+     * @var ?\test\BREVO\Models\Shared\GetSmsEventReportEvent $event
      */
 	#[\JMS\Serializer\Annotation\SerializedName('event')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetSmsEventReportEventsEvent>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetSmsEventReportEvent>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetSmsEventReportEventsEvent $event = null;
+    public ?GetSmsEventReportEvent $event = null;
     
     /**
      * Message ID which generated the event

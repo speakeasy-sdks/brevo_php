@@ -1,5 +1,5 @@
 # TransactionalSMS
-(*transactionalSMS*)
+
 
 ### Available Operations
 
@@ -20,28 +20,26 @@ Get all your SMS activity (unaggregated events)
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetSmsEventsRequest;
-use \test\BREVO\Models\Operations\GetSmsEventsEvent;
-use \test\BREVO\Models\Operations\GetSmsEventsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetSmsEventsRequest();
+    $request = new Operations\GetSmsEventsRequest();
     $request->days = 922986;
     $request->endDate = 'string';
-    $request->event = GetSmsEventsEvent::Blocked;
+    $request->event = Operations\Event::Blocked;
     $request->limit = 648983;
     $request->offset = 491120;
     $request->phoneNumber = 'string';
-    $request->sort = GetSmsEventsSort::Desc;
+    $request->sort = Operations\GetSmsEventsQueryParamSort::Desc;
     $request->startDate = 'string';
     $request->tags = 'string';
 
@@ -79,19 +77,19 @@ Get your SMS activity aggregated over a period of time
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetTransacAggregatedSmsReportRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetTransacAggregatedSmsReportRequest();
+    $request = new Operations\GetTransacAggregatedSmsReportRequest();
     $request->days = 40533;
     $request->endDate = 'string';
     $request->startDate = 'string';
@@ -131,23 +129,22 @@ Get your SMS activity aggregated per day
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetTransacSmsReportRequest;
-use \test\BREVO\Models\Operations\GetTransacSmsReportSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetTransacSmsReportRequest();
+    $request = new Operations\GetTransacSmsReportRequest();
     $request->days = 183250;
     $request->endDate = 'string';
-    $request->sort = GetTransacSmsReportSort::Desc;
+    $request->sort = Operations\GetTransacSmsReportQueryParamSort::Desc;
     $request->startDate = 'string';
     $request->tag = 'string';
 
@@ -185,26 +182,24 @@ Send SMS message to a mobile number
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\SendTransacSms;
-use \test\BREVO\Models\Shared\SendTransacSmsType;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new SendTransacSms();
+    $request = new Shared\SendTransacSms();
     $request->content = 'Enter this code:CCJJG8 to validate your account';
     $request->organisationPrefix = 'MyCompany';
     $request->recipient = '33689965433';
     $request->sender = 'MyShop';
     $request->tag = 'accountValidation';
-    $request->type = SendTransacSmsType::Marketing;
+    $request->type = Shared\SendTransacSmsType::Marketing;
     $request->unicodeEnabled = true;
     $request->webUrl = 'http://requestb.in/173lyyx1';
 

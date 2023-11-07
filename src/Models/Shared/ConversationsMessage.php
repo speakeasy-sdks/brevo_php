@@ -48,9 +48,9 @@ class ConversationsMessage
     public ?int $createdAt = null;
     
 	#[\JMS\Serializer\Annotation\SerializedName('file')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\ConversationsMessageFile')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\File')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?ConversationsMessageFile $file = null;
+    public ?File $file = null;
     
     /**
      * Message ID. It can be used for further manipulations with the message.
@@ -95,12 +95,12 @@ class ConversationsMessage
     /**
      * `"agent"` for agents’ messages, `"visitor"` for visitors’ messages.
      * 
-     * @var ?\test\BREVO\Models\Shared\ConversationsMessageType $type
+     * @var ?\test\BREVO\Models\Shared\Type $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\ConversationsMessageType>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\Type>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?ConversationsMessageType $type = null;
+    public ?Type $type = null;
     
     /**
      * visitor’s ID

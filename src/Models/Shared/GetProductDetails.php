@@ -62,12 +62,12 @@ class GetProductDetails
     /**
      * Meta data of product such as description, vendor, producer, stock level, etc.
      * 
-     * @var ?\test\BREVO\Models\Shared\GetProductDetailsMetaInfo $metaInfo
+     * @var ?\test\BREVO\Models\Shared\MetaInfo $metaInfo
      */
 	#[\JMS\Serializer\Annotation\SerializedName('metaInfo')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetProductDetailsMetaInfo')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\MetaInfo')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetProductDetailsMetaInfo $metaInfo = null;
+    public ?MetaInfo $metaInfo = null;
     
     /**
      * Last modification UTC date-time of the product (YYYY-MM-DDTHH:mm:ss.SSSZ)

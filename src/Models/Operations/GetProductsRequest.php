@@ -102,10 +102,10 @@ class GetProductsRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetProductsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetProductsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetProductsSort $sort = null;
+    public ?GetProductsQueryParamSort $sort = null;
     
 	public function __construct()
 	{

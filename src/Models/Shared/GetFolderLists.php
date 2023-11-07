@@ -24,10 +24,10 @@ class GetFolderLists
     /**
      * $lists
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetFolderListsLists> $lists
+     * @var ?array<\test\BREVO\Models\Shared\Lists> $lists
      */
 	#[\JMS\Serializer\Annotation\SerializedName('lists')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetFolderListsLists>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Lists>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $lists = null;
     

@@ -14,10 +14,10 @@ class GetExtendedList
     /**
      * $campaignStats
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetExtendedListCampaignStats> $campaignStats
+     * @var ?array<\test\BREVO\Models\Shared\CampaignStats> $campaignStats
      */
 	#[\JMS\Serializer\Annotation\SerializedName('campaignStats')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetExtendedListCampaignStats>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\CampaignStats>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $campaignStats = null;
     

@@ -54,10 +54,10 @@ class GetCrmTasksRequest
     /**
      * Filter by date
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCrmTasksFilterDate $filterDate
+     * @var ?\test\BREVO\Models\Operations\FilterDate $filterDate
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=filter[date]')]
-    public ?GetCrmTasksFilterDate $filterDate = null;
+    public ?FilterDate $filterDate = null;
     
     /**
      * Filter by deals ids
@@ -70,10 +70,10 @@ class GetCrmTasksRequest
     /**
      * Filter by task status
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCrmTasksFilterStatus $filterStatus
+     * @var ?\test\BREVO\Models\Operations\FilterStatus $filterStatus
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=filter[status]')]
-    public ?GetCrmTasksFilterStatus $filterStatus = null;
+    public ?FilterStatus $filterStatus = null;
     
     /**
      * Filter by task type (ID)
@@ -102,10 +102,10 @@ class GetCrmTasksRequest
     /**
      * Sort the results in the ascending/descending order. Default order is **descending** by creation if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCrmTasksSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetCrmTasksQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetCrmTasksSort $sort = null;
+    public ?GetCrmTasksQueryParamSort $sort = null;
     
     /**
      * The field used to sort field names.

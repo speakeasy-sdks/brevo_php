@@ -41,10 +41,10 @@ class GetWhatsAppTemplatesRequest
     /**
      * Sort the results in the ascending/descending order of record modification. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetWhatsAppTemplatesSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetWhatsAppTemplatesQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetWhatsAppTemplatesSort $sort = null;
+    public ?GetWhatsAppTemplatesQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used**. Starting (urlencoded) UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) to filter the templates created.

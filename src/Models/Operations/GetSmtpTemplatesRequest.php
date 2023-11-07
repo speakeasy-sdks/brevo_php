@@ -30,10 +30,10 @@ class GetSmtpTemplatesRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetSmtpTemplatesSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetSmtpTemplatesQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetSmtpTemplatesSort $sort = null;
+    public ?GetSmtpTemplatesQueryParamSort $sort = null;
     
     /**
      * Filter on the status of the template. Active = true, inactive = false

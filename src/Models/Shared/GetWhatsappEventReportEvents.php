@@ -42,11 +42,11 @@ class GetWhatsappEventReportEvents
     /**
      * Event which occurred
      * 
-     * @var \test\BREVO\Models\Shared\GetWhatsappEventReportEventsEvent $event
+     * @var \test\BREVO\Models\Shared\GetWhatsappEventReportEvent $event
      */
 	#[\JMS\Serializer\Annotation\SerializedName('event')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetWhatsappEventReportEventsEvent>')]
-    public GetWhatsappEventReportEventsEvent $event;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetWhatsappEventReportEvent>')]
+    public GetWhatsappEventReportEvent $event;
     
     /**
      * Url of the media reply (will be there only in case of `reply` event with media)
@@ -91,7 +91,7 @@ class GetWhatsappEventReportEvents
 		$this->body = null;
 		$this->contactNumber = "";
 		$this->date = "";
-		$this->event = \test\BREVO\Models\Shared\GetWhatsappEventReportEventsEvent::Sent;
+		$this->event = \test\BREVO\Models\Shared\GetWhatsappEventReportEvent::Sent;
 		$this->mediaUrl = null;
 		$this->messageId = "";
 		$this->reason = null;

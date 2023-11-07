@@ -26,12 +26,12 @@ class PostCrmDealsRequestBody
      * Pipeline and deal_stage are ids you can fetch using this endpoint `/crm/pipeline/details/{pipelineID}`
      * 
      * 
-     * @var ?\test\BREVO\Models\Operations\PostCrmDealsRequestBodyAttributes $attributes
+     * @var ?\test\BREVO\Models\Operations\PostCrmDealsAttributes $attributes
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attributes')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Operations\PostCrmDealsRequestBodyAttributes')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Operations\PostCrmDealsAttributes')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?PostCrmDealsRequestBodyAttributes $attributes = null;
+    public ?PostCrmDealsAttributes $attributes = null;
     
     /**
      * Name of deal

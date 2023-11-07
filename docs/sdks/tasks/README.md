@@ -1,5 +1,5 @@
 # Tasks
-(*tasks*)
+
 
 ### Available Operations
 
@@ -22,19 +22,19 @@ Delete a task
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteCrmTasksIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteCrmTasksIdRequest();
+    $request = new Operations\DeleteCrmTasksIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->tasks->deleteCrmTasksId($request);
@@ -71,34 +71,31 @@ Get all tasks
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmTasksRequest;
-use \test\BREVO\Models\Operations\GetCrmTasksFilterDate;
-use \test\BREVO\Models\Operations\GetCrmTasksFilterStatus;
-use \test\BREVO\Models\Operations\GetCrmTasksSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmTasksRequest();
+    $request = new Operations\GetCrmTasksRequest();
     $request->dateFrom = 347707;
     $request->dateTo = 258884;
     $request->filterAssignTo = 'string';
     $request->filterCompanies = 'string';
     $request->filterContacts = 'string';
-    $request->filterDate = GetCrmTasksFilterDate::Week;
+    $request->filterDate = Operations\FilterDate::Week;
     $request->filterDeals = 'string';
-    $request->filterStatus = GetCrmTasksFilterStatus::Done;
+    $request->filterStatus = Operations\FilterStatus::Done;
     $request->filterType = 'string';
     $request->limit = 92194;
     $request->offset = 295949;
-    $request->sort = GetCrmTasksSort::Desc;
+    $request->sort = Operations\GetCrmTasksQueryParamSort::Desc;
     $request->sortBy = 'string';
 
     $response = $sdk->tasks->getCrmTasks($request);
@@ -135,19 +132,19 @@ Get a task
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmTasksIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmTasksIdRequest();
+    $request = new Operations\GetCrmTasksIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->tasks->getCrmTasksId($request);
@@ -184,13 +181,13 @@ Get all task types
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -223,24 +220,20 @@ Update a task
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PatchCrmTasksIdRequest;
-use \test\BREVO\Models\Operations\PatchCrmTasksIdRequestBody;
-use \test\BREVO\Models\Shared\TaskReminder;
-use \test\BREVO\Models\Shared\TaskReminderTypes;
-use \test\BREVO\Models\Shared\TaskReminderUnit;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PatchCrmTasksIdRequest();
-    $request->requestBody = new PatchCrmTasksIdRequestBody();
+    $request = new Operations\PatchCrmTasksIdRequest();
+    $request->requestBody = new Operations\PatchCrmTasksIdRequestBody();
     $request->requestBody->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->requestBody->companiesIds = [
         'string',
@@ -256,11 +249,11 @@ try {
     $request->requestBody->duration = 600000;
     $request->requestBody->name = 'Task: Connect with client';
     $request->requestBody->notes = 'In communication with client for resolution of queries.';
-    $request->requestBody->reminder = new TaskReminder();
+    $request->requestBody->reminder = new Shared\TaskReminder();
     $request->requestBody->reminder->types = [
-        TaskReminderTypes::Push,
+        Shared\Types::Push,
     ];
-    $request->requestBody->reminder->unit = TaskReminderUnit::Weeks;
+    $request->requestBody->reminder->unit = Shared\Unit::Weeks;
     $request->requestBody->reminder->value = 10;
     $request->requestBody->taskTypeId = '61a5cd07ca1347c82306ad09';
     $request->id = '<ID>';
@@ -299,22 +292,19 @@ Create a task
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PostCrmTasksRequestBody;
-use \test\BREVO\Models\Shared\TaskReminder;
-use \test\BREVO\Models\Shared\TaskReminderTypes;
-use \test\BREVO\Models\Shared\TaskReminderUnit;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PostCrmTasksRequestBody();
+    $request = new Operations\PostCrmTasksRequestBody();
     $request->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->companiesIds = [
         'string',
@@ -330,17 +320,17 @@ try {
     $request->duration = 600000;
     $request->name = 'Task: Connect with client';
     $request->notes = 'In communication with client for resolution of queries.';
-    $request->reminder = new TaskReminder();
+    $request->reminder = new Shared\TaskReminder();
     $request->reminder->types = [
-        TaskReminderTypes::Push,
+        Shared\Types::Push,
     ];
-    $request->reminder->unit = TaskReminderUnit::Weeks;
+    $request->reminder->unit = Shared\Unit::Weeks;
     $request->reminder->value = 10;
     $request->taskTypeId = '61a5cd07ca1347c82306ad09';
 
     $response = $sdk->tasks->postCrmTasks($request);
 
-    if ($response->postCrmTasks201ApplicationJSONObject !== null) {
+    if ($response->object !== null) {
         // handle response
     }
 } catch (Exception $e) {

@@ -14,10 +14,10 @@ class GetEmailCampaigns
     /**
      * $campaigns
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetEmailCampaignsCampaigns> $campaigns
+     * @var ?array<\test\BREVO\Models\Shared\Campaigns> $campaigns
      */
 	#[\JMS\Serializer\Annotation\SerializedName('campaigns')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetEmailCampaignsCampaigns>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Campaigns>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $campaigns = null;
     

@@ -1,9 +1,0 @@
-# CreateDomainModelDnsRecords
-
-
-## Fields
-
-| Field                                                                                                  | Type                                                                                                   | Required                                                                                               | Description                                                                                            |
-| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| `brevoCode`                                                                                            | [?CreateDomainModelDnsRecordsBrevoCode](../../models/shared/CreateDomainModelDnsRecordsBrevoCode.md)   | :heavy_minus_sign:                                                                                     | N/A                                                                                                    |
-| `dkimRecord`                                                                                           | [?CreateDomainModelDnsRecordsDkimRecord](../../models/shared/CreateDomainModelDnsRecordsDkimRecord.md) | :heavy_minus_sign:                                                                                     | N/A                                                                                                    |

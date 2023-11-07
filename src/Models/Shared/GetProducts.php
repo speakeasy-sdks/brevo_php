@@ -23,10 +23,10 @@ class GetProducts
     /**
      * $products
      * 
-     * @var array<\test\BREVO\Models\Shared\GetProductsProducts> $products
+     * @var array<\test\BREVO\Models\Shared\Products> $products
      */
 	#[\JMS\Serializer\Annotation\SerializedName('products')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetProductsProducts>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Products>')]
     public array $products;
     
 	public function __construct()

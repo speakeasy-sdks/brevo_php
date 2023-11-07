@@ -20,12 +20,12 @@ class Company
     /**
      * Company attributes with values
      * 
-     * @var ?\test\BREVO\Models\Shared\CompanyAttributes $attributes
+     * @var ?\test\BREVO\Models\Shared\Attributes $attributes
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attributes')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\CompanyAttributes')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Attributes')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?CompanyAttributes $attributes = null;
+    public ?Attributes $attributes = null;
     
     /**
      * Unique comoany id

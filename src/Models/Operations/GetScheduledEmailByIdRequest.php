@@ -46,10 +46,10 @@ class GetScheduledEmailByIdRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed. Not valid when identifier is `messageId`.
      * 
-     * @var ?\test\BREVO\Models\Operations\GetScheduledEmailByIdSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetScheduledEmailByIdQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetScheduledEmailByIdSort $sort = null;
+    public ?GetScheduledEmailByIdQueryParamSort $sort = null;
     
     /**
      * Mandatory if `endDate` is used. Starting date (YYYY-MM-DD) from which you want to fetch the list. Can be maximum 30 days older tha current date.
@@ -62,10 +62,10 @@ class GetScheduledEmailByIdRequest
     /**
      * Filter the records by `status` of the scheduled email batch or message. Not valid when identifier is `messageId`.
      * 
-     * @var ?\test\BREVO\Models\Operations\GetScheduledEmailByIdStatus $status
+     * @var ?\test\BREVO\Models\Operations\GetScheduledEmailByIdQueryParamStatus $status
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=status')]
-    public ?GetScheduledEmailByIdStatus $status = null;
+    public ?GetScheduledEmailByIdQueryParamStatus $status = null;
     
 	public function __construct()
 	{

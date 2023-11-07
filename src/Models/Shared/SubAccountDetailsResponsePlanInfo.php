@@ -20,22 +20,22 @@ class SubAccountDetailsResponsePlanInfo
     /**
      * Credits quota and remaining credits on the sub-account
      * 
-     * @var ?\test\BREVO\Models\Shared\SubAccountDetailsResponsePlanInfoCredits $credits
+     * @var ?\test\BREVO\Models\Shared\SubAccountDetailsResponseCredits $credits
      */
 	#[\JMS\Serializer\Annotation\SerializedName('credits')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\SubAccountDetailsResponsePlanInfoCredits')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\SubAccountDetailsResponseCredits')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?SubAccountDetailsResponsePlanInfoCredits $credits = null;
+    public ?SubAccountDetailsResponseCredits $credits = null;
     
     /**
      * Features available on the sub-account
      * 
-     * @var ?\test\BREVO\Models\Shared\SubAccountDetailsResponsePlanInfoFeatures $features
+     * @var ?\test\BREVO\Models\Shared\SubAccountDetailsResponseFeatures $features
      */
 	#[\JMS\Serializer\Annotation\SerializedName('features')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\SubAccountDetailsResponsePlanInfoFeatures')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\SubAccountDetailsResponseFeatures')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?SubAccountDetailsResponsePlanInfoFeatures $features = null;
+    public ?SubAccountDetailsResponseFeatures $features = null;
     
     /**
      * type of the plan

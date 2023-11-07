@@ -1,5 +1,5 @@
 # Domains
-(*domains*)
+
 
 ### Available Operations
 
@@ -21,19 +21,19 @@ Authenticate a domain
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\AuthenticateDomainRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new AuthenticateDomainRequest();
+    $request = new Operations\AuthenticateDomainRequest();
     $request->domainName = 'sparkling-awareness.biz';
 
     $response = $sdk->domains->authenticateDomain($request);
@@ -70,19 +70,18 @@ Create a new domain
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateDomain;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateDomain();
+    $request = new Shared\CreateDomain();
     $request->name = 'mycompany.com';
 
     $response = $sdk->domains->createDomain($request);
@@ -119,19 +118,19 @@ Delete a domain
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteDomainRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteDomainRequest();
+    $request = new Operations\DeleteDomainRequest();
     $request->domainName = 'sturdy-supper.net';
 
     $response = $sdk->domains->deleteDomain($request);
@@ -168,19 +167,19 @@ Validate domain configuration
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetDomainConfigurationRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetDomainConfigurationRequest();
+    $request = new Operations\GetDomainConfigurationRequest();
     $request->domainName = 'slight-county.net';
 
     $response = $sdk->domains->getDomainConfiguration($request);
@@ -217,13 +216,13 @@ Get the list of all your domains
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 

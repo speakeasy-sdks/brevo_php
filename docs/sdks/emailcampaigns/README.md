@@ -1,5 +1,5 @@
 # EmailCampaigns
-(*emailCampaigns*)
+
 
 ### Available Operations
 
@@ -29,22 +29,18 @@ Create an email campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateEmailCampaign;
-use \test\BREVO\Models\Shared\CreateEmailCampaignRecipients;
-use \test\BREVO\Models\Shared\CreateEmailCampaignSender;
-use \test\BREVO\Models\Shared\CreateEmailCampaignWinnerCriteria;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateEmailCampaign();
+    $request = new Shared\CreateEmailCampaign();
     $request->abTesting = true;
     $request->attachmentUrl = 'https://attachment.domain.com';
     $request->footer = '[DEFAULT_FOOTER]';
@@ -61,7 +57,7 @@ try {
         'wield' => 'string',
     ];
     $request->previewText = 'Thanks for your order!';
-    $request->recipients = new CreateEmailCampaignRecipients();
+    $request->recipients = new Shared\Recipients();
     $request->recipients->exclusionListIds = [
         8,
     ];
@@ -74,7 +70,7 @@ try {
     $request->replyTo = 'support@myshop.com';
     $request->scheduledAt = '2017-06-01T12:30:00+02:00';
     $request->sendAtBestTime = true;
-    $request->sender = new CreateEmailCampaignSender();
+    $request->sender = new Shared\Sender();
     $request->sender->email = 'newsletter@myshop.com';
     $request->sender->id = 3;
     $request->sender->name = 'Mary from MyShop';
@@ -88,7 +84,7 @@ try {
     $request->unsubscriptionPageId = '62cbb7fabbe85021021aac52';
     $request->updateFormId = '6313436b9ad40e23b371d095';
     $request->utmCampaign = 'NL_05_2017';
-    $request->winnerCriteria = CreateEmailCampaignWinnerCriteria::Open;
+    $request->winnerCriteria = Shared\WinnerCriteria::Open;
     $request->winnerDelay = 50;
 
     $response = $sdk->emailCampaigns->createEmailCampaign($request);
@@ -125,19 +121,19 @@ Delete an email campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteEmailCampaignRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteEmailCampaignRequest();
+    $request = new Operations\DeleteEmailCampaignRequest();
     $request->campaignId = 413690;
 
     $response = $sdk->emailCampaigns->deleteEmailCampaign($request);
@@ -174,25 +170,23 @@ Export the recipients of an email campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\EmailExportRecipientsRequest;
-use \test\BREVO\Models\Shared\EmailExportRecipients;
-use \test\BREVO\Models\Shared\EmailExportRecipientsRecipientsType;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new EmailExportRecipientsRequest();
+    $request = new Operations\EmailExportRecipientsRequest();
     $request->campaignId = 116313;
-    $request->emailExportRecipients = new EmailExportRecipients();
+    $request->emailExportRecipients = new Shared\EmailExportRecipients();
     $request->emailExportRecipients->notifyURL = 'http://requestb.in/173lyyx1';
-    $request->emailExportRecipients->recipientsType = EmailExportRecipientsRecipientsType::Openers;
+    $request->emailExportRecipients->recipientsType = Shared\RecipientsType::Openers;
 
     $response = $sdk->emailCampaigns->emailExportRecipients($request);
 
@@ -228,19 +222,19 @@ Obtain winning version of an A/B test email campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetAbTestCampaignResultRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetAbTestCampaignResultRequest();
+    $request = new Operations\GetAbTestCampaignResultRequest();
     $request->campaignId = 968439;
 
     $response = $sdk->emailCampaigns->getAbTestCampaignResult($request);
@@ -277,22 +271,21 @@ Get an email campaign report
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetEmailCampaignRequest;
-use \test\BREVO\Models\Operations\GetEmailCampaignStatistics;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetEmailCampaignRequest();
+    $request = new Operations\GetEmailCampaignRequest();
     $request->campaignId = 715666;
-    $request->statistics = GetEmailCampaignStatistics::GlobalStats;
+    $request->statistics = Operations\Statistics::GlobalStats;
 
     $response = $sdk->emailCampaigns->getEmailCampaign($request);
 
@@ -328,33 +321,28 @@ Return all your created email campaigns
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetEmailCampaignsRequest;
-use \test\BREVO\Models\Operations\GetEmailCampaignsExcludeHTMLContent;
-use \test\BREVO\Models\Operations\GetEmailCampaignsSort;
-use \test\BREVO\Models\Operations\GetEmailCampaignsStatistics;
-use \test\BREVO\Models\Operations\GetEmailCampaignsStatus;
-use \test\BREVO\Models\Operations\GetEmailCampaignsType;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetEmailCampaignsRequest();
+    $request = new Operations\GetEmailCampaignsRequest();
     $request->endDate = 'string';
-    $request->excludeHtmlContent = GetEmailCampaignsExcludeHTMLContent::True;
+    $request->excludeHtmlContent = Operations\ExcludeHtmlContent::True;
     $request->limit = 276251;
     $request->offset = 238074;
-    $request->sort = GetEmailCampaignsSort::Asc;
+    $request->sort = Operations\GetEmailCampaignsQueryParamSort::Asc;
     $request->startDate = 'string';
-    $request->statistics = GetEmailCampaignsStatistics::LinksStats;
-    $request->status = GetEmailCampaignsStatus::Archive;
-    $request->type = GetEmailCampaignsType::Trigger;
+    $request->statistics = Operations\QueryParamStatistics::LinksStats;
+    $request->status = Operations\Status::Archive;
+    $request->type = Operations\Type::Trigger;
 
     $response = $sdk->emailCampaigns->getEmailCampaigns($request);
 
@@ -390,19 +378,19 @@ Get a unique URL to share & import an email template from one Brevo account to a
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetSharedTemplateUrlRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetSharedTemplateUrlRequest();
+    $request = new Operations\GetSharedTemplateUrlRequest();
     $request->campaignId = 374812;
 
     $response = $sdk->emailCampaigns->getSharedTemplateUrl($request);
@@ -439,19 +427,19 @@ Send an email campaign immediately, based on campaignId
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\SendEmailCampaignNowRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new SendEmailCampaignNowRequest();
+    $request = new Operations\SendEmailCampaignNowRequest();
     $request->campaignId = 666463;
 
     $response = $sdk->emailCampaigns->sendEmailCampaignNow($request);
@@ -488,30 +476,27 @@ A PDF will be sent to the specified email addresses
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\SendReportRequest;
-use \test\BREVO\Models\Shared\SendReport;
-use \test\BREVO\Models\Shared\SendReportEmail;
-use \test\BREVO\Models\Shared\SendReportLanguage;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new SendReportRequest();
+    $request = new Operations\SendReportRequest();
     $request->campaignId = 349447;
-    $request->sendReport = new SendReport();
-    $request->sendReport->email = new SendReportEmail();
+    $request->sendReport = new Shared\SendReport();
+    $request->sendReport->email = new Shared\Email();
     $request->sendReport->email->body = 'Please find attached the report of our last email campaign.';
     $request->sendReport->email->to = [
         'jim.suehan@example.com',
     ];
-    $request->sendReport->language = SendReportLanguage::En;
+    $request->sendReport->language = Shared\SendReportLanguage::En;
 
     $response = $sdk->emailCampaigns->sendReport($request);
 
@@ -547,22 +532,21 @@ Send an email campaign to your test list
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\SendTestEmailRequest;
-use \test\BREVO\Models\Shared\SendTestEmail;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new SendTestEmailRequest();
+    $request = new Operations\SendTestEmailRequest();
     $request->campaignId = 634623;
-    $request->sendTestEmail = new SendTestEmail();
+    $request->sendTestEmail = new Shared\SendTestEmail();
     $request->sendTestEmail->emailTo = [
         'helen.jurger@example.com',
     ];
@@ -601,24 +585,22 @@ Update an email campaign status
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateCampaignStatusRequest;
-use \test\BREVO\Models\Shared\UpdateCampaignStatus;
-use \test\BREVO\Models\Shared\UpdateCampaignStatusStatus;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateCampaignStatusRequest();
+    $request = new Operations\UpdateCampaignStatusRequest();
     $request->campaignId = 859791;
-    $request->updateCampaignStatus = new UpdateCampaignStatus();
-    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::ReplicateTemplate;
+    $request->updateCampaignStatus = new Shared\UpdateCampaignStatus();
+    $request->updateCampaignStatus->status = Shared\UpdateCampaignStatusStatus::ReplicateTemplate;
 
     $response = $sdk->emailCampaigns->updateCampaignStatus($request);
 
@@ -654,25 +636,21 @@ Update an email campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateEmailCampaignRequest;
-use \test\BREVO\Models\Shared\UpdateEmailCampaign;
-use \test\BREVO\Models\Shared\UpdateEmailCampaignRecipients;
-use \test\BREVO\Models\Shared\UpdateEmailCampaignSender;
-use \test\BREVO\Models\Shared\UpdateEmailCampaignWinnerCriteria;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateEmailCampaignRequest();
+    $request = new Operations\UpdateEmailCampaignRequest();
     $request->campaignId = 130470;
-    $request->updateEmailCampaign = new UpdateEmailCampaign();
+    $request->updateEmailCampaign = new Shared\UpdateEmailCampaign();
     $request->updateEmailCampaign->abTesting = true;
     $request->updateEmailCampaign->attachmentUrl = 'https://attachment.domain.com';
     $request->updateEmailCampaign->footer = '[DEFAULT_FOOTER]';
@@ -689,7 +667,7 @@ try {
         'Bicycle' => 'string',
     ];
     $request->updateEmailCampaign->previewText = 'Thanks for your order!';
-    $request->updateEmailCampaign->recipients = new UpdateEmailCampaignRecipients();
+    $request->updateEmailCampaign->recipients = new Shared\UpdateEmailCampaignRecipients();
     $request->updateEmailCampaign->recipients->exclusionListIds = [
         8,
     ];
@@ -703,7 +681,7 @@ try {
     $request->updateEmailCampaign->replyTo = 'support@myshop.com';
     $request->updateEmailCampaign->scheduledAt = '2017-06-01T12:30:00+02:00';
     $request->updateEmailCampaign->sendAtBestTime = true;
-    $request->updateEmailCampaign->sender = new UpdateEmailCampaignSender();
+    $request->updateEmailCampaign->sender = new Shared\UpdateEmailCampaignSender();
     $request->updateEmailCampaign->sender->email = 'newsletter@myshop.com';
     $request->updateEmailCampaign->sender->id = 3;
     $request->updateEmailCampaign->sender->name = 'Mary from MyShop';
@@ -716,7 +694,7 @@ try {
     $request->updateEmailCampaign->unsubscriptionPageId = '62cbb7fabbe85021021aac52';
     $request->updateEmailCampaign->updateFormId = '6313436b9ad40e23b371d095';
     $request->updateEmailCampaign->utmCampaign = 'NL_05_2017';
-    $request->updateEmailCampaign->winnerCriteria = UpdateEmailCampaignWinnerCriteria::Open;
+    $request->updateEmailCampaign->winnerCriteria = Shared\UpdateEmailCampaignWinnerCriteria::Open;
     $request->updateEmailCampaign->winnerDelay = 50;
 
     $response = $sdk->emailCampaigns->updateEmailCampaign($request);
@@ -753,19 +731,18 @@ Upload an image to your account's image gallery
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\UploadImageToGallery;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UploadImageToGallery();
+    $request = new Shared\UploadImageToGallery();
     $request->imageUrl = 'https://somedomain.com/image1.jpg';
     $request->name = 'nature.jpg';
 

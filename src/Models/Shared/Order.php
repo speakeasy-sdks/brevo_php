@@ -23,12 +23,12 @@ class Order
     /**
      * Billing details of an order.
      * 
-     * @var ?\test\BREVO\Models\Shared\OrderBilling $billing
+     * @var ?\test\BREVO\Models\Shared\Billing $billing
      */
 	#[\JMS\Serializer\Annotation\SerializedName('billing')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\OrderBilling')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Billing')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?OrderBilling $billing = null;
+    public ?Billing $billing = null;
     
     /**
      * Coupons applied to the order. Stored case insensitive.

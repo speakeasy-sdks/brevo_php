@@ -20,12 +20,12 @@ class Deal
     /**
      * Deal attributes with values
      * 
-     * @var ?\test\BREVO\Models\Shared\DealAttributes $attributes
+     * @var ?\test\BREVO\Models\Shared\DealSchemasAttributes $attributes
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attributes')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\DealAttributes')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\DealSchemasAttributes')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?DealAttributes $attributes = null;
+    public ?DealSchemasAttributes $attributes = null;
     
     /**
      * Unique deal id

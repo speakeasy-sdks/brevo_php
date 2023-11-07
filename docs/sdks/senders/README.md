@@ -1,5 +1,5 @@
 # Senders
-(*senders*)
+
 
 ### Available Operations
 
@@ -23,23 +23,21 @@ Create a new sender
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateSender;
-use \test\BREVO\Models\Shared\CreateSenderIps;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateSender();
+    $request = new Shared\CreateSender();
     $request->email = 'newsletter@mycompany.com';
     $request->ips = [
-        new CreateSenderIps(),
+        new Shared\Ips(),
     ];
     $request->name = 'Newsletter';
 
@@ -77,19 +75,19 @@ Delete a sender
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteSenderRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteSenderRequest();
+    $request = new Operations\DeleteSenderRequest();
     $request->senderId = 234732;
 
     $response = $sdk->senders->deleteSender($request);
@@ -126,13 +124,13 @@ Get all the dedicated IPs for your account
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -165,19 +163,19 @@ Get all the dedicated IPs for a sender
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetIpsFromSenderRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetIpsFromSenderRequest();
+    $request = new Operations\GetIpsFromSenderRequest();
     $request->senderId = 848663;
 
     $response = $sdk->senders->getIpsFromSender($request);
@@ -214,19 +212,19 @@ Get the list of all your senders
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetSendersRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetSendersRequest();
+    $request = new Operations\GetSendersRequest();
     $request->domain = 'extroverted-congo.name';
     $request->ip = '94.106.65.227';
 
@@ -264,26 +262,24 @@ Update a sender
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateSenderRequest;
-use \test\BREVO\Models\Shared\UpdateSender;
-use \test\BREVO\Models\Shared\UpdateSenderIps;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateSenderRequest();
+    $request = new Operations\UpdateSenderRequest();
     $request->senderId = 616420;
-    $request->updateSender = new UpdateSender();
+    $request->updateSender = new Shared\UpdateSender();
     $request->updateSender->email = 'newsletter@mycompany.com';
     $request->updateSender->ips = [
-        new UpdateSenderIps(),
+        new Shared\UpdateSenderIps(),
     ];
     $request->updateSender->name = 'Newsletter';
 
@@ -321,21 +317,20 @@ Validate Sender using OTP
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\ValidateSenderByOTPRequest;
-use \test\BREVO\Models\Shared\Otp;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new ValidateSenderByOTPRequest();
-    $request->otp = new Otp();
+    $request = new Operations\ValidateSenderByOTPRequest();
+    $request->otp = new Shared\Otp();
     $request->otp->otp = 123456;
     $request->senderId = 499324;
 

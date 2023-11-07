@@ -14,10 +14,10 @@ class GetCategories
     /**
      * $categories
      * 
-     * @var array<\test\BREVO\Models\Shared\GetCategoriesCategories> $categories
+     * @var array<\test\BREVO\Models\Shared\Categories> $categories
      */
 	#[\JMS\Serializer\Annotation\SerializedName('categories')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetCategoriesCategories>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Categories>')]
     public array $categories;
     
     /**

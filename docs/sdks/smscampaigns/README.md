@@ -1,5 +1,5 @@
 # SMSCampaigns
-(*smsCampaigns*)
+
 
 ### Available Operations
 
@@ -26,24 +26,22 @@ Creates an SMS campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateSmsCampaign;
-use \test\BREVO\Models\Shared\CreateSmsCampaignRecipients;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateSmsCampaign();
+    $request = new Shared\CreateSmsCampaign();
     $request->content = 'Get a discount by visiting our NY store and saying : Happy Spring!';
     $request->name = 'Spring Promo Code';
     $request->organisationPrefix = 'MyCompany';
-    $request->recipients = new CreateSmsCampaignRecipients();
+    $request->recipients = new Shared\CreateSmsCampaignRecipients();
     $request->recipients->exclusionListIds = [
         15,
     ];
@@ -89,19 +87,19 @@ Delete an SMS campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteSmsCampaignRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteSmsCampaignRequest();
+    $request = new Operations\DeleteSmsCampaignRequest();
     $request->campaignId = 225721;
 
     $response = $sdk->smsCampaigns->deleteSmsCampaign($request);
@@ -138,19 +136,19 @@ Get an SMS campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetSmsCampaignRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetSmsCampaignRequest();
+    $request = new Operations\GetSmsCampaignRequest();
     $request->campaignId = 704072;
 
     $response = $sdk->smsCampaigns->getSmsCampaign($request);
@@ -187,27 +185,25 @@ Returns the information for all your created SMS campaigns
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetSmsCampaignsRequest;
-use \test\BREVO\Models\Operations\GetSmsCampaignsSort;
-use \test\BREVO\Models\Operations\GetSmsCampaignsStatus;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetSmsCampaignsRequest();
+    $request = new Operations\GetSmsCampaignsRequest();
     $request->endDate = 'string';
     $request->limit = 200697;
     $request->offset = 609082;
-    $request->sort = GetSmsCampaignsSort::Desc;
+    $request->sort = Operations\GetSmsCampaignsQueryParamSort::Desc;
     $request->startDate = 'string';
-    $request->status = GetSmsCampaignsStatus::Suspended;
+    $request->status = Operations\QueryParamStatus::Suspended;
 
     $response = $sdk->smsCampaigns->getSmsCampaigns($request);
 
@@ -243,25 +239,23 @@ It returns the background process ID which on completion calls the notify URL th
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\RequestSmsRecipientExportRequest;
-use \test\BREVO\Models\Shared\RequestSmsRecipientExport;
-use \test\BREVO\Models\Shared\RequestSmsRecipientExportRecipientsType;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new RequestSmsRecipientExportRequest();
+    $request = new Operations\RequestSmsRecipientExportRequest();
     $request->campaignId = 946569;
-    $request->requestSmsRecipientExport = new RequestSmsRecipientExport();
+    $request->requestSmsRecipientExport = new Shared\RequestSmsRecipientExport();
     $request->requestSmsRecipientExport->notifyURL = 'http://requestb.in/173lyyx1';
-    $request->requestSmsRecipientExport->recipientsType = RequestSmsRecipientExportRecipientsType::Answered;
+    $request->requestSmsRecipientExport->recipientsType = Shared\RequestSmsRecipientExportRecipientsType::Answered;
 
     $response = $sdk->smsCampaigns->requestSmsRecipientExport($request);
 
@@ -297,19 +291,19 @@ Send your SMS campaign immediately
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\SendSmsCampaignNowRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new SendSmsCampaignNowRequest();
+    $request = new Operations\SendSmsCampaignNowRequest();
     $request->campaignId = 697931;
 
     $response = $sdk->smsCampaigns->sendSmsCampaignNow($request);
@@ -346,30 +340,27 @@ Send report of Sent and Archived campaign, to the specified email addresses, wit
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\SendSmsReportRequest;
-use \test\BREVO\Models\Shared\SendReport;
-use \test\BREVO\Models\Shared\SendReportEmail;
-use \test\BREVO\Models\Shared\SendReportLanguage;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new SendSmsReportRequest();
+    $request = new Operations\SendSmsReportRequest();
     $request->campaignId = 786011;
-    $request->sendReport = new SendReport();
-    $request->sendReport->email = new SendReportEmail();
+    $request->sendReport = new Shared\SendReport();
+    $request->sendReport->email = new Shared\Email();
     $request->sendReport->email->body = 'Please find attached the report of our last email campaign.';
     $request->sendReport->email->to = [
         'jim.suehan@example.com',
     ];
-    $request->sendReport->language = SendReportLanguage::En;
+    $request->sendReport->language = Shared\SendReportLanguage::En;
 
     $response = $sdk->smsCampaigns->sendSmsReport($request);
 
@@ -405,22 +396,21 @@ Send a test SMS campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\SendTestSmsRequest;
-use \test\BREVO\Models\Shared\SendTestSms;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new SendTestSmsRequest();
+    $request = new Operations\SendTestSmsRequest();
     $request->campaignId = 562258;
-    $request->sendTestSms = new SendTestSms();
+    $request->sendTestSms = new Shared\SendTestSms();
     $request->sendTestSms->phoneNumber = '33689965433';
 
     $response = $sdk->smsCampaigns->sendTestSms($request);
@@ -457,27 +447,25 @@ Update an SMS campaign
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateSmsCampaignRequest;
-use \test\BREVO\Models\Shared\UpdateSmsCampaign;
-use \test\BREVO\Models\Shared\UpdateSmsCampaignRecipients;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateSmsCampaignRequest();
+    $request = new Operations\UpdateSmsCampaignRequest();
     $request->campaignId = 537860;
-    $request->updateSmsCampaign = new UpdateSmsCampaign();
+    $request->updateSmsCampaign = new Shared\UpdateSmsCampaign();
     $request->updateSmsCampaign->content = 'Get a discount by visiting our NY store and saying : Happy Spring!';
     $request->updateSmsCampaign->name = 'Spring Promo Code';
     $request->updateSmsCampaign->organisationPrefix = 'MyCompany';
-    $request->updateSmsCampaign->recipients = new UpdateSmsCampaignRecipients();
+    $request->updateSmsCampaign->recipients = new Shared\UpdateSmsCampaignRecipients();
     $request->updateSmsCampaign->recipients->exclusionListIds = [
         15,
     ];
@@ -523,24 +511,22 @@ Update a campaign's status
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateSmsCampaignStatusRequest;
-use \test\BREVO\Models\Shared\UpdateCampaignStatus;
-use \test\BREVO\Models\Shared\UpdateCampaignStatusStatus;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateSmsCampaignStatusRequest();
+    $request = new Operations\UpdateSmsCampaignStatusRequest();
     $request->campaignId = 258044;
-    $request->updateCampaignStatus = new UpdateCampaignStatus();
-    $request->updateCampaignStatus->status = UpdateCampaignStatusStatus::Suspended;
+    $request->updateCampaignStatus = new Shared\UpdateCampaignStatus();
+    $request->updateCampaignStatus->status = Shared\UpdateCampaignStatusStatus::Suspended;
 
     $response = $sdk->smsCampaigns->updateSmsCampaignStatus($request);
 

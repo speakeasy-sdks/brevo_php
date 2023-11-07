@@ -178,12 +178,12 @@ class CreateEmailCampaign
     /**
      * Segment ids and List ids to include/exclude from campaign
      * 
-     * @var ?\test\BREVO\Models\Shared\CreateEmailCampaignRecipients $recipients
+     * @var ?\test\BREVO\Models\Shared\Recipients $recipients
      */
 	#[\JMS\Serializer\Annotation\SerializedName('recipients')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\CreateEmailCampaignRecipients')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Recipients')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?CreateEmailCampaignRecipients $recipients = null;
+    public ?Recipients $recipients = null;
     
     /**
      * Email on which the campaign recipients will be able to reply to
@@ -226,11 +226,11 @@ class CreateEmailCampaign
      * **{"name":"xyz", "id":123}**
      * 
      * 
-     * @var \test\BREVO\Models\Shared\CreateEmailCampaignSender $sender
+     * @var \test\BREVO\Models\Shared\Sender $sender
      */
 	#[\JMS\Serializer\Annotation\SerializedName('sender')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\CreateEmailCampaignSender')]
-    public CreateEmailCampaignSender $sender;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Sender')]
+    public Sender $sender;
     
     /**
      * Add the size of your test groups. **Mandatory if abTesting = true & 'recipients' is passed**. We'll send version A and B to a random sample of recipients, and then the winning version to everyone else
@@ -358,12 +358,12 @@ class CreateEmailCampaign
      * 
      * 
      * 
-     * @var ?\test\BREVO\Models\Shared\CreateEmailCampaignWinnerCriteria $winnerCriteria
+     * @var ?\test\BREVO\Models\Shared\WinnerCriteria $winnerCriteria
      */
 	#[\JMS\Serializer\Annotation\SerializedName('winnerCriteria')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\CreateEmailCampaignWinnerCriteria>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\WinnerCriteria>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?CreateEmailCampaignWinnerCriteria $winnerCriteria = null;
+    public ?WinnerCriteria $winnerCriteria = null;
     
     /**
      * Choose the duration of the test in hours. Maximum is 7 days, pass 24*7 = 168 hours. The winning version will be sent at the end of the test. **Mandatory if _splitRule_ >= 1 and < 50**. If splitRule = 50, `winnerDelay` is ignored if passed
@@ -397,7 +397,7 @@ class CreateEmailCampaign
 		$this->replyTo = null;
 		$this->scheduledAt = null;
 		$this->sendAtBestTime = null;
-		$this->sender = new \test\BREVO\Models\Shared\CreateEmailCampaignSender();
+		$this->sender = new \test\BREVO\Models\Shared\Sender();
 		$this->splitRule = null;
 		$this->subject = null;
 		$this->subjectA = null;

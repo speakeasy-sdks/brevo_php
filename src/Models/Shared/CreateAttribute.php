@@ -17,10 +17,10 @@ class CreateAttribute
      * **[{"value":1, "label":"male"}, {"value":2, "label":"female"}]**
      * 
      * 
-     * @var ?array<\test\BREVO\Models\Shared\CreateAttributeEnumeration> $enumeration
+     * @var ?array<\test\BREVO\Models\Shared\Enumeration> $enumeration
      */
 	#[\JMS\Serializer\Annotation\SerializedName('enumeration')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\CreateAttributeEnumeration>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Enumeration>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $enumeration = null;
     

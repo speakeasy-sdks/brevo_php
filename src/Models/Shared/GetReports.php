@@ -14,10 +14,10 @@ class GetReports
     /**
      * $reports
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetReportsReports> $reports
+     * @var ?array<\test\BREVO\Models\Shared\Reports> $reports
      */
 	#[\JMS\Serializer\Annotation\SerializedName('reports')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetReportsReports>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Reports>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $reports = null;
     

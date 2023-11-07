@@ -54,10 +54,10 @@ class GetCrmDealsRequest
     /**
      * Sort the results in the ascending/descending order. Default order is **descending** by creation if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCrmDealsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetCrmDealsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetCrmDealsSort $sort = null;
+    public ?GetCrmDealsQueryParamSort $sort = null;
     
 	public function __construct()
 	{

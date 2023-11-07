@@ -1,5 +1,5 @@
 # TransactionalWhatsApp
-(*transactionalWhatsApp*)
+
 
 ### Available Operations
 
@@ -18,28 +18,26 @@ This endpoint will show the unaggregated statistics for WhatsApp activity (30 da
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetWhatsappEventReportRequest;
-use \test\BREVO\Models\Operations\GetWhatsappEventReportEvent;
-use \test\BREVO\Models\Operations\GetWhatsappEventReportSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetWhatsappEventReportRequest();
+    $request = new Operations\GetWhatsappEventReportRequest();
     $request->contactNumber = '217-450-0860 x3202';
     $request->days = 322054;
     $request->endDate = 'string';
-    $request->event = GetWhatsappEventReportEvent::Sent;
+    $request->event = Operations\QueryParamEvent::Sent;
     $request->limit = 686968;
     $request->offset = 60200;
-    $request->sort = GetWhatsappEventReportSort::Desc;
+    $request->sort = Operations\GetWhatsappEventReportQueryParamSort::Desc;
     $request->startDate = 'string';
 
     $response = $sdk->transactionalWhatsApp->getWhatsappEventReport($request);
@@ -76,13 +74,13 @@ This endpoint is used to send a WhatsApp message. <br/>(**The first message you 
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -91,7 +89,7 @@ try {
 
     $response = $sdk->transactionalWhatsApp->sendWhatsappMessage($request);
 
-    if ($response->sendWhatsappMessage201ApplicationJSONObject !== null) {
+    if ($response->object !== null) {
         // handle response
     }
 } catch (Exception $e) {

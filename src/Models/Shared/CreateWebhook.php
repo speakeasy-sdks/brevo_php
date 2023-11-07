@@ -41,10 +41,10 @@ class CreateWebhook
      * #### `inboundEmailProcessed`
      * 
      * 
-     * @var array<\test\BREVO\Models\Shared\CreateWebhookEvents> $events
+     * @var array<\test\BREVO\Models\Shared\Events> $events
      */
 	#[\JMS\Serializer\Annotation\SerializedName('events')]
-    #[\JMS\Serializer\Annotation\Type('array<enum<test\BREVO\Models\Shared\CreateWebhookEvents>>')]
+    #[\JMS\Serializer\Annotation\Type('array<enum<test\BREVO\Models\Shared\Events>>')]
     public array $events;
     
     /**

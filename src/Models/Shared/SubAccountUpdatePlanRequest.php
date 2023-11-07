@@ -30,12 +30,12 @@ class SubAccountUpdatePlanRequest
     /**
      * Features details to update
      * 
-     * @var ?\test\BREVO\Models\Shared\SubAccountUpdatePlanRequestFeatures $features
+     * @var ?\test\BREVO\Models\Shared\Features $features
      */
 	#[\JMS\Serializer\Annotation\SerializedName('features')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\SubAccountUpdatePlanRequestFeatures')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Features')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?SubAccountUpdatePlanRequestFeatures $features = null;
+    public ?Features $features = null;
     
 	public function __construct()
 	{

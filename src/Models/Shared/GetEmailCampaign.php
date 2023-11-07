@@ -208,11 +208,11 @@ class GetEmailCampaign
     /**
      * Status of the campaign
      * 
-     * @var \test\BREVO\Models\Shared\GetEmailCampaignStatus $status
+     * @var \test\BREVO\Models\Shared\Status $status
      */
 	#[\JMS\Serializer\Annotation\SerializedName('status')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetEmailCampaignStatus>')]
-    public GetEmailCampaignStatus $status;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\Status>')]
+    public Status $status;
     
     /**
      * Subject of the campaign. Only available if `abTesting` flag of the campaign is `false`
@@ -326,7 +326,7 @@ class GetEmailCampaign
 		$this->shareLink = null;
 		$this->splitRule = null;
 		$this->statistics = new \test\BREVO\Models\Shared\GetEmailCampaignStatistics();
-		$this->status = \test\BREVO\Models\Shared\GetEmailCampaignStatus::Draft;
+		$this->status = \test\BREVO\Models\Shared\Status::Draft;
 		$this->subject = null;
 		$this->subjectA = null;
 		$this->subjectB = null;

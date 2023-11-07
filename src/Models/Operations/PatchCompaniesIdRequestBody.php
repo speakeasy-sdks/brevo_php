@@ -20,12 +20,12 @@ class PatchCompaniesIdRequestBody
     /**
      * Attributes for company update
      * 
-     * @var ?\test\BREVO\Models\Operations\PatchCompaniesIdRequestBodyAttributes $attributes
+     * @var ?\test\BREVO\Models\Operations\Attributes $attributes
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attributes')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Operations\PatchCompaniesIdRequestBodyAttributes')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Operations\Attributes')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?PatchCompaniesIdRequestBodyAttributes $attributes = null;
+    public ?Attributes $attributes = null;
     
     /**
      * Country code if phone_number is passed in attributes.

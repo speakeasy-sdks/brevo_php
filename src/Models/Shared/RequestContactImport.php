@@ -63,10 +63,10 @@ class RequestContactImport
      * 
      * 
      * 
-     * @var ?array<\test\BREVO\Models\Shared\RequestContactImportJsonBody> $jsonBody
+     * @var ?array<\test\BREVO\Models\Shared\JsonBody> $jsonBody
      */
 	#[\JMS\Serializer\Annotation\SerializedName('jsonBody')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\RequestContactImportJsonBody>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\JsonBody>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $jsonBody = null;
     
@@ -85,12 +85,12 @@ class RequestContactImport
     /**
      * To create a new list and import the contacts into it, pass the listName and an optional folderId.
      * 
-     * @var ?\test\BREVO\Models\Shared\RequestContactImportNewList $newList
+     * @var ?\test\BREVO\Models\Shared\NewList $newList
      */
 	#[\JMS\Serializer\Annotation\SerializedName('newList')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\RequestContactImportNewList')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\NewList')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?RequestContactImportNewList $newList = null;
+    public ?NewList $newList = null;
     
     /**
      * URL that will be called once the import process is finished. For reference, https://help.brevo.com/hc/en-us/articles/360007666479

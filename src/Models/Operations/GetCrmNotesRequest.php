@@ -30,10 +30,10 @@ class GetCrmNotesRequest
     /**
      * Filter by note entity type
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCrmNotesEntity $entity
+     * @var ?\test\BREVO\Models\Operations\QueryParamEntity $entity
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=entity')]
-    public ?GetCrmNotesEntity $entity = null;
+    public ?QueryParamEntity $entity = null;
     
     /**
      * Filter by note entity IDs
@@ -62,10 +62,10 @@ class GetCrmNotesRequest
     /**
      * Sort the results in the ascending/descending order. Default order is **descending** by creation if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCrmNotesSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetCrmNotesQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetCrmNotesSort $sort = null;
+    public ?GetCrmNotesQueryParamSort $sort = null;
     
 	public function __construct()
 	{

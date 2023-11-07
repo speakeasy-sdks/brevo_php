@@ -1,5 +1,5 @@
 # MasterAccount
-(*masterAccount*)
+
 
 ### Available Operations
 
@@ -26,19 +26,19 @@ Delete a sub-account
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteCorporateSubAccountIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteCorporateSubAccountIdRequest();
+    $request = new Operations\DeleteCorporateSubAccountIdRequest();
     $request->id = 240183;
 
     $response = $sdk->masterAccount->deleteCorporateSubAccountId($request);
@@ -75,19 +75,19 @@ Get user activity logs
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetAccountActivityRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetAccountActivityRequest();
+    $request = new Operations\GetAccountActivityRequest();
     $request->endDate = 'string';
     $request->limit = 87824;
     $request->offset = 280117;
@@ -127,13 +127,13 @@ This endpoint will provide the details of the master account.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -166,19 +166,19 @@ This endpoint will provide the list all the sub-accounts of the master account.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCorporateSubAccountRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCorporateSubAccountRequest();
+    $request = new Operations\GetCorporateSubAccountRequest();
     $request->limit = 809548;
     $request->offset = 775566;
 
@@ -216,19 +216,19 @@ This endpoint will provide the details for the specified sub-account company
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCorporateSubAccountIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCorporateSubAccountIdRequest();
+    $request = new Operations\GetCorporateSubAccountIdRequest();
     $request->id = 504418;
 
     $response = $sdk->masterAccount->getCorporateSubAccountId($request);
@@ -265,23 +265,21 @@ This endpoint will create a new sub-account under a master account
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateSubAccount;
-use \test\BREVO\Models\Shared\CreateSubAccountLanguage;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateSubAccount();
+    $request = new Shared\CreateSubAccount();
     $request->companyName = 'Bayer, Graham and Lemke';
     $request->email = 'Maxime61@hotmail.com';
-    $request->language = CreateSubAccountLanguage::Pt;
+    $request->language = Shared\CreateSubAccountLanguage::Pt;
     $request->timezone = 'Asia/Muscat';
 
     $response = $sdk->masterAccount->postCorporateSubAccount($request);
@@ -318,19 +316,19 @@ This endpoint will generate an API v3 key for a sub account
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PostCorporateSubAccountKeyRequestBody;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PostCorporateSubAccountKeyRequestBody();
+    $request = new Operations\PostCorporateSubAccountKeyRequestBody();
     $request->id = 3232323;
     $request->name = 'My Api Key';
 
@@ -368,23 +366,22 @@ This endpoint generates an sso token to authenticate and access a sub-account of
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBody;
-use \test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBodyTarget;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PostCorporateSubAccountSsoTokenRequestBody();
+    $request = new Operations\PostCorporateSubAccountSsoTokenRequestBody();
     $request->email = 'vipin+subaccount@brevo.com';
     $request->id = 3232323;
-    $request->target = PostCorporateSubAccountSsoTokenRequestBodyTarget::Contacts;
+    $request->target = Operations\Target::Contacts;
     $request->url = 'https://app.brevo.com/senders/domain/list';
 
     $response = $sdk->masterAccount->postCorporateSubAccountSsoToken($request);
@@ -421,22 +418,21 @@ API endpoints for the Corporate owner to enable/disable applications on the sub-
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PutCorporateSubAccountIdApplicationsToggleRequest;
-use \test\BREVO\Models\Shared\SubAccountAppsToggleRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PutCorporateSubAccountIdApplicationsToggleRequest();
+    $request = new Operations\PutCorporateSubAccountIdApplicationsToggleRequest();
     $request->id = 310762;
-    $request->subAccountAppsToggleRequest = new SubAccountAppsToggleRequest();
+    $request->subAccountAppsToggleRequest = new Shared\SubAccountAppsToggleRequest();
     $request->subAccountAppsToggleRequest->automation = false;
     $request->subAccountAppsToggleRequest->conversations = false;
     $request->subAccountAppsToggleRequest->crm = false;
@@ -485,27 +481,24 @@ This endpoint will update the sub-account plan
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PutCorporateSubAccountIdPlanRequest;
-use \test\BREVO\Models\Shared\SubAccountUpdatePlanRequest;
-use \test\BREVO\Models\Shared\SubAccountUpdatePlanRequestCredits;
-use \test\BREVO\Models\Shared\SubAccountUpdatePlanRequestFeatures;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PutCorporateSubAccountIdPlanRequest();
+    $request = new Operations\PutCorporateSubAccountIdPlanRequest();
     $request->id = 152623;
-    $request->subAccountUpdatePlanRequest = new SubAccountUpdatePlanRequest();
-    $request->subAccountUpdatePlanRequest->credits = new SubAccountUpdatePlanRequestCredits();
+    $request->subAccountUpdatePlanRequest = new Shared\SubAccountUpdatePlanRequest();
+    $request->subAccountUpdatePlanRequest->credits = new Shared\SubAccountUpdatePlanRequestCredits();
     $request->subAccountUpdatePlanRequest->credits->email = 454340;
-    $request->subAccountUpdatePlanRequest->features = new SubAccountUpdatePlanRequestFeatures();
+    $request->subAccountUpdatePlanRequest->features = new Shared\Features();
     $request->subAccountUpdatePlanRequest->features->inbox = 662938;
     $request->subAccountUpdatePlanRequest->features->landingPage = 92293;
     $request->subAccountUpdatePlanRequest->features->users = 570439;

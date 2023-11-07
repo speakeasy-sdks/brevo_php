@@ -34,10 +34,10 @@ class GetSmsEventsRequest
     /**
      * Filter the report for specific events
      * 
-     * @var ?\test\BREVO\Models\Operations\GetSmsEventsEvent $event
+     * @var ?\test\BREVO\Models\Operations\Event $event
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=event')]
-    public ?GetSmsEventsEvent $event = null;
+    public ?Event $event = null;
     
     /**
      * Number of documents per page
@@ -66,10 +66,10 @@ class GetSmsEventsRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetSmsEventsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetSmsEventsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetSmsEventsSort $sort = null;
+    public ?GetSmsEventsQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used.** Starting date (YYYY-MM-DD) of the report

@@ -24,10 +24,10 @@ class GetAllExternalFeeds
     /**
      * $feeds
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetAllExternalFeedsFeeds> $feeds
+     * @var ?array<\test\BREVO\Models\Shared\Feeds> $feeds
      */
 	#[\JMS\Serializer\Annotation\SerializedName('feeds')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetAllExternalFeedsFeeds>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Feeds>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $feeds = null;
     

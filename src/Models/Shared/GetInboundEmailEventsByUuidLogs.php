@@ -24,12 +24,12 @@ class GetInboundEmailEventsByUuidLogs
     /**
      * Type of the event
      * 
-     * @var ?\test\BREVO\Models\Shared\GetInboundEmailEventsByUuidLogsType $type
+     * @var ?\test\BREVO\Models\Shared\GetInboundEmailEventsByUuidType $type
      */
 	#[\JMS\Serializer\Annotation\SerializedName('type')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetInboundEmailEventsByUuidLogsType>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetInboundEmailEventsByUuidType>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetInboundEmailEventsByUuidLogsType $type = null;
+    public ?GetInboundEmailEventsByUuidType $type = null;
     
 	public function __construct()
 	{

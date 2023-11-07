@@ -14,11 +14,11 @@ class SendReport
     /**
      * Custom attributes for the report email.
      * 
-     * @var \test\BREVO\Models\Shared\SendReportEmail $email
+     * @var \test\BREVO\Models\Shared\Email $email
      */
 	#[\JMS\Serializer\Annotation\SerializedName('email')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\SendReportEmail')]
-    public SendReportEmail $email;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Email')]
+    public Email $email;
     
     /**
      * Language of email content for campaign report sending.
@@ -32,7 +32,7 @@ class SendReport
     
 	public function __construct()
 	{
-		$this->email = new \test\BREVO\Models\Shared\SendReportEmail();
+		$this->email = new \test\BREVO\Models\Shared\Email();
 		$this->language = null;
 	}
 }

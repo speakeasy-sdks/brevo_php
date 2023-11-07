@@ -14,10 +14,10 @@ class CreateAttributeRequest
     /**
      * Category of the attribute
      * 
-     * @var \test\BREVO\Models\Operations\CreateAttributeAttributeCategory $attributeCategory
+     * @var \test\BREVO\Models\Operations\AttributeCategory $attributeCategory
      */
 	#[SpeakeasyMetadata('pathParam:style=simple,explode=false,name=attributeCategory')]
-    public CreateAttributeAttributeCategory $attributeCategory;
+    public AttributeCategory $attributeCategory;
     
     /**
      * Name of the attribute
@@ -37,7 +37,7 @@ class CreateAttributeRequest
     
 	public function __construct()
 	{
-		$this->attributeCategory = \test\BREVO\Models\Operations\CreateAttributeAttributeCategory::Normal;
+		$this->attributeCategory = \test\BREVO\Models\Operations\AttributeCategory::Normal;
 		$this->attributeName = "";
 		$this->createAttribute = new \test\BREVO\Models\Shared\CreateAttribute();
 	}

@@ -14,12 +14,12 @@ class GetChildInfo
     /**
      * API Keys associated to child account
      * 
-     * @var ?\test\BREVO\Models\Shared\GetChildInfoApiKeys $apiKeys
+     * @var ?\test\BREVO\Models\Shared\ApiKeys $apiKeys
      */
 	#[\JMS\Serializer\Annotation\SerializedName('apiKeys')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetChildInfoApiKeys')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\ApiKeys')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetChildInfoApiKeys $apiKeys = null;
+    public ?ApiKeys $apiKeys = null;
     
     /**
      * Name of the company
@@ -33,12 +33,12 @@ class GetChildInfo
     /**
      * Credits available for your child
      * 
-     * @var ?\test\BREVO\Models\Shared\GetChildInfoCredits $credits
+     * @var ?\test\BREVO\Models\Shared\Credits $credits
      */
 	#[\JMS\Serializer\Annotation\SerializedName('credits')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetChildInfoCredits')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Credits')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetChildInfoCredits $credits = null;
+    public ?Credits $credits = null;
     
     /**
      * Login Email

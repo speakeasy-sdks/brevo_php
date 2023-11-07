@@ -1,5 +1,5 @@
 # Notes
-(*notes*)
+
 
 ### Available Operations
 
@@ -21,19 +21,19 @@ Delete a note
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteCrmNotesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteCrmNotesIdRequest();
+    $request = new Operations\DeleteCrmNotesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->notes->deleteCrmNotesId($request);
@@ -70,28 +70,26 @@ Get all notes
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmNotesRequest;
-use \test\BREVO\Models\Operations\GetCrmNotesEntity;
-use \test\BREVO\Models\Operations\GetCrmNotesSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmNotesRequest();
+    $request = new Operations\GetCrmNotesRequest();
     $request->dateFrom = 734797;
     $request->dateTo = 292043;
-    $request->entity = GetCrmNotesEntity::Contacts;
+    $request->entity = Operations\QueryParamEntity::Contacts;
     $request->entityIds = 'string';
     $request->limit = 672070;
     $request->offset = 601102;
-    $request->sort = GetCrmNotesSort::Asc;
+    $request->sort = Operations\GetCrmNotesQueryParamSort::Asc;
 
     $response = $sdk->notes->getCrmNotes($request);
 
@@ -127,19 +125,19 @@ Get a note
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmNotesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmNotesIdRequest();
+    $request = new Operations\GetCrmNotesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->notes->getCrmNotesId($request);
@@ -176,21 +174,20 @@ Update a note
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PatchCrmNotesIdRequest;
-use \test\BREVO\Models\Shared\NoteData;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PatchCrmNotesIdRequest();
-    $request->noteData = new NoteData();
+    $request = new Operations\PatchCrmNotesIdRequest();
+    $request->noteData = new Shared\NoteData();
     $request->noteData->companyIds = [
         'string',
     ];
@@ -237,19 +234,18 @@ Create a note
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\NoteData;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new NoteData();
+    $request = new Shared\NoteData();
     $request->companyIds = [
         'string',
     ];

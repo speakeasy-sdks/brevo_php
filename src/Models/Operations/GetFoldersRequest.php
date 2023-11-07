@@ -30,10 +30,10 @@ class GetFoldersRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetFoldersSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetFoldersQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetFoldersSort $sort = null;
+    public ?GetFoldersQueryParamSort $sort = null;
     
 	public function __construct()
 	{

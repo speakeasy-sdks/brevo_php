@@ -40,10 +40,10 @@ class GetSmsCampaignsRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetSmsCampaignsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetSmsCampaignsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetSmsCampaignsSort $sort = null;
+    public ?GetSmsCampaignsQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used.** Starting (urlencoded) UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) to filter the sent sms campaigns. **Prefer to pass your timezone in date-time format for accurate result** ( only available if either 'status' not passed and if passed is set to 'sent' )
@@ -58,10 +58,10 @@ class GetSmsCampaignsRequest
     /**
      * Status of campaign.
      * 
-     * @var ?\test\BREVO\Models\Operations\GetSmsCampaignsStatus $status
+     * @var ?\test\BREVO\Models\Operations\QueryParamStatus $status
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=status')]
-    public ?GetSmsCampaignsStatus $status = null;
+    public ?QueryParamStatus $status = null;
     
 	public function __construct()
 	{

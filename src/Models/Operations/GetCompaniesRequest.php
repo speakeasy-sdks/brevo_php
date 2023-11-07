@@ -54,10 +54,10 @@ class GetCompaniesRequest
     /**
      * Sort the results in the ascending/descending order. Default order is **descending** by creation if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCompaniesSort $sort
+     * @var ?\test\BREVO\Models\Operations\Sort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetCompaniesSort $sort = null;
+    public ?Sort $sort = null;
     
     /**
      * The field used to sort field names.

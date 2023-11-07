@@ -16,11 +16,11 @@ class RequestContactExport
      * 
      * 
      * 
-     * @var \test\BREVO\Models\Shared\RequestContactExportCustomContactFilter $customContactFilter
+     * @var \test\BREVO\Models\Shared\CustomContactFilter $customContactFilter
      */
 	#[\JMS\Serializer\Annotation\SerializedName('customContactFilter')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\RequestContactExportCustomContactFilter')]
-    public RequestContactExportCustomContactFilter $customContactFilter;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\CustomContactFilter')]
+    public CustomContactFilter $customContactFilter;
     
     /**
      * List of all the attributes that you want to export. **These attributes must be present in your contact database.** For example:
@@ -47,7 +47,7 @@ class RequestContactExport
     
 	public function __construct()
 	{
-		$this->customContactFilter = new \test\BREVO\Models\Shared\RequestContactExportCustomContactFilter();
+		$this->customContactFilter = new \test\BREVO\Models\Shared\CustomContactFilter();
 		$this->exportAttributes = null;
 		$this->notifyUrl = null;
 	}

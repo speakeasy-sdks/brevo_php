@@ -38,16 +38,16 @@ class PostCrmTasksResponse
     /**
      * Created new task
      * 
-     * @var ?\test\BREVO\Models\Operations\PostCrmTasks201ApplicationJSON $postCrmTasks201ApplicationJSONObject
+     * @var ?\test\BREVO\Models\Operations\PostCrmTasksResponseBody $object
      */
 	
-    public ?PostCrmTasks201ApplicationJSON $postCrmTasks201ApplicationJSONObject = null;
+    public ?PostCrmTasksResponseBody $object = null;
     
 	public function __construct()
 	{
 		$this->contentType = "";
 		$this->statusCode = 0;
 		$this->rawResponse = null;
-		$this->postCrmTasks201ApplicationJSONObject = null;
+		$this->object = null;
 	}
 }

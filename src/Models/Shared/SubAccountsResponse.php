@@ -24,10 +24,10 @@ class SubAccountsResponse
     /**
      * $subAccounts
      * 
-     * @var ?array<\test\BREVO\Models\Shared\SubAccountsResponseSubAccounts> $subAccounts
+     * @var ?array<\test\BREVO\Models\Shared\SubAccounts> $subAccounts
      */
 	#[\JMS\Serializer\Annotation\SerializedName('subAccounts')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\SubAccountsResponseSubAccounts>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\SubAccounts>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $subAccounts = null;
     

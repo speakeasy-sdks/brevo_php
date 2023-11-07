@@ -14,10 +14,10 @@ class GetChildrenList
     /**
      * Your children's account information
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetChildrenListChildren> $children
+     * @var ?array<\test\BREVO\Models\Shared\Children> $children
      */
 	#[\JMS\Serializer\Annotation\SerializedName('children')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetChildrenListChildren>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Children>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $children = null;
     

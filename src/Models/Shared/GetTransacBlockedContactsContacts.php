@@ -32,11 +32,11 @@ class GetTransacBlockedContactsContacts
     /**
      * Reason for blocking / unsubscribing
      * 
-     * @var \test\BREVO\Models\Shared\GetTransacBlockedContactsContactsReason $reason
+     * @var \test\BREVO\Models\Shared\Reason $reason
      */
 	#[\JMS\Serializer\Annotation\SerializedName('reason')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetTransacBlockedContactsContactsReason')]
-    public GetTransacBlockedContactsContactsReason $reason;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Reason')]
+    public Reason $reason;
     
     /**
      * Sender email address of the blocked or unsubscribed contact
@@ -51,7 +51,7 @@ class GetTransacBlockedContactsContacts
 	{
 		$this->blockedAt = "";
 		$this->email = "";
-		$this->reason = new \test\BREVO\Models\Shared\GetTransacBlockedContactsContactsReason();
+		$this->reason = new \test\BREVO\Models\Shared\Reason();
 		$this->senderEmail = "";
 	}
 }

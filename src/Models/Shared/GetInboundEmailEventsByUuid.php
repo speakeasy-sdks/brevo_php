@@ -14,10 +14,10 @@ class GetInboundEmailEventsByUuid
     /**
      * List of attachments of the email. This will be present only after the processing is done.
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetInboundEmailEventsByUuidAttachments> $attachments
+     * @var ?array<\test\BREVO\Models\Shared\Attachments> $attachments
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attachments')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetInboundEmailEventsByUuidAttachments>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Attachments>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $attachments = null;
     

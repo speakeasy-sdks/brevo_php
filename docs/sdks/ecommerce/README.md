@@ -1,5 +1,5 @@
 # Ecommerce
-(*ecommerce*)
+
 
 ### Available Operations
 
@@ -27,25 +27,21 @@ Create multiple orders at one time instead of one order at a time
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\OrderBatch;
-use \test\BREVO\Models\Shared\Order;
-use \test\BREVO\Models\Shared\OrderBilling;
-use \test\BREVO\Models\Shared\OrderProducts;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new OrderBatch();
+    $request = new Shared\OrderBatch();
     $request->notifyUrl = 'https://en.wikipedia.org/wiki/Webhook';
     $request->orders = [
-        new Order(),
+        new Shared\Order(),
     ];
 
     $response = $sdk->ecommerce->createBatchOrder($request);
@@ -82,23 +78,20 @@ Manages the transactional status of the order
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\Order;
-use \test\BREVO\Models\Shared\OrderBilling;
-use \test\BREVO\Models\Shared\OrderProducts;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new Order();
+    $request = new Shared\Order();
     $request->amount = 308.42;
-    $request->billing = new OrderBilling();
+    $request->billing = new Shared\Billing();
     $request->billing->address = '15 Somewhere Road, Brynmenyn';
     $request->billing->city = 'Basel';
     $request->billing->countryCode = 'CA';
@@ -113,7 +106,7 @@ try {
     $request->email = 'example@brevo.com';
     $request->id = '14';
     $request->products = [
-        new OrderProducts(),
+        new Shared\OrderProducts(),
     ];
     $request->status = 'completed';
     $request->updatedAt = '2021-07-30T10:59:23.383Z';
@@ -152,22 +145,20 @@ Create categories in batch
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateUpdateBatchCategory;
-use \test\BREVO\Models\Shared\CreateUpdateCategories;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateUpdateBatchCategory();
+    $request = new Shared\CreateUpdateBatchCategory();
     $request->categories = [
-        new CreateUpdateCategories(),
+        new Shared\CreateUpdateCategories(),
     ];
     $request->updateEnabled = false;
 
@@ -205,22 +196,20 @@ Create products in batch
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateUpdateBatchProducts;
-use \test\BREVO\Models\Shared\CreateUpdateProducts;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateUpdateBatchProducts();
+    $request = new Shared\CreateUpdateBatchProducts();
     $request->products = [
-        new CreateUpdateProducts(),
+        new Shared\CreateUpdateProducts(),
     ];
     $request->updateEnabled = false;
 
@@ -258,19 +247,18 @@ Create/Update a category
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateUpdateCategory;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateUpdateCategory();
+    $request = new Shared\CreateUpdateCategory();
     $request->deletedAt = '2017-05-12T12:30:00Z';
     $request->id = 'CAT123';
     $request->name = 'Electronics';
@@ -311,19 +299,18 @@ Create/Update a product
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateUpdateProduct;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateUpdateProduct();
+    $request = new Shared\CreateUpdateProduct();
     $request->categories = [
         'string',
     ];
@@ -374,27 +361,26 @@ Return all your categories
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCategoriesRequest;
-use \test\BREVO\Models\Operations\GetCategoriesSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCategoriesRequest();
+    $request = new Operations\GetCategoriesRequest();
     $request->ids = [
         'string',
     ];
     $request->limit = 806522;
     $request->name = 'string';
     $request->offset = 152083;
-    $request->sort = GetCategoriesSort::Desc;
+    $request->sort = Operations\GetCategoriesQueryParamSort::Desc;
 
     $response = $sdk->ecommerce->getCategories($request);
 
@@ -430,19 +416,19 @@ Get a category details
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCategoryInfoRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCategoryInfoRequest();
+    $request = new Operations\GetCategoryInfoRequest();
     $request->id = '<ID>';
 
     $response = $sdk->ecommerce->getCategoryInfo($request);
@@ -479,19 +465,19 @@ Get a product's details
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetProductInfoRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetProductInfoRequest();
+    $request = new Operations\GetProductInfoRequest();
     $request->id = '<ID>';
 
     $response = $sdk->ecommerce->getProductInfo($request);
@@ -528,20 +514,19 @@ Return all your products
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetProductsRequest;
-use \test\BREVO\Models\Operations\GetProductsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetProductsRequest();
+    $request = new Operations\GetProductsRequest();
     $request->categories = [
         'string',
     ];
@@ -557,7 +542,7 @@ try {
     $request->priceLt = 6920.07;
     $request->priceLte = 2190.35;
     $request->priceNe = 849.64;
-    $request->sort = GetProductsSort::Desc;
+    $request->sort = Operations\GetProductsQueryParamSort::Desc;
 
     $response = $sdk->ecommerce->getProducts($request);
 
@@ -593,13 +578,13 @@ Getting access to Brevo eCommerce.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 

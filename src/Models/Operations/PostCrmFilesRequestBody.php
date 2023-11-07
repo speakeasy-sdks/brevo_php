@@ -23,16 +23,16 @@ class PostCrmFilesRequestBody
     /**
      * File data to create a file.
      * 
-     * @var \test\BREVO\Models\Operations\PostCrmFilesRequestBodyFile $file
+     * @var \test\BREVO\Models\Operations\File $file
      */
 	#[SpeakeasyMetadata('multipartForm:file=true')]
-    public PostCrmFilesRequestBodyFile $file;
+    public File $file;
     
 	public function __construct()
 	{
 		$this->companyId = null;
 		$this->contactId = null;
 		$this->dealId = null;
-		$this->file = new \test\BREVO\Models\Operations\PostCrmFilesRequestBodyFile();
+		$this->file = new \test\BREVO\Models\Operations\File();
 	}
 }

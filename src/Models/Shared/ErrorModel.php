@@ -14,11 +14,11 @@ class ErrorModel
     /**
      * Error code displayed in case of a failure
      * 
-     * @var \test\BREVO\Models\Shared\ErrorModelCode $code
+     * @var \test\BREVO\Models\Shared\Code $code
      */
 	#[\JMS\Serializer\Annotation\SerializedName('code')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\ErrorModelCode>')]
-    public ErrorModelCode $code;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\Code>')]
+    public Code $code;
     
     /**
      * Readable message associated to the failure
@@ -31,7 +31,7 @@ class ErrorModel
     
 	public function __construct()
 	{
-		$this->code = \test\BREVO\Models\Shared\ErrorModelCode::InvalidParameter;
+		$this->code = \test\BREVO\Models\Shared\Code::InvalidParameter;
 		$this->message = "";
 	}
 }

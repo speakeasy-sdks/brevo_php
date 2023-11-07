@@ -1,5 +1,5 @@
 # Files
-(*files*)
+
 
 ### Available Operations
 
@@ -21,19 +21,19 @@ Delete a file
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteCrmFilesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteCrmFilesIdRequest();
+    $request = new Operations\DeleteCrmFilesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->files->deleteCrmFilesId($request);
@@ -70,28 +70,26 @@ Get all files
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmFilesRequest;
-use \test\BREVO\Models\Operations\GetCrmFilesEntity;
-use \test\BREVO\Models\Operations\GetCrmFilesSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmFilesRequest();
+    $request = new Operations\GetCrmFilesRequest();
     $request->dateFrom = 736297;
     $request->dateTo = 40718;
-    $request->entity = GetCrmFilesEntity::Deals;
+    $request->entity = Operations\Entity::Deals;
     $request->entityIds = 'string';
     $request->limit = 240606;
     $request->offset = 115165;
-    $request->sort = GetCrmFilesSort::Asc;
+    $request->sort = Operations\GetCrmFilesQueryParamSort::Asc;
 
     $response = $sdk->files->getCrmFiles($request);
 
@@ -127,19 +125,19 @@ Download a file
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmFilesIdRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmFilesIdRequest();
+    $request = new Operations\GetCrmFilesIdRequest();
     $request->id = '<ID>';
 
     $response = $sdk->files->getCrmFilesId($request);
@@ -176,19 +174,19 @@ Get file details
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetCrmFilesIdDataRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetCrmFilesIdDataRequest();
+    $request = new Operations\GetCrmFilesIdDataRequest();
     $request->id = '<ID>';
 
     $response = $sdk->files->getCrmFilesIdData($request);
@@ -225,26 +223,25 @@ Upload a file
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\PostCrmFilesRequestBody;
-use \test\BREVO\Models\Operations\PostCrmFilesRequestBodyFile;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new PostCrmFilesRequestBody();
+    $request = new Operations\PostCrmFilesRequestBody();
     $request->companyId = 'string';
     $request->contactId = 256288;
     $request->dealId = 'string';
-    $request->file = new PostCrmFilesRequestBodyFile();
-    $request->file->content = 'k3*ek8J:Kt';
-    $request->file->file = 'string';
+    $request->file = new Operations\File();
+    $request->file->content = '0xB42AB596aD';
+    $request->file->fileName = 'officer_personnel_diesel.mpg4';
 
     $response = $sdk->files->postCrmFiles($request);
 

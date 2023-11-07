@@ -14,10 +14,10 @@ class GetAccountActivity
     /**
      * Get user activity logs
      * 
-     * @var ?array<\test\BREVO\Models\Shared\GetAccountActivityLogs> $logs
+     * @var ?array<\test\BREVO\Models\Shared\Logs> $logs
      */
 	#[\JMS\Serializer\Annotation\SerializedName('logs')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetAccountActivityLogs>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Logs>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $logs = null;
     

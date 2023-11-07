@@ -46,10 +46,10 @@ class GetCategoriesRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetCategoriesSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetCategoriesQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetCategoriesSort $sort = null;
+    public ?GetCategoriesQueryParamSort $sort = null;
     
 	public function __construct()
 	{

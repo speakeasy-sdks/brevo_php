@@ -46,10 +46,10 @@ class UpdateCouponCollectionResponse
     /**
      * Coupon collection updated
      * 
-     * @var ?\test\BREVO\Models\Operations\UpdateCouponCollection200ApplicationJSON $updateCouponCollection200ApplicationJSONObject
+     * @var ?\test\BREVO\Models\Operations\UpdateCouponCollectionResponseBody $object
      */
 	
-    public ?UpdateCouponCollection200ApplicationJSON $updateCouponCollection200ApplicationJSONObject = null;
+    public ?UpdateCouponCollectionResponseBody $object = null;
     
 	public function __construct()
 	{
@@ -57,6 +57,6 @@ class UpdateCouponCollectionResponse
 		$this->statusCode = 0;
 		$this->rawResponse = null;
 		$this->errorModel = null;
-		$this->updateCouponCollection200ApplicationJSONObject = null;
+		$this->object = null;
 	}
 }

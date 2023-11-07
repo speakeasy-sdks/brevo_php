@@ -25,10 +25,10 @@ class GetEmailCampaignsRequest
     /**
      * Use this flag to exclude htmlContent from the response body. If set to **true**, htmlContent field will be returned as empty string in the response body
      * 
-     * @var ?\test\BREVO\Models\Operations\GetEmailCampaignsExcludeHTMLContent $excludeHtmlContent
+     * @var ?\test\BREVO\Models\Operations\ExcludeHtmlContent $excludeHtmlContent
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=excludeHtmlContent')]
-    public ?GetEmailCampaignsExcludeHTMLContent $excludeHtmlContent = null;
+    public ?ExcludeHtmlContent $excludeHtmlContent = null;
     
     /**
      * Number of documents per page
@@ -49,10 +49,10 @@ class GetEmailCampaignsRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetEmailCampaignsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetEmailCampaignsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetEmailCampaignsSort $sort = null;
+    public ?GetEmailCampaignsQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used**. Starting (urlencoded) UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) to filter the sent email campaigns.
@@ -68,26 +68,26 @@ class GetEmailCampaignsRequest
     /**
      * Filter on the type of statistics required. Example **globalStats** value will only fetch globalStats info of the campaign in returned response.
      * 
-     * @var ?\test\BREVO\Models\Operations\GetEmailCampaignsStatistics $statistics
+     * @var ?\test\BREVO\Models\Operations\QueryParamStatistics $statistics
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=statistics')]
-    public ?GetEmailCampaignsStatistics $statistics = null;
+    public ?QueryParamStatistics $statistics = null;
     
     /**
      * Filter on the status of the campaign
      * 
-     * @var ?\test\BREVO\Models\Operations\GetEmailCampaignsStatus $status
+     * @var ?\test\BREVO\Models\Operations\Status $status
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=status')]
-    public ?GetEmailCampaignsStatus $status = null;
+    public ?Status $status = null;
     
     /**
      * Filter on the type of the campaigns
      * 
-     * @var ?\test\BREVO\Models\Operations\GetEmailCampaignsType $type
+     * @var ?\test\BREVO\Models\Operations\Type $type
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=type')]
-    public ?GetEmailCampaignsType $type = null;
+    public ?Type $type = null;
     
 	public function __construct()
 	{

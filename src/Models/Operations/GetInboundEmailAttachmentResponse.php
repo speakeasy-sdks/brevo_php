@@ -44,6 +44,14 @@ class GetInboundEmailAttachmentResponse
     public ?\Psr\Http\Message\ResponseInterface $rawResponse = null;
     
     /**
+     * Attachment information
+     * 
+     * @var ?string $bytes
+     */
+	
+    public ?string $bytes = null;
+    
+    /**
      * bad request
      * 
      * @var ?\test\BREVO\Models\Shared\ErrorModel $errorModel
@@ -51,21 +59,13 @@ class GetInboundEmailAttachmentResponse
 	
     public ?\test\BREVO\Models\Shared\ErrorModel $errorModel = null;
     
-    /**
-     * Attachment information
-     * 
-     * @var ?string $getInboundEmailAttachment200ApplicationOctetStreamBinaryString
-     */
-	
-    public ?string $getInboundEmailAttachment200ApplicationOctetStreamBinaryString = null;
-    
 	public function __construct()
 	{
 		$this->contentType = "";
 		$this->headers = null;
 		$this->statusCode = 0;
 		$this->rawResponse = null;
+		$this->bytes = null;
 		$this->errorModel = null;
-		$this->getInboundEmailAttachment200ApplicationOctetStreamBinaryString = null;
 	}
 }

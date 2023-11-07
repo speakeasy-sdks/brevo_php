@@ -25,10 +25,10 @@ class CreateSender
      * 
      * 
      * 
-     * @var ?array<\test\BREVO\Models\Shared\CreateSenderIps> $ips
+     * @var ?array<\test\BREVO\Models\Shared\Ips> $ips
      */
 	#[\JMS\Serializer\Annotation\SerializedName('ips')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\CreateSenderIps>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Ips>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
     public ?array $ips = null;
     

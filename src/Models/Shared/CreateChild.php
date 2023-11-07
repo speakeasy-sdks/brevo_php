@@ -41,12 +41,12 @@ class CreateChild
     /**
      * Language of the child account
      * 
-     * @var ?\test\BREVO\Models\Shared\CreateChildLanguage $language
+     * @var ?\test\BREVO\Models\Shared\Language $language
      */
 	#[\JMS\Serializer\Annotation\SerializedName('language')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\CreateChildLanguage>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\Language>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?CreateChildLanguage $language = null;
+    public ?Language $language = null;
     
     /**
      * Last name to use to create the child account

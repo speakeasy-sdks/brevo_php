@@ -22,9 +22,9 @@ class AbTestCampaignResult
     public ?string $clickRate = null;
     
 	#[\JMS\Serializer\Annotation\SerializedName('clickedLinks')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\AbTestCampaignResultClickedLinks')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\ClickedLinks')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?AbTestCampaignResultClickedLinks $clickedLinks = null;
+    public ?ClickedLinks $clickedLinks = null;
     
     /**
      * Open rate for current winning version
@@ -37,19 +37,19 @@ class AbTestCampaignResult
     public ?string $openRate = null;
     
 	#[\JMS\Serializer\Annotation\SerializedName('statistics')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\AbTestCampaignResultStatistics')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Statistics')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?AbTestCampaignResultStatistics $statistics = null;
+    public ?Statistics $statistics = null;
     
     /**
      * Criteria choosen for winning version (Open/Click)
      * 
-     * @var ?\test\BREVO\Models\Shared\AbTestCampaignResultWinningCriteria $winningCriteria
+     * @var ?\test\BREVO\Models\Shared\WinningCriteria $winningCriteria
      */
 	#[\JMS\Serializer\Annotation\SerializedName('winningCriteria')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\AbTestCampaignResultWinningCriteria>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\WinningCriteria>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?AbTestCampaignResultWinningCriteria $winningCriteria = null;
+    public ?WinningCriteria $winningCriteria = null;
     
     /**
      * Subject Line of current winning version
@@ -64,12 +64,12 @@ class AbTestCampaignResult
     /**
      * Winning Campaign Info. pending = Campaign has been picked for sending and winning version is yet to be decided, tie = A tie happened between both the versions, notAvailable = Campaign has not yet been picked for sending.
      * 
-     * @var ?\test\BREVO\Models\Shared\AbTestCampaignResultWinningVersion $winningVersion
+     * @var ?\test\BREVO\Models\Shared\WinningVersion $winningVersion
      */
 	#[\JMS\Serializer\Annotation\SerializedName('winningVersion')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\AbTestCampaignResultWinningVersion>')]
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\WinningVersion>')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?AbTestCampaignResultWinningVersion $winningVersion = null;
+    public ?WinningVersion $winningVersion = null;
     
     /**
      * Open/Click rate for the winner version

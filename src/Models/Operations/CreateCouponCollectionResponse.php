@@ -36,14 +36,6 @@ class CreateCouponCollectionResponse
     public ?\Psr\Http\Message\ResponseInterface $rawResponse = null;
     
     /**
-     * Coupon collection created
-     * 
-     * @var ?\test\BREVO\Models\Operations\CreateCouponCollection201ApplicationJSON $createCouponCollection201ApplicationJSONObject
-     */
-	
-    public ?CreateCouponCollection201ApplicationJSON $createCouponCollection201ApplicationJSONObject = null;
-    
-    /**
      * bad request
      * 
      * @var ?\test\BREVO\Models\Shared\ErrorModel $errorModel
@@ -51,12 +43,20 @@ class CreateCouponCollectionResponse
 	
     public ?\test\BREVO\Models\Shared\ErrorModel $errorModel = null;
     
+    /**
+     * Coupon collection created
+     * 
+     * @var ?\test\BREVO\Models\Operations\CreateCouponCollectionResponseBody $object
+     */
+	
+    public ?CreateCouponCollectionResponseBody $object = null;
+    
 	public function __construct()
 	{
 		$this->contentType = "";
 		$this->statusCode = 0;
 		$this->rawResponse = null;
-		$this->createCouponCollection201ApplicationJSONObject = null;
 		$this->errorModel = null;
+		$this->object = null;
 	}
 }

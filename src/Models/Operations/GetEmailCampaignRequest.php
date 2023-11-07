@@ -22,10 +22,10 @@ class GetEmailCampaignRequest
     /**
      * Filter on the type of statistics required. Example **globalStats** value will only fetch globalStats info of the campaign in returned response.
      * 
-     * @var ?\test\BREVO\Models\Operations\GetEmailCampaignStatistics $statistics
+     * @var ?\test\BREVO\Models\Operations\Statistics $statistics
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=statistics')]
-    public ?GetEmailCampaignStatistics $statistics = null;
+    public ?Statistics $statistics = null;
     
 	public function __construct()
 	{

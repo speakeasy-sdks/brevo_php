@@ -57,8 +57,8 @@ class GetSmsCampaignsCampaigns
     public string $name;
     
 	#[\JMS\Serializer\Annotation\SerializedName('recipients')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetSmsCampaignsCampaignsRecipients')]
-    public GetSmsCampaignsCampaignsRecipients $recipients;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetSmsCampaignsRecipients')]
+    public GetSmsCampaignsRecipients $recipients;
     
     /**
      * UTC date-time on which SMS campaign is scheduled. Should be in YYYY-MM-DDTHH:mm:ss.SSSZ format
@@ -80,17 +80,17 @@ class GetSmsCampaignsCampaigns
     public string $sender;
     
 	#[\JMS\Serializer\Annotation\SerializedName('statistics')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetSmsCampaignsCampaignsStatistics')]
-    public GetSmsCampaignsCampaignsStatistics $statistics;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetSmsCampaignsStatistics')]
+    public GetSmsCampaignsStatistics $statistics;
     
     /**
      * Status of the SMS Campaign
      * 
-     * @var \test\BREVO\Models\Shared\GetSmsCampaignsCampaignsStatus $status
+     * @var \test\BREVO\Models\Shared\GetSmsCampaignsStatus $status
      */
 	#[\JMS\Serializer\Annotation\SerializedName('status')]
-    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetSmsCampaignsCampaignsStatus>')]
-    public GetSmsCampaignsCampaignsStatus $status;
+    #[\JMS\Serializer\Annotation\Type('enum<test\BREVO\Models\Shared\GetSmsCampaignsStatus>')]
+    public GetSmsCampaignsStatus $status;
     
 	public function __construct()
 	{
@@ -99,10 +99,10 @@ class GetSmsCampaignsCampaigns
 		$this->id = 0;
 		$this->modifiedAt = "";
 		$this->name = "";
-		$this->recipients = new \test\BREVO\Models\Shared\GetSmsCampaignsCampaignsRecipients();
+		$this->recipients = new \test\BREVO\Models\Shared\GetSmsCampaignsRecipients();
 		$this->scheduledAt = null;
 		$this->sender = "";
-		$this->statistics = new \test\BREVO\Models\Shared\GetSmsCampaignsCampaignsStatistics();
-		$this->status = \test\BREVO\Models\Shared\GetSmsCampaignsCampaignsStatus::Draft;
+		$this->statistics = new \test\BREVO\Models\Shared\GetSmsCampaignsStatistics();
+		$this->status = \test\BREVO\Models\Shared\GetSmsCampaignsStatus::Draft;
 	}
 }

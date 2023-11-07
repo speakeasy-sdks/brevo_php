@@ -14,19 +14,19 @@ class RemainingCreditModel
     /**
      * Credits remaining for child account
      * 
-     * @var \test\BREVO\Models\Shared\RemainingCreditModelChild $child
+     * @var \test\BREVO\Models\Shared\Child $child
      */
 	#[\JMS\Serializer\Annotation\SerializedName('child')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\RemainingCreditModelChild')]
-    public RemainingCreditModelChild $child;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Child')]
+    public Child $child;
     
 	#[\JMS\Serializer\Annotation\SerializedName('reseller')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\RemainingCreditModelReseller')]
-    public RemainingCreditModelReseller $reseller;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Reseller')]
+    public Reseller $reseller;
     
 	public function __construct()
 	{
-		$this->child = new \test\BREVO\Models\Shared\RemainingCreditModelChild();
-		$this->reseller = new \test\BREVO\Models\Shared\RemainingCreditModelReseller();
+		$this->child = new \test\BREVO\Models\Shared\Child();
+		$this->reseller = new \test\BREVO\Models\Shared\Reseller();
 	}
 }

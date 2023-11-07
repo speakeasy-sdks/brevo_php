@@ -38,16 +38,16 @@ class PostCrmDealsResponse
     /**
      * Created new Deal
      * 
-     * @var ?\test\BREVO\Models\Operations\PostCrmDeals201ApplicationJSON $postCrmDeals201ApplicationJSONObject
+     * @var ?\test\BREVO\Models\Operations\PostCrmDealsResponseBody $object
      */
 	
-    public ?PostCrmDeals201ApplicationJSON $postCrmDeals201ApplicationJSONObject = null;
+    public ?PostCrmDealsResponseBody $object = null;
     
 	public function __construct()
 	{
 		$this->contentType = "";
 		$this->statusCode = 0;
 		$this->rawResponse = null;
-		$this->postCrmDeals201ApplicationJSONObject = null;
+		$this->object = null;
 	}
 }

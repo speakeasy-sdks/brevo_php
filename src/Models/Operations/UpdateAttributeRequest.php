@@ -14,10 +14,10 @@ class UpdateAttributeRequest
     /**
      * Category of the attribute
      * 
-     * @var \test\BREVO\Models\Operations\UpdateAttributeAttributeCategory $attributeCategory
+     * @var \test\BREVO\Models\Operations\UpdateAttributePathParamAttributeCategory $attributeCategory
      */
 	#[SpeakeasyMetadata('pathParam:style=simple,explode=false,name=attributeCategory')]
-    public UpdateAttributeAttributeCategory $attributeCategory;
+    public UpdateAttributePathParamAttributeCategory $attributeCategory;
     
     /**
      * Name of the existing attribute
@@ -37,7 +37,7 @@ class UpdateAttributeRequest
     
 	public function __construct()
 	{
-		$this->attributeCategory = \test\BREVO\Models\Operations\UpdateAttributeAttributeCategory::Category;
+		$this->attributeCategory = \test\BREVO\Models\Operations\UpdateAttributePathParamAttributeCategory::Category;
 		$this->attributeName = "";
 		$this->updateAttribute = new \test\BREVO\Models\Shared\UpdateAttribute();
 	}

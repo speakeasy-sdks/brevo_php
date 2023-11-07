@@ -14,11 +14,11 @@ class GetAccount
     /**
      * Address informations
      * 
-     * @var \test\BREVO\Models\Shared\GetAccountAddress $address
+     * @var \test\BREVO\Models\Shared\Address $address
      */
 	#[\JMS\Serializer\Annotation\SerializedName('address')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetAccountAddress')]
-    public GetAccountAddress $address;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Address')]
+    public Address $address;
     
     /**
      * Name of the company
@@ -57,37 +57,37 @@ class GetAccount
     public string $lastName;
     
 	#[\JMS\Serializer\Annotation\SerializedName('marketingAutomation')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetAccountMarketingAutomation')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\MarketingAutomation')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?GetAccountMarketingAutomation $marketingAutomation = null;
+    public ?MarketingAutomation $marketingAutomation = null;
     
     /**
      * Information about your plans and credits
      * 
-     * @var array<\test\BREVO\Models\Shared\GetAccountPlan> $plan
+     * @var array<\test\BREVO\Models\Shared\Plan> $plan
      */
 	#[\JMS\Serializer\Annotation\SerializedName('plan')]
-    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\GetAccountPlan>')]
+    #[\JMS\Serializer\Annotation\Type('array<test\BREVO\Models\Shared\Plan>')]
     public array $plan;
     
     /**
      * Information about your transactional email account
      * 
-     * @var \test\BREVO\Models\Shared\GetAccountRelay $relay
+     * @var \test\BREVO\Models\Shared\Relay $relay
      */
 	#[\JMS\Serializer\Annotation\SerializedName('relay')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\GetAccountRelay')]
-    public GetAccountRelay $relay;
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Shared\Relay')]
+    public Relay $relay;
     
 	public function __construct()
 	{
-		$this->address = new \test\BREVO\Models\Shared\GetAccountAddress();
+		$this->address = new \test\BREVO\Models\Shared\Address();
 		$this->companyName = "";
 		$this->email = "";
 		$this->firstName = "";
 		$this->lastName = "";
 		$this->marketingAutomation = null;
 		$this->plan = [];
-		$this->relay = new \test\BREVO\Models\Shared\GetAccountRelay();
+		$this->relay = new \test\BREVO\Models\Shared\Relay();
 	}
 }

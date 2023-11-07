@@ -1,5 +1,5 @@
 # InboundParsing
-(*inboundParsing*)
+
 
 ### Available Operations
 
@@ -19,24 +19,24 @@ This endpoint will retrieve inbound attachment with download token.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetInboundEmailAttachmentRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetInboundEmailAttachmentRequest();
+    $request = new Operations\GetInboundEmailAttachmentRequest();
     $request->downloadToken = 'string';
 
     $response = $sdk->inboundParsing->getInboundEmailAttachment($request);
 
-    if ($response->getInboundEmailAttachment200ApplicationOctetStreamBinaryString !== null) {
+    if ($response->bytes !== null) {
         // handle response
     }
 } catch (Exception $e) {
@@ -68,25 +68,24 @@ This endpoint will show the list of all the events for the received emails.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetInboundEmailEventsRequest;
-use \test\BREVO\Models\Operations\GetInboundEmailEventsSort;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetInboundEmailEventsRequest();
+    $request = new Operations\GetInboundEmailEventsRequest();
     $request->endDate = 'string';
     $request->limit = 717459;
     $request->offset = 401477;
     $request->sender = 'string';
-    $request->sort = GetInboundEmailEventsSort::Desc;
+    $request->sort = Operations\GetInboundEmailEventsQueryParamSort::Desc;
     $request->startDate = 'string';
 
     $response = $sdk->inboundParsing->getInboundEmailEvents($request);
@@ -123,19 +122,19 @@ This endpoint will show the list of all events history for one particular receiv
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetInboundEmailEventsByUuidRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetInboundEmailEventsByUuidRequest();
+    $request = new Operations\GetInboundEmailEventsByUuidRequest();
     $request->uuid = '0b78133b-5346-4c5c-9f06-f4b3166b05d6';
 
     $response = $sdk->inboundParsing->getInboundEmailEventsByUuid($request);

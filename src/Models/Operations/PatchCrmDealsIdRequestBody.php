@@ -26,12 +26,12 @@ class PatchCrmDealsIdRequestBody
      * Pipeline and deal_stage are ids you can fetch using this endpoint `/crm/pipeline/details/{pipelineID}`
      * 
      * 
-     * @var ?\test\BREVO\Models\Operations\PatchCrmDealsIdRequestBodyAttributes $attributes
+     * @var ?\test\BREVO\Models\Operations\PatchCrmDealsIdAttributes $attributes
      */
 	#[\JMS\Serializer\Annotation\SerializedName('attributes')]
-    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Operations\PatchCrmDealsIdRequestBodyAttributes')]
+    #[\JMS\Serializer\Annotation\Type('test\BREVO\Models\Operations\PatchCrmDealsIdAttributes')]
     #[\JMS\Serializer\Annotation\SkipWhenEmpty]
-    public ?PatchCrmDealsIdRequestBodyAttributes $attributes = null;
+    public ?PatchCrmDealsIdAttributes $attributes = null;
     
     /**
      * Name of deal

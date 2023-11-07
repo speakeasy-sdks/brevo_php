@@ -1,5 +1,5 @@
 # Reseller
-(*reseller*)
+
 
 ### Available Operations
 
@@ -32,21 +32,20 @@ Add Email and/or SMS credits to a specific child account
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\AddCreditsRequest;
-use \test\BREVO\Models\Shared\AddCredits;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new AddCreditsRequest();
-    $request->addCredits = new AddCredits();
+    $request = new Operations\AddCreditsRequest();
+    $request->addCredits = new Shared\AddCredits();
     $request->addCredits->email = 1200;
     $request->addCredits->sms = 450;
     $request->childIdentifier = 'string';
@@ -85,22 +84,21 @@ Associate a dedicated IP to the child
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\AssociateIpToChildRequest;
-use \test\BREVO\Models\Shared\ManageIp;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new AssociateIpToChildRequest();
+    $request = new Operations\AssociateIpToChildRequest();
     $request->childIdentifier = 'string';
-    $request->manageIp = new ManageIp();
+    $request->manageIp = new Shared\ManageIp();
     $request->manageIp->ip = '123.65.8.22';
 
     $response = $sdk->reseller->associateIpToChild($request);
@@ -137,21 +135,20 @@ Create a domain for a child account
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\CreateChildDomainRequest;
-use \test\BREVO\Models\Shared\AddChildDomain;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateChildDomainRequest();
-    $request->addChildDomain = new AddChildDomain();
+    $request = new Operations\CreateChildDomainRequest();
+    $request->addChildDomain = new Shared\AddChildDomain();
     $request->addChildDomain->domain = 'mychilddomain.com';
     $request->childIdentifier = 'string';
 
@@ -189,24 +186,22 @@ Creates a reseller child
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateChild;
-use \test\BREVO\Models\Shared\CreateChildLanguage;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateChild();
+    $request = new Shared\CreateChild();
     $request->companyName = 'Your Company';
     $request->email = 'josh.cruise@example.com';
     $request->firstName = 'Josh';
-    $request->language = CreateChildLanguage::En;
+    $request->language = Shared\Language::En;
     $request->lastName = 'Cruise';
     $request->password = 'Pa55w0rd65';
 
@@ -244,19 +239,19 @@ Delete the sender domain of the reseller child based on the childIdentifier and 
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteChildDomainRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteChildDomainRequest();
+    $request = new Operations\DeleteChildDomainRequest();
     $request->childIdentifier = 'string';
     $request->domainName = 'silver-redesign.org';
 
@@ -294,19 +289,19 @@ Delete a single reseller child based on the child identifier supplied
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteResellerChildRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteResellerChildRequest();
+    $request = new Operations\DeleteResellerChildRequest();
     $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->deleteResellerChild($request);
@@ -343,22 +338,21 @@ Dissociate a dedicated IP to the child
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DissociateIpFromChildRequest;
-use \test\BREVO\Models\Shared\ManageIp;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DissociateIpFromChildRequest();
+    $request = new Operations\DissociateIpFromChildRequest();
     $request->childIdentifier = 'string';
-    $request->manageIp = new ManageIp();
+    $request->manageIp = new Shared\ManageIp();
     $request->manageIp->ip = '123.65.8.22';
 
     $response = $sdk->reseller->dissociateIpFromChild($request);
@@ -395,19 +389,19 @@ Get the status of a reseller's child account creation, whether it is successfull
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetChildAccountCreationStatusRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetChildAccountCreationStatusRequest();
+    $request = new Operations\GetChildAccountCreationStatusRequest();
     $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->getChildAccountCreationStatus($request);
@@ -444,19 +438,19 @@ Get all sender domains for a specific child account
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetChildDomainsRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetChildDomainsRequest();
+    $request = new Operations\GetChildDomainsRequest();
     $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->getChildDomains($request);
@@ -493,19 +487,19 @@ Get a child account's details
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetChildInfoRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetChildInfoRequest();
+    $request = new Operations\GetChildInfoRequest();
     $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->getChildInfo($request);
@@ -542,19 +536,19 @@ Get the list of all children accounts
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetResellerChildsRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetResellerChildsRequest();
+    $request = new Operations\GetResellerChildsRequest();
     $request->limit = 137968;
     $request->offset = 492577;
 
@@ -592,19 +586,19 @@ It returns a session [token] which will remain valid for a short period of time.
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetSsoTokenRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetSsoTokenRequest();
+    $request = new Operations\GetSsoTokenRequest();
     $request->childIdentifier = 'string';
 
     $response = $sdk->reseller->getSsoToken($request);
@@ -641,22 +635,21 @@ Remove Email and/or SMS credits from a specific child account
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\RemoveCreditsRequest;
-use \test\BREVO\Models\Shared\RemoveCredits;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new RemoveCreditsRequest();
+    $request = new Operations\RemoveCreditsRequest();
     $request->childIdentifier = 'string';
-    $request->removeCredits = new RemoveCredits();
+    $request->removeCredits = new Shared\RemoveCredits();
     $request->removeCredits->email = 500;
     $request->removeCredits->sms = 300;
 
@@ -694,22 +687,21 @@ Update info of reseller's child account status based on the identifier supplied
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateChildAccountStatusRequest;
-use \test\BREVO\Models\Shared\UpdateChildAccountStatus;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateChildAccountStatusRequest();
+    $request = new Operations\UpdateChildAccountStatusRequest();
     $request->childIdentifier = 'string';
-    $request->updateChildAccountStatus = new UpdateChildAccountStatus();
+    $request->updateChildAccountStatus = new Shared\UpdateChildAccountStatus();
     $request->updateChildAccountStatus->marketingAutomation = true;
     $request->updateChildAccountStatus->smsCampaign = true;
     $request->updateChildAccountStatus->transactionalEmail = false;
@@ -749,23 +741,22 @@ Update the sender domain of reseller's child based on the childIdentifier and do
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateChildDomainRequest;
-use \test\BREVO\Models\Shared\UpdateChildDomain;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateChildDomainRequest();
+    $request = new Operations\UpdateChildDomainRequest();
     $request->childIdentifier = 'string';
     $request->domainName = 'turbulent-quotation.biz';
-    $request->updateChildDomain = new UpdateChildDomain();
+    $request->updateChildDomain = new Shared\UpdateChildDomain();
     $request->updateChildDomain->domain = 'myupdateddomain.com';
 
     $response = $sdk->reseller->updateChildDomain($request);
@@ -802,22 +793,21 @@ Update info of reseller's child based on the child identifier supplied
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateResellerChildRequest;
-use \test\BREVO\Models\Shared\UpdateChild;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateResellerChildRequest();
+    $request = new Operations\UpdateResellerChildRequest();
     $request->childIdentifier = 'string';
-    $request->updateChild = new UpdateChild();
+    $request->updateChild = new Shared\UpdateChild();
     $request->updateChild->companyName = 'Your Company';
     $request->updateChild->email = 'josh.cruise@example.com';
     $request->updateChild->firstName = 'Josh';

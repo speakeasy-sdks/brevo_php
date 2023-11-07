@@ -1,5 +1,5 @@
 # Webhooks
-(*webhooks*)
+
 
 ### Available Operations
 
@@ -22,27 +22,24 @@ Create a webhook
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Shared\CreateWebhook;
-use \test\BREVO\Models\Shared\CreateWebhookEvents;
-use \test\BREVO\Models\Shared\CreateWebhookType;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new CreateWebhook();
+    $request = new Shared\CreateWebhook();
     $request->description = 'Webhook triggered on unsubscription';
     $request->domain = 'example.com';
     $request->events = [
-        CreateWebhookEvents::Unsubscribed,
+        Shared\Events::Unsubscribed,
     ];
-    $request->type = CreateWebhookType::Marketing;
+    $request->type = Shared\CreateWebhookType::Marketing;
     $request->url = 'http://requestb.in/173lyyx1';
 
     $response = $sdk->webhooks->createWebhook($request);
@@ -79,19 +76,19 @@ Delete a webhook
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\DeleteWebhookRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new DeleteWebhookRequest();
+    $request = new Operations\DeleteWebhookRequest();
     $request->webhookId = 594215;
 
     $response = $sdk->webhooks->deleteWebhook($request);
@@ -128,13 +125,13 @@ This endpoint will submit a request to get the history of webhooks in the CSV fi
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
@@ -175,19 +172,19 @@ Get a webhook details
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetWebhookRequest;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetWebhookRequest();
+    $request = new Operations\GetWebhookRequest();
     $request->webhookId = 841269;
 
     $response = $sdk->webhooks->getWebhook($request);
@@ -224,23 +221,21 @@ Get all webhooks
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\GetWebhooksRequest;
-use \test\BREVO\Models\Operations\GetWebhooksSort;
-use \test\BREVO\Models\Operations\GetWebhooksType;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new GetWebhooksRequest();
-    $request->sort = GetWebhooksSort::Asc;
-    $request->type = GetWebhooksType::Marketing;
+    $request = new Operations\GetWebhooksRequest();
+    $request->sort = Operations\GetWebhooksQueryParamSort::Asc;
+    $request->type = Operations\QueryParamType::Marketing;
 
     $response = $sdk->webhooks->getWebhooks($request);
 
@@ -276,26 +271,24 @@ Update a webhook
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \test\BREVO\Brevo;
-use \test\BREVO\Models\Shared\Security;
-use \test\BREVO\Models\Operations\UpdateWebhookRequest;
-use \test\BREVO\Models\Shared\UpdateWebhook;
-use \test\BREVO\Models\Shared\UpdateWebhookEvents;
+use \test\BREVO;
+use \test\BREVO\Models\Shared;
+use \test\BREVO\Models\Operations;
 
-$security = new Security();
+$security = new Shared\Security();
 $security->apiKey = '';
 
-$sdk = Brevo::builder()
+$sdk = BREVO\Brevo::builder()
     ->setSecurity($security)
     ->build();
 
 try {
-    $request = new UpdateWebhookRequest();
-    $request->updateWebhook = new UpdateWebhook();
+    $request = new Operations\UpdateWebhookRequest();
+    $request->updateWebhook = new Shared\UpdateWebhook();
     $request->updateWebhook->description = 'Webhook triggered on contact hardbounce';
     $request->updateWebhook->domain = 'example.com';
     $request->updateWebhook->events = [
-        UpdateWebhookEvents::HardBounce,
+        Shared\UpdateWebhookEvents::HardBounce,
     ];
     $request->updateWebhook->url = 'http://requestb.in/173lyyx1';
     $request->webhookId = 520428;

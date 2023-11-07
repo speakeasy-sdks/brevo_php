@@ -41,10 +41,10 @@ class GetWhatsAppCampaignsRequest
     /**
      * Sort the results in the ascending/descending order of record modification. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetWhatsAppCampaignsSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetWhatsAppCampaignsQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetWhatsAppCampaignsSort $sort = null;
+    public ?GetWhatsAppCampaignsQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used**. Starting (urlencoded) UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) to filter the WhatsApp campaigns created.

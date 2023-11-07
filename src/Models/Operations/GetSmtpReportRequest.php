@@ -50,10 +50,10 @@ class GetSmtpReportRequest
     /**
      * Sort the results in the ascending/descending order of record creation. Default order is **descending** if `sort` is not passed
      * 
-     * @var ?\test\BREVO\Models\Operations\GetSmtpReportSort $sort
+     * @var ?\test\BREVO\Models\Operations\GetSmtpReportQueryParamSort $sort
      */
 	#[SpeakeasyMetadata('queryParam:style=form,explode=true,name=sort')]
-    public ?GetSmtpReportSort $sort = null;
+    public ?GetSmtpReportQueryParamSort $sort = null;
     
     /**
      * **Mandatory if endDate is used.** Starting date of the report (YYYY-MM-DD)

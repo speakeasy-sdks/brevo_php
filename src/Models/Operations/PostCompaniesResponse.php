@@ -46,10 +46,10 @@ class PostCompaniesResponse
     /**
      * Created new Company
      * 
-     * @var ?\test\BREVO\Models\Operations\PostCompanies200ApplicationJSON $postCompanies200ApplicationJSONObject
+     * @var ?\test\BREVO\Models\Operations\PostCompaniesResponseBody $object
      */
 	
-    public ?PostCompanies200ApplicationJSON $postCompanies200ApplicationJSONObject = null;
+    public ?PostCompaniesResponseBody $object = null;
     
 	public function __construct()
 	{
@@ -57,6 +57,6 @@ class PostCompaniesResponse
 		$this->statusCode = 0;
 		$this->rawResponse = null;
 		$this->errorModel = null;
-		$this->postCompanies200ApplicationJSONObject = null;
+		$this->object = null;
 	}
 }
