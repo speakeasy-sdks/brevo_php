@@ -55,12 +55,12 @@ try {
 
 | Parameter                                                                                                                         | Type                                                                                                                              | Required                                                                                                                          | Description                                                                                                                       |
 | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                        | [\test\BREVO\Models\Operations\DeleteCorporateSubAccountIdRequest](../../models/operations/DeleteCorporateSubAccountIdRequest.md) | :heavy_check_mark:                                                                                                                | The request object to use for the request.                                                                                        |
+| `$request`                                                                                                                        | [\test\BREVO\Models\Operations\DeleteCorporateSubAccountIdRequest](../../Models/Operations/DeleteCorporateSubAccountIdRequest.md) | :heavy_check_mark:                                                                                                                | The request object to use for the request.                                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteCorporateSubAccountIdResponse](../../models/operations/DeleteCorporateSubAccountIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteCorporateSubAccountIdResponse](../../Models/Operations/DeleteCorporateSubAccountIdResponse.md)**
 
 
 ## getAccountActivity
@@ -107,12 +107,12 @@ try {
 
 | Parameter                                                                                                       | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                      | [\test\BREVO\Models\Operations\GetAccountActivityRequest](../../models/operations/GetAccountActivityRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
+| `$request`                                                                                                      | [\test\BREVO\Models\Operations\GetAccountActivityRequest](../../Models/Operations/GetAccountActivityRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetAccountActivityResponse](../../models/operations/GetAccountActivityResponse.md)**
+**[?\test\BREVO\Models\Operations\GetAccountActivityResponse](../../Models/Operations/GetAccountActivityResponse.md)**
 
 
 ## getCorporateMasterAccount
@@ -151,7 +151,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCorporateMasterAccountResponse](../../models/operations/GetCorporateMasterAccountResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCorporateMasterAccountResponse](../../Models/Operations/GetCorporateMasterAccountResponse.md)**
 
 
 ## getCorporateSubAccount
@@ -196,12 +196,12 @@ try {
 
 | Parameter                                                                                                               | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                              | [\test\BREVO\Models\Operations\GetCorporateSubAccountRequest](../../models/operations/GetCorporateSubAccountRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
+| `$request`                                                                                                              | [\test\BREVO\Models\Operations\GetCorporateSubAccountRequest](../../Models/Operations/GetCorporateSubAccountRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCorporateSubAccountResponse](../../models/operations/GetCorporateSubAccountResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCorporateSubAccountResponse](../../Models/Operations/GetCorporateSubAccountResponse.md)**
 
 
 ## getCorporateSubAccountId
@@ -245,12 +245,12 @@ try {
 
 | Parameter                                                                                                                   | Type                                                                                                                        | Required                                                                                                                    | Description                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                  | [\test\BREVO\Models\Operations\GetCorporateSubAccountIdRequest](../../models/operations/GetCorporateSubAccountIdRequest.md) | :heavy_check_mark:                                                                                                          | The request object to use for the request.                                                                                  |
+| `$request`                                                                                                                  | [\test\BREVO\Models\Operations\GetCorporateSubAccountIdRequest](../../Models/Operations/GetCorporateSubAccountIdRequest.md) | :heavy_check_mark:                                                                                                          | The request object to use for the request.                                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCorporateSubAccountIdResponse](../../models/operations/GetCorporateSubAccountIdResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCorporateSubAccountIdResponse](../../Models/Operations/GetCorporateSubAccountIdResponse.md)**
 
 
 ## postCorporateSubAccount
@@ -296,12 +296,12 @@ try {
 
 | Parameter                                                                             | Type                                                                                  | Required                                                                              | Description                                                                           |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| `$request`                                                                            | [\test\BREVO\Models\Shared\CreateSubAccount](../../models/shared/CreateSubAccount.md) | :heavy_check_mark:                                                                    | The request object to use for the request.                                            |
+| `$request`                                                                            | [\test\BREVO\Models\Shared\CreateSubAccount](../../Models/Shared/CreateSubAccount.md) | :heavy_check_mark:                                                                    | The request object to use for the request.                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostCorporateSubAccountResponse](../../models/operations/PostCorporateSubAccountResponse.md)**
+**[?\test\BREVO\Models\Operations\PostCorporateSubAccountResponse](../../Models/Operations/PostCorporateSubAccountResponse.md)**
 
 
 ## postCorporateSubAccountKey
@@ -346,12 +346,12 @@ try {
 
 | Parameter                                                                                                                               | Type                                                                                                                                    | Required                                                                                                                                | Description                                                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                              | [\test\BREVO\Models\Operations\PostCorporateSubAccountKeyRequestBody](../../models/operations/PostCorporateSubAccountKeyRequestBody.md) | :heavy_check_mark:                                                                                                                      | The request object to use for the request.                                                                                              |
+| `$request`                                                                                                                              | [\test\BREVO\Models\Operations\PostCorporateSubAccountKeyRequestBody](../../Models/Operations/PostCorporateSubAccountKeyRequestBody.md) | :heavy_check_mark:                                                                                                                      | The request object to use for the request.                                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostCorporateSubAccountKeyResponse](../../models/operations/PostCorporateSubAccountKeyResponse.md)**
+**[?\test\BREVO\Models\Operations\PostCorporateSubAccountKeyResponse](../../Models/Operations/PostCorporateSubAccountKeyResponse.md)**
 
 
 ## postCorporateSubAccountSsoToken
@@ -398,12 +398,12 @@ try {
 
 | Parameter                                                                                                                                         | Type                                                                                                                                              | Required                                                                                                                                          | Description                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                                        | [\test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBody](../../models/operations/PostCorporateSubAccountSsoTokenRequestBody.md) | :heavy_check_mark:                                                                                                                                | The request object to use for the request.                                                                                                        |
+| `$request`                                                                                                                                        | [\test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenRequestBody](../../Models/Operations/PostCorporateSubAccountSsoTokenRequestBody.md) | :heavy_check_mark:                                                                                                                                | The request object to use for the request.                                                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenResponse](../../models/operations/PostCorporateSubAccountSsoTokenResponse.md)**
+**[?\test\BREVO\Models\Operations\PostCorporateSubAccountSsoTokenResponse](../../Models/Operations/PostCorporateSubAccountSsoTokenResponse.md)**
 
 
 ## putCorporateSubAccountIdApplicationsToggle
@@ -461,12 +461,12 @@ try {
 
 | Parameter                                                                                                                                                       | Type                                                                                                                                                            | Required                                                                                                                                                        | Description                                                                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                                                      | [\test\BREVO\Models\Operations\PutCorporateSubAccountIdApplicationsToggleRequest](../../models/operations/PutCorporateSubAccountIdApplicationsToggleRequest.md) | :heavy_check_mark:                                                                                                                                              | The request object to use for the request.                                                                                                                      |
+| `$request`                                                                                                                                                      | [\test\BREVO\Models\Operations\PutCorporateSubAccountIdApplicationsToggleRequest](../../Models/Operations/PutCorporateSubAccountIdApplicationsToggleRequest.md) | :heavy_check_mark:                                                                                                                                              | The request object to use for the request.                                                                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PutCorporateSubAccountIdApplicationsToggleResponse](../../models/operations/PutCorporateSubAccountIdApplicationsToggleResponse.md)**
+**[?\test\BREVO\Models\Operations\PutCorporateSubAccountIdApplicationsToggleResponse](../../Models/Operations/PutCorporateSubAccountIdApplicationsToggleResponse.md)**
 
 
 ## putCorporateSubAccountIdPlan
@@ -517,10 +517,10 @@ try {
 
 | Parameter                                                                                                                           | Type                                                                                                                                | Required                                                                                                                            | Description                                                                                                                         |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                          | [\test\BREVO\Models\Operations\PutCorporateSubAccountIdPlanRequest](../../models/operations/PutCorporateSubAccountIdPlanRequest.md) | :heavy_check_mark:                                                                                                                  | The request object to use for the request.                                                                                          |
+| `$request`                                                                                                                          | [\test\BREVO\Models\Operations\PutCorporateSubAccountIdPlanRequest](../../Models/Operations/PutCorporateSubAccountIdPlanRequest.md) | :heavy_check_mark:                                                                                                                  | The request object to use for the request.                                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PutCorporateSubAccountIdPlanResponse](../../models/operations/PutCorporateSubAccountIdPlanResponse.md)**
+**[?\test\BREVO\Models\Operations\PutCorporateSubAccountIdPlanResponse](../../Models/Operations/PutCorporateSubAccountIdPlanResponse.md)**
 

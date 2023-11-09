@@ -42,7 +42,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetInvitedUsersListResponse](../../models/operations/GetInvitedUsersListResponse.md)**
+**[?\test\BREVO\Models\Operations\GetInvitedUsersListResponse](../../Models/Operations/GetInvitedUsersListResponse.md)**
 
 
 ## getUserPermission
@@ -86,10 +86,10 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\GetUserPermissionRequest](../../models/operations/GetUserPermissionRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\GetUserPermissionRequest](../../Models/Operations/GetUserPermissionRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetUserPermissionResponse](../../models/operations/GetUserPermissionResponse.md)**
+**[?\test\BREVO\Models\Operations\GetUserPermissionResponse](../../Models/Operations/GetUserPermissionResponse.md)**
 

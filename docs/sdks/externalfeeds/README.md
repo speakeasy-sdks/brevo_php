@@ -59,12 +59,12 @@ try {
 
 | Parameter                                                                                 | Type                                                                                      | Required                                                                                  | Description                                                                               |
 | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `$request`                                                                                | [\test\BREVO\Models\Shared\CreateExternalFeed](../../models/shared/CreateExternalFeed.md) | :heavy_check_mark:                                                                        | The request object to use for the request.                                                |
+| `$request`                                                                                | [\test\BREVO\Models\Shared\CreateExternalFeed](../../Models/Shared/CreateExternalFeed.md) | :heavy_check_mark:                                                                        | The request object to use for the request.                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateExternalFeedResponse](../../models/operations/CreateExternalFeedResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateExternalFeedResponse](../../Models/Operations/CreateExternalFeedResponse.md)**
 
 
 ## deleteExternalFeed
@@ -108,12 +108,12 @@ try {
 
 | Parameter                                                                                                       | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                      | [\test\BREVO\Models\Operations\DeleteExternalFeedRequest](../../models/operations/DeleteExternalFeedRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
+| `$request`                                                                                                      | [\test\BREVO\Models\Operations\DeleteExternalFeedRequest](../../Models/Operations/DeleteExternalFeedRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteExternalFeedResponse](../../models/operations/DeleteExternalFeedResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteExternalFeedResponse](../../Models/Operations/DeleteExternalFeedResponse.md)**
 
 
 ## getAllExternalFeeds
@@ -163,12 +163,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetAllExternalFeedsRequest](../../models/operations/GetAllExternalFeedsRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetAllExternalFeedsRequest](../../Models/Operations/GetAllExternalFeedsRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetAllExternalFeedsResponse](../../models/operations/GetAllExternalFeedsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetAllExternalFeedsResponse](../../Models/Operations/GetAllExternalFeedsResponse.md)**
 
 
 ## getExternalFeedByUUID
@@ -212,12 +212,12 @@ try {
 
 | Parameter                                                                                                             | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                            | [\test\BREVO\Models\Operations\GetExternalFeedByUUIDRequest](../../models/operations/GetExternalFeedByUUIDRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
+| `$request`                                                                                                            | [\test\BREVO\Models\Operations\GetExternalFeedByUUIDRequest](../../Models/Operations/GetExternalFeedByUUIDRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetExternalFeedByUUIDResponse](../../models/operations/GetExternalFeedByUUIDResponse.md)**
+**[?\test\BREVO\Models\Operations\GetExternalFeedByUUIDResponse](../../Models/Operations/GetExternalFeedByUUIDResponse.md)**
 
 
 ## updateExternalFeed
@@ -273,10 +273,10 @@ try {
 
 | Parameter                                                                                                       | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                      | [\test\BREVO\Models\Operations\UpdateExternalFeedRequest](../../models/operations/UpdateExternalFeedRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
+| `$request`                                                                                                      | [\test\BREVO\Models\Operations\UpdateExternalFeedRequest](../../Models/Operations/UpdateExternalFeedRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateExternalFeedResponse](../../models/operations/UpdateExternalFeedResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateExternalFeedResponse](../../Models/Operations/UpdateExternalFeedResponse.md)**
 

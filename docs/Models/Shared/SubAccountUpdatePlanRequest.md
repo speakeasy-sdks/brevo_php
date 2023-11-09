@@ -1,0 +1,11 @@
+# SubAccountUpdatePlanRequest
+
+Details of the plan to be changed
+
+
+## Fields
+
+| Field                                                                                                                      | Type                                                                                                                       | Required                                                                                                                   | Description                                                                                                                |
+| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `credits`                                                                                                                  | [?\test\BREVO\Models\Shared\SubAccountUpdatePlanRequestCredits](../../Models/Shared/SubAccountUpdatePlanRequestCredits.md) | :heavy_minus_sign:                                                                                                         | Credit details to update                                                                                                   |
+| `features`                                                                                                                 | [?\test\BREVO\Models\Shared\Features](../../Models/Shared/Features.md)                                                     | :heavy_minus_sign:                                                                                                         | Features details to update                                                                                                 |

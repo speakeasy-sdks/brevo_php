@@ -50,12 +50,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\DeleteCrmFilesIdRequest](../../models/operations/DeleteCrmFilesIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\DeleteCrmFilesIdRequest](../../Models/Operations/DeleteCrmFilesIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteCrmFilesIdResponse](../../models/operations/DeleteCrmFilesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteCrmFilesIdResponse](../../Models/Operations/DeleteCrmFilesIdResponse.md)**
 
 
 ## getCrmFiles
@@ -105,12 +105,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetCrmFilesRequest](../../models/operations/GetCrmFilesRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetCrmFilesRequest](../../Models/Operations/GetCrmFilesRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmFilesResponse](../../models/operations/GetCrmFilesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmFilesResponse](../../Models/Operations/GetCrmFilesResponse.md)**
 
 
 ## getCrmFilesId
@@ -154,12 +154,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCrmFilesIdRequest](../../models/operations/GetCrmFilesIdRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCrmFilesIdRequest](../../Models/Operations/GetCrmFilesIdRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmFilesIdResponse](../../models/operations/GetCrmFilesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmFilesIdResponse](../../Models/Operations/GetCrmFilesIdResponse.md)**
 
 
 ## getCrmFilesIdData
@@ -203,12 +203,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\GetCrmFilesIdDataRequest](../../models/operations/GetCrmFilesIdDataRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\GetCrmFilesIdDataRequest](../../Models/Operations/GetCrmFilesIdDataRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmFilesIdDataResponse](../../models/operations/GetCrmFilesIdDataResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmFilesIdDataResponse](../../Models/Operations/GetCrmFilesIdDataResponse.md)**
 
 
 ## postCrmFiles
@@ -257,10 +257,10 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\PostCrmFilesRequestBody](../../models/operations/PostCrmFilesRequestBody.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\PostCrmFilesRequestBody](../../Models/Operations/PostCrmFilesRequestBody.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostCrmFilesResponse](../../models/operations/PostCrmFilesResponse.md)**
+**[?\test\BREVO\Models\Operations\PostCrmFilesResponse](../../Models/Operations/PostCrmFilesResponse.md)**
 

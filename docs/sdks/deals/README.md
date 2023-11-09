@@ -55,12 +55,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\DeleteCrmDealsIdRequest](../../models/operations/DeleteCrmDealsIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\DeleteCrmDealsIdRequest](../../Models/Operations/DeleteCrmDealsIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteCrmDealsIdResponse](../../models/operations/DeleteCrmDealsIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteCrmDealsIdResponse](../../Models/Operations/DeleteCrmDealsIdResponse.md)**
 
 
 ## getCrmAttributesDeals
@@ -99,7 +99,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmAttributesDealsResponse](../../models/operations/GetCrmAttributesDealsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmAttributesDealsResponse](../../Models/Operations/GetCrmAttributesDealsResponse.md)**
 
 
 ## getCrmDeals
@@ -148,12 +148,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetCrmDealsRequest](../../models/operations/GetCrmDealsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetCrmDealsRequest](../../Models/Operations/GetCrmDealsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmDealsResponse](../../models/operations/GetCrmDealsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmDealsResponse](../../Models/Operations/GetCrmDealsResponse.md)**
 
 
 ## getCrmDealsId
@@ -197,12 +197,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCrmDealsIdRequest](../../models/operations/GetCrmDealsIdRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCrmDealsIdRequest](../../Models/Operations/GetCrmDealsIdRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmDealsIdResponse](../../models/operations/GetCrmDealsIdResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmDealsIdResponse](../../Models/Operations/GetCrmDealsIdResponse.md)**
 
 
 ## ~~getCrmPipelineDetails~~
@@ -243,7 +243,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmPipelineDetailsResponse](../../models/operations/GetCrmPipelineDetailsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmPipelineDetailsResponse](../../Models/Operations/GetCrmPipelineDetailsResponse.md)**
 
 
 ## getCrmPipelineDetailsAll
@@ -282,7 +282,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmPipelineDetailsAllResponse](../../models/operations/GetCrmPipelineDetailsAllResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmPipelineDetailsAllResponse](../../Models/Operations/GetCrmPipelineDetailsAllResponse.md)**
 
 
 ## getCrmPipelineDetailsPipelineID
@@ -326,12 +326,12 @@ try {
 
 | Parameter                                                                                                                                 | Type                                                                                                                                      | Required                                                                                                                                  | Description                                                                                                                               |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                                | [\test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDRequest](../../models/operations/GetCrmPipelineDetailsPipelineIDRequest.md) | :heavy_check_mark:                                                                                                                        | The request object to use for the request.                                                                                                |
+| `$request`                                                                                                                                | [\test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDRequest](../../Models/Operations/GetCrmPipelineDetailsPipelineIDRequest.md) | :heavy_check_mark:                                                                                                                        | The request object to use for the request.                                                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDResponse](../../models/operations/GetCrmPipelineDetailsPipelineIDResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmPipelineDetailsPipelineIDResponse](../../Models/Operations/GetCrmPipelineDetailsPipelineIDResponse.md)**
 
 
 ## patchCrmDealsLinkUnlinkId
@@ -388,12 +388,12 @@ try {
 
 | Parameter                                                                                                                     | Type                                                                                                                          | Required                                                                                                                      | Description                                                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                    | [\test\BREVO\Models\Operations\PatchCrmDealsLinkUnlinkIdRequest](../../models/operations/PatchCrmDealsLinkUnlinkIdRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
+| `$request`                                                                                                                    | [\test\BREVO\Models\Operations\PatchCrmDealsLinkUnlinkIdRequest](../../Models/Operations/PatchCrmDealsLinkUnlinkIdRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PatchCrmDealsLinkUnlinkIdResponse](../../models/operations/PatchCrmDealsLinkUnlinkIdResponse.md)**
+**[?\test\BREVO\Models\Operations\PatchCrmDealsLinkUnlinkIdResponse](../../Models/Operations/PatchCrmDealsLinkUnlinkIdResponse.md)**
 
 
 ## patchCrmDealsId
@@ -440,12 +440,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\PatchCrmDealsIdRequest](../../models/operations/PatchCrmDealsIdRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\PatchCrmDealsIdRequest](../../Models/Operations/PatchCrmDealsIdRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PatchCrmDealsIdResponse](../../models/operations/PatchCrmDealsIdResponse.md)**
+**[?\test\BREVO\Models\Operations\PatchCrmDealsIdResponse](../../Models/Operations/PatchCrmDealsIdResponse.md)**
 
 
 ## postCrmDeals
@@ -490,10 +490,10 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\PostCrmDealsRequestBody](../../models/operations/PostCrmDealsRequestBody.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\PostCrmDealsRequestBody](../../Models/Operations/PostCrmDealsRequestBody.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostCrmDealsResponse](../../models/operations/PostCrmDealsResponse.md)**
+**[?\test\BREVO\Models\Operations\PostCrmDealsResponse](../../Models/Operations/PostCrmDealsResponse.md)**
 

@@ -64,12 +64,12 @@ try {
 
 | Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `$request`                                                                                      | [\test\BREVO\Models\Operations\AddCreditsRequest](../../models/operations/AddCreditsRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
+| `$request`                                                                                      | [\test\BREVO\Models\Operations\AddCreditsRequest](../../Models/Operations/AddCreditsRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\AddCreditsResponse](../../models/operations/AddCreditsResponse.md)**
+**[?\test\BREVO\Models\Operations\AddCreditsResponse](../../Models/Operations/AddCreditsResponse.md)**
 
 
 ## associateIpToChild
@@ -115,12 +115,12 @@ try {
 
 | Parameter                                                                                                       | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                      | [\test\BREVO\Models\Operations\AssociateIpToChildRequest](../../models/operations/AssociateIpToChildRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
+| `$request`                                                                                                      | [\test\BREVO\Models\Operations\AssociateIpToChildRequest](../../Models/Operations/AssociateIpToChildRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\AssociateIpToChildResponse](../../models/operations/AssociateIpToChildResponse.md)**
+**[?\test\BREVO\Models\Operations\AssociateIpToChildResponse](../../Models/Operations/AssociateIpToChildResponse.md)**
 
 
 ## createChildDomain
@@ -166,12 +166,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\CreateChildDomainRequest](../../models/operations/CreateChildDomainRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\CreateChildDomainRequest](../../Models/Operations/CreateChildDomainRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateChildDomainResponse](../../models/operations/CreateChildDomainResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateChildDomainResponse](../../Models/Operations/CreateChildDomainResponse.md)**
 
 
 ## createResellerChild
@@ -219,12 +219,12 @@ try {
 
 | Parameter                                                                   | Type                                                                        | Required                                                                    | Description                                                                 |
 | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| `$request`                                                                  | [\test\BREVO\Models\Shared\CreateChild](../../models/shared/CreateChild.md) | :heavy_check_mark:                                                          | The request object to use for the request.                                  |
+| `$request`                                                                  | [\test\BREVO\Models\Shared\CreateChild](../../Models/Shared/CreateChild.md) | :heavy_check_mark:                                                          | The request object to use for the request.                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateResellerChildResponse](../../models/operations/CreateResellerChildResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateResellerChildResponse](../../Models/Operations/CreateResellerChildResponse.md)**
 
 
 ## deleteChildDomain
@@ -269,12 +269,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\DeleteChildDomainRequest](../../models/operations/DeleteChildDomainRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\DeleteChildDomainRequest](../../Models/Operations/DeleteChildDomainRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteChildDomainResponse](../../models/operations/DeleteChildDomainResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteChildDomainResponse](../../Models/Operations/DeleteChildDomainResponse.md)**
 
 
 ## deleteResellerChild
@@ -318,12 +318,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\DeleteResellerChildRequest](../../models/operations/DeleteResellerChildRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\DeleteResellerChildRequest](../../Models/Operations/DeleteResellerChildRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteResellerChildResponse](../../models/operations/DeleteResellerChildResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteResellerChildResponse](../../Models/Operations/DeleteResellerChildResponse.md)**
 
 
 ## dissociateIpFromChild
@@ -369,12 +369,12 @@ try {
 
 | Parameter                                                                                                             | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                            | [\test\BREVO\Models\Operations\DissociateIpFromChildRequest](../../models/operations/DissociateIpFromChildRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
+| `$request`                                                                                                            | [\test\BREVO\Models\Operations\DissociateIpFromChildRequest](../../Models/Operations/DissociateIpFromChildRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DissociateIpFromChildResponse](../../models/operations/DissociateIpFromChildResponse.md)**
+**[?\test\BREVO\Models\Operations\DissociateIpFromChildResponse](../../Models/Operations/DissociateIpFromChildResponse.md)**
 
 
 ## getChildAccountCreationStatus
@@ -418,12 +418,12 @@ try {
 
 | Parameter                                                                                                                             | Type                                                                                                                                  | Required                                                                                                                              | Description                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                            | [\test\BREVO\Models\Operations\GetChildAccountCreationStatusRequest](../../models/operations/GetChildAccountCreationStatusRequest.md) | :heavy_check_mark:                                                                                                                    | The request object to use for the request.                                                                                            |
+| `$request`                                                                                                                            | [\test\BREVO\Models\Operations\GetChildAccountCreationStatusRequest](../../Models/Operations/GetChildAccountCreationStatusRequest.md) | :heavy_check_mark:                                                                                                                    | The request object to use for the request.                                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetChildAccountCreationStatusResponse](../../models/operations/GetChildAccountCreationStatusResponse.md)**
+**[?\test\BREVO\Models\Operations\GetChildAccountCreationStatusResponse](../../Models/Operations/GetChildAccountCreationStatusResponse.md)**
 
 
 ## getChildDomains
@@ -467,12 +467,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetChildDomainsRequest](../../models/operations/GetChildDomainsRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetChildDomainsRequest](../../Models/Operations/GetChildDomainsRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetChildDomainsResponse](../../models/operations/GetChildDomainsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetChildDomainsResponse](../../Models/Operations/GetChildDomainsResponse.md)**
 
 
 ## getChildInfo
@@ -516,12 +516,12 @@ try {
 
 | Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                          | [\test\BREVO\Models\Operations\GetChildInfoRequest](../../models/operations/GetChildInfoRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
+| `$request`                                                                                          | [\test\BREVO\Models\Operations\GetChildInfoRequest](../../Models/Operations/GetChildInfoRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetChildInfoResponse](../../models/operations/GetChildInfoResponse.md)**
+**[?\test\BREVO\Models\Operations\GetChildInfoResponse](../../Models/Operations/GetChildInfoResponse.md)**
 
 
 ## getResellerChilds
@@ -566,12 +566,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\GetResellerChildsRequest](../../models/operations/GetResellerChildsRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\GetResellerChildsRequest](../../Models/Operations/GetResellerChildsRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetResellerChildsResponse](../../models/operations/GetResellerChildsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetResellerChildsResponse](../../Models/Operations/GetResellerChildsResponse.md)**
 
 
 ## getSsoToken
@@ -615,12 +615,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetSsoTokenRequest](../../models/operations/GetSsoTokenRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetSsoTokenRequest](../../Models/Operations/GetSsoTokenRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSsoTokenResponse](../../models/operations/GetSsoTokenResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSsoTokenResponse](../../Models/Operations/GetSsoTokenResponse.md)**
 
 
 ## removeCredits
@@ -667,12 +667,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\RemoveCreditsRequest](../../models/operations/RemoveCreditsRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\RemoveCreditsRequest](../../Models/Operations/RemoveCreditsRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\RemoveCreditsResponse](../../models/operations/RemoveCreditsResponse.md)**
+**[?\test\BREVO\Models\Operations\RemoveCreditsResponse](../../Models/Operations/RemoveCreditsResponse.md)**
 
 
 ## updateChildAccountStatus
@@ -721,12 +721,12 @@ try {
 
 | Parameter                                                                                                                   | Type                                                                                                                        | Required                                                                                                                    | Description                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                  | [\test\BREVO\Models\Operations\UpdateChildAccountStatusRequest](../../models/operations/UpdateChildAccountStatusRequest.md) | :heavy_check_mark:                                                                                                          | The request object to use for the request.                                                                                  |
+| `$request`                                                                                                                  | [\test\BREVO\Models\Operations\UpdateChildAccountStatusRequest](../../Models/Operations/UpdateChildAccountStatusRequest.md) | :heavy_check_mark:                                                                                                          | The request object to use for the request.                                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateChildAccountStatusResponse](../../models/operations/UpdateChildAccountStatusResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateChildAccountStatusResponse](../../Models/Operations/UpdateChildAccountStatusResponse.md)**
 
 
 ## updateChildDomain
@@ -773,12 +773,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\UpdateChildDomainRequest](../../models/operations/UpdateChildDomainRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\UpdateChildDomainRequest](../../Models/Operations/UpdateChildDomainRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateChildDomainResponse](../../models/operations/UpdateChildDomainResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateChildDomainResponse](../../Models/Operations/UpdateChildDomainResponse.md)**
 
 
 ## updateResellerChild
@@ -828,10 +828,10 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\UpdateResellerChildRequest](../../models/operations/UpdateResellerChildRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\UpdateResellerChildRequest](../../Models/Operations/UpdateResellerChildRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateResellerChildResponse](../../models/operations/UpdateResellerChildResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateResellerChildResponse](../../Models/Operations/UpdateResellerChildResponse.md)**
 

@@ -51,12 +51,12 @@ try {
 
 | Parameter                                                                                                                       | Type                                                                                                                            | Required                                                                                                                        | Description                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                      | [\test\BREVO\Models\Operations\CreateCouponCollectionRequestBody](../../models/operations/CreateCouponCollectionRequestBody.md) | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
+| `$request`                                                                                                                      | [\test\BREVO\Models\Operations\CreateCouponCollectionRequestBody](../../Models/Operations/CreateCouponCollectionRequestBody.md) | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateCouponCollectionResponse](../../models/operations/CreateCouponCollectionResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateCouponCollectionResponse](../../Models/Operations/CreateCouponCollectionResponse.md)**
 
 
 ## createCoupons
@@ -103,12 +103,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\CreateCouponsRequestBody](../../models/operations/CreateCouponsRequestBody.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\CreateCouponsRequestBody](../../Models/Operations/CreateCouponsRequestBody.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateCouponsResponse](../../models/operations/CreateCouponsResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateCouponsResponse](../../Models/Operations/CreateCouponsResponse.md)**
 
 
 ## getCouponCollection
@@ -152,12 +152,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetCouponCollectionRequest](../../models/operations/GetCouponCollectionRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetCouponCollectionRequest](../../Models/Operations/GetCouponCollectionRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCouponCollectionResponse](../../models/operations/GetCouponCollectionResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCouponCollectionResponse](../../Models/Operations/GetCouponCollectionResponse.md)**
 
 
 ## getCouponCollections
@@ -203,12 +203,12 @@ try {
 
 | Parameter                                                                                                           | Type                                                                                                                | Required                                                                                                            | Description                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetCouponCollectionsRequest](../../models/operations/GetCouponCollectionsRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
+| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetCouponCollectionsRequest](../../Models/Operations/GetCouponCollectionsRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCouponCollectionsResponse](../../models/operations/GetCouponCollectionsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCouponCollectionsResponse](../../Models/Operations/GetCouponCollectionsResponse.md)**
 
 
 ## updateCouponCollection
@@ -254,10 +254,10 @@ try {
 
 | Parameter                                                                                                               | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                              | [\test\BREVO\Models\Operations\UpdateCouponCollectionRequest](../../models/operations/UpdateCouponCollectionRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
+| `$request`                                                                                                              | [\test\BREVO\Models\Operations\UpdateCouponCollectionRequest](../../Models/Operations/UpdateCouponCollectionRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateCouponCollectionResponse](../../models/operations/UpdateCouponCollectionResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateCouponCollectionResponse](../../Models/Operations/UpdateCouponCollectionResponse.md)**
 

@@ -1,9 +1,0 @@
-# SendReport
-
-
-## Fields
-
-| Field                                                                                      | Type                                                                                       | Required                                                                                   | Description                                                                                | Example                                                                                    |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `email`                                                                                    | [\test\BREVO\Models\Shared\Email](../../models/shared/Email.md)                            | :heavy_check_mark:                                                                         | Custom attributes for the report email.                                                    |                                                                                            |
-| `language`                                                                                 | [?\test\BREVO\Models\Shared\SendReportLanguage](../../models/shared/SendReportLanguage.md) | :heavy_minus_sign:                                                                         | Language of email content for campaign report sending.                                     | en                                                                                         |

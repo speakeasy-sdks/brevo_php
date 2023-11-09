@@ -48,12 +48,12 @@ try {
 
 | Parameter                                                                                                                     | Type                                                                                                                          | Required                                                                                                                      | Description                                                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                    | [\test\BREVO\Models\Operations\GetInboundEmailAttachmentRequest](../../models/operations/GetInboundEmailAttachmentRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
+| `$request`                                                                                                                    | [\test\BREVO\Models\Operations\GetInboundEmailAttachmentRequest](../../Models/Operations/GetInboundEmailAttachmentRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetInboundEmailAttachmentResponse](../../models/operations/GetInboundEmailAttachmentResponse.md)**
+**[?\test\BREVO\Models\Operations\GetInboundEmailAttachmentResponse](../../Models/Operations/GetInboundEmailAttachmentResponse.md)**
 
 
 ## getInboundEmailEvents
@@ -102,12 +102,12 @@ try {
 
 | Parameter                                                                                                             | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                            | [\test\BREVO\Models\Operations\GetInboundEmailEventsRequest](../../models/operations/GetInboundEmailEventsRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
+| `$request`                                                                                                            | [\test\BREVO\Models\Operations\GetInboundEmailEventsRequest](../../Models/Operations/GetInboundEmailEventsRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetInboundEmailEventsResponse](../../models/operations/GetInboundEmailEventsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetInboundEmailEventsResponse](../../Models/Operations/GetInboundEmailEventsResponse.md)**
 
 
 ## getInboundEmailEventsByUuid
@@ -151,10 +151,10 @@ try {
 
 | Parameter                                                                                                                         | Type                                                                                                                              | Required                                                                                                                          | Description                                                                                                                       |
 | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                        | [\test\BREVO\Models\Operations\GetInboundEmailEventsByUuidRequest](../../models/operations/GetInboundEmailEventsByUuidRequest.md) | :heavy_check_mark:                                                                                                                | The request object to use for the request.                                                                                        |
+| `$request`                                                                                                                        | [\test\BREVO\Models\Operations\GetInboundEmailEventsByUuidRequest](../../Models/Operations/GetInboundEmailEventsByUuidRequest.md) | :heavy_check_mark:                                                                                                                | The request object to use for the request.                                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetInboundEmailEventsByUuidResponse](../../models/operations/GetInboundEmailEventsByUuidResponse.md)**
+**[?\test\BREVO\Models\Operations\GetInboundEmailEventsByUuidResponse](../../Models/Operations/GetInboundEmailEventsByUuidResponse.md)**
 

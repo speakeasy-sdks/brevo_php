@@ -65,12 +65,12 @@ try {
 
 | Parameter                                                                   | Type                                                                        | Required                                                                    | Description                                                                 |
 | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| `$request`                                                                  | [\test\BREVO\Models\Shared\BlockDomain](../../models/shared/BlockDomain.md) | :heavy_check_mark:                                                          | The request object to use for the request.                                  |
+| `$request`                                                                  | [\test\BREVO\Models\Shared\BlockDomain](../../Models/Shared/BlockDomain.md) | :heavy_check_mark:                                                          | The request object to use for the request.                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\BlockNewDomainResponse](../../models/operations/BlockNewDomainResponse.md)**
+**[?\test\BREVO\Models\Operations\BlockNewDomainResponse](../../Models/Operations/BlockNewDomainResponse.md)**
 
 
 ## createSmtpTemplate
@@ -125,12 +125,12 @@ try {
 
 | Parameter                                                                                 | Type                                                                                      | Required                                                                                  | Description                                                                               |
 | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `$request`                                                                                | [\test\BREVO\Models\Shared\CreateSmtpTemplate](../../models/shared/CreateSmtpTemplate.md) | :heavy_check_mark:                                                                        | The request object to use for the request.                                                |
+| `$request`                                                                                | [\test\BREVO\Models\Shared\CreateSmtpTemplate](../../Models/Shared/CreateSmtpTemplate.md) | :heavy_check_mark:                                                                        | The request object to use for the request.                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateSmtpTemplateResponse](../../models/operations/CreateSmtpTemplateResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateSmtpTemplateResponse](../../Models/Operations/CreateSmtpTemplateResponse.md)**
 
 
 ## deleteBlockedDomain
@@ -174,12 +174,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\DeleteBlockedDomainRequest](../../models/operations/DeleteBlockedDomainRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\DeleteBlockedDomainRequest](../../Models/Operations/DeleteBlockedDomainRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteBlockedDomainResponse](../../models/operations/DeleteBlockedDomainResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteBlockedDomainResponse](../../Models/Operations/DeleteBlockedDomainResponse.md)**
 
 
 ## deleteHardbounces
@@ -224,12 +224,12 @@ try {
 
 | Parameter                                                                               | Type                                                                                    | Required                                                                                | Description                                                                             |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `$request`                                                                              | [\test\BREVO\Models\Shared\DeleteHardbounces](../../models/shared/DeleteHardbounces.md) | :heavy_check_mark:                                                                      | The request object to use for the request.                                              |
+| `$request`                                                                              | [\test\BREVO\Models\Shared\DeleteHardbounces](../../Models/Shared/DeleteHardbounces.md) | :heavy_check_mark:                                                                      | The request object to use for the request.                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteHardbouncesResponse](../../models/operations/DeleteHardbouncesResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteHardbouncesResponse](../../Models/Operations/DeleteHardbouncesResponse.md)**
 
 
 ## deleteScheduledEmailById
@@ -273,12 +273,12 @@ try {
 
 | Parameter                                                                                                                   | Type                                                                                                                        | Required                                                                                                                    | Description                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                  | [\test\BREVO\Models\Operations\DeleteScheduledEmailByIdRequest](../../models/operations/DeleteScheduledEmailByIdRequest.md) | :heavy_check_mark:                                                                                                          | The request object to use for the request.                                                                                  |
+| `$request`                                                                                                                  | [\test\BREVO\Models\Operations\DeleteScheduledEmailByIdRequest](../../Models/Operations/DeleteScheduledEmailByIdRequest.md) | :heavy_check_mark:                                                                                                          | The request object to use for the request.                                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteScheduledEmailByIdResponse](../../models/operations/DeleteScheduledEmailByIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteScheduledEmailByIdResponse](../../Models/Operations/DeleteScheduledEmailByIdResponse.md)**
 
 
 ## deleteSmtpTemplate
@@ -322,12 +322,12 @@ try {
 
 | Parameter                                                                                                       | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                      | [\test\BREVO\Models\Operations\DeleteSmtpTemplateRequest](../../models/operations/DeleteSmtpTemplateRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
+| `$request`                                                                                                      | [\test\BREVO\Models\Operations\DeleteSmtpTemplateRequest](../../Models/Operations/DeleteSmtpTemplateRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteSmtpTemplateResponse](../../models/operations/DeleteSmtpTemplateResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteSmtpTemplateResponse](../../Models/Operations/DeleteSmtpTemplateResponse.md)**
 
 
 ## deleteSmtpBlockedContactsEmail
@@ -371,12 +371,12 @@ try {
 
 | Parameter                                                                                                                               | Type                                                                                                                                    | Required                                                                                                                                | Description                                                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                              | [\test\BREVO\Models\Operations\DeleteSmtpBlockedContactsEmailRequest](../../models/operations/DeleteSmtpBlockedContactsEmailRequest.md) | :heavy_check_mark:                                                                                                                      | The request object to use for the request.                                                                                              |
+| `$request`                                                                                                                              | [\test\BREVO\Models\Operations\DeleteSmtpBlockedContactsEmailRequest](../../Models/Operations/DeleteSmtpBlockedContactsEmailRequest.md) | :heavy_check_mark:                                                                                                                      | The request object to use for the request.                                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteSmtpBlockedContactsEmailResponse](../../models/operations/DeleteSmtpBlockedContactsEmailResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteSmtpBlockedContactsEmailResponse](../../Models/Operations/DeleteSmtpBlockedContactsEmailResponse.md)**
 
 
 ## deleteSmtpLogMessageId
@@ -420,12 +420,12 @@ try {
 
 | Parameter                                                                                                               | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                              | [\test\BREVO\Models\Operations\DeleteSmtpLogMessageIdRequest](../../models/operations/DeleteSmtpLogMessageIdRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
+| `$request`                                                                                                              | [\test\BREVO\Models\Operations\DeleteSmtpLogMessageIdRequest](../../Models/Operations/DeleteSmtpLogMessageIdRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteSmtpLogMessageIdResponse](../../models/operations/DeleteSmtpLogMessageIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteSmtpLogMessageIdResponse](../../Models/Operations/DeleteSmtpLogMessageIdResponse.md)**
 
 
 ## getAggregatedSmtpReport
@@ -472,12 +472,12 @@ try {
 
 | Parameter                                                                                                                 | Type                                                                                                                      | Required                                                                                                                  | Description                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                | [\test\BREVO\Models\Operations\GetAggregatedSmtpReportRequest](../../models/operations/GetAggregatedSmtpReportRequest.md) | :heavy_check_mark:                                                                                                        | The request object to use for the request.                                                                                |
+| `$request`                                                                                                                | [\test\BREVO\Models\Operations\GetAggregatedSmtpReportRequest](../../Models/Operations/GetAggregatedSmtpReportRequest.md) | :heavy_check_mark:                                                                                                        | The request object to use for the request.                                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetAggregatedSmtpReportResponse](../../models/operations/GetAggregatedSmtpReportResponse.md)**
+**[?\test\BREVO\Models\Operations\GetAggregatedSmtpReportResponse](../../Models/Operations/GetAggregatedSmtpReportResponse.md)**
 
 
 ## getBlockedDomains
@@ -516,7 +516,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetBlockedDomainsResponse](../../models/operations/GetBlockedDomainsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetBlockedDomainsResponse](../../Models/Operations/GetBlockedDomainsResponse.md)**
 
 
 ## getEmailEventReport
@@ -570,12 +570,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetEmailEventReportRequest](../../models/operations/GetEmailEventReportRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetEmailEventReportRequest](../../Models/Operations/GetEmailEventReportRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetEmailEventReportResponse](../../models/operations/GetEmailEventReportResponse.md)**
+**[?\test\BREVO\Models\Operations\GetEmailEventReportResponse](../../Models/Operations/GetEmailEventReportResponse.md)**
 
 
 ## getScheduledEmailById
@@ -625,12 +625,12 @@ try {
 
 | Parameter                                                                                                             | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                            | [\test\BREVO\Models\Operations\GetScheduledEmailByIdRequest](../../models/operations/GetScheduledEmailByIdRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
+| `$request`                                                                                                            | [\test\BREVO\Models\Operations\GetScheduledEmailByIdRequest](../../Models/Operations/GetScheduledEmailByIdRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetScheduledEmailByIdResponse](../../models/operations/GetScheduledEmailByIdResponse.md)**
+**[?\test\BREVO\Models\Operations\GetScheduledEmailByIdResponse](../../Models/Operations/GetScheduledEmailByIdResponse.md)**
 
 
 ## getSmtpReport
@@ -680,12 +680,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetSmtpReportRequest](../../models/operations/GetSmtpReportRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetSmtpReportRequest](../../Models/Operations/GetSmtpReportRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSmtpReportResponse](../../models/operations/GetSmtpReportResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSmtpReportResponse](../../Models/Operations/GetSmtpReportResponse.md)**
 
 
 ## getSmtpTemplate
@@ -729,12 +729,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetSmtpTemplateRequest](../../models/operations/GetSmtpTemplateRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetSmtpTemplateRequest](../../Models/Operations/GetSmtpTemplateRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSmtpTemplateResponse](../../models/operations/GetSmtpTemplateResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSmtpTemplateResponse](../../Models/Operations/GetSmtpTemplateResponse.md)**
 
 
 ## getSmtpTemplates
@@ -781,12 +781,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\GetSmtpTemplatesRequest](../../models/operations/GetSmtpTemplatesRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\GetSmtpTemplatesRequest](../../Models/Operations/GetSmtpTemplatesRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSmtpTemplatesResponse](../../models/operations/GetSmtpTemplatesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSmtpTemplatesResponse](../../Models/Operations/GetSmtpTemplatesResponse.md)**
 
 
 ## getTransacBlockedContacts
@@ -837,12 +837,12 @@ try {
 
 | Parameter                                                                                                                     | Type                                                                                                                          | Required                                                                                                                      | Description                                                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                    | [\test\BREVO\Models\Operations\GetTransacBlockedContactsRequest](../../models/operations/GetTransacBlockedContactsRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
+| `$request`                                                                                                                    | [\test\BREVO\Models\Operations\GetTransacBlockedContactsRequest](../../Models/Operations/GetTransacBlockedContactsRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetTransacBlockedContactsResponse](../../models/operations/GetTransacBlockedContactsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetTransacBlockedContactsResponse](../../Models/Operations/GetTransacBlockedContactsResponse.md)**
 
 
 ## getTransacEmailContent
@@ -886,12 +886,12 @@ try {
 
 | Parameter                                                                                                               | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                              | [\test\BREVO\Models\Operations\GetTransacEmailContentRequest](../../models/operations/GetTransacEmailContentRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
+| `$request`                                                                                                              | [\test\BREVO\Models\Operations\GetTransacEmailContentRequest](../../Models/Operations/GetTransacEmailContentRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetTransacEmailContentResponse](../../models/operations/GetTransacEmailContentResponse.md)**
+**[?\test\BREVO\Models\Operations\GetTransacEmailContentResponse](../../Models/Operations/GetTransacEmailContentResponse.md)**
 
 
 ## getTransacEmailsList
@@ -942,12 +942,12 @@ try {
 
 | Parameter                                                                                                           | Type                                                                                                                | Required                                                                                                            | Description                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetTransacEmailsListRequest](../../models/operations/GetTransacEmailsListRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
+| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetTransacEmailsListRequest](../../Models/Operations/GetTransacEmailsListRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetTransacEmailsListResponse](../../models/operations/GetTransacEmailsListResponse.md)**
+**[?\test\BREVO\Models\Operations\GetTransacEmailsListResponse](../../Models/Operations/GetTransacEmailsListResponse.md)**
 
 
 ## sendTestTemplate
@@ -995,12 +995,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\SendTestTemplateRequest](../../models/operations/SendTestTemplateRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\SendTestTemplateRequest](../../Models/Operations/SendTestTemplateRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendTestTemplateResponse](../../models/operations/SendTestTemplateResponse.md)**
+**[?\test\BREVO\Models\Operations\SendTestTemplateResponse](../../Models/Operations/SendTestTemplateResponse.md)**
 
 
 ## sendTransacEmail
@@ -1079,12 +1079,12 @@ try {
 
 | Parameter                                                                       | Type                                                                            | Required                                                                        | Description                                                                     |
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| `$request`                                                                      | [\test\BREVO\Models\Shared\SendSmtpEmail](../../models/shared/SendSmtpEmail.md) | :heavy_check_mark:                                                              | The request object to use for the request.                                      |
+| `$request`                                                                      | [\test\BREVO\Models\Shared\SendSmtpEmail](../../Models/Shared/SendSmtpEmail.md) | :heavy_check_mark:                                                              | The request object to use for the request.                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendTransacEmailResponse](../../models/operations/SendTransacEmailResponse.md)**
+**[?\test\BREVO\Models\Operations\SendTransacEmailResponse](../../Models/Operations/SendTransacEmailResponse.md)**
 
 
 ## updateSmtpTemplate
@@ -1142,10 +1142,10 @@ try {
 
 | Parameter                                                                                                       | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                      | [\test\BREVO\Models\Operations\UpdateSmtpTemplateRequest](../../models/operations/UpdateSmtpTemplateRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
+| `$request`                                                                                                      | [\test\BREVO\Models\Operations\UpdateSmtpTemplateRequest](../../Models/Operations/UpdateSmtpTemplateRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateSmtpTemplateResponse](../../models/operations/UpdateSmtpTemplateResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateSmtpTemplateResponse](../../Models/Operations/UpdateSmtpTemplateResponse.md)**
 

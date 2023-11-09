@@ -1,0 +1,9 @@
+# Unsubscriptions
+
+
+## Fields
+
+| Field                                                                                              | Type                                                                                               | Required                                                                                           | Description                                                                                        |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `adminUnsubscription`                                                                              | array<[\test\BREVO\Models\Shared\AdminUnsubscription](../../Models/Shared/AdminUnsubscription.md)> | :heavy_check_mark:                                                                                 | Contact has been unsubscribed from the administrator                                               |
+| `userUnsubscription`                                                                               | array<[\test\BREVO\Models\Shared\UserUnsubscription](../../Models/Shared/UserUnsubscription.md)>   | :heavy_check_mark:                                                                                 | Contact has unsubscribed via the unsubscription link in the email                                  |

@@ -1,9 +1,0 @@
-# UpdateWhatsAppCampaignRequest
-
-
-## Fields
-
-| Field                                                                                             | Type                                                                                              | Required                                                                                          | Description                                                                                       |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `campaignId`                                                                                      | *int*                                                                                             | :heavy_check_mark:                                                                                | id of the campaign                                                                                |
-| `updateWhatsAppCampaign`                                                                          | [\test\BREVO\Models\Shared\UpdateWhatsAppCampaign](../../models/shared/UpdateWhatsAppCampaign.md) | :heavy_check_mark:                                                                                | Values to update a WhatsApp Campaign                                                              |

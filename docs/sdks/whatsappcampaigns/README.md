@@ -65,12 +65,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Shared\CreateWhatsAppCampaign](../../models/shared/CreateWhatsAppCampaign.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Shared\CreateWhatsAppCampaign](../../Models/Shared/CreateWhatsAppCampaign.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateWhatsAppCampaignResponse](../../models/operations/CreateWhatsAppCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateWhatsAppCampaignResponse](../../Models/Operations/CreateWhatsAppCampaignResponse.md)**
 
 
 ## createWhatsAppTemplate
@@ -118,12 +118,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Shared\CreateWhatsAppTemplate](../../models/shared/CreateWhatsAppTemplate.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Shared\CreateWhatsAppTemplate](../../Models/Shared/CreateWhatsAppTemplate.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateWhatsAppTemplateResponse](../../models/operations/CreateWhatsAppTemplateResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateWhatsAppTemplateResponse](../../Models/Operations/CreateWhatsAppTemplateResponse.md)**
 
 
 ## deleteWhatsAppCampaign
@@ -167,12 +167,12 @@ try {
 
 | Parameter                                                                                                               | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                              | [\test\BREVO\Models\Operations\DeleteWhatsAppCampaignRequest](../../models/operations/DeleteWhatsAppCampaignRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
+| `$request`                                                                                                              | [\test\BREVO\Models\Operations\DeleteWhatsAppCampaignRequest](../../Models/Operations/DeleteWhatsAppCampaignRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteWhatsAppCampaignResponse](../../models/operations/DeleteWhatsAppCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteWhatsAppCampaignResponse](../../Models/Operations/DeleteWhatsAppCampaignResponse.md)**
 
 
 ## getWhatsAppCampaign
@@ -216,12 +216,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetWhatsAppCampaignRequest](../../models/operations/GetWhatsAppCampaignRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetWhatsAppCampaignRequest](../../Models/Operations/GetWhatsAppCampaignRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetWhatsAppCampaignResponse](../../models/operations/GetWhatsAppCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\GetWhatsAppCampaignResponse](../../Models/Operations/GetWhatsAppCampaignResponse.md)**
 
 
 ## getWhatsAppCampaigns
@@ -269,12 +269,12 @@ try {
 
 | Parameter                                                                                                           | Type                                                                                                                | Required                                                                                                            | Description                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetWhatsAppCampaignsRequest](../../models/operations/GetWhatsAppCampaignsRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
+| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetWhatsAppCampaignsRequest](../../Models/Operations/GetWhatsAppCampaignsRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetWhatsAppCampaignsResponse](../../models/operations/GetWhatsAppCampaignsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetWhatsAppCampaignsResponse](../../Models/Operations/GetWhatsAppCampaignsResponse.md)**
 
 
 ## getWhatsAppConfig
@@ -313,7 +313,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetWhatsAppConfigResponse](../../models/operations/GetWhatsAppConfigResponse.md)**
+**[?\test\BREVO\Models\Operations\GetWhatsAppConfigResponse](../../Models/Operations/GetWhatsAppConfigResponse.md)**
 
 
 ## getWhatsAppTemplates
@@ -361,12 +361,12 @@ try {
 
 | Parameter                                                                                                           | Type                                                                                                                | Required                                                                                                            | Description                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetWhatsAppTemplatesRequest](../../models/operations/GetWhatsAppTemplatesRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
+| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetWhatsAppTemplatesRequest](../../Models/Operations/GetWhatsAppTemplatesRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetWhatsAppTemplatesResponse](../../models/operations/GetWhatsAppTemplatesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetWhatsAppTemplatesResponse](../../Models/Operations/GetWhatsAppTemplatesResponse.md)**
 
 
 ## sendWhatsAppTemplateApproval
@@ -410,12 +410,12 @@ try {
 
 | Parameter                                                                                                                           | Type                                                                                                                                | Required                                                                                                                            | Description                                                                                                                         |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                          | [\test\BREVO\Models\Operations\SendWhatsAppTemplateApprovalRequest](../../models/operations/SendWhatsAppTemplateApprovalRequest.md) | :heavy_check_mark:                                                                                                                  | The request object to use for the request.                                                                                          |
+| `$request`                                                                                                                          | [\test\BREVO\Models\Operations\SendWhatsAppTemplateApprovalRequest](../../Models/Operations/SendWhatsAppTemplateApprovalRequest.md) | :heavy_check_mark:                                                                                                                  | The request object to use for the request.                                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendWhatsAppTemplateApprovalResponse](../../models/operations/SendWhatsAppTemplateApprovalResponse.md)**
+**[?\test\BREVO\Models\Operations\SendWhatsAppTemplateApprovalResponse](../../Models/Operations/SendWhatsAppTemplateApprovalResponse.md)**
 
 
 ## updateWhatsAppCampaign
@@ -473,10 +473,10 @@ try {
 
 | Parameter                                                                                                               | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                              | [\test\BREVO\Models\Operations\UpdateWhatsAppCampaignRequest](../../models/operations/UpdateWhatsAppCampaignRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
+| `$request`                                                                                                              | [\test\BREVO\Models\Operations\UpdateWhatsAppCampaignRequest](../../Models/Operations/UpdateWhatsAppCampaignRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateWhatsAppCampaignResponse](../../models/operations/UpdateWhatsAppCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateWhatsAppCampaignResponse](../../Models/Operations/UpdateWhatsAppCampaignResponse.md)**
 

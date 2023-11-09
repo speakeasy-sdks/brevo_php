@@ -75,12 +75,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\AddContactToListRequest](../../models/operations/AddContactToListRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\AddContactToListRequest](../../Models/Operations/AddContactToListRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\AddContactToListResponse](../../models/operations/AddContactToListResponse.md)**
+**[?\test\BREVO\Models\Operations\AddContactToListResponse](../../Models/Operations/AddContactToListResponse.md)**
 
 
 ## createAttribute
@@ -132,12 +132,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\CreateAttributeRequest](../../models/operations/CreateAttributeRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\CreateAttributeRequest](../../Models/Operations/CreateAttributeRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateAttributeResponse](../../models/operations/CreateAttributeResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateAttributeResponse](../../Models/Operations/CreateAttributeResponse.md)**
 
 
 ## createContact
@@ -193,12 +193,12 @@ try {
 
 | Parameter                                                                       | Type                                                                            | Required                                                                        | Description                                                                     |
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| `$request`                                                                      | [\test\BREVO\Models\Shared\CreateContact](../../models/shared/CreateContact.md) | :heavy_check_mark:                                                              | The request object to use for the request.                                      |
+| `$request`                                                                      | [\test\BREVO\Models\Shared\CreateContact](../../Models/Shared/CreateContact.md) | :heavy_check_mark:                                                              | The request object to use for the request.                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateContactResponse](../../models/operations/CreateContactResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateContactResponse](../../Models/Operations/CreateContactResponse.md)**
 
 
 ## createDoiContact
@@ -252,12 +252,12 @@ try {
 
 | Parameter                                                                             | Type                                                                                  | Required                                                                              | Description                                                                           |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| `$request`                                                                            | [\test\BREVO\Models\Shared\CreateDoiContact](../../models/shared/CreateDoiContact.md) | :heavy_check_mark:                                                                    | The request object to use for the request.                                            |
+| `$request`                                                                            | [\test\BREVO\Models\Shared\CreateDoiContact](../../Models/Shared/CreateDoiContact.md) | :heavy_check_mark:                                                                    | The request object to use for the request.                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateDoiContactResponse](../../models/operations/CreateDoiContactResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateDoiContactResponse](../../Models/Operations/CreateDoiContactResponse.md)**
 
 
 ## createFolder
@@ -300,12 +300,12 @@ try {
 
 | Parameter                                                                                 | Type                                                                                      | Required                                                                                  | Description                                                                               |
 | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `$request`                                                                                | [\test\BREVO\Models\Shared\CreateUpdateFolder](../../models/shared/CreateUpdateFolder.md) | :heavy_check_mark:                                                                        | The request object to use for the request.                                                |
+| `$request`                                                                                | [\test\BREVO\Models\Shared\CreateUpdateFolder](../../Models/Shared/CreateUpdateFolder.md) | :heavy_check_mark:                                                                        | The request object to use for the request.                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateFolderResponse](../../models/operations/CreateFolderResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateFolderResponse](../../Models/Operations/CreateFolderResponse.md)**
 
 
 ## createList
@@ -349,12 +349,12 @@ try {
 
 | Parameter                                                                 | Type                                                                      | Required                                                                  | Description                                                               |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `$request`                                                                | [\test\BREVO\Models\Shared\CreateList](../../models/shared/CreateList.md) | :heavy_check_mark:                                                        | The request object to use for the request.                                |
+| `$request`                                                                | [\test\BREVO\Models\Shared\CreateList](../../Models/Shared/CreateList.md) | :heavy_check_mark:                                                        | The request object to use for the request.                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateListResponse](../../models/operations/CreateListResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateListResponse](../../Models/Operations/CreateListResponse.md)**
 
 
 ## deleteAttribute
@@ -399,12 +399,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\DeleteAttributeRequest](../../models/operations/DeleteAttributeRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\DeleteAttributeRequest](../../Models/Operations/DeleteAttributeRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteAttributeResponse](../../models/operations/DeleteAttributeResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteAttributeResponse](../../Models/Operations/DeleteAttributeResponse.md)**
 
 
 ## deleteContact
@@ -448,12 +448,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\DeleteContactRequest](../../models/operations/DeleteContactRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\DeleteContactRequest](../../Models/Operations/DeleteContactRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteContactResponse](../../models/operations/DeleteContactResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteContactResponse](../../Models/Operations/DeleteContactResponse.md)**
 
 
 ## deleteFolder
@@ -497,12 +497,12 @@ try {
 
 | Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                          | [\test\BREVO\Models\Operations\DeleteFolderRequest](../../models/operations/DeleteFolderRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
+| `$request`                                                                                          | [\test\BREVO\Models\Operations\DeleteFolderRequest](../../Models/Operations/DeleteFolderRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteFolderResponse](../../models/operations/DeleteFolderResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteFolderResponse](../../Models/Operations/DeleteFolderResponse.md)**
 
 
 ## deleteList
@@ -546,12 +546,12 @@ try {
 
 | Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `$request`                                                                                      | [\test\BREVO\Models\Operations\DeleteListRequest](../../models/operations/DeleteListRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
+| `$request`                                                                                      | [\test\BREVO\Models\Operations\DeleteListRequest](../../Models/Operations/DeleteListRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteListResponse](../../models/operations/DeleteListResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteListResponse](../../Models/Operations/DeleteListResponse.md)**
 
 
 ## getAttributes
@@ -590,7 +590,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetAttributesResponse](../../models/operations/GetAttributesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetAttributesResponse](../../Models/Operations/GetAttributesResponse.md)**
 
 
 ## getContactInfo
@@ -636,12 +636,12 @@ try {
 
 | Parameter                                                                                               | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetContactInfoRequest](../../models/operations/GetContactInfoRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
+| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetContactInfoRequest](../../Models/Operations/GetContactInfoRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetContactInfoResponse](../../models/operations/GetContactInfoResponse.md)**
+**[?\test\BREVO\Models\Operations\GetContactInfoResponse](../../Models/Operations/GetContactInfoResponse.md)**
 
 
 ## getContactStats
@@ -687,12 +687,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetContactStatsRequest](../../models/operations/GetContactStatsRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetContactStatsRequest](../../Models/Operations/GetContactStatsRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetContactStatsResponse](../../models/operations/GetContactStatsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetContactStatsResponse](../../Models/Operations/GetContactStatsResponse.md)**
 
 
 ## getContacts
@@ -740,12 +740,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetContactsRequest](../../models/operations/GetContactsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetContactsRequest](../../Models/Operations/GetContactsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetContactsResponse](../../models/operations/GetContactsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetContactsResponse](../../Models/Operations/GetContactsResponse.md)**
 
 
 ## getContactsFromList
@@ -793,12 +793,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetContactsFromListRequest](../../models/operations/GetContactsFromListRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetContactsFromListRequest](../../Models/Operations/GetContactsFromListRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetContactsFromListResponse](../../models/operations/GetContactsFromListResponse.md)**
+**[?\test\BREVO\Models\Operations\GetContactsFromListResponse](../../Models/Operations/GetContactsFromListResponse.md)**
 
 
 ## getFolder
@@ -842,12 +842,12 @@ try {
 
 | Parameter                                                                                     | Type                                                                                          | Required                                                                                      | Description                                                                                   |
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `$request`                                                                                    | [\test\BREVO\Models\Operations\GetFolderRequest](../../models/operations/GetFolderRequest.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
+| `$request`                                                                                    | [\test\BREVO\Models\Operations\GetFolderRequest](../../Models/Operations/GetFolderRequest.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetFolderResponse](../../models/operations/GetFolderResponse.md)**
+**[?\test\BREVO\Models\Operations\GetFolderResponse](../../Models/Operations/GetFolderResponse.md)**
 
 
 ## getFolderLists
@@ -894,12 +894,12 @@ try {
 
 | Parameter                                                                                               | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetFolderListsRequest](../../models/operations/GetFolderListsRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
+| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetFolderListsRequest](../../Models/Operations/GetFolderListsRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetFolderListsResponse](../../models/operations/GetFolderListsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetFolderListsResponse](../../Models/Operations/GetFolderListsResponse.md)**
 
 
 ## getFolders
@@ -945,12 +945,12 @@ try {
 
 | Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `$request`                                                                                      | [\test\BREVO\Models\Operations\GetFoldersRequest](../../models/operations/GetFoldersRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
+| `$request`                                                                                      | [\test\BREVO\Models\Operations\GetFoldersRequest](../../Models/Operations/GetFoldersRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetFoldersResponse](../../models/operations/GetFoldersResponse.md)**
+**[?\test\BREVO\Models\Operations\GetFoldersResponse](../../Models/Operations/GetFoldersResponse.md)**
 
 
 ## getList
@@ -994,12 +994,12 @@ try {
 
 | Parameter                                                                                 | Type                                                                                      | Required                                                                                  | Description                                                                               |
 | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `$request`                                                                                | [\test\BREVO\Models\Operations\GetListRequest](../../models/operations/GetListRequest.md) | :heavy_check_mark:                                                                        | The request object to use for the request.                                                |
+| `$request`                                                                                | [\test\BREVO\Models\Operations\GetListRequest](../../Models/Operations/GetListRequest.md) | :heavy_check_mark:                                                                        | The request object to use for the request.                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetListResponse](../../models/operations/GetListResponse.md)**
+**[?\test\BREVO\Models\Operations\GetListResponse](../../Models/Operations/GetListResponse.md)**
 
 
 ## getLists
@@ -1045,12 +1045,12 @@ try {
 
 | Parameter                                                                                   | Type                                                                                        | Required                                                                                    | Description                                                                                 |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| `$request`                                                                                  | [\test\BREVO\Models\Operations\GetListsRequest](../../models/operations/GetListsRequest.md) | :heavy_check_mark:                                                                          | The request object to use for the request.                                                  |
+| `$request`                                                                                  | [\test\BREVO\Models\Operations\GetListsRequest](../../Models/Operations/GetListsRequest.md) | :heavy_check_mark:                                                                          | The request object to use for the request.                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetListsResponse](../../models/operations/GetListsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetListsResponse](../../Models/Operations/GetListsResponse.md)**
 
 
 ## getSegments
@@ -1096,12 +1096,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetSegmentsRequest](../../models/operations/GetSegmentsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetSegmentsRequest](../../Models/Operations/GetSegmentsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSegmentsResponse](../../models/operations/GetSegmentsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSegmentsResponse](../../Models/Operations/GetSegmentsResponse.md)**
 
 
 ## importContacts
@@ -1161,12 +1161,12 @@ try {
 
 | Parameter                                                                                     | Type                                                                                          | Required                                                                                      | Description                                                                                   |
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `$request`                                                                                    | [\test\BREVO\Models\Shared\RequestContactImport](../../models/shared/RequestContactImport.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
+| `$request`                                                                                    | [\test\BREVO\Models\Shared\RequestContactImport](../../Models/Shared/RequestContactImport.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\ImportContactsResponse](../../models/operations/ImportContactsResponse.md)**
+**[?\test\BREVO\Models\Operations\ImportContactsResponse](../../Models/Operations/ImportContactsResponse.md)**
 
 
 ## removeContactFromList
@@ -1211,12 +1211,12 @@ try {
 
 | Parameter                                                                                                             | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                            | [\test\BREVO\Models\Operations\RemoveContactFromListRequest](../../models/operations/RemoveContactFromListRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
+| `$request`                                                                                                            | [\test\BREVO\Models\Operations\RemoveContactFromListRequest](../../Models/Operations/RemoveContactFromListRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\RemoveContactFromListResponse](../../models/operations/RemoveContactFromListResponse.md)**
+**[?\test\BREVO\Models\Operations\RemoveContactFromListResponse](../../Models/Operations/RemoveContactFromListResponse.md)**
 
 
 ## requestContactExport
@@ -1269,12 +1269,12 @@ try {
 
 | Parameter                                                                                     | Type                                                                                          | Required                                                                                      | Description                                                                                   |
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `$request`                                                                                    | [\test\BREVO\Models\Shared\RequestContactExport](../../models/shared/RequestContactExport.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
+| `$request`                                                                                    | [\test\BREVO\Models\Shared\RequestContactExport](../../Models/Shared/RequestContactExport.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\RequestContactExportResponse](../../models/operations/RequestContactExportResponse.md)**
+**[?\test\BREVO\Models\Operations\RequestContactExportResponse](../../Models/Operations/RequestContactExportResponse.md)**
 
 
 ## updateAttribute
@@ -1324,12 +1324,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\UpdateAttributeRequest](../../models/operations/UpdateAttributeRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\UpdateAttributeRequest](../../Models/Operations/UpdateAttributeRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateAttributeResponse](../../models/operations/UpdateAttributeResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateAttributeResponse](../../Models/Operations/UpdateAttributeResponse.md)**
 
 
 ## updateBatchContacts
@@ -1374,12 +1374,12 @@ try {
 
 | Parameter                                                                                   | Type                                                                                        | Required                                                                                    | Description                                                                                 |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| `$request`                                                                                  | [\test\BREVO\Models\Shared\UpdateBatchContacts](../../models/shared/UpdateBatchContacts.md) | :heavy_check_mark:                                                                          | The request object to use for the request.                                                  |
+| `$request`                                                                                  | [\test\BREVO\Models\Shared\UpdateBatchContacts](../../Models/Shared/UpdateBatchContacts.md) | :heavy_check_mark:                                                                          | The request object to use for the request.                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateBatchContactsResponse](../../models/operations/UpdateBatchContactsResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateBatchContactsResponse](../../Models/Operations/UpdateBatchContactsResponse.md)**
 
 
 ## updateContact
@@ -1439,12 +1439,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\UpdateContactRequest](../../models/operations/UpdateContactRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\UpdateContactRequest](../../Models/Operations/UpdateContactRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateContactResponse](../../models/operations/UpdateContactResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateContactResponse](../../Models/Operations/UpdateContactResponse.md)**
 
 
 ## updateFolder
@@ -1490,12 +1490,12 @@ try {
 
 | Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                          | [\test\BREVO\Models\Operations\UpdateFolderRequest](../../models/operations/UpdateFolderRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
+| `$request`                                                                                          | [\test\BREVO\Models\Operations\UpdateFolderRequest](../../Models/Operations/UpdateFolderRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateFolderResponse](../../models/operations/UpdateFolderResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateFolderResponse](../../Models/Operations/UpdateFolderResponse.md)**
 
 
 ## updateList
@@ -1542,10 +1542,10 @@ try {
 
 | Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `$request`                                                                                      | [\test\BREVO\Models\Operations\UpdateListRequest](../../models/operations/UpdateListRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
+| `$request`                                                                                      | [\test\BREVO\Models\Operations\UpdateListRequest](../../Models/Operations/UpdateListRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateListResponse](../../models/operations/UpdateListResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateListResponse](../../Models/Operations/UpdateListResponse.md)**
 

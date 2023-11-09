@@ -54,12 +54,12 @@ try {
 
 | Parameter                                                                                                               | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                              | [\test\BREVO\Models\Operations\GetWhatsappEventReportRequest](../../models/operations/GetWhatsappEventReportRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
+| `$request`                                                                                                              | [\test\BREVO\Models\Operations\GetWhatsappEventReportRequest](../../Models/Operations/GetWhatsappEventReportRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetWhatsappEventReportResponse](../../models/operations/GetWhatsappEventReportResponse.md)**
+**[?\test\BREVO\Models\Operations\GetWhatsappEventReportResponse](../../Models/Operations/GetWhatsappEventReportResponse.md)**
 
 
 ## sendWhatsappMessage
@@ -101,10 +101,10 @@ try {
 
 | Parameter                                  | Type                                       | Required                                   | Description                                |
 | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
-| `$request`                                 | [mixed](../../models//.md)                 | :heavy_check_mark:                         | The request object to use for the request. |
+| `$request`                                 | [mixed](../../.md)                         | :heavy_check_mark:                         | The request object to use for the request. |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendWhatsappMessageResponse](../../models/operations/SendWhatsappMessageResponse.md)**
+**[?\test\BREVO\Models\Operations\SendWhatsappMessageResponse](../../Models/Operations/SendWhatsappMessageResponse.md)**
 

@@ -1,0 +1,12 @@
+# SubAccountDetailsResponsePlanInfo
+
+Sub-account plan details
+
+
+## Fields
+
+| Field                                                                                                                    | Type                                                                                                                     | Required                                                                                                                 | Description                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| `credits`                                                                                                                | [?\test\BREVO\Models\Shared\SubAccountDetailsResponseCredits](../../Models/Shared/SubAccountDetailsResponseCredits.md)   | :heavy_minus_sign:                                                                                                       | Credits quota and remaining credits on the sub-account                                                                   |
+| `features`                                                                                                               | [?\test\BREVO\Models\Shared\SubAccountDetailsResponseFeatures](../../Models/Shared/SubAccountDetailsResponseFeatures.md) | :heavy_minus_sign:                                                                                                       | Features available on the sub-account                                                                                    |
+| `planType`                                                                                                               | *?string*                                                                                                                | :heavy_minus_sign:                                                                                                       | type of the plan                                                                                                         |

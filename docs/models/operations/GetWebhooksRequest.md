@@ -1,9 +1,0 @@
-# GetWebhooksRequest
-
-
-## Fields
-
-| Field                                                                                                            | Type                                                                                                             | Required                                                                                                         | Description                                                                                                      |
-| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `sort`                                                                                                           | [?\test\BREVO\Models\Operations\GetWebhooksQueryParamSort](../../models/operations/GetWebhooksQueryParamSort.md) | :heavy_minus_sign:                                                                                               | Sort the results in the ascending/descending order of webhook creation                                           |
-| `type`                                                                                                           | [?\test\BREVO\Models\Operations\QueryParamType](../../models/operations/QueryParamType.md)                       | :heavy_minus_sign:                                                                                               | Filter on webhook type                                                                                           |

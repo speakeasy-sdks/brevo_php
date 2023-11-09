@@ -58,12 +58,12 @@ try {
 
 | Parameter                                                                 | Type                                                                      | Required                                                                  | Description                                                               |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `$request`                                                                | [\test\BREVO\Models\Shared\OrderBatch](../../models/shared/OrderBatch.md) | :heavy_check_mark:                                                        | The request object to use for the request.                                |
+| `$request`                                                                | [\test\BREVO\Models\Shared\OrderBatch](../../Models/Shared/OrderBatch.md) | :heavy_check_mark:                                                        | The request object to use for the request.                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateBatchOrderResponse](../../models/operations/CreateBatchOrderResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateBatchOrderResponse](../../Models/Operations/CreateBatchOrderResponse.md)**
 
 
 ## createOrder
@@ -125,12 +125,12 @@ try {
 
 | Parameter                                                       | Type                                                            | Required                                                        | Description                                                     |
 | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
-| `$request`                                                      | [\test\BREVO\Models\Shared\Order](../../models/shared/Order.md) | :heavy_check_mark:                                              | The request object to use for the request.                      |
+| `$request`                                                      | [\test\BREVO\Models\Shared\Order](../../Models/Shared/Order.md) | :heavy_check_mark:                                              | The request object to use for the request.                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateOrderResponse](../../models/operations/CreateOrderResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateOrderResponse](../../Models/Operations/CreateOrderResponse.md)**
 
 
 ## createUpdateBatchCategory
@@ -176,12 +176,12 @@ try {
 
 | Parameter                                                                                               | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                              | [\test\BREVO\Models\Shared\CreateUpdateBatchCategory](../../models/shared/CreateUpdateBatchCategory.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
+| `$request`                                                                                              | [\test\BREVO\Models\Shared\CreateUpdateBatchCategory](../../Models/Shared/CreateUpdateBatchCategory.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateUpdateBatchCategoryResponse](../../models/operations/CreateUpdateBatchCategoryResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateUpdateBatchCategoryResponse](../../Models/Operations/CreateUpdateBatchCategoryResponse.md)**
 
 
 ## createUpdateBatchProducts
@@ -227,12 +227,12 @@ try {
 
 | Parameter                                                                                               | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                              | [\test\BREVO\Models\Shared\CreateUpdateBatchProducts](../../models/shared/CreateUpdateBatchProducts.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
+| `$request`                                                                                              | [\test\BREVO\Models\Shared\CreateUpdateBatchProducts](../../Models/Shared/CreateUpdateBatchProducts.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateUpdateBatchProductsResponse](../../models/operations/CreateUpdateBatchProductsResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateUpdateBatchProductsResponse](../../Models/Operations/CreateUpdateBatchProductsResponse.md)**
 
 
 ## createUpdateCategory
@@ -279,12 +279,12 @@ try {
 
 | Parameter                                                                                     | Type                                                                                          | Required                                                                                      | Description                                                                                   |
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `$request`                                                                                    | [\test\BREVO\Models\Shared\CreateUpdateCategory](../../models/shared/CreateUpdateCategory.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
+| `$request`                                                                                    | [\test\BREVO\Models\Shared\CreateUpdateCategory](../../Models/Shared/CreateUpdateCategory.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateUpdateCategoryResponse](../../models/operations/CreateUpdateCategoryResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateUpdateCategoryResponse](../../Models/Operations/CreateUpdateCategoryResponse.md)**
 
 
 ## createUpdateProduct
@@ -341,12 +341,12 @@ try {
 
 | Parameter                                                                                   | Type                                                                                        | Required                                                                                    | Description                                                                                 |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| `$request`                                                                                  | [\test\BREVO\Models\Shared\CreateUpdateProduct](../../models/shared/CreateUpdateProduct.md) | :heavy_check_mark:                                                                          | The request object to use for the request.                                                  |
+| `$request`                                                                                  | [\test\BREVO\Models\Shared\CreateUpdateProduct](../../Models/Shared/CreateUpdateProduct.md) | :heavy_check_mark:                                                                          | The request object to use for the request.                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateUpdateProductResponse](../../models/operations/CreateUpdateProductResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateUpdateProductResponse](../../Models/Operations/CreateUpdateProductResponse.md)**
 
 
 ## getCategories
@@ -396,12 +396,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCategoriesRequest](../../models/operations/GetCategoriesRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCategoriesRequest](../../Models/Operations/GetCategoriesRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCategoriesResponse](../../models/operations/GetCategoriesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCategoriesResponse](../../Models/Operations/GetCategoriesResponse.md)**
 
 
 ## getCategoryInfo
@@ -445,12 +445,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetCategoryInfoRequest](../../models/operations/GetCategoryInfoRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetCategoryInfoRequest](../../Models/Operations/GetCategoryInfoRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCategoryInfoResponse](../../models/operations/GetCategoryInfoResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCategoryInfoResponse](../../Models/Operations/GetCategoryInfoResponse.md)**
 
 
 ## getProductInfo
@@ -494,12 +494,12 @@ try {
 
 | Parameter                                                                                               | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetProductInfoRequest](../../models/operations/GetProductInfoRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
+| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetProductInfoRequest](../../Models/Operations/GetProductInfoRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetProductInfoResponse](../../models/operations/GetProductInfoResponse.md)**
+**[?\test\BREVO\Models\Operations\GetProductInfoResponse](../../Models/Operations/GetProductInfoResponse.md)**
 
 
 ## getProducts
@@ -558,12 +558,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetProductsRequest](../../models/operations/GetProductsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetProductsRequest](../../Models/Operations/GetProductsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetProductsResponse](../../models/operations/GetProductsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetProductsResponse](../../Models/Operations/GetProductsResponse.md)**
 
 
 ## postEcommerceActivate
@@ -602,5 +602,5 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostEcommerceActivateResponse](../../models/operations/PostEcommerceActivateResponse.md)**
+**[?\test\BREVO\Models\Operations\PostEcommerceActivateResponse](../../Models/Operations/PostEcommerceActivateResponse.md)**
 

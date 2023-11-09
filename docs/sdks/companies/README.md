@@ -52,12 +52,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\DeleteCompaniesIdRequest](../../models/operations/DeleteCompaniesIdRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\DeleteCompaniesIdRequest](../../Models/Operations/DeleteCompaniesIdRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteCompaniesIdResponse](../../models/operations/DeleteCompaniesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteCompaniesIdResponse](../../Models/Operations/DeleteCompaniesIdResponse.md)**
 
 
 ## getCompanies
@@ -107,12 +107,12 @@ try {
 
 | Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                          | [\test\BREVO\Models\Operations\GetCompaniesRequest](../../models/operations/GetCompaniesRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
+| `$request`                                                                                          | [\test\BREVO\Models\Operations\GetCompaniesRequest](../../Models/Operations/GetCompaniesRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCompaniesResponse](../../models/operations/GetCompaniesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCompaniesResponse](../../Models/Operations/GetCompaniesResponse.md)**
 
 
 ## getCompaniesAttributes
@@ -151,7 +151,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCompaniesAttributesResponse](../../models/operations/GetCompaniesAttributesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCompaniesAttributesResponse](../../Models/Operations/GetCompaniesAttributesResponse.md)**
 
 
 ## getCompaniesId
@@ -195,12 +195,12 @@ try {
 
 | Parameter                                                                                               | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetCompaniesIdRequest](../../models/operations/GetCompaniesIdRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
+| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetCompaniesIdRequest](../../Models/Operations/GetCompaniesIdRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCompaniesIdResponse](../../models/operations/GetCompaniesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCompaniesIdResponse](../../Models/Operations/GetCompaniesIdResponse.md)**
 
 
 ## patchCompaniesLinkUnlinkId
@@ -257,12 +257,12 @@ try {
 
 | Parameter                                                                                                                       | Type                                                                                                                            | Required                                                                                                                        | Description                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                      | [\test\BREVO\Models\Operations\PatchCompaniesLinkUnlinkIdRequest](../../models/operations/PatchCompaniesLinkUnlinkIdRequest.md) | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
+| `$request`                                                                                                                      | [\test\BREVO\Models\Operations\PatchCompaniesLinkUnlinkIdRequest](../../Models/Operations/PatchCompaniesLinkUnlinkIdRequest.md) | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PatchCompaniesLinkUnlinkIdResponse](../../models/operations/PatchCompaniesLinkUnlinkIdResponse.md)**
+**[?\test\BREVO\Models\Operations\PatchCompaniesLinkUnlinkIdResponse](../../Models/Operations/PatchCompaniesLinkUnlinkIdResponse.md)**
 
 
 ## patchCompaniesId
@@ -310,12 +310,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\PatchCompaniesIdRequest](../../models/operations/PatchCompaniesIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\PatchCompaniesIdRequest](../../Models/Operations/PatchCompaniesIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PatchCompaniesIdResponse](../../models/operations/PatchCompaniesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\PatchCompaniesIdResponse](../../Models/Operations/PatchCompaniesIdResponse.md)**
 
 
 ## postCompanies
@@ -361,10 +361,10 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\PostCompaniesRequestBody](../../models/operations/PostCompaniesRequestBody.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\PostCompaniesRequestBody](../../Models/Operations/PostCompaniesRequestBody.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostCompaniesResponse](../../models/operations/PostCompaniesResponse.md)**
+**[?\test\BREVO\Models\Operations\PostCompaniesResponse](../../Models/Operations/PostCompaniesResponse.md)**
 

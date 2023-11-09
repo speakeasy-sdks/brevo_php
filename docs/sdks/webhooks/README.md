@@ -56,12 +56,12 @@ try {
 
 | Parameter                                                                       | Type                                                                            | Required                                                                        | Description                                                                     |
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| `$request`                                                                      | [\test\BREVO\Models\Shared\CreateWebhook](../../models/shared/CreateWebhook.md) | :heavy_check_mark:                                                              | The request object to use for the request.                                      |
+| `$request`                                                                      | [\test\BREVO\Models\Shared\CreateWebhook](../../Models/Shared/CreateWebhook.md) | :heavy_check_mark:                                                              | The request object to use for the request.                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateWebhookResponse](../../models/operations/CreateWebhookResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateWebhookResponse](../../Models/Operations/CreateWebhookResponse.md)**
 
 
 ## deleteWebhook
@@ -105,12 +105,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\DeleteWebhookRequest](../../models/operations/DeleteWebhookRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\DeleteWebhookRequest](../../Models/Operations/DeleteWebhookRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteWebhookResponse](../../models/operations/DeleteWebhookResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteWebhookResponse](../../Models/Operations/DeleteWebhookResponse.md)**
 
 
 ## exportWebhooksHistory
@@ -152,12 +152,12 @@ try {
 
 | Parameter                                  | Type                                       | Required                                   | Description                                |
 | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
-| `$request`                                 | [mixed](../../models//.md)                 | :heavy_check_mark:                         | The request object to use for the request. |
+| `$request`                                 | [mixed](../../.md)                         | :heavy_check_mark:                         | The request object to use for the request. |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\ExportWebhooksHistoryResponse](../../models/operations/ExportWebhooksHistoryResponse.md)**
+**[?\test\BREVO\Models\Operations\ExportWebhooksHistoryResponse](../../Models/Operations/ExportWebhooksHistoryResponse.md)**
 
 
 ## getWebhook
@@ -201,12 +201,12 @@ try {
 
 | Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `$request`                                                                                      | [\test\BREVO\Models\Operations\GetWebhookRequest](../../models/operations/GetWebhookRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
+| `$request`                                                                                      | [\test\BREVO\Models\Operations\GetWebhookRequest](../../Models/Operations/GetWebhookRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetWebhookResponse](../../models/operations/GetWebhookResponse.md)**
+**[?\test\BREVO\Models\Operations\GetWebhookResponse](../../Models/Operations/GetWebhookResponse.md)**
 
 
 ## getWebhooks
@@ -251,12 +251,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetWebhooksRequest](../../models/operations/GetWebhooksRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetWebhooksRequest](../../Models/Operations/GetWebhooksRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetWebhooksResponse](../../models/operations/GetWebhooksResponse.md)**
+**[?\test\BREVO\Models\Operations\GetWebhooksResponse](../../Models/Operations/GetWebhooksResponse.md)**
 
 
 ## updateWebhook
@@ -307,10 +307,10 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\UpdateWebhookRequest](../../models/operations/UpdateWebhookRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\UpdateWebhookRequest](../../Models/Operations/UpdateWebhookRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateWebhookResponse](../../models/operations/UpdateWebhookResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateWebhookResponse](../../Models/Operations/UpdateWebhookResponse.md)**
 

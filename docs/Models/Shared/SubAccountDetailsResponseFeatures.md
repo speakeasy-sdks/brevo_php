@@ -1,0 +1,12 @@
+# SubAccountDetailsResponseFeatures
+
+Features available on the sub-account
+
+
+## Fields
+
+| Field                                                                                                              | Type                                                                                                               | Required                                                                                                           | Description                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `inbox`                                                                                                            | [?\test\BREVO\Models\Shared\Inbox](../../Models/Shared/Inbox.md)                                                   | :heavy_minus_sign:                                                                                                 | Inbox details                                                                                                      |
+| `landingPage`                                                                                                      | [?\test\BREVO\Models\Shared\LandingPage](../../Models/Shared/LandingPage.md)                                       | :heavy_minus_sign:                                                                                                 | Landing page details                                                                                               |
+| `users`                                                                                                            | [?\test\BREVO\Models\Shared\SubAccountDetailsResponseUsers](../../Models/Shared/SubAccountDetailsResponseUsers.md) | :heavy_minus_sign:                                                                                                 | Multi-account details                                                                                              |

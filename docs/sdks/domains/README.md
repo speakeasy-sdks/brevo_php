@@ -50,12 +50,12 @@ try {
 
 | Parameter                                                                                                       | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                      | [\test\BREVO\Models\Operations\AuthenticateDomainRequest](../../models/operations/AuthenticateDomainRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
+| `$request`                                                                                                      | [\test\BREVO\Models\Operations\AuthenticateDomainRequest](../../Models/Operations/AuthenticateDomainRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\AuthenticateDomainResponse](../../models/operations/AuthenticateDomainResponse.md)**
+**[?\test\BREVO\Models\Operations\AuthenticateDomainResponse](../../Models/Operations/AuthenticateDomainResponse.md)**
 
 
 ## createDomain
@@ -98,12 +98,12 @@ try {
 
 | Parameter                                                                     | Type                                                                          | Required                                                                      | Description                                                                   |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| `$request`                                                                    | [\test\BREVO\Models\Shared\CreateDomain](../../models/shared/CreateDomain.md) | :heavy_check_mark:                                                            | The request object to use for the request.                                    |
+| `$request`                                                                    | [\test\BREVO\Models\Shared\CreateDomain](../../Models/Shared/CreateDomain.md) | :heavy_check_mark:                                                            | The request object to use for the request.                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateDomainResponse](../../models/operations/CreateDomainResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateDomainResponse](../../Models/Operations/CreateDomainResponse.md)**
 
 
 ## deleteDomain
@@ -147,12 +147,12 @@ try {
 
 | Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                          | [\test\BREVO\Models\Operations\DeleteDomainRequest](../../models/operations/DeleteDomainRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
+| `$request`                                                                                          | [\test\BREVO\Models\Operations\DeleteDomainRequest](../../Models/Operations/DeleteDomainRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteDomainResponse](../../models/operations/DeleteDomainResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteDomainResponse](../../Models/Operations/DeleteDomainResponse.md)**
 
 
 ## getDomainConfiguration
@@ -196,12 +196,12 @@ try {
 
 | Parameter                                                                                                               | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                              | [\test\BREVO\Models\Operations\GetDomainConfigurationRequest](../../models/operations/GetDomainConfigurationRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
+| `$request`                                                                                                              | [\test\BREVO\Models\Operations\GetDomainConfigurationRequest](../../Models/Operations/GetDomainConfigurationRequest.md) | :heavy_check_mark:                                                                                                      | The request object to use for the request.                                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetDomainConfigurationResponse](../../models/operations/GetDomainConfigurationResponse.md)**
+**[?\test\BREVO\Models\Operations\GetDomainConfigurationResponse](../../Models/Operations/GetDomainConfigurationResponse.md)**
 
 
 ## getDomains
@@ -240,5 +240,5 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetDomainsResponse](../../models/operations/GetDomainsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetDomainsResponse](../../Models/Operations/GetDomainsResponse.md)**
 

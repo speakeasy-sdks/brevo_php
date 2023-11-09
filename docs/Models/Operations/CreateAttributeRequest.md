@@ -1,0 +1,10 @@
+# CreateAttributeRequest
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `attributeCategory`                                                                             | [\test\BREVO\Models\Operations\AttributeCategory](../../Models/Operations/AttributeCategory.md) | :heavy_check_mark:                                                                              | Category of the attribute                                                                       |
+| `attributeName`                                                                                 | *string*                                                                                        | :heavy_check_mark:                                                                              | Name of the attribute                                                                           |
+| `createAttribute`                                                                               | [\test\BREVO\Models\Shared\CreateAttribute](../../Models/Shared/CreateAttribute.md)             | :heavy_check_mark:                                                                              | Values to create an attribute                                                                   |

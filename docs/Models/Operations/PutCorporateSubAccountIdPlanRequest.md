@@ -1,0 +1,9 @@
+# PutCorporateSubAccountIdPlanRequest
+
+
+## Fields
+
+| Field                                                                                                       | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `id`                                                                                                        | *int*                                                                                                       | :heavy_check_mark:                                                                                          | Id of the sub-account organization                                                                          |
+| `subAccountUpdatePlanRequest`                                                                               | [\test\BREVO\Models\Shared\SubAccountUpdatePlanRequest](../../Models/Shared/SubAccountUpdatePlanRequest.md) | :heavy_check_mark:                                                                                          | Values to update a sub-account plan                                                                         |

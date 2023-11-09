@@ -55,12 +55,12 @@ try {
 
 | Parameter                                                                     | Type                                                                          | Required                                                                      | Description                                                                   |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| `$request`                                                                    | [\test\BREVO\Models\Shared\CreateSender](../../models/shared/CreateSender.md) | :heavy_check_mark:                                                            | The request object to use for the request.                                    |
+| `$request`                                                                    | [\test\BREVO\Models\Shared\CreateSender](../../Models/Shared/CreateSender.md) | :heavy_check_mark:                                                            | The request object to use for the request.                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateSenderResponse](../../models/operations/CreateSenderResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateSenderResponse](../../Models/Operations/CreateSenderResponse.md)**
 
 
 ## deleteSender
@@ -104,12 +104,12 @@ try {
 
 | Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                          | [\test\BREVO\Models\Operations\DeleteSenderRequest](../../models/operations/DeleteSenderRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
+| `$request`                                                                                          | [\test\BREVO\Models\Operations\DeleteSenderRequest](../../Models/Operations/DeleteSenderRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteSenderResponse](../../models/operations/DeleteSenderResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteSenderResponse](../../Models/Operations/DeleteSenderResponse.md)**
 
 
 ## getIps
@@ -148,7 +148,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetIpsResponse](../../models/operations/GetIpsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetIpsResponse](../../Models/Operations/GetIpsResponse.md)**
 
 
 ## getIpsFromSender
@@ -192,12 +192,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\GetIpsFromSenderRequest](../../models/operations/GetIpsFromSenderRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\GetIpsFromSenderRequest](../../Models/Operations/GetIpsFromSenderRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetIpsFromSenderResponse](../../models/operations/GetIpsFromSenderResponse.md)**
+**[?\test\BREVO\Models\Operations\GetIpsFromSenderResponse](../../Models/Operations/GetIpsFromSenderResponse.md)**
 
 
 ## getSenders
@@ -242,12 +242,12 @@ try {
 
 | Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `$request`                                                                                      | [\test\BREVO\Models\Operations\GetSendersRequest](../../models/operations/GetSendersRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
+| `$request`                                                                                      | [\test\BREVO\Models\Operations\GetSendersRequest](../../Models/Operations/GetSendersRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSendersResponse](../../models/operations/GetSendersResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSendersResponse](../../Models/Operations/GetSendersResponse.md)**
 
 
 ## updateSender
@@ -297,12 +297,12 @@ try {
 
 | Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                          | [\test\BREVO\Models\Operations\UpdateSenderRequest](../../models/operations/UpdateSenderRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
+| `$request`                                                                                          | [\test\BREVO\Models\Operations\UpdateSenderRequest](../../Models/Operations/UpdateSenderRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateSenderResponse](../../models/operations/UpdateSenderResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateSenderResponse](../../Models/Operations/UpdateSenderResponse.md)**
 
 
 ## validateSenderByOTP
@@ -348,10 +348,10 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\ValidateSenderByOTPRequest](../../models/operations/ValidateSenderByOTPRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\ValidateSenderByOTPRequest](../../Models/Operations/ValidateSenderByOTPRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\ValidateSenderByOTPResponse](../../models/operations/ValidateSenderByOTPResponse.md)**
+**[?\test\BREVO\Models\Operations\ValidateSenderByOTPResponse](../../Models/Operations/ValidateSenderByOTPResponse.md)**
 

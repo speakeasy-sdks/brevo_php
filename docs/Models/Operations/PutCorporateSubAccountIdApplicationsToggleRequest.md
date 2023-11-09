@@ -1,0 +1,9 @@
+# PutCorporateSubAccountIdApplicationsToggleRequest
+
+
+## Fields
+
+| Field                                                                                                       | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `id`                                                                                                        | *int*                                                                                                       | :heavy_check_mark:                                                                                          | Id of the sub-account organization (mandatory)                                                              |
+| `subAccountAppsToggleRequest`                                                                               | [\test\BREVO\Models\Shared\SubAccountAppsToggleRequest](../../Models/Shared/SubAccountAppsToggleRequest.md) | :heavy_check_mark:                                                                                          | List of applications to activate or deactivate on a sub-account                                             |

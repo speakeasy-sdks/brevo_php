@@ -101,12 +101,12 @@ try {
 
 | Parameter                                                                                   | Type                                                                                        | Required                                                                                    | Description                                                                                 |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| `$request`                                                                                  | [\test\BREVO\Models\Shared\CreateEmailCampaign](../../models/shared/CreateEmailCampaign.md) | :heavy_check_mark:                                                                          | The request object to use for the request.                                                  |
+| `$request`                                                                                  | [\test\BREVO\Models\Shared\CreateEmailCampaign](../../Models/Shared/CreateEmailCampaign.md) | :heavy_check_mark:                                                                          | The request object to use for the request.                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateEmailCampaignResponse](../../models/operations/CreateEmailCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateEmailCampaignResponse](../../Models/Operations/CreateEmailCampaignResponse.md)**
 
 
 ## deleteEmailCampaign
@@ -150,12 +150,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\DeleteEmailCampaignRequest](../../models/operations/DeleteEmailCampaignRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\DeleteEmailCampaignRequest](../../Models/Operations/DeleteEmailCampaignRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteEmailCampaignResponse](../../models/operations/DeleteEmailCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteEmailCampaignResponse](../../Models/Operations/DeleteEmailCampaignResponse.md)**
 
 
 ## emailExportRecipients
@@ -202,12 +202,12 @@ try {
 
 | Parameter                                                                                                             | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                            | [\test\BREVO\Models\Operations\EmailExportRecipientsRequest](../../models/operations/EmailExportRecipientsRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
+| `$request`                                                                                                            | [\test\BREVO\Models\Operations\EmailExportRecipientsRequest](../../Models/Operations/EmailExportRecipientsRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\EmailExportRecipientsResponse](../../models/operations/EmailExportRecipientsResponse.md)**
+**[?\test\BREVO\Models\Operations\EmailExportRecipientsResponse](../../Models/Operations/EmailExportRecipientsResponse.md)**
 
 
 ## getAbTestCampaignResult
@@ -251,12 +251,12 @@ try {
 
 | Parameter                                                                                                                 | Type                                                                                                                      | Required                                                                                                                  | Description                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                | [\test\BREVO\Models\Operations\GetAbTestCampaignResultRequest](../../models/operations/GetAbTestCampaignResultRequest.md) | :heavy_check_mark:                                                                                                        | The request object to use for the request.                                                                                |
+| `$request`                                                                                                                | [\test\BREVO\Models\Operations\GetAbTestCampaignResultRequest](../../Models/Operations/GetAbTestCampaignResultRequest.md) | :heavy_check_mark:                                                                                                        | The request object to use for the request.                                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetAbTestCampaignResultResponse](../../models/operations/GetAbTestCampaignResultResponse.md)**
+**[?\test\BREVO\Models\Operations\GetAbTestCampaignResultResponse](../../Models/Operations/GetAbTestCampaignResultResponse.md)**
 
 
 ## getEmailCampaign
@@ -301,12 +301,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\GetEmailCampaignRequest](../../models/operations/GetEmailCampaignRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\GetEmailCampaignRequest](../../Models/Operations/GetEmailCampaignRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetEmailCampaignResponse](../../models/operations/GetEmailCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\GetEmailCampaignResponse](../../Models/Operations/GetEmailCampaignResponse.md)**
 
 
 ## getEmailCampaigns
@@ -358,12 +358,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\GetEmailCampaignsRequest](../../models/operations/GetEmailCampaignsRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\GetEmailCampaignsRequest](../../Models/Operations/GetEmailCampaignsRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetEmailCampaignsResponse](../../models/operations/GetEmailCampaignsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetEmailCampaignsResponse](../../Models/Operations/GetEmailCampaignsResponse.md)**
 
 
 ## getSharedTemplateUrl
@@ -407,12 +407,12 @@ try {
 
 | Parameter                                                                                                           | Type                                                                                                                | Required                                                                                                            | Description                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetSharedTemplateUrlRequest](../../models/operations/GetSharedTemplateUrlRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
+| `$request`                                                                                                          | [\test\BREVO\Models\Operations\GetSharedTemplateUrlRequest](../../Models/Operations/GetSharedTemplateUrlRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSharedTemplateUrlResponse](../../models/operations/GetSharedTemplateUrlResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSharedTemplateUrlResponse](../../Models/Operations/GetSharedTemplateUrlResponse.md)**
 
 
 ## sendEmailCampaignNow
@@ -456,12 +456,12 @@ try {
 
 | Parameter                                                                                                           | Type                                                                                                                | Required                                                                                                            | Description                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                          | [\test\BREVO\Models\Operations\SendEmailCampaignNowRequest](../../models/operations/SendEmailCampaignNowRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
+| `$request`                                                                                                          | [\test\BREVO\Models\Operations\SendEmailCampaignNowRequest](../../Models/Operations/SendEmailCampaignNowRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendEmailCampaignNowResponse](../../models/operations/SendEmailCampaignNowResponse.md)**
+**[?\test\BREVO\Models\Operations\SendEmailCampaignNowResponse](../../Models/Operations/SendEmailCampaignNowResponse.md)**
 
 
 ## sendReport
@@ -512,12 +512,12 @@ try {
 
 | Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `$request`                                                                                      | [\test\BREVO\Models\Operations\SendReportRequest](../../models/operations/SendReportRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
+| `$request`                                                                                      | [\test\BREVO\Models\Operations\SendReportRequest](../../Models/Operations/SendReportRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendReportResponse](../../models/operations/SendReportResponse.md)**
+**[?\test\BREVO\Models\Operations\SendReportResponse](../../Models/Operations/SendReportResponse.md)**
 
 
 ## sendTestEmail
@@ -565,12 +565,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\SendTestEmailRequest](../../models/operations/SendTestEmailRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\SendTestEmailRequest](../../Models/Operations/SendTestEmailRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendTestEmailResponse](../../models/operations/SendTestEmailResponse.md)**
+**[?\test\BREVO\Models\Operations\SendTestEmailResponse](../../Models/Operations/SendTestEmailResponse.md)**
 
 
 ## updateCampaignStatus
@@ -616,12 +616,12 @@ try {
 
 | Parameter                                                                                                           | Type                                                                                                                | Required                                                                                                            | Description                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                          | [\test\BREVO\Models\Operations\UpdateCampaignStatusRequest](../../models/operations/UpdateCampaignStatusRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
+| `$request`                                                                                                          | [\test\BREVO\Models\Operations\UpdateCampaignStatusRequest](../../Models/Operations/UpdateCampaignStatusRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateCampaignStatusResponse](../../models/operations/UpdateCampaignStatusResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateCampaignStatusResponse](../../Models/Operations/UpdateCampaignStatusResponse.md)**
 
 
 ## updateEmailCampaign
@@ -711,12 +711,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\UpdateEmailCampaignRequest](../../models/operations/UpdateEmailCampaignRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\UpdateEmailCampaignRequest](../../Models/Operations/UpdateEmailCampaignRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateEmailCampaignResponse](../../models/operations/UpdateEmailCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateEmailCampaignResponse](../../Models/Operations/UpdateEmailCampaignResponse.md)**
 
 
 ## uploadImageToGallery
@@ -760,10 +760,10 @@ try {
 
 | Parameter                                                                                     | Type                                                                                          | Required                                                                                      | Description                                                                                   |
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `$request`                                                                                    | [\test\BREVO\Models\Shared\UploadImageToGallery](../../models/shared/UploadImageToGallery.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
+| `$request`                                                                                    | [\test\BREVO\Models\Shared\UploadImageToGallery](../../Models/Shared/UploadImageToGallery.md) | :heavy_check_mark:                                                                            | The request object to use for the request.                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UploadImageToGalleryResponse](../../models/operations/UploadImageToGalleryResponse.md)**
+**[?\test\BREVO\Models\Operations\UploadImageToGalleryResponse](../../Models/Operations/UploadImageToGalleryResponse.md)**
 

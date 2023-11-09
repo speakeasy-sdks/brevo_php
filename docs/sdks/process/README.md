@@ -47,12 +47,12 @@ try {
 
 | Parameter                                                                                       | Type                                                                                            | Required                                                                                        | Description                                                                                     |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `$request`                                                                                      | [\test\BREVO\Models\Operations\GetProcessRequest](../../models/operations/GetProcessRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
+| `$request`                                                                                      | [\test\BREVO\Models\Operations\GetProcessRequest](../../Models/Operations/GetProcessRequest.md) | :heavy_check_mark:                                                                              | The request object to use for the request.                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetProcessResponse](../../models/operations/GetProcessResponse.md)**
+**[?\test\BREVO\Models\Operations\GetProcessResponse](../../Models/Operations/GetProcessResponse.md)**
 
 
 ## getProcesses
@@ -98,10 +98,10 @@ try {
 
 | Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                          | [\test\BREVO\Models\Operations\GetProcessesRequest](../../models/operations/GetProcessesRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
+| `$request`                                                                                          | [\test\BREVO\Models\Operations\GetProcessesRequest](../../Models/Operations/GetProcessesRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetProcessesResponse](../../models/operations/GetProcessesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetProcessesResponse](../../Models/Operations/GetProcessesResponse.md)**
 

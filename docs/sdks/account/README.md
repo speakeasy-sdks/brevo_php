@@ -42,7 +42,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetAccountResponse](../../models/operations/GetAccountResponse.md)**
+**[?\test\BREVO\Models\Operations\GetAccountResponse](../../Models/Operations/GetAccountResponse.md)**
 
 
 ## getAccountActivity
@@ -89,10 +89,10 @@ try {
 
 | Parameter                                                                                                       | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                      | [\test\BREVO\Models\Operations\GetAccountActivityRequest](../../models/operations/GetAccountActivityRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
+| `$request`                                                                                                      | [\test\BREVO\Models\Operations\GetAccountActivityRequest](../../Models/Operations/GetAccountActivityRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetAccountActivityResponse](../../models/operations/GetAccountActivityResponse.md)**
+**[?\test\BREVO\Models\Operations\GetAccountActivityResponse](../../Models/Operations/GetAccountActivityResponse.md)**
 

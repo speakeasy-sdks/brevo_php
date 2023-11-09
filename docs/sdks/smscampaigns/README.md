@@ -67,12 +67,12 @@ try {
 
 | Parameter                                                                               | Type                                                                                    | Required                                                                                | Description                                                                             |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `$request`                                                                              | [\test\BREVO\Models\Shared\CreateSmsCampaign](../../models/shared/CreateSmsCampaign.md) | :heavy_check_mark:                                                                      | The request object to use for the request.                                              |
+| `$request`                                                                              | [\test\BREVO\Models\Shared\CreateSmsCampaign](../../Models/Shared/CreateSmsCampaign.md) | :heavy_check_mark:                                                                      | The request object to use for the request.                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\CreateSmsCampaignResponse](../../models/operations/CreateSmsCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\CreateSmsCampaignResponse](../../Models/Operations/CreateSmsCampaignResponse.md)**
 
 
 ## deleteSmsCampaign
@@ -116,12 +116,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\DeleteSmsCampaignRequest](../../models/operations/DeleteSmsCampaignRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\DeleteSmsCampaignRequest](../../Models/Operations/DeleteSmsCampaignRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteSmsCampaignResponse](../../models/operations/DeleteSmsCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteSmsCampaignResponse](../../Models/Operations/DeleteSmsCampaignResponse.md)**
 
 
 ## getSmsCampaign
@@ -165,12 +165,12 @@ try {
 
 | Parameter                                                                                               | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetSmsCampaignRequest](../../models/operations/GetSmsCampaignRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
+| `$request`                                                                                              | [\test\BREVO\Models\Operations\GetSmsCampaignRequest](../../Models/Operations/GetSmsCampaignRequest.md) | :heavy_check_mark:                                                                                      | The request object to use for the request.                                                              |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSmsCampaignResponse](../../models/operations/GetSmsCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSmsCampaignResponse](../../Models/Operations/GetSmsCampaignResponse.md)**
 
 
 ## getSmsCampaigns
@@ -219,12 +219,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetSmsCampaignsRequest](../../models/operations/GetSmsCampaignsRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\GetSmsCampaignsRequest](../../Models/Operations/GetSmsCampaignsRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSmsCampaignsResponse](../../models/operations/GetSmsCampaignsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSmsCampaignsResponse](../../Models/Operations/GetSmsCampaignsResponse.md)**
 
 
 ## requestSmsRecipientExport
@@ -271,12 +271,12 @@ try {
 
 | Parameter                                                                                                                     | Type                                                                                                                          | Required                                                                                                                      | Description                                                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                    | [\test\BREVO\Models\Operations\RequestSmsRecipientExportRequest](../../models/operations/RequestSmsRecipientExportRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
+| `$request`                                                                                                                    | [\test\BREVO\Models\Operations\RequestSmsRecipientExportRequest](../../Models/Operations/RequestSmsRecipientExportRequest.md) | :heavy_check_mark:                                                                                                            | The request object to use for the request.                                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\RequestSmsRecipientExportResponse](../../models/operations/RequestSmsRecipientExportResponse.md)**
+**[?\test\BREVO\Models\Operations\RequestSmsRecipientExportResponse](../../Models/Operations/RequestSmsRecipientExportResponse.md)**
 
 
 ## sendSmsCampaignNow
@@ -320,12 +320,12 @@ try {
 
 | Parameter                                                                                                       | Type                                                                                                            | Required                                                                                                        | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                      | [\test\BREVO\Models\Operations\SendSmsCampaignNowRequest](../../models/operations/SendSmsCampaignNowRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
+| `$request`                                                                                                      | [\test\BREVO\Models\Operations\SendSmsCampaignNowRequest](../../Models/Operations/SendSmsCampaignNowRequest.md) | :heavy_check_mark:                                                                                              | The request object to use for the request.                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendSmsCampaignNowResponse](../../models/operations/SendSmsCampaignNowResponse.md)**
+**[?\test\BREVO\Models\Operations\SendSmsCampaignNowResponse](../../Models/Operations/SendSmsCampaignNowResponse.md)**
 
 
 ## sendSmsReport
@@ -376,12 +376,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\SendSmsReportRequest](../../models/operations/SendSmsReportRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\SendSmsReportRequest](../../Models/Operations/SendSmsReportRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendSmsReportResponse](../../models/operations/SendSmsReportResponse.md)**
+**[?\test\BREVO\Models\Operations\SendSmsReportResponse](../../Models/Operations/SendSmsReportResponse.md)**
 
 
 ## sendTestSms
@@ -427,12 +427,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\SendTestSmsRequest](../../models/operations/SendTestSmsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\SendTestSmsRequest](../../Models/Operations/SendTestSmsRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendTestSmsResponse](../../models/operations/SendTestSmsResponse.md)**
+**[?\test\BREVO\Models\Operations\SendTestSmsResponse](../../Models/Operations/SendTestSmsResponse.md)**
 
 
 ## updateSmsCampaign
@@ -491,12 +491,12 @@ try {
 
 | Parameter                                                                                                     | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                    | [\test\BREVO\Models\Operations\UpdateSmsCampaignRequest](../../models/operations/UpdateSmsCampaignRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
+| `$request`                                                                                                    | [\test\BREVO\Models\Operations\UpdateSmsCampaignRequest](../../Models/Operations/UpdateSmsCampaignRequest.md) | :heavy_check_mark:                                                                                            | The request object to use for the request.                                                                    |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateSmsCampaignResponse](../../models/operations/UpdateSmsCampaignResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateSmsCampaignResponse](../../Models/Operations/UpdateSmsCampaignResponse.md)**
 
 
 ## updateSmsCampaignStatus
@@ -542,10 +542,10 @@ try {
 
 | Parameter                                                                                                                 | Type                                                                                                                      | Required                                                                                                                  | Description                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                | [\test\BREVO\Models\Operations\UpdateSmsCampaignStatusRequest](../../models/operations/UpdateSmsCampaignStatusRequest.md) | :heavy_check_mark:                                                                                                        | The request object to use for the request.                                                                                |
+| `$request`                                                                                                                | [\test\BREVO\Models\Operations\UpdateSmsCampaignStatusRequest](../../Models/Operations/UpdateSmsCampaignStatusRequest.md) | :heavy_check_mark:                                                                                                        | The request object to use for the request.                                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\UpdateSmsCampaignStatusResponse](../../models/operations/UpdateSmsCampaignStatusResponse.md)**
+**[?\test\BREVO\Models\Operations\UpdateSmsCampaignStatusResponse](../../Models/Operations/UpdateSmsCampaignStatusResponse.md)**
 

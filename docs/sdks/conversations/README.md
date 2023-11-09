@@ -54,12 +54,12 @@ try {
 
 | Parameter                                                                                                                             | Type                                                                                                                                  | Required                                                                                                                              | Description                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                            | [\test\BREVO\Models\Operations\DeleteConversationsMessagesIdRequest](../../models/operations/DeleteConversationsMessagesIdRequest.md) | :heavy_check_mark:                                                                                                                    | The request object to use for the request.                                                                                            |
+| `$request`                                                                                                                            | [\test\BREVO\Models\Operations\DeleteConversationsMessagesIdRequest](../../Models/Operations/DeleteConversationsMessagesIdRequest.md) | :heavy_check_mark:                                                                                                                    | The request object to use for the request.                                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteConversationsMessagesIdResponse](../../models/operations/DeleteConversationsMessagesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteConversationsMessagesIdResponse](../../Models/Operations/DeleteConversationsMessagesIdResponse.md)**
 
 
 ## deleteConversationsPushedMessagesId
@@ -103,12 +103,12 @@ try {
 
 | Parameter                                                                                                                                         | Type                                                                                                                                              | Required                                                                                                                                          | Description                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                                        | [\test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdRequest](../../models/operations/DeleteConversationsPushedMessagesIdRequest.md) | :heavy_check_mark:                                                                                                                                | The request object to use for the request.                                                                                                        |
+| `$request`                                                                                                                                        | [\test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdRequest](../../Models/Operations/DeleteConversationsPushedMessagesIdRequest.md) | :heavy_check_mark:                                                                                                                                | The request object to use for the request.                                                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdResponse](../../models/operations/DeleteConversationsPushedMessagesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteConversationsPushedMessagesIdResponse](../../Models/Operations/DeleteConversationsPushedMessagesIdResponse.md)**
 
 
 ## getConversationsMessagesId
@@ -152,12 +152,12 @@ try {
 
 | Parameter                                                                                                                       | Type                                                                                                                            | Required                                                                                                                        | Description                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                      | [\test\BREVO\Models\Operations\GetConversationsMessagesIdRequest](../../models/operations/GetConversationsMessagesIdRequest.md) | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
+| `$request`                                                                                                                      | [\test\BREVO\Models\Operations\GetConversationsMessagesIdRequest](../../Models/Operations/GetConversationsMessagesIdRequest.md) | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetConversationsMessagesIdResponse](../../models/operations/GetConversationsMessagesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\GetConversationsMessagesIdResponse](../../Models/Operations/GetConversationsMessagesIdResponse.md)**
 
 
 ## getConversationsPushedMessagesId
@@ -201,12 +201,12 @@ try {
 
 | Parameter                                                                                                                                   | Type                                                                                                                                        | Required                                                                                                                                    | Description                                                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                                  | [\test\BREVO\Models\Operations\GetConversationsPushedMessagesIdRequest](../../models/operations/GetConversationsPushedMessagesIdRequest.md) | :heavy_check_mark:                                                                                                                          | The request object to use for the request.                                                                                                  |
+| `$request`                                                                                                                                  | [\test\BREVO\Models\Operations\GetConversationsPushedMessagesIdRequest](../../Models/Operations/GetConversationsPushedMessagesIdRequest.md) | :heavy_check_mark:                                                                                                                          | The request object to use for the request.                                                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetConversationsPushedMessagesIdResponse](../../models/operations/GetConversationsPushedMessagesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\GetConversationsPushedMessagesIdResponse](../../Models/Operations/GetConversationsPushedMessagesIdResponse.md)**
 
 
 ## postConversationsAgentOnlinePing
@@ -253,12 +253,12 @@ try {
 
 | Parameter                                                                                                                                           | Type                                                                                                                                                | Required                                                                                                                                            | Description                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                                          | [\test\BREVO\Models\Operations\PostConversationsAgentOnlinePingRequestBody](../../models/operations/PostConversationsAgentOnlinePingRequestBody.md) | :heavy_check_mark:                                                                                                                                  | The request object to use for the request.                                                                                                          |
+| `$request`                                                                                                                                          | [\test\BREVO\Models\Operations\PostConversationsAgentOnlinePingRequestBody](../../Models/Operations/PostConversationsAgentOnlinePingRequestBody.md) | :heavy_check_mark:                                                                                                                                  | The request object to use for the request.                                                                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostConversationsAgentOnlinePingResponse](../../models/operations/PostConversationsAgentOnlinePingResponse.md)**
+**[?\test\BREVO\Models\Operations\PostConversationsAgentOnlinePingResponse](../../Models/Operations/PostConversationsAgentOnlinePingResponse.md)**
 
 
 ## postConversationsMessages
@@ -307,12 +307,12 @@ try {
 
 | Parameter                                                                                                                             | Type                                                                                                                                  | Required                                                                                                                              | Description                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                            | [\test\BREVO\Models\Operations\PostConversationsMessagesRequestBody](../../models/operations/PostConversationsMessagesRequestBody.md) | :heavy_check_mark:                                                                                                                    | The request object to use for the request.                                                                                            |
+| `$request`                                                                                                                            | [\test\BREVO\Models\Operations\PostConversationsMessagesRequestBody](../../Models/Operations/PostConversationsMessagesRequestBody.md) | :heavy_check_mark:                                                                                                                    | The request object to use for the request.                                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostConversationsMessagesResponse](../../models/operations/PostConversationsMessagesResponse.md)**
+**[?\test\BREVO\Models\Operations\PostConversationsMessagesResponse](../../Models/Operations/PostConversationsMessagesResponse.md)**
 
 
 ## postConversationsPushedMessages
@@ -359,12 +359,12 @@ try {
 
 | Parameter                                                                                                                                         | Type                                                                                                                                              | Required                                                                                                                                          | Description                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                                        | [\test\BREVO\Models\Operations\PostConversationsPushedMessagesRequestBody](../../models/operations/PostConversationsPushedMessagesRequestBody.md) | :heavy_check_mark:                                                                                                                                | The request object to use for the request.                                                                                                        |
+| `$request`                                                                                                                                        | [\test\BREVO\Models\Operations\PostConversationsPushedMessagesRequestBody](../../Models/Operations/PostConversationsPushedMessagesRequestBody.md) | :heavy_check_mark:                                                                                                                                | The request object to use for the request.                                                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostConversationsPushedMessagesResponse](../../models/operations/PostConversationsPushedMessagesResponse.md)**
+**[?\test\BREVO\Models\Operations\PostConversationsPushedMessagesResponse](../../Models/Operations/PostConversationsPushedMessagesResponse.md)**
 
 
 ## putConversationsMessagesId
@@ -410,12 +410,12 @@ try {
 
 | Parameter                                                                                                                       | Type                                                                                                                            | Required                                                                                                                        | Description                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                      | [\test\BREVO\Models\Operations\PutConversationsMessagesIdRequest](../../models/operations/PutConversationsMessagesIdRequest.md) | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
+| `$request`                                                                                                                      | [\test\BREVO\Models\Operations\PutConversationsMessagesIdRequest](../../Models/Operations/PutConversationsMessagesIdRequest.md) | :heavy_check_mark:                                                                                                              | The request object to use for the request.                                                                                      |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PutConversationsMessagesIdResponse](../../models/operations/PutConversationsMessagesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\PutConversationsMessagesIdResponse](../../Models/Operations/PutConversationsMessagesIdResponse.md)**
 
 
 ## putConversationsPushedMessagesId
@@ -461,10 +461,10 @@ try {
 
 | Parameter                                                                                                                                   | Type                                                                                                                                        | Required                                                                                                                                    | Description                                                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                                  | [\test\BREVO\Models\Operations\PutConversationsPushedMessagesIdRequest](../../models/operations/PutConversationsPushedMessagesIdRequest.md) | :heavy_check_mark:                                                                                                                          | The request object to use for the request.                                                                                                  |
+| `$request`                                                                                                                                  | [\test\BREVO\Models\Operations\PutConversationsPushedMessagesIdRequest](../../Models/Operations/PutConversationsPushedMessagesIdRequest.md) | :heavy_check_mark:                                                                                                                          | The request object to use for the request.                                                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PutConversationsPushedMessagesIdResponse](../../models/operations/PutConversationsPushedMessagesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\PutConversationsPushedMessagesIdResponse](../../Models/Operations/PutConversationsPushedMessagesIdResponse.md)**
 

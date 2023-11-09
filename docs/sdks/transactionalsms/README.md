@@ -57,12 +57,12 @@ try {
 
 | Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                          | [\test\BREVO\Models\Operations\GetSmsEventsRequest](../../models/operations/GetSmsEventsRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
+| `$request`                                                                                          | [\test\BREVO\Models\Operations\GetSmsEventsRequest](../../Models/Operations/GetSmsEventsRequest.md) | :heavy_check_mark:                                                                                  | The request object to use for the request.                                                          |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetSmsEventsResponse](../../models/operations/GetSmsEventsResponse.md)**
+**[?\test\BREVO\Models\Operations\GetSmsEventsResponse](../../Models/Operations/GetSmsEventsResponse.md)**
 
 
 ## getTransacAggregatedSmsReport
@@ -109,12 +109,12 @@ try {
 
 | Parameter                                                                                                                             | Type                                                                                                                                  | Required                                                                                                                              | Description                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                                            | [\test\BREVO\Models\Operations\GetTransacAggregatedSmsReportRequest](../../models/operations/GetTransacAggregatedSmsReportRequest.md) | :heavy_check_mark:                                                                                                                    | The request object to use for the request.                                                                                            |
+| `$request`                                                                                                                            | [\test\BREVO\Models\Operations\GetTransacAggregatedSmsReportRequest](../../Models/Operations/GetTransacAggregatedSmsReportRequest.md) | :heavy_check_mark:                                                                                                                    | The request object to use for the request.                                                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetTransacAggregatedSmsReportResponse](../../models/operations/GetTransacAggregatedSmsReportResponse.md)**
+**[?\test\BREVO\Models\Operations\GetTransacAggregatedSmsReportResponse](../../Models/Operations/GetTransacAggregatedSmsReportResponse.md)**
 
 
 ## getTransacSmsReport
@@ -162,12 +162,12 @@ try {
 
 | Parameter                                                                                                         | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetTransacSmsReportRequest](../../models/operations/GetTransacSmsReportRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
+| `$request`                                                                                                        | [\test\BREVO\Models\Operations\GetTransacSmsReportRequest](../../Models/Operations/GetTransacSmsReportRequest.md) | :heavy_check_mark:                                                                                                | The request object to use for the request.                                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetTransacSmsReportResponse](../../models/operations/GetTransacSmsReportResponse.md)**
+**[?\test\BREVO\Models\Operations\GetTransacSmsReportResponse](../../Models/Operations/GetTransacSmsReportResponse.md)**
 
 
 ## sendTransacSms
@@ -217,10 +217,10 @@ try {
 
 | Parameter                                                                         | Type                                                                              | Required                                                                          | Description                                                                       |
 | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| `$request`                                                                        | [\test\BREVO\Models\Shared\SendTransacSms](../../models/shared/SendTransacSms.md) | :heavy_check_mark:                                                                | The request object to use for the request.                                        |
+| `$request`                                                                        | [\test\BREVO\Models\Shared\SendTransacSms](../../Models/Shared/SendTransacSms.md) | :heavy_check_mark:                                                                | The request object to use for the request.                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\SendTransacSmsResponse](../../models/operations/SendTransacSmsResponse.md)**
+**[?\test\BREVO\Models\Operations\SendTransacSmsResponse](../../Models/Operations/SendTransacSmsResponse.md)**
 

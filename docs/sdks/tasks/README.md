@@ -51,12 +51,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\DeleteCrmTasksIdRequest](../../models/operations/DeleteCrmTasksIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\DeleteCrmTasksIdRequest](../../Models/Operations/DeleteCrmTasksIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteCrmTasksIdResponse](../../models/operations/DeleteCrmTasksIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteCrmTasksIdResponse](../../Models/Operations/DeleteCrmTasksIdResponse.md)**
 
 
 ## getCrmTasks
@@ -112,12 +112,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetCrmTasksRequest](../../models/operations/GetCrmTasksRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetCrmTasksRequest](../../Models/Operations/GetCrmTasksRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmTasksResponse](../../models/operations/GetCrmTasksResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmTasksResponse](../../Models/Operations/GetCrmTasksResponse.md)**
 
 
 ## getCrmTasksId
@@ -161,12 +161,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCrmTasksIdRequest](../../models/operations/GetCrmTasksIdRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCrmTasksIdRequest](../../Models/Operations/GetCrmTasksIdRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmTasksIdResponse](../../models/operations/GetCrmTasksIdResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmTasksIdResponse](../../Models/Operations/GetCrmTasksIdResponse.md)**
 
 
 ## getCrmTasktypes
@@ -205,7 +205,7 @@ try {
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmTasktypesResponse](../../models/operations/GetCrmTasktypesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmTasktypesResponse](../../Models/Operations/GetCrmTasktypesResponse.md)**
 
 
 ## patchCrmTasksId
@@ -272,12 +272,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\PatchCrmTasksIdRequest](../../models/operations/PatchCrmTasksIdRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\PatchCrmTasksIdRequest](../../Models/Operations/PatchCrmTasksIdRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PatchCrmTasksIdResponse](../../models/operations/PatchCrmTasksIdResponse.md)**
+**[?\test\BREVO\Models\Operations\PatchCrmTasksIdResponse](../../Models/Operations/PatchCrmTasksIdResponse.md)**
 
 
 ## postCrmTasks
@@ -342,10 +342,10 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\PostCrmTasksRequestBody](../../models/operations/PostCrmTasksRequestBody.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\PostCrmTasksRequestBody](../../Models/Operations/PostCrmTasksRequestBody.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostCrmTasksResponse](../../models/operations/PostCrmTasksResponse.md)**
+**[?\test\BREVO\Models\Operations\PostCrmTasksResponse](../../Models/Operations/PostCrmTasksResponse.md)**
 

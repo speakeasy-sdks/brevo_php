@@ -50,12 +50,12 @@ try {
 
 | Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                  | [\test\BREVO\Models\Operations\DeleteCrmNotesIdRequest](../../models/operations/DeleteCrmNotesIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
+| `$request`                                                                                                  | [\test\BREVO\Models\Operations\DeleteCrmNotesIdRequest](../../Models/Operations/DeleteCrmNotesIdRequest.md) | :heavy_check_mark:                                                                                          | The request object to use for the request.                                                                  |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\DeleteCrmNotesIdResponse](../../models/operations/DeleteCrmNotesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\DeleteCrmNotesIdResponse](../../Models/Operations/DeleteCrmNotesIdResponse.md)**
 
 
 ## getCrmNotes
@@ -105,12 +105,12 @@ try {
 
 | Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetCrmNotesRequest](../../models/operations/GetCrmNotesRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
+| `$request`                                                                                        | [\test\BREVO\Models\Operations\GetCrmNotesRequest](../../Models/Operations/GetCrmNotesRequest.md) | :heavy_check_mark:                                                                                | The request object to use for the request.                                                        |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmNotesResponse](../../models/operations/GetCrmNotesResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmNotesResponse](../../Models/Operations/GetCrmNotesResponse.md)**
 
 
 ## getCrmNotesId
@@ -154,12 +154,12 @@ try {
 
 | Parameter                                                                                             | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCrmNotesIdRequest](../../models/operations/GetCrmNotesIdRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
+| `$request`                                                                                            | [\test\BREVO\Models\Operations\GetCrmNotesIdRequest](../../Models/Operations/GetCrmNotesIdRequest.md) | :heavy_check_mark:                                                                                    | The request object to use for the request.                                                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\GetCrmNotesIdResponse](../../models/operations/GetCrmNotesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\GetCrmNotesIdResponse](../../Models/Operations/GetCrmNotesIdResponse.md)**
 
 
 ## patchCrmNotesId
@@ -214,12 +214,12 @@ try {
 
 | Parameter                                                                                                 | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                                | [\test\BREVO\Models\Operations\PatchCrmNotesIdRequest](../../models/operations/PatchCrmNotesIdRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
+| `$request`                                                                                                | [\test\BREVO\Models\Operations\PatchCrmNotesIdRequest](../../Models/Operations/PatchCrmNotesIdRequest.md) | :heavy_check_mark:                                                                                        | The request object to use for the request.                                                                |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PatchCrmNotesIdResponse](../../models/operations/PatchCrmNotesIdResponse.md)**
+**[?\test\BREVO\Models\Operations\PatchCrmNotesIdResponse](../../Models/Operations/PatchCrmNotesIdResponse.md)**
 
 
 ## postCrmNotes
@@ -271,10 +271,10 @@ try {
 
 | Parameter                                                             | Type                                                                  | Required                                                              | Description                                                           |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| `$request`                                                            | [\test\BREVO\Models\Shared\NoteData](../../models/shared/NoteData.md) | :heavy_check_mark:                                                    | The request object to use for the request.                            |
+| `$request`                                                            | [\test\BREVO\Models\Shared\NoteData](../../Models/Shared/NoteData.md) | :heavy_check_mark:                                                    | The request object to use for the request.                            |
 
 
 ### Response
 
-**[?\test\BREVO\Models\Operations\PostCrmNotesResponse](../../models/operations/PostCrmNotesResponse.md)**
+**[?\test\BREVO\Models\Operations\PostCrmNotesResponse](../../Models/Operations/PostCrmNotesResponse.md)**
 
