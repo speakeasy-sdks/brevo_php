@@ -33,7 +33,7 @@ class PatchCrmDealsLinkUnlinkIdResponse
      * @var ?\Psr\Http\Message\ResponseInterface $rawResponse
      */
 	
-    public ?\Psr\Http\Message\ResponseInterface $rawResponse = null;
+    public ?\Psr\Http\Message\ResponseInterface $rawResponse;
     
     /**
      * Returned when query params are invalid or invalid data provided in request.

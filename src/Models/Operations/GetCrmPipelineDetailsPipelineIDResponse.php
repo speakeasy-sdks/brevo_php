@@ -41,7 +41,7 @@ class GetCrmPipelineDetailsPipelineIDResponse
      * @var ?\Psr\Http\Message\ResponseInterface $rawResponse
      */
 	
-    public ?\Psr\Http\Message\ResponseInterface $rawResponse = null;
+    public ?\Psr\Http\Message\ResponseInterface $rawResponse;
     
     /**
      * Returned when pipeline id is invalid or does not exist

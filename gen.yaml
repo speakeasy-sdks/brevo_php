@@ -2,20 +2,22 @@ configVersion: 1.0.0
 management:
   docChecksum: fd6551c04044961cce38d49d9c1dd06d
   docVersion: 3.0.0
-  speakeasyVersion: 1.116.0
-  generationVersion: 2.185.0
+  speakeasyVersion: 1.120.3
+  generationVersion: 2.192.1
 generation:
   comments: {}
   sdkClassName: BREVO
   repoURL: https://github.com/speakeasy-sdks/brevo_php.git
+  usageSnippets:
+    optionalPropertyRendering: withExample
 features:
   php:
-    core: 3.1.1
+    core: 3.1.2
     deprecations: 2.81.1
     globalSecurity: 2.81.1
     globalServerURLs: 2.82.0
 php:
-  version: 2.0.1
+  version: 2.0.2
   imports:
     option: openapi
     paths:

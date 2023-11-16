@@ -33,7 +33,7 @@ class SendTestEmailResponse
      * @var ?\Psr\Http\Message\ResponseInterface $rawResponse
      */
 	
-    public ?\Psr\Http\Message\ResponseInterface $rawResponse = null;
+    public ?\Psr\Http\Message\ResponseInterface $rawResponse;
     
     /**
      * Test email could not be sent to the following email addresses
