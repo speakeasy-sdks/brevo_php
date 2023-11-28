@@ -1,6 +1,6 @@
 # test/brevo
 
-<!-- Start SDK Installation -->
+<!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
 ### Composer
@@ -26,10 +26,11 @@ Then run the following command:
 ```bash
 composer update
 ```
-<!-- End SDK Installation -->
+<!-- End SDK Installation [installation] -->
 
+<!-- Start SDK Example Usage [usage] -->
 ## SDK Example Usage
-<!-- Start SDK Example Usage -->
+
 ### Example
 
 ```php
@@ -59,11 +60,10 @@ try {
 }
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->
 
-<!-- Start SDK Available Operations -->
+<!-- Start Available Resources and Operations [operations] -->
 ## Available Resources and Operations
-
 
 ### [Account](docs/sdks/account/README.md)
 
@@ -343,13 +343,9 @@ try {
 * [getWhatsAppTemplates](docs/sdks/whatsappcampaigns/README.md#getwhatsapptemplates) - Return all your created WhatsApp templates
 * [sendWhatsAppTemplateApproval](docs/sdks/whatsappcampaigns/README.md#sendwhatsapptemplateapproval) - Send your WhatsApp template for approval
 * [updateWhatsAppCampaign](docs/sdks/whatsappcampaigns/README.md#updatewhatsappcampaign) - Update a WhatsApp campaign
-<!-- End SDK Available Operations -->
+<!-- End Available Resources and Operations [operations] -->
 
 
-
-<!-- Start Dev Containers -->
-
-<!-- End Dev Containers -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 

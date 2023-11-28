@@ -867,7 +867,6 @@ src/Models/Shared/UpdateWhatsAppCampaignCampaignStatus.php
 src/Models/Shared/UpdateWhatsAppCampaignRecipients.php
 src/Models/Shared/UpdateWhatsAppCampaign.php
 src/Models/Shared/Security.php
-USAGE.md
 docs/Models/Operations/GetAccountResponse.md
 docs/Models/Operations/GetAccountActivityRequest.md
 docs/Models/Operations/GetAccountActivityResponse.md
@@ -1717,4 +1716,5 @@ docs/sdks/transactionalsms/README.md
 docs/sdks/webhooks/README.md
 docs/sdks/transactionalwhatsapp/README.md
 docs/sdks/whatsappcampaigns/README.md
+USAGE.md
 .gitattributes
