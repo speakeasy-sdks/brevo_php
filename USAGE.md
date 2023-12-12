@@ -9,7 +9,7 @@ use test\BREVO;
 use test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
 $sdk = BREVO\Brevo::builder()
     ->setSecurity($security)

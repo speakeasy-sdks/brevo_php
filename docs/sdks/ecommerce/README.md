@@ -31,18 +31,16 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\OrderBatch();
+        $request = new Shared\OrderBatch();
     $request->notifyUrl = 'https://en.wikipedia.org/wiki/Webhook';
     $request->orders = [
         new Shared\Order(),
-    ];
+    ];;
 
     $response = $sdk->ecommerce->createBatchOrder($request);
 
@@ -82,14 +80,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\Order();
+        $request = new Shared\Order();
     $request->amount = 308.42;
     $request->billing = new Shared\Billing();
     $request->billing->address = '15 Somewhere Road, Brynmenyn';
@@ -109,7 +105,7 @@ try {
         new Shared\OrderProducts(),
     ];
     $request->status = 'completed';
-    $request->updatedAt = '2021-07-30T10:59:23.383Z';
+    $request->updatedAt = '2021-07-30T10:59:23.383Z';;
 
     $response = $sdk->ecommerce->createOrder($request);
 
@@ -149,18 +145,16 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateUpdateBatchCategory();
+        $request = new Shared\CreateUpdateBatchCategory();
     $request->categories = [
         new Shared\CreateUpdateCategories(),
     ];
-    $request->updateEnabled = false;
+    $request->updateEnabled = false;;
 
     $response = $sdk->ecommerce->createUpdateBatchCategory($request);
 
@@ -200,18 +194,16 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateUpdateBatchProducts();
+        $request = new Shared\CreateUpdateBatchProducts();
     $request->products = [
         new Shared\CreateUpdateProducts(),
     ];
-    $request->updateEnabled = false;
+    $request->updateEnabled = false;;
 
     $response = $sdk->ecommerce->createUpdateBatchProducts($request);
 
@@ -251,19 +243,17 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateUpdateCategory();
+        $request = new Shared\CreateUpdateCategory();
     $request->deletedAt = '2017-05-12T12:30:00Z';
     $request->id = 'CAT123';
     $request->name = 'Electronics';
     $request->updateEnabled = false;
-    $request->url = 'http://mydomain.com/category/electronics';
+    $request->url = 'http://mydomain.com/category/electronics';;
 
     $response = $sdk->ecommerce->createUpdateCategory($request);
 
@@ -303,14 +293,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateUpdateProduct();
+        $request = new Shared\CreateUpdateProduct();
     $request->categories = [
         'string',
     ];
@@ -325,7 +313,7 @@ try {
     $request->price = 7600.86;
     $request->sku = 'string';
     $request->updateEnabled = false;
-    $request->url = 'http://mydomain.com/product/electronics/product1';
+    $request->url = 'http://mydomain.com/product/electronics/product1';;
 
     $response = $sdk->ecommerce->createUpdateProduct($request);
 
@@ -366,21 +354,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCategoriesRequest();
+        $request = new Operations\GetCategoriesRequest();
     $request->ids = [
         'string',
     ];
     $request->limit = 806522;
     $request->name = 'string';
     $request->offset = 152083;
-    $request->sort = Operations\GetCategoriesQueryParamSort::Desc;
+    $request->sort = Operations\GetCategoriesQueryParamSort::Desc;;
 
     $response = $sdk->ecommerce->getCategories($request);
 
@@ -421,15 +407,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCategoryInfoRequest();
-    $request->id = '<ID>';
+        $request = new Operations\GetCategoryInfoRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->ecommerce->getCategoryInfo($request);
 
@@ -470,15 +454,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetProductInfoRequest();
-    $request->id = '<ID>';
+        $request = new Operations\GetProductInfoRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->ecommerce->getProductInfo($request);
 
@@ -519,14 +501,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetProductsRequest();
+        $request = new Operations\GetProductsRequest();
     $request->categories = [
         'string',
     ];
@@ -542,7 +522,7 @@ try {
     $request->priceLt = 6920.07;
     $request->priceLte = 2190.35;
     $request->priceNe = 849.64;
-    $request->sort = Operations\GetProductsQueryParamSort::Desc;
+    $request->sort = Operations\GetProductsQueryParamSort::Desc;;
 
     $response = $sdk->ecommerce->getProducts($request);
 
@@ -582,11 +562,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->ecommerce->postEcommerceActivate();

@@ -50,16 +50,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\AddContactToListRequest();
+        $request = new Operations\AddContactToListRequest();
     $request->requestBody = 'string';
-    $request->listId = 77706;
+    $request->listId = 77706;;
 
     $response = $sdk->contacts->addContactToList($request);
 
@@ -100,14 +98,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\CreateAttributeRequest();
+        $request = new Operations\CreateAttributeRequest();
     $request->attributeCategory = Operations\AttributeCategory::Calculated;
     $request->attributeName = 'string';
     $request->createAttribute = new Shared\CreateAttribute();
@@ -116,7 +112,7 @@ try {
     ];
     $request->createAttribute->isRecurring = true;
     $request->createAttribute->type = Shared\CreateAttributeType::Text;
-    $request->createAttribute->value = 'COUNT[BLACKLISTED,BLACKLISTED,<,NOW()]';
+    $request->createAttribute->value = 'COUNT[BLACKLISTED,BLACKLISTED,<,NOW()]';;
 
     $response = $sdk->contacts->createAttribute($request);
 
@@ -156,14 +152,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateContact();
+        $request = new Shared\CreateContact();
     $request->attributes = [
         'Mercedes' => 'string',
     ];
@@ -177,7 +171,7 @@ try {
     $request->smtpBlacklistSender = [
         'Seamus_Kemmer13@yahoo.com',
     ];
-    $request->updateEnabled = false;
+    $request->updateEnabled = false;;
 
     $response = $sdk->contacts->createContact($request);
 
@@ -217,14 +211,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateDoiContact();
+        $request = new Shared\CreateDoiContact();
     $request->attributes = [
         'UDP' => 'string',
     ];
@@ -236,7 +228,7 @@ try {
         36,
     ];
     $request->redirectionUrl = 'http://requestb.in/173lyyx1';
-    $request->templateId = 2;
+    $request->templateId = 2;;
 
     $response = $sdk->contacts->createDoiContact($request);
 
@@ -276,15 +268,13 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateUpdateFolder();
-    $request->name = 'Wordpress Contacts';
+        $request = new Shared\CreateUpdateFolder();
+    $request->name = 'Wordpress Contacts';;
 
     $response = $sdk->contacts->createFolder($request);
 
@@ -324,16 +314,14 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateList();
+        $request = new Shared\CreateList();
     $request->folderId = 2;
-    $request->name = 'Magento Customer - ES';
+    $request->name = 'Magento Customer - ES';;
 
     $response = $sdk->contacts->createList($request);
 
@@ -374,16 +362,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteAttributeRequest();
+        $request = new Operations\DeleteAttributeRequest();
     $request->attributeCategory = Operations\PathParamAttributeCategory::Normal;
-    $request->attributeName = 'string';
+    $request->attributeName = 'string';;
 
     $response = $sdk->contacts->deleteAttribute($request);
 
@@ -424,15 +410,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteContactRequest();
-    $request->identifier = 'string';
+        $request = new Operations\DeleteContactRequest();
+    $request->identifier = 'string';;
 
     $response = $sdk->contacts->deleteContact($request);
 
@@ -473,15 +457,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteFolderRequest();
-    $request->folderId = 225818;
+        $request = new Operations\DeleteFolderRequest();
+    $request->folderId = 225818;;
 
     $response = $sdk->contacts->deleteFolder($request);
 
@@ -522,15 +504,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteListRequest();
-    $request->listId = 231491;
+        $request = new Operations\DeleteListRequest();
+    $request->listId = 231491;;
 
     $response = $sdk->contacts->deleteList($request);
 
@@ -570,11 +550,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->contacts->getAttributes();
@@ -610,17 +588,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetContactInfoRequest();
+        $request = new Operations\GetContactInfoRequest();
     $request->endDate = 'string';
     $request->identifier = 'string';
-    $request->startDate = 'string';
+    $request->startDate = 'string';;
 
     $response = $sdk->contacts->getContactInfo($request);
 
@@ -661,17 +637,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetContactStatsRequest();
+        $request = new Operations\GetContactStatsRequest();
     $request->endDate = 'string';
     $request->identifier = 'string';
-    $request->startDate = 'string';
+    $request->startDate = 'string';;
 
     $response = $sdk->contacts->getContactStats($request);
 
@@ -712,19 +686,17 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetContactsRequest();
+        $request = new Operations\GetContactsRequest();
     $request->createdSince = 'string';
     $request->limit = 883763;
     $request->modifiedSince = 'string';
     $request->offset = 587699;
-    $request->sort = Operations\QueryParamSort::Desc;
+    $request->sort = Operations\QueryParamSort::Desc;;
 
     $response = $sdk->contacts->getContacts($request);
 
@@ -765,19 +737,17 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetContactsFromListRequest();
+        $request = new Operations\GetContactsFromListRequest();
     $request->limit = 164358;
     $request->listId = 721707;
     $request->modifiedSince = 'string';
     $request->offset = 221058;
-    $request->sort = Operations\GetContactsFromListQueryParamSort::Desc;
+    $request->sort = Operations\GetContactsFromListQueryParamSort::Desc;;
 
     $response = $sdk->contacts->getContactsFromList($request);
 
@@ -818,15 +788,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetFolderRequest();
-    $request->folderId = 867135;
+        $request = new Operations\GetFolderRequest();
+    $request->folderId = 867135;;
 
     $response = $sdk->contacts->getFolder($request);
 
@@ -867,18 +835,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetFolderListsRequest();
+        $request = new Operations\GetFolderListsRequest();
     $request->folderId = 790110;
     $request->limit = 468056;
     $request->offset = 270959;
-    $request->sort = Operations\GetFolderListsQueryParamSort::Asc;
+    $request->sort = Operations\GetFolderListsQueryParamSort::Asc;;
 
     $response = $sdk->contacts->getFolderLists($request);
 
@@ -919,17 +885,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetFoldersRequest();
+        $request = new Operations\GetFoldersRequest();
     $request->limit = 846820;
     $request->offset = 320424;
-    $request->sort = Operations\GetFoldersQueryParamSort::Asc;
+    $request->sort = Operations\GetFoldersQueryParamSort::Asc;;
 
     $response = $sdk->contacts->getFolders($request);
 
@@ -970,15 +934,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetListRequest();
-    $request->listId = 451512;
+        $request = new Operations\GetListRequest();
+    $request->listId = 451512;;
 
     $response = $sdk->contacts->getList($request);
 
@@ -1019,17 +981,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetListsRequest();
+        $request = new Operations\GetListsRequest();
     $request->limit = 919382;
     $request->offset = 383011;
-    $request->sort = Operations\GetListsQueryParamSort::Desc;
+    $request->sort = Operations\GetListsQueryParamSort::Desc;;
 
     $response = $sdk->contacts->getLists($request);
 
@@ -1070,17 +1030,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSegmentsRequest();
+        $request = new Operations\GetSegmentsRequest();
     $request->limit = 904899;
     $request->offset = 703723;
-    $request->sort = Operations\GetSegmentsQueryParamSort::Desc;
+    $request->sort = Operations\GetSegmentsQueryParamSort::Desc;;
 
     $response = $sdk->contacts->getSegments($request);
 
@@ -1120,14 +1078,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\RequestContactImport();
+        $request = new Shared\RequestContactImport();
     $request->emailBlacklist = false;
     $request->emptyContactsAttributes = true;
     $request->fileBody = 'NAME;SURNAME;EMAIL
@@ -1145,7 +1101,7 @@ try {
     $request->newList->listName = 'ContactImport - 2017-05';
     $request->notifyUrl = 'http://requestb.in/173lyyx1';
     $request->smsBlacklist = false;
-    $request->updateExistingContacts = true;
+    $request->updateExistingContacts = true;;
 
     $response = $sdk->contacts->importContacts($request);
 
@@ -1186,16 +1142,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\RemoveContactFromListRequest();
+        $request = new Operations\RemoveContactFromListRequest();
     $request->requestBody = 'string';
-    $request->listId = 85992;
+    $request->listId = 85992;;
 
     $response = $sdk->contacts->removeContactFromList($request);
 
@@ -1235,14 +1189,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\RequestContactExport();
+        $request = new Shared\RequestContactExport();
     $request->customContactFilter = new Shared\CustomContactFilter();
     $request->customContactFilter->actionForContacts = Shared\ActionForContacts::Subscribed;
     $request->customContactFilter->actionForEmailCampaigns = Shared\ActionForEmailCampaigns::NonClickers;
@@ -1253,7 +1205,7 @@ try {
     $request->exportAttributes = [
         'NAME',
     ];
-    $request->notifyUrl = 'http://requestb.in/173lyyx1';
+    $request->notifyUrl = 'http://requestb.in/173lyyx1';;
 
     $response = $sdk->contacts->requestContactExport($request);
 
@@ -1294,21 +1246,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateAttributeRequest();
+        $request = new Operations\UpdateAttributeRequest();
     $request->attributeCategory = Operations\UpdateAttributePathParamAttributeCategory::Calculated;
     $request->attributeName = 'string';
     $request->updateAttribute = new Shared\UpdateAttribute();
     $request->updateAttribute->enumeration = [
         new Shared\UpdateAttributeEnumeration(),
     ];
-    $request->updateAttribute->value = 'COUNT[BLACKLISTED,BLACKLISTED,<,NOW()]';
+    $request->updateAttribute->value = 'COUNT[BLACKLISTED,BLACKLISTED,<,NOW()]';;
 
     $response = $sdk->contacts->updateAttribute($request);
 
@@ -1348,17 +1298,15 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\UpdateBatchContacts();
+        $request = new Shared\UpdateBatchContacts();
     $request->contacts = [
         new Shared\UpdateBatchContactsContacts(),
-    ];
+    ];;
 
     $response = $sdk->contacts->updateBatchContacts($request);
 
@@ -1399,14 +1347,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateContactRequest();
+        $request = new Operations\UpdateContactRequest();
     $request->identifier = 'string';
     $request->updateContact = new Shared\UpdateContact();
     $request->updateContact->attributes = [
@@ -1423,7 +1369,7 @@ try {
     ];
     $request->updateContact->unlinkListIds = [
         36,
-    ];
+    ];;
 
     $response = $sdk->contacts->updateContact($request);
 
@@ -1464,17 +1410,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateFolderRequest();
+        $request = new Operations\UpdateFolderRequest();
     $request->createUpdateFolder = new Shared\CreateUpdateFolder();
     $request->createUpdateFolder->name = 'Wordpress Contacts';
-    $request->folderId = 317879;
+    $request->folderId = 317879;;
 
     $response = $sdk->contacts->updateFolder($request);
 
@@ -1515,18 +1459,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateListRequest();
+        $request = new Operations\UpdateListRequest();
     $request->listId = 549225;
     $request->updateList = new Shared\UpdateList();
     $request->updateList->folderId = 2;
-    $request->updateList->name = 'Magento Customer - ES';
+    $request->updateList->name = 'Magento Customer - ES';;
 
     $response = $sdk->contacts->updateList($request);
 

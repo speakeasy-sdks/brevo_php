@@ -25,14 +25,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSmsEventsRequest();
+        $request = new Operations\GetSmsEventsRequest();
     $request->days = 922986;
     $request->endDate = 'string';
     $request->event = Operations\Event::Blocked;
@@ -41,7 +39,7 @@ try {
     $request->phoneNumber = 'string';
     $request->sort = Operations\GetSmsEventsQueryParamSort::Desc;
     $request->startDate = 'string';
-    $request->tags = 'string';
+    $request->tags = 'string';;
 
     $response = $sdk->transactionalSMS->getSmsEvents($request);
 
@@ -82,18 +80,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetTransacAggregatedSmsReportRequest();
+        $request = new Operations\GetTransacAggregatedSmsReportRequest();
     $request->days = 40533;
     $request->endDate = 'string';
     $request->startDate = 'string';
-    $request->tag = 'string';
+    $request->tag = 'string';;
 
     $response = $sdk->transactionalSMS->getTransacAggregatedSmsReport($request);
 
@@ -134,19 +130,17 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetTransacSmsReportRequest();
+        $request = new Operations\GetTransacSmsReportRequest();
     $request->days = 183250;
     $request->endDate = 'string';
     $request->sort = Operations\GetTransacSmsReportQueryParamSort::Desc;
     $request->startDate = 'string';
-    $request->tag = 'string';
+    $request->tag = 'string';;
 
     $response = $sdk->transactionalSMS->getTransacSmsReport($request);
 
@@ -186,14 +180,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\SendTransacSms();
+        $request = new Shared\SendTransacSms();
     $request->content = 'Enter this code:CCJJG8 to validate your account';
     $request->organisationPrefix = 'MyCompany';
     $request->recipient = '33689965433';
@@ -201,7 +193,7 @@ try {
     $request->tag = 'accountValidation';
     $request->type = Shared\SendTransacSmsType::Marketing;
     $request->unicodeEnabled = true;
-    $request->webUrl = 'http://requestb.in/173lyyx1';
+    $request->webUrl = 'http://requestb.in/173lyyx1';;
 
     $response = $sdk->transactionalSMS->sendTransacSms($request);
 

@@ -26,21 +26,19 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateWebhook();
+        $request = new Shared\CreateWebhook();
     $request->description = 'Webhook triggered on unsubscription';
     $request->domain = 'example.com';
     $request->events = [
         Shared\Events::Unsubscribed,
     ];
     $request->type = Shared\CreateWebhookType::Marketing;
-    $request->url = 'http://requestb.in/173lyyx1';
+    $request->url = 'http://requestb.in/173lyyx1';;
 
     $response = $sdk->webhooks->createWebhook($request);
 
@@ -81,15 +79,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteWebhookRequest();
-    $request->webhookId = 594215;
+        $request = new Operations\DeleteWebhookRequest();
+    $request->webhookId = 594215;;
 
     $response = $sdk->webhooks->deleteWebhook($request);
 
@@ -129,14 +125,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-'string'
+    'string';
 
     $response = $sdk->webhooks->exportWebhooksHistory($request);
 
@@ -177,15 +171,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetWebhookRequest();
-    $request->webhookId = 841269;
+        $request = new Operations\GetWebhookRequest();
+    $request->webhookId = 841269;;
 
     $response = $sdk->webhooks->getWebhook($request);
 
@@ -226,16 +218,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetWebhooksRequest();
+        $request = new Operations\GetWebhooksRequest();
     $request->sort = Operations\GetWebhooksQueryParamSort::Asc;
-    $request->type = Operations\QueryParamType::Marketing;
+    $request->type = Operations\QueryParamType::Marketing;;
 
     $response = $sdk->webhooks->getWebhooks($request);
 
@@ -276,14 +266,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateWebhookRequest();
+        $request = new Operations\UpdateWebhookRequest();
     $request->updateWebhook = new Shared\UpdateWebhook();
     $request->updateWebhook->description = 'Webhook triggered on contact hardbounce';
     $request->updateWebhook->domain = 'example.com';
@@ -291,7 +279,7 @@ try {
         Shared\UpdateWebhookEvents::HardBounce,
     ];
     $request->updateWebhook->url = 'http://requestb.in/173lyyx1';
-    $request->webhookId = 520428;
+    $request->webhookId = 520428;;
 
     $response = $sdk->webhooks->updateWebhook($request);
 

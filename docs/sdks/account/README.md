@@ -22,11 +22,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->account->getAccount();
@@ -62,18 +60,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetAccountActivityRequest();
+        $request = new Operations\GetAccountActivityRequest();
     $request->endDate = 'string';
     $request->limit = 87824;
     $request->offset = 280117;
-    $request->startDate = 'string';
+    $request->startDate = 'string';;
 
     $response = $sdk->account->getAccountActivity($request);
 

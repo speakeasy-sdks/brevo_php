@@ -23,14 +23,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetWhatsappEventReportRequest();
+        $request = new Operations\GetWhatsappEventReportRequest();
     $request->contactNumber = '217-450-0860 x3202';
     $request->days = 322054;
     $request->endDate = 'string';
@@ -38,7 +36,7 @@ try {
     $request->limit = 686968;
     $request->offset = 60200;
     $request->sort = Operations\GetWhatsappEventReportQueryParamSort::Desc;
-    $request->startDate = 'string';
+    $request->startDate = 'string';;
 
     $response = $sdk->transactionalWhatsApp->getWhatsappEventReport($request);
 
@@ -78,14 +76,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-'string'
+    'string';
 
     $response = $sdk->transactionalWhatsApp->sendWhatsappMessage($request);
 

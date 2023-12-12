@@ -27,15 +27,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteCrmTasksIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\DeleteCrmTasksIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->tasks->deleteCrmTasksId($request);
 
@@ -76,14 +74,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmTasksRequest();
+        $request = new Operations\GetCrmTasksRequest();
     $request->dateFrom = 347707;
     $request->dateTo = 258884;
     $request->filterAssignTo = 'string';
@@ -96,7 +92,7 @@ try {
     $request->limit = 92194;
     $request->offset = 295949;
     $request->sort = Operations\GetCrmTasksQueryParamSort::Desc;
-    $request->sortBy = 'string';
+    $request->sortBy = 'string';;
 
     $response = $sdk->tasks->getCrmTasks($request);
 
@@ -137,15 +133,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmTasksIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\GetCrmTasksIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->tasks->getCrmTasksId($request);
 
@@ -185,11 +179,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->tasks->getCrmTasktypes();
@@ -225,14 +217,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PatchCrmTasksIdRequest();
+        $request = new Operations\PatchCrmTasksIdRequest();
     $request->requestBody = new Operations\PatchCrmTasksIdRequestBody();
     $request->requestBody->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->requestBody->companiesIds = [
@@ -256,7 +246,7 @@ try {
     $request->requestBody->reminder->unit = Shared\Unit::Weeks;
     $request->requestBody->reminder->value = 10;
     $request->requestBody->taskTypeId = '61a5cd07ca1347c82306ad09';
-    $request->id = '<ID>';
+    $request->id = '<ID>';;
 
     $response = $sdk->tasks->patchCrmTasksId($request);
 
@@ -297,14 +287,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PostCrmTasksRequestBody();
+        $request = new Operations\PostCrmTasksRequestBody();
     $request->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->companiesIds = [
         'string',
@@ -326,7 +314,7 @@ try {
     ];
     $request->reminder->unit = Shared\Unit::Weeks;
     $request->reminder->value = 10;
-    $request->taskTypeId = '61a5cd07ca1347c82306ad09';
+    $request->taskTypeId = '61a5cd07ca1347c82306ad09';;
 
     $response = $sdk->tasks->postCrmTasks($request);
 

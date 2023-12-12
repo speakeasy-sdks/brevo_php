@@ -27,19 +27,17 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateSender();
+        $request = new Shared\CreateSender();
     $request->email = 'newsletter@mycompany.com';
     $request->ips = [
         new Shared\Ips(),
     ];
-    $request->name = 'Newsletter';
+    $request->name = 'Newsletter';;
 
     $response = $sdk->senders->createSender($request);
 
@@ -80,15 +78,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteSenderRequest();
-    $request->senderId = 234732;
+        $request = new Operations\DeleteSenderRequest();
+    $request->senderId = 234732;;
 
     $response = $sdk->senders->deleteSender($request);
 
@@ -128,11 +124,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->senders->getIps();
@@ -168,15 +162,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetIpsFromSenderRequest();
-    $request->senderId = 848663;
+        $request = new Operations\GetIpsFromSenderRequest();
+    $request->senderId = 848663;;
 
     $response = $sdk->senders->getIpsFromSender($request);
 
@@ -217,16 +209,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSendersRequest();
+        $request = new Operations\GetSendersRequest();
     $request->domain = 'extroverted-congo.name';
-    $request->ip = '94.106.65.227';
+    $request->ip = '94.106.65.227';;
 
     $response = $sdk->senders->getSenders($request);
 
@@ -267,21 +257,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateSenderRequest();
+        $request = new Operations\UpdateSenderRequest();
     $request->senderId = 616420;
     $request->updateSender = new Shared\UpdateSender();
     $request->updateSender->email = 'newsletter@mycompany.com';
     $request->updateSender->ips = [
         new Shared\UpdateSenderIps(),
     ];
-    $request->updateSender->name = 'Newsletter';
+    $request->updateSender->name = 'Newsletter';;
 
     $response = $sdk->senders->updateSender($request);
 
@@ -322,17 +310,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\ValidateSenderByOTPRequest();
+        $request = new Operations\ValidateSenderByOTPRequest();
     $request->otp = new Shared\Otp();
     $request->otp->otp = 123456;
-    $request->senderId = 499324;
+    $request->senderId = 499324;;
 
     $response = $sdk->senders->validateSenderByOTP($request);
 

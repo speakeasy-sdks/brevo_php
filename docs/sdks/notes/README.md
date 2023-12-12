@@ -26,15 +26,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteCrmNotesIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\DeleteCrmNotesIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->notes->deleteCrmNotesId($request);
 
@@ -75,21 +73,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmNotesRequest();
+        $request = new Operations\GetCrmNotesRequest();
     $request->dateFrom = 734797;
     $request->dateTo = 292043;
     $request->entity = Operations\QueryParamEntity::Contacts;
     $request->entityIds = 'string';
     $request->limit = 672070;
     $request->offset = 601102;
-    $request->sort = Operations\GetCrmNotesQueryParamSort::Asc;
+    $request->sort = Operations\GetCrmNotesQueryParamSort::Asc;;
 
     $response = $sdk->notes->getCrmNotes($request);
 
@@ -130,15 +126,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmNotesIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\GetCrmNotesIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->notes->getCrmNotesId($request);
 
@@ -179,14 +173,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PatchCrmNotesIdRequest();
+        $request = new Operations\PatchCrmNotesIdRequest();
     $request->noteData = new Shared\NoteData();
     $request->noteData->companyIds = [
         'string',
@@ -198,7 +190,7 @@ try {
         'string',
     ];
     $request->noteData->text = 'In communication with client for resolution of queries.';
-    $request->id = '<ID>';
+    $request->id = '<ID>';;
 
     $response = $sdk->notes->patchCrmNotesId($request);
 
@@ -238,14 +230,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\NoteData();
+        $request = new Shared\NoteData();
     $request->companyIds = [
         'string',
     ];
@@ -255,7 +245,7 @@ try {
     $request->dealIds = [
         'string',
     ];
-    $request->text = 'In communication with client for resolution of queries.';
+    $request->text = 'In communication with client for resolution of queries.';;
 
     $response = $sdk->notes->postCrmNotes($request);
 

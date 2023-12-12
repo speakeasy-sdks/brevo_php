@@ -41,15 +41,13 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\BlockDomain();
-    $request->domain = 'example.com';
+        $request = new Shared\BlockDomain();
+    $request->domain = 'example.com';;
 
     $response = $sdk->transactionalEmails->blockNewDomain($request);
 
@@ -89,14 +87,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateSmtpTemplate();
+        $request = new Shared\CreateSmtpTemplate();
     $request->attachmentUrl = 'https://attachment.domain.com';
     $request->htmlContent = 'The order n°xxxxx has been confirmed. Thanks for your purchase';
     $request->htmlUrl = 'https://html.domain.com';
@@ -109,7 +105,7 @@ try {
     $request->subject = 'Thanks for your purchase !';
     $request->tag = 'OrderConfirmation';
     $request->templateName = 'Order Confirmation - EN';
-    $request->toField = '{FNAME} {LNAME}';
+    $request->toField = '{FNAME} {LNAME}';;
 
     $response = $sdk->transactionalEmails->createSmtpTemplate($request);
 
@@ -150,15 +146,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteBlockedDomainRequest();
-    $request->domain = 'unknown-cappuccino.name';
+        $request = new Operations\DeleteBlockedDomainRequest();
+    $request->domain = 'unknown-cappuccino.name';;
 
     $response = $sdk->transactionalEmails->deleteBlockedDomain($request);
 
@@ -198,17 +192,15 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\DeleteHardbounces();
+        $request = new Shared\DeleteHardbounces();
     $request->contactEmail = 'alex76@example.com';
-    $request->endDate = '2017-01-31';
-    $request->startDate = '2016-12-31';
+    $request->endDate = '2017-01-31T00:00:00Z';
+    $request->startDate = '2016-12-31T00:00:00Z';;
 
     $response = $sdk->transactionalEmails->deleteHardbounces($request);
 
@@ -249,15 +241,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteScheduledEmailByIdRequest();
-    $request->identifier = 'string';
+        $request = new Operations\DeleteScheduledEmailByIdRequest();
+    $request->identifier = 'string';;
 
     $response = $sdk->transactionalEmails->deleteScheduledEmailById($request);
 
@@ -298,15 +288,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteSmtpTemplateRequest();
-    $request->templateId = 567614;
+        $request = new Operations\DeleteSmtpTemplateRequest();
+    $request->templateId = 567614;;
 
     $response = $sdk->transactionalEmails->deleteSmtpTemplate($request);
 
@@ -347,15 +335,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteSmtpBlockedContactsEmailRequest();
-    $request->email = 'Francesco.Marks@yahoo.com';
+        $request = new Operations\DeleteSmtpBlockedContactsEmailRequest();
+    $request->email = 'Francesco.Marks@yahoo.com';;
 
     $response = $sdk->transactionalEmails->deleteSmtpBlockedContactsEmail($request);
 
@@ -396,15 +382,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteSmtpLogMessageIdRequest();
-    $request->messageId = 'string';
+        $request = new Operations\DeleteSmtpLogMessageIdRequest();
+    $request->messageId = 'string';;
 
     $response = $sdk->transactionalEmails->deleteSmtpLogMessageId($request);
 
@@ -445,18 +429,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetAggregatedSmtpReportRequest();
+        $request = new Operations\GetAggregatedSmtpReportRequest();
     $request->days = 49808;
     $request->endDate = 'string';
     $request->startDate = 'string';
-    $request->tag = 'string';
+    $request->tag = 'string';;
 
     $response = $sdk->transactionalEmails->getAggregatedSmtpReport($request);
 
@@ -496,11 +478,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->transactionalEmails->getBlockedDomains();
@@ -536,14 +516,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetEmailEventReportRequest();
+        $request = new Operations\GetEmailEventReportRequest();
     $request->days = 140058;
     $request->email = 'Saige.Keebler63@yahoo.com';
     $request->endDate = 'string';
@@ -554,7 +532,7 @@ try {
     $request->sort = Operations\GetEmailEventReportQueryParamSort::Asc;
     $request->startDate = 'string';
     $request->tags = 'string';
-    $request->templateId = 427801;
+    $request->templateId = 427801;;
 
     $response = $sdk->transactionalEmails->getEmailEventReport($request);
 
@@ -595,21 +573,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetScheduledEmailByIdRequest();
+        $request = new Operations\GetScheduledEmailByIdRequest();
     $request->endDate = DateTime::createFromFormat('Y-m-d', '2021-10-03');
     $request->identifier = 'string';
     $request->limit = 169392;
     $request->offset = 19100;
     $request->sort = Operations\GetScheduledEmailByIdQueryParamSort::Desc;
     $request->startDate = DateTime::createFromFormat('Y-m-d', '2021-06-15');
-    $request->status = Operations\GetScheduledEmailByIdQueryParamStatus::Processed;
+    $request->status = Operations\GetScheduledEmailByIdQueryParamStatus::Processed;;
 
     $response = $sdk->transactionalEmails->getScheduledEmailById($request);
 
@@ -650,21 +626,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSmtpReportRequest();
+        $request = new Operations\GetSmtpReportRequest();
     $request->days = 6474;
     $request->endDate = 'string';
     $request->limit = 183433;
     $request->offset = 786117;
     $request->sort = Operations\GetSmtpReportQueryParamSort::Desc;
     $request->startDate = 'string';
-    $request->tag = 'string';
+    $request->tag = 'string';;
 
     $response = $sdk->transactionalEmails->getSmtpReport($request);
 
@@ -705,15 +679,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSmtpTemplateRequest();
-    $request->templateId = 397488;
+        $request = new Operations\GetSmtpTemplateRequest();
+    $request->templateId = 397488;;
 
     $response = $sdk->transactionalEmails->getSmtpTemplate($request);
 
@@ -754,18 +726,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSmtpTemplatesRequest();
+        $request = new Operations\GetSmtpTemplatesRequest();
     $request->limit = 714658;
     $request->offset = 628724;
     $request->sort = Operations\GetSmtpTemplatesQueryParamSort::Desc;
-    $request->templateStatus = false;
+    $request->templateStatus = false;;
 
     $response = $sdk->transactionalEmails->getSmtpTemplates($request);
 
@@ -806,14 +776,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetTransacBlockedContactsRequest();
+        $request = new Operations\GetTransacBlockedContactsRequest();
     $request->endDate = 'string';
     $request->limit = 309106;
     $request->offset = 420163;
@@ -821,7 +789,7 @@ try {
         'string',
     ];
     $request->sort = Operations\GetTransacBlockedContactsQueryParamSort::Asc;
-    $request->startDate = 'string';
+    $request->startDate = 'string';;
 
     $response = $sdk->transactionalEmails->getTransacBlockedContacts($request);
 
@@ -862,15 +830,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetTransacEmailContentRequest();
-    $request->uuid = '566179bf-4e3e-496d-95b0-fe604c61ac51';
+        $request = new Operations\GetTransacEmailContentRequest();
+    $request->uuid = '566179bf-4e3e-496d-95b0-fe604c61ac51';;
 
     $response = $sdk->transactionalEmails->getTransacEmailContent($request);
 
@@ -911,14 +877,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetTransacEmailsListRequest();
+        $request = new Operations\GetTransacEmailsListRequest();
     $request->email = 'Carmel_McLaughlin64@hotmail.com';
     $request->endDate = 'string';
     $request->limit = 16086;
@@ -926,7 +890,7 @@ try {
     $request->offset = 704759;
     $request->sort = Operations\GetTransacEmailsListQueryParamSort::Desc;
     $request->startDate = 'string';
-    $request->templateId = 839474;
+    $request->templateId = 839474;;
 
     $response = $sdk->transactionalEmails->getTransacEmailsList($request);
 
@@ -967,19 +931,17 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\SendTestTemplateRequest();
+        $request = new Operations\SendTestTemplateRequest();
     $request->sendTestEmail = new Shared\SendTestEmail();
     $request->sendTestEmail->emailTo = [
         'helen.jurger@example.com',
     ];
-    $request->templateId = 320531;
+    $request->templateId = 320531;;
 
     $response = $sdk->transactionalEmails->sendTestTemplate($request);
 
@@ -1019,14 +981,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\SendSmtpEmail();
+        $request = new Shared\SendSmtpEmail();
     $request->attachment = [
         new Shared\Attachment(),
     ];
@@ -1063,7 +1023,7 @@ try {
     $request->textContent = 'Please confirm your email address by clicking on the link https://text.domain.com';
     $request->to = [
         new Shared\To(),
-    ];
+    ];;
 
     $response = $sdk->transactionalEmails->sendTransacEmail($request);
 
@@ -1104,14 +1064,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateSmtpTemplateRequest();
+        $request = new Operations\UpdateSmtpTemplateRequest();
     $request->templateId = 604767;
     $request->updateSmtpTemplate = new Shared\UpdateSmtpTemplate();
     $request->updateSmtpTemplate->attachmentUrl = 'https://attachment.domain.com';
@@ -1126,7 +1084,7 @@ try {
     $request->updateSmtpTemplate->subject = 'Thanks for your purchase !';
     $request->updateSmtpTemplate->tag = 'OrderConfirmation';
     $request->updateSmtpTemplate->templateName = 'Order Confirmation - EN';
-    $request->updateSmtpTemplate->toField = '{FNAME} {LNAME}';
+    $request->updateSmtpTemplate->toField = '{FNAME} {LNAME}';;
 
     $response = $sdk->transactionalEmails->updateSmtpTemplate($request);
 

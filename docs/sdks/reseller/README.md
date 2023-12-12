@@ -37,18 +37,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\AddCreditsRequest();
+        $request = new Operations\AddCreditsRequest();
     $request->addCredits = new Shared\AddCredits();
     $request->addCredits->email = 1200;
     $request->addCredits->sms = 450;
-    $request->childIdentifier = 'string';
+    $request->childIdentifier = 'string';;
 
     $response = $sdk->reseller->addCredits($request);
 
@@ -89,17 +87,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\AssociateIpToChildRequest();
+        $request = new Operations\AssociateIpToChildRequest();
     $request->childIdentifier = 'string';
     $request->manageIp = new Shared\ManageIp();
-    $request->manageIp->ip = '123.65.8.22';
+    $request->manageIp->ip = '123.65.8.22';;
 
     $response = $sdk->reseller->associateIpToChild($request);
 
@@ -140,17 +136,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\CreateChildDomainRequest();
+        $request = new Operations\CreateChildDomainRequest();
     $request->addChildDomain = new Shared\AddChildDomain();
     $request->addChildDomain->domain = 'mychilddomain.com';
-    $request->childIdentifier = 'string';
+    $request->childIdentifier = 'string';;
 
     $response = $sdk->reseller->createChildDomain($request);
 
@@ -190,20 +184,18 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateChild();
+        $request = new Shared\CreateChild();
     $request->companyName = 'Your Company';
     $request->email = 'josh.cruise@example.com';
     $request->firstName = 'Josh';
     $request->language = Shared\Language::En;
     $request->lastName = 'Cruise';
-    $request->password = 'Pa55w0rd65';
+    $request->password = 'Pa55w0rd65';;
 
     $response = $sdk->reseller->createResellerChild($request);
 
@@ -244,16 +236,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteChildDomainRequest();
+        $request = new Operations\DeleteChildDomainRequest();
     $request->childIdentifier = 'string';
-    $request->domainName = 'silver-redesign.org';
+    $request->domainName = 'silver-redesign.org';;
 
     $response = $sdk->reseller->deleteChildDomain($request);
 
@@ -294,15 +284,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteResellerChildRequest();
-    $request->childIdentifier = 'string';
+        $request = new Operations\DeleteResellerChildRequest();
+    $request->childIdentifier = 'string';;
 
     $response = $sdk->reseller->deleteResellerChild($request);
 
@@ -343,17 +331,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DissociateIpFromChildRequest();
+        $request = new Operations\DissociateIpFromChildRequest();
     $request->childIdentifier = 'string';
     $request->manageIp = new Shared\ManageIp();
-    $request->manageIp->ip = '123.65.8.22';
+    $request->manageIp->ip = '123.65.8.22';;
 
     $response = $sdk->reseller->dissociateIpFromChild($request);
 
@@ -394,15 +380,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetChildAccountCreationStatusRequest();
-    $request->childIdentifier = 'string';
+        $request = new Operations\GetChildAccountCreationStatusRequest();
+    $request->childIdentifier = 'string';;
 
     $response = $sdk->reseller->getChildAccountCreationStatus($request);
 
@@ -443,15 +427,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetChildDomainsRequest();
-    $request->childIdentifier = 'string';
+        $request = new Operations\GetChildDomainsRequest();
+    $request->childIdentifier = 'string';;
 
     $response = $sdk->reseller->getChildDomains($request);
 
@@ -492,15 +474,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetChildInfoRequest();
-    $request->childIdentifier = 'string';
+        $request = new Operations\GetChildInfoRequest();
+    $request->childIdentifier = 'string';;
 
     $response = $sdk->reseller->getChildInfo($request);
 
@@ -541,16 +521,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetResellerChildsRequest();
+        $request = new Operations\GetResellerChildsRequest();
     $request->limit = 137968;
-    $request->offset = 492577;
+    $request->offset = 492577;;
 
     $response = $sdk->reseller->getResellerChilds($request);
 
@@ -591,15 +569,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSsoTokenRequest();
-    $request->childIdentifier = 'string';
+        $request = new Operations\GetSsoTokenRequest();
+    $request->childIdentifier = 'string';;
 
     $response = $sdk->reseller->getSsoToken($request);
 
@@ -640,18 +616,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\RemoveCreditsRequest();
+        $request = new Operations\RemoveCreditsRequest();
     $request->childIdentifier = 'string';
     $request->removeCredits = new Shared\RemoveCredits();
     $request->removeCredits->email = 500;
-    $request->removeCredits->sms = 300;
+    $request->removeCredits->sms = 300;;
 
     $response = $sdk->reseller->removeCredits($request);
 
@@ -692,20 +666,18 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateChildAccountStatusRequest();
+        $request = new Operations\UpdateChildAccountStatusRequest();
     $request->childIdentifier = 'string';
     $request->updateChildAccountStatus = new Shared\UpdateChildAccountStatus();
     $request->updateChildAccountStatus->marketingAutomation = true;
     $request->updateChildAccountStatus->smsCampaign = true;
     $request->updateChildAccountStatus->transactionalEmail = false;
-    $request->updateChildAccountStatus->transactionalSms = false;
+    $request->updateChildAccountStatus->transactionalSms = false;;
 
     $response = $sdk->reseller->updateChildAccountStatus($request);
 
@@ -746,18 +718,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateChildDomainRequest();
+        $request = new Operations\UpdateChildDomainRequest();
     $request->childIdentifier = 'string';
     $request->domainName = 'turbulent-quotation.biz';
     $request->updateChildDomain = new Shared\UpdateChildDomain();
-    $request->updateChildDomain->domain = 'myupdateddomain.com';
+    $request->updateChildDomain->domain = 'myupdateddomain.com';;
 
     $response = $sdk->reseller->updateChildDomain($request);
 
@@ -798,21 +768,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateResellerChildRequest();
+        $request = new Operations\UpdateResellerChildRequest();
     $request->childIdentifier = 'string';
     $request->updateChild = new Shared\UpdateChild();
     $request->updateChild->companyName = 'Your Company';
     $request->updateChild->email = 'josh.cruise@example.com';
     $request->updateChild->firstName = 'Josh';
     $request->updateChild->lastName = 'Cruise';
-    $request->updateChild->password = 'Pa55w0rd65';
+    $request->updateChild->password = 'Pa55w0rd65';;
 
     $response = $sdk->reseller->updateResellerChild($request);
 

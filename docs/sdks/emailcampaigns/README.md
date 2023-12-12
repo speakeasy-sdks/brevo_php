@@ -33,14 +33,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateEmailCampaign();
+        $request = new Shared\CreateEmailCampaign();
     $request->abTesting = true;
     $request->attachmentUrl = 'https://attachment.domain.com';
     $request->footer = '[DEFAULT_FOOTER]';
@@ -85,7 +83,7 @@ try {
     $request->updateFormId = '6313436b9ad40e23b371d095';
     $request->utmCampaign = 'NL_05_2017';
     $request->winnerCriteria = Shared\WinnerCriteria::Open;
-    $request->winnerDelay = 50;
+    $request->winnerDelay = 50;;
 
     $response = $sdk->emailCampaigns->createEmailCampaign($request);
 
@@ -126,15 +124,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteEmailCampaignRequest();
-    $request->campaignId = 413690;
+        $request = new Operations\DeleteEmailCampaignRequest();
+    $request->campaignId = 413690;;
 
     $response = $sdk->emailCampaigns->deleteEmailCampaign($request);
 
@@ -175,18 +171,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\EmailExportRecipientsRequest();
+        $request = new Operations\EmailExportRecipientsRequest();
     $request->campaignId = 116313;
     $request->emailExportRecipients = new Shared\EmailExportRecipients();
     $request->emailExportRecipients->notifyURL = 'http://requestb.in/173lyyx1';
-    $request->emailExportRecipients->recipientsType = Shared\RecipientsType::Openers;
+    $request->emailExportRecipients->recipientsType = Shared\RecipientsType::Openers;;
 
     $response = $sdk->emailCampaigns->emailExportRecipients($request);
 
@@ -227,15 +221,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetAbTestCampaignResultRequest();
-    $request->campaignId = 968439;
+        $request = new Operations\GetAbTestCampaignResultRequest();
+    $request->campaignId = 968439;;
 
     $response = $sdk->emailCampaigns->getAbTestCampaignResult($request);
 
@@ -276,16 +268,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetEmailCampaignRequest();
+        $request = new Operations\GetEmailCampaignRequest();
     $request->campaignId = 715666;
-    $request->statistics = Operations\Statistics::GlobalStats;
+    $request->statistics = Operations\Statistics::GlobalStats;;
 
     $response = $sdk->emailCampaigns->getEmailCampaign($request);
 
@@ -326,14 +316,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetEmailCampaignsRequest();
+        $request = new Operations\GetEmailCampaignsRequest();
     $request->endDate = 'string';
     $request->excludeHtmlContent = Operations\ExcludeHtmlContent::True;
     $request->limit = 276251;
@@ -342,7 +330,7 @@ try {
     $request->startDate = 'string';
     $request->statistics = Operations\QueryParamStatistics::LinksStats;
     $request->status = Operations\Status::Archive;
-    $request->type = Operations\Type::Trigger;
+    $request->type = Operations\Type::Trigger;;
 
     $response = $sdk->emailCampaigns->getEmailCampaigns($request);
 
@@ -383,15 +371,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSharedTemplateUrlRequest();
-    $request->campaignId = 374812;
+        $request = new Operations\GetSharedTemplateUrlRequest();
+    $request->campaignId = 374812;;
 
     $response = $sdk->emailCampaigns->getSharedTemplateUrl($request);
 
@@ -432,15 +418,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\SendEmailCampaignNowRequest();
-    $request->campaignId = 666463;
+        $request = new Operations\SendEmailCampaignNowRequest();
+    $request->campaignId = 666463;;
 
     $response = $sdk->emailCampaigns->sendEmailCampaignNow($request);
 
@@ -481,14 +465,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\SendReportRequest();
+        $request = new Operations\SendReportRequest();
     $request->campaignId = 349447;
     $request->sendReport = new Shared\SendReport();
     $request->sendReport->email = new Shared\Email();
@@ -496,7 +478,7 @@ try {
     $request->sendReport->email->to = [
         'jim.suehan@example.com',
     ];
-    $request->sendReport->language = Shared\SendReportLanguage::En;
+    $request->sendReport->language = Shared\SendReportLanguage::En;;
 
     $response = $sdk->emailCampaigns->sendReport($request);
 
@@ -537,19 +519,17 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\SendTestEmailRequest();
+        $request = new Operations\SendTestEmailRequest();
     $request->campaignId = 634623;
     $request->sendTestEmail = new Shared\SendTestEmail();
     $request->sendTestEmail->emailTo = [
         'helen.jurger@example.com',
-    ];
+    ];;
 
     $response = $sdk->emailCampaigns->sendTestEmail($request);
 
@@ -590,17 +570,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateCampaignStatusRequest();
+        $request = new Operations\UpdateCampaignStatusRequest();
     $request->campaignId = 859791;
     $request->updateCampaignStatus = new Shared\UpdateCampaignStatus();
-    $request->updateCampaignStatus->status = Shared\UpdateCampaignStatusStatus::ReplicateTemplate;
+    $request->updateCampaignStatus->status = Shared\UpdateCampaignStatusStatus::ReplicateTemplate;;
 
     $response = $sdk->emailCampaigns->updateCampaignStatus($request);
 
@@ -641,14 +619,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateEmailCampaignRequest();
+        $request = new Operations\UpdateEmailCampaignRequest();
     $request->campaignId = 130470;
     $request->updateEmailCampaign = new Shared\UpdateEmailCampaign();
     $request->updateEmailCampaign->abTesting = true;
@@ -695,7 +671,7 @@ try {
     $request->updateEmailCampaign->updateFormId = '6313436b9ad40e23b371d095';
     $request->updateEmailCampaign->utmCampaign = 'NL_05_2017';
     $request->updateEmailCampaign->winnerCriteria = Shared\UpdateEmailCampaignWinnerCriteria::Open;
-    $request->updateEmailCampaign->winnerDelay = 50;
+    $request->updateEmailCampaign->winnerDelay = 50;;
 
     $response = $sdk->emailCampaigns->updateEmailCampaign($request);
 
@@ -735,16 +711,14 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\UploadImageToGallery();
+        $request = new Shared\UploadImageToGallery();
     $request->imageUrl = 'https://somedomain.com/image1.jpg';
-    $request->name = 'nature.jpg';
+    $request->name = 'nature.jpg';;
 
     $response = $sdk->emailCampaigns->uploadImageToGallery($request);
 

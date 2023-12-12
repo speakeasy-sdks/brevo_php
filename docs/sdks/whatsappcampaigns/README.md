@@ -29,14 +29,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateWhatsAppCampaign();
+        $request = new Shared\CreateWhatsAppCampaign();
     $request->name = 'Test Campaign';
     $request->recipients = new Shared\CreateWhatsAppCampaignRecipients();
     $request->recipients->excludedListIds = [
@@ -49,7 +47,7 @@ try {
         23,
     ];
     $request->scheduledAt = '2017-06-01T12:30:00+02:00';
-    $request->templateId = 19;
+    $request->templateId = 19;;
 
     $response = $sdk->whatsAppCampaigns->createWhatsAppCampaign($request);
 
@@ -89,20 +87,18 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateWhatsAppTemplate();
+        $request = new Shared\CreateWhatsAppTemplate();
     $request->bodyText = 'making it look like readable English';
     $request->category = Shared\Category::Marketing;
     $request->headerText = 'Test WhatsApp campaign';
     $request->language = 'en';
     $request->mediaUrl = 'https://attachment.domain.com';
-    $request->name = 'Test template';
+    $request->name = 'Test template';;
 
     $response = $sdk->whatsAppCampaigns->createWhatsAppTemplate($request);
 
@@ -143,15 +139,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteWhatsAppCampaignRequest();
-    $request->campaignId = 789504;
+        $request = new Operations\DeleteWhatsAppCampaignRequest();
+    $request->campaignId = 789504;;
 
     $response = $sdk->whatsAppCampaigns->deleteWhatsAppCampaign($request);
 
@@ -192,15 +186,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetWhatsAppCampaignRequest();
-    $request->campaignId = 179428;
+        $request = new Operations\GetWhatsAppCampaignRequest();
+    $request->campaignId = 179428;;
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppCampaign($request);
 
@@ -241,19 +233,17 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetWhatsAppCampaignsRequest();
+        $request = new Operations\GetWhatsAppCampaignsRequest();
     $request->endDate = 'string';
     $request->limit = 452266;
     $request->offset = 758325;
     $request->sort = Operations\GetWhatsAppCampaignsQueryParamSort::Asc;
-    $request->startDate = 'string';
+    $request->startDate = 'string';;
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppCampaigns($request);
 
@@ -293,11 +283,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->whatsAppCampaigns->getWhatsAppConfig();
@@ -333,19 +321,17 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetWhatsAppTemplatesRequest();
+        $request = new Operations\GetWhatsAppTemplatesRequest();
     $request->endDate = 'string';
     $request->limit = 39819;
     $request->offset = 185489;
     $request->sort = Operations\GetWhatsAppTemplatesQueryParamSort::Asc;
-    $request->startDate = 'string';
+    $request->startDate = 'string';;
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppTemplates($request);
 
@@ -386,15 +372,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\SendWhatsAppTemplateApprovalRequest();
-    $request->templateId = 576759;
+        $request = new Operations\SendWhatsAppTemplateApprovalRequest();
+    $request->templateId = 576759;;
 
     $response = $sdk->whatsAppCampaigns->sendWhatsAppTemplateApproval($request);
 
@@ -435,14 +419,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateWhatsAppCampaignRequest();
+        $request = new Operations\UpdateWhatsAppCampaignRequest();
     $request->campaignId = 898516;
     $request->updateWhatsAppCampaign = new Shared\UpdateWhatsAppCampaign();
     $request->updateWhatsAppCampaign->campaignName = 'Test WhatsApp';
@@ -457,7 +439,7 @@ try {
     $request->updateWhatsAppCampaign->recipients->segments = [
         23,
     ];
-    $request->updateWhatsAppCampaign->rescheduleFor = '2017-06-01T12:30:00+02:00';
+    $request->updateWhatsAppCampaign->rescheduleFor = '2017-06-01T12:30:00+02:00';;
 
     $response = $sdk->whatsAppCampaigns->updateWhatsAppCampaign($request);
 

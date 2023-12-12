@@ -23,15 +23,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetProcessRequest();
-    $request->processId = 220156;
+        $request = new Operations\GetProcessRequest();
+    $request->processId = 220156;;
 
     $response = $sdk->process->getProcess($request);
 
@@ -72,17 +70,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetProcessesRequest();
+        $request = new Operations\GetProcessesRequest();
     $request->limit = 441197;
     $request->offset = 705753;
-    $request->sort = Operations\GetProcessesQueryParamSort::Asc;
+    $request->sort = Operations\GetProcessesQueryParamSort::Asc;;
 
     $response = $sdk->process->getProcesses($request);
 

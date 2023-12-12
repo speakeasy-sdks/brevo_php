@@ -24,15 +24,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetInboundEmailAttachmentRequest();
-    $request->downloadToken = 'string';
+        $request = new Operations\GetInboundEmailAttachmentRequest();
+    $request->downloadToken = 'string';;
 
     $response = $sdk->inboundParsing->getInboundEmailAttachment($request);
 
@@ -73,20 +71,18 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetInboundEmailEventsRequest();
+        $request = new Operations\GetInboundEmailEventsRequest();
     $request->endDate = 'string';
     $request->limit = 717459;
     $request->offset = 401477;
     $request->sender = 'string';
     $request->sort = Operations\GetInboundEmailEventsQueryParamSort::Desc;
-    $request->startDate = 'string';
+    $request->startDate = 'string';;
 
     $response = $sdk->inboundParsing->getInboundEmailEvents($request);
 
@@ -127,15 +123,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetInboundEmailEventsByUuidRequest();
-    $request->uuid = '0b78133b-5346-4c5c-9f06-f4b3166b05d6';
+        $request = new Operations\GetInboundEmailEventsByUuidRequest();
+    $request->uuid = '0b78133b-5346-4c5c-9f06-f4b3166b05d6';;
 
     $response = $sdk->inboundParsing->getInboundEmailEventsByUuid($request);
 

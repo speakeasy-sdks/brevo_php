@@ -31,15 +31,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteCorporateSubAccountIdRequest();
-    $request->id = 240183;
+        $request = new Operations\DeleteCorporateSubAccountIdRequest();
+    $request->id = 240183;;
 
     $response = $sdk->masterAccount->deleteCorporateSubAccountId($request);
 
@@ -80,18 +78,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetAccountActivityRequest();
+        $request = new Operations\GetAccountActivityRequest();
     $request->endDate = 'string';
     $request->limit = 87824;
     $request->offset = 280117;
-    $request->startDate = 'string';
+    $request->startDate = 'string';;
 
     $response = $sdk->masterAccount->getAccountActivity($request);
 
@@ -131,11 +127,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->masterAccount->getCorporateMasterAccount();
@@ -171,16 +165,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCorporateSubAccountRequest();
+        $request = new Operations\GetCorporateSubAccountRequest();
     $request->limit = 809548;
-    $request->offset = 775566;
+    $request->offset = 775566;;
 
     $response = $sdk->masterAccount->getCorporateSubAccount($request);
 
@@ -221,15 +213,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCorporateSubAccountIdRequest();
-    $request->id = 504418;
+        $request = new Operations\GetCorporateSubAccountIdRequest();
+    $request->id = 504418;;
 
     $response = $sdk->masterAccount->getCorporateSubAccountId($request);
 
@@ -269,18 +259,16 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateSubAccount();
+        $request = new Shared\CreateSubAccount();
     $request->companyName = 'Bayer, Graham and Lemke';
     $request->email = 'Maxime61@hotmail.com';
     $request->language = Shared\CreateSubAccountLanguage::Pt;
-    $request->timezone = 'Asia/Muscat';
+    $request->timezone = 'Asia/Muscat';;
 
     $response = $sdk->masterAccount->postCorporateSubAccount($request);
 
@@ -321,16 +309,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PostCorporateSubAccountKeyRequestBody();
+        $request = new Operations\PostCorporateSubAccountKeyRequestBody();
     $request->id = 3232323;
-    $request->name = 'My Api Key';
+    $request->name = 'My Api Key';;
 
     $response = $sdk->masterAccount->postCorporateSubAccountKey($request);
 
@@ -371,18 +357,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PostCorporateSubAccountSsoTokenRequestBody();
+        $request = new Operations\PostCorporateSubAccountSsoTokenRequestBody();
     $request->email = 'vipin+subaccount@brevo.com';
     $request->id = 3232323;
     $request->target = Operations\Target::Contacts;
-    $request->url = 'https://app.brevo.com/senders/domain/list';
+    $request->url = 'https://app.brevo.com/senders/domain/list';;
 
     $response = $sdk->masterAccount->postCorporateSubAccountSsoToken($request);
 
@@ -423,14 +407,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PutCorporateSubAccountIdApplicationsToggleRequest();
+        $request = new Operations\PutCorporateSubAccountIdApplicationsToggleRequest();
     $request->id = 310762;
     $request->subAccountAppsToggleRequest = new Shared\SubAccountAppsToggleRequest();
     $request->subAccountAppsToggleRequest->automation = false;
@@ -445,7 +427,7 @@ try {
     $request->subAccountAppsToggleRequest->transactionalEmails = false;
     $request->subAccountAppsToggleRequest->transactionalSms = false;
     $request->subAccountAppsToggleRequest->webPush = false;
-    $request->subAccountAppsToggleRequest->whatsapp = false;
+    $request->subAccountAppsToggleRequest->whatsapp = false;;
 
     $response = $sdk->masterAccount->putCorporateSubAccountIdApplicationsToggle($request);
 
@@ -486,14 +468,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PutCorporateSubAccountIdPlanRequest();
+        $request = new Operations\PutCorporateSubAccountIdPlanRequest();
     $request->id = 152623;
     $request->subAccountUpdatePlanRequest = new Shared\SubAccountUpdatePlanRequest();
     $request->subAccountUpdatePlanRequest->credits = new Shared\SubAccountUpdatePlanRequestCredits();
@@ -501,7 +481,7 @@ try {
     $request->subAccountUpdatePlanRequest->features = new Shared\Features();
     $request->subAccountUpdatePlanRequest->features->inbox = 662938;
     $request->subAccountUpdatePlanRequest->features->landingPage = 92293;
-    $request->subAccountUpdatePlanRequest->features->users = 570439;
+    $request->subAccountUpdatePlanRequest->features->users = 570439;;
 
     $response = $sdk->masterAccount->putCorporateSubAccountIdPlan($request);
 

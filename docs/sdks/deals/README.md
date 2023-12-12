@@ -31,15 +31,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteCrmDealsIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\DeleteCrmDealsIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->deals->deleteCrmDealsId($request);
 
@@ -79,11 +77,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->deals->getCrmAttributesDeals();
@@ -119,20 +115,18 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmDealsRequest();
+        $request = new Operations\GetCrmDealsRequest();
     $request->filtersAttributesDealName = 'string';
     $request->filtersLinkedCompaniesIds = 'string';
     $request->filtersLinkedContactsIds = 'string';
     $request->limit = 851588;
     $request->offset = 163297;
-    $request->sort = Operations\GetCrmDealsQueryParamSort::Asc;
+    $request->sort = Operations\GetCrmDealsQueryParamSort::Asc;;
 
     $response = $sdk->deals->getCrmDeals($request);
 
@@ -173,15 +167,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmDealsIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\GetCrmDealsIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->deals->getCrmDealsId($request);
 
@@ -223,11 +215,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->deals->getCrmPipelineDetails();
@@ -262,11 +252,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->deals->getCrmPipelineDetailsAll();
@@ -302,15 +290,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmPipelineDetailsPipelineIDRequest();
-    $request->pipelineID = 'string';
+        $request = new Operations\GetCrmPipelineDetailsPipelineIDRequest();
+    $request->pipelineID = 'string';;
 
     $response = $sdk->deals->getCrmPipelineDetailsPipelineID($request);
 
@@ -351,14 +337,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PatchCrmDealsLinkUnlinkIdRequest();
+        $request = new Operations\PatchCrmDealsLinkUnlinkIdRequest();
     $request->requestBody = new Operations\PatchCrmDealsLinkUnlinkIdRequestBody();
     $request->requestBody->linkCompanyIds = [
         'string',
@@ -372,7 +356,7 @@ try {
     $request->requestBody->unlinkContactIds = [
         381340,
     ];
-    $request->id = '<ID>';
+    $request->id = '<ID>';;
 
     $response = $sdk->deals->patchCrmDealsLinkUnlinkId($request);
 
@@ -413,18 +397,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PatchCrmDealsIdRequest();
+        $request = new Operations\PatchCrmDealsIdRequest();
     $request->requestBody = new Operations\PatchCrmDealsIdRequestBody();
     $request->requestBody->attributes = new Operations\PatchCrmDealsIdAttributes();
     $request->requestBody->name = 'Deal: Connect with client';
-    $request->id = '<ID>';
+    $request->id = '<ID>';;
 
     $response = $sdk->deals->patchCrmDealsId($request);
 
@@ -465,16 +447,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PostCrmDealsRequestBody();
+        $request = new Operations\PostCrmDealsRequestBody();
     $request->attributes = new Operations\PostCrmDealsAttributes();
-    $request->name = 'Deal: Connect with company';
+    $request->name = 'Deal: Connect with company';;
 
     $response = $sdk->deals->postCrmDeals($request);
 

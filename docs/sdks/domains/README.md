@@ -26,15 +26,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\AuthenticateDomainRequest();
-    $request->domainName = 'sparkling-awareness.biz';
+        $request = new Operations\AuthenticateDomainRequest();
+    $request->domainName = 'sparkling-awareness.biz';;
 
     $response = $sdk->domains->authenticateDomain($request);
 
@@ -74,15 +72,13 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateDomain();
-    $request->name = 'mycompany.com';
+        $request = new Shared\CreateDomain();
+    $request->name = 'mycompany.com';;
 
     $response = $sdk->domains->createDomain($request);
 
@@ -123,15 +119,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteDomainRequest();
-    $request->domainName = 'sturdy-supper.net';
+        $request = new Operations\DeleteDomainRequest();
+    $request->domainName = 'sturdy-supper.net';;
 
     $response = $sdk->domains->deleteDomain($request);
 
@@ -172,15 +166,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetDomainConfigurationRequest();
-    $request->domainName = 'slight-county.net';
+        $request = new Operations\GetDomainConfigurationRequest();
+    $request->domainName = 'slight-county.net';;
 
     $response = $sdk->domains->getDomainConfiguration($request);
 
@@ -220,11 +212,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->domains->getDomains();

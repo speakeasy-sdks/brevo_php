@@ -26,16 +26,14 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\CreateCouponCollectionRequestBody();
+        $request = new Operations\CreateCouponCollectionRequestBody();
     $request->defaultCoupon = '10 OFF';
-    $request->name = 'SummerPromotions';
+    $request->name = 'SummerPromotions';;
 
     $response = $sdk->coupons->createCouponCollection($request);
 
@@ -76,18 +74,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\CreateCouponsRequestBody();
+        $request = new Operations\CreateCouponsRequestBody();
     $request->collectionId = '23befbae-1505-47a8-bd27-e30ef739f32c';
     $request->coupons = [
         'Uf12AF',
-    ];
+    ];;
 
     $response = $sdk->coupons->createCoupons($request);
 
@@ -128,15 +124,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCouponCollectionRequest();
-    $request->id = 'string';
+        $request = new Operations\GetCouponCollectionRequest();
+    $request->id = 'string';;
 
     $response = $sdk->coupons->getCouponCollection($request);
 
@@ -177,17 +171,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCouponCollectionsRequest();
+        $request = new Operations\GetCouponCollectionsRequest();
     $request->limit = 928542;
     $request->offset = 507488;
-    $request->sort = Operations\GetCouponCollectionsQueryParamSort::Asc;
+    $request->sort = Operations\GetCouponCollectionsQueryParamSort::Asc;;
 
     $response = $sdk->coupons->getCouponCollections($request);
 
@@ -228,17 +220,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateCouponCollectionRequest();
+        $request = new Operations\UpdateCouponCollectionRequest();
     $request->requestBody = new Operations\UpdateCouponCollectionRequestBody();
     $request->requestBody->defaultCoupon = '10 OFF';
-    $request->id = 'string';
+    $request->id = 'string';;
 
     $response = $sdk->coupons->updateCouponCollection($request);
 

@@ -30,14 +30,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateSmsCampaign();
+        $request = new Shared\CreateSmsCampaign();
     $request->content = 'Get a discount by visiting our NY store and saying : Happy Spring!';
     $request->name = 'Spring Promo Code';
     $request->organisationPrefix = 'MyCompany';
@@ -51,7 +49,7 @@ try {
     $request->scheduledAt = '2017-05-05T12:30:00+02:00';
     $request->sender = 'MyShop';
     $request->unicodeEnabled = true;
-    $request->unsubscribeInstruction = 'send Stop if you want to unsubscribe.';
+    $request->unsubscribeInstruction = 'send Stop if you want to unsubscribe.';;
 
     $response = $sdk->smsCampaigns->createSmsCampaign($request);
 
@@ -92,15 +90,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteSmsCampaignRequest();
-    $request->campaignId = 225721;
+        $request = new Operations\DeleteSmsCampaignRequest();
+    $request->campaignId = 225721;;
 
     $response = $sdk->smsCampaigns->deleteSmsCampaign($request);
 
@@ -141,15 +137,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSmsCampaignRequest();
-    $request->campaignId = 704072;
+        $request = new Operations\GetSmsCampaignRequest();
+    $request->campaignId = 704072;;
 
     $response = $sdk->smsCampaigns->getSmsCampaign($request);
 
@@ -190,20 +184,18 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetSmsCampaignsRequest();
+        $request = new Operations\GetSmsCampaignsRequest();
     $request->endDate = 'string';
     $request->limit = 200697;
     $request->offset = 609082;
     $request->sort = Operations\GetSmsCampaignsQueryParamSort::Desc;
     $request->startDate = 'string';
-    $request->status = Operations\QueryParamStatus::Suspended;
+    $request->status = Operations\QueryParamStatus::Suspended;;
 
     $response = $sdk->smsCampaigns->getSmsCampaigns($request);
 
@@ -244,18 +236,16 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\RequestSmsRecipientExportRequest();
+        $request = new Operations\RequestSmsRecipientExportRequest();
     $request->campaignId = 946569;
     $request->requestSmsRecipientExport = new Shared\RequestSmsRecipientExport();
     $request->requestSmsRecipientExport->notifyURL = 'http://requestb.in/173lyyx1';
-    $request->requestSmsRecipientExport->recipientsType = Shared\RequestSmsRecipientExportRecipientsType::Answered;
+    $request->requestSmsRecipientExport->recipientsType = Shared\RequestSmsRecipientExportRecipientsType::Answered;;
 
     $response = $sdk->smsCampaigns->requestSmsRecipientExport($request);
 
@@ -296,15 +286,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\SendSmsCampaignNowRequest();
-    $request->campaignId = 697931;
+        $request = new Operations\SendSmsCampaignNowRequest();
+    $request->campaignId = 697931;;
 
     $response = $sdk->smsCampaigns->sendSmsCampaignNow($request);
 
@@ -345,14 +333,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\SendSmsReportRequest();
+        $request = new Operations\SendSmsReportRequest();
     $request->campaignId = 786011;
     $request->sendReport = new Shared\SendReport();
     $request->sendReport->email = new Shared\Email();
@@ -360,7 +346,7 @@ try {
     $request->sendReport->email->to = [
         'jim.suehan@example.com',
     ];
-    $request->sendReport->language = Shared\SendReportLanguage::En;
+    $request->sendReport->language = Shared\SendReportLanguage::En;;
 
     $response = $sdk->smsCampaigns->sendSmsReport($request);
 
@@ -401,17 +387,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\SendTestSmsRequest();
+        $request = new Operations\SendTestSmsRequest();
     $request->campaignId = 562258;
     $request->sendTestSms = new Shared\SendTestSms();
-    $request->sendTestSms->phoneNumber = '33689965433';
+    $request->sendTestSms->phoneNumber = '33689965433';;
 
     $response = $sdk->smsCampaigns->sendTestSms($request);
 
@@ -452,14 +436,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateSmsCampaignRequest();
+        $request = new Operations\UpdateSmsCampaignRequest();
     $request->campaignId = 537860;
     $request->updateSmsCampaign = new Shared\UpdateSmsCampaign();
     $request->updateSmsCampaign->content = 'Get a discount by visiting our NY store and saying : Happy Spring!';
@@ -475,7 +457,7 @@ try {
     $request->updateSmsCampaign->scheduledAt = '2017-05-05T12:30:00+02:00';
     $request->updateSmsCampaign->sender = 'MyShop';
     $request->updateSmsCampaign->unicodeEnabled = true;
-    $request->updateSmsCampaign->unsubscribeInstruction = 'send Stop if you want to unsubscribe.';
+    $request->updateSmsCampaign->unsubscribeInstruction = 'send Stop if you want to unsubscribe.';;
 
     $response = $sdk->smsCampaigns->updateSmsCampaign($request);
 
@@ -516,17 +498,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateSmsCampaignStatusRequest();
+        $request = new Operations\UpdateSmsCampaignStatusRequest();
     $request->campaignId = 258044;
     $request->updateCampaignStatus = new Shared\UpdateCampaignStatus();
-    $request->updateCampaignStatus->status = Shared\UpdateCampaignStatusStatus::Suspended;
+    $request->updateCampaignStatus->status = Shared\UpdateCampaignStatusStatus::Suspended;;
 
     $response = $sdk->smsCampaigns->updateSmsCampaignStatus($request);
 

@@ -28,15 +28,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteCompaniesIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\DeleteCompaniesIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->companies->deleteCompaniesId($request);
 
@@ -77,21 +75,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCompaniesRequest();
+        $request = new Operations\GetCompaniesRequest();
     $request->filters = 'string';
     $request->limit = 817302;
     $request->linkedContactsIds = 571205;
     $request->linkedDealsIds = 'string';
     $request->page = 66234;
     $request->sort = Operations\Sort::Desc;
-    $request->sortBy = 'string';
+    $request->sortBy = 'string';;
 
     $response = $sdk->companies->getCompanies($request);
 
@@ -131,11 +127,9 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
     $response = $sdk->companies->getCompaniesAttributes();
@@ -171,15 +165,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCompaniesIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\GetCompaniesIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->companies->getCompaniesId($request);
 
@@ -220,14 +212,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PatchCompaniesLinkUnlinkIdRequest();
+        $request = new Operations\PatchCompaniesLinkUnlinkIdRequest();
     $request->requestBody = new Operations\PatchCompaniesLinkUnlinkIdRequestBody();
     $request->requestBody->linkContactIds = [
         478673,
@@ -241,7 +231,7 @@ try {
     $request->requestBody->unlinkDealsIds = [
         'string',
     ];
-    $request->id = '<ID>';
+    $request->id = '<ID>';;
 
     $response = $sdk->companies->patchCompaniesLinkUnlinkId($request);
 
@@ -282,19 +272,17 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PatchCompaniesIdRequest();
+        $request = new Operations\PatchCompaniesIdRequest();
     $request->requestBody = new Operations\PatchCompaniesIdRequestBody();
     $request->requestBody->attributes = new Operations\Attributes();
     $request->requestBody->countryCode = 91;
     $request->requestBody->name = 'company';
-    $request->id = '<ID>';
+    $request->id = '<ID>';;
 
     $response = $sdk->companies->patchCompaniesId($request);
 
@@ -335,17 +323,15 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PostCompaniesRequestBody();
+        $request = new Operations\PostCompaniesRequestBody();
     $request->attributes = new Operations\PostCompaniesAttributes();
     $request->countryCode = 91;
-    $request->name = 'company';
+    $request->name = 'company';;
 
     $response = $sdk->companies->postCompanies($request);
 

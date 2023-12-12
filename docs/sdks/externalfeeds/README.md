@@ -25,14 +25,12 @@ use \test\BREVO;
 use \test\BREVO\Models\Shared;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Shared\CreateExternalFeed();
+        $request = new Shared\CreateExternalFeed();
     $request->authType = Shared\AuthType::Token;
     $request->cache = true;
     $request->headers = [
@@ -43,7 +41,7 @@ try {
     $request->password = 'password';
     $request->token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c';
     $request->url = 'http://requestb.in/173lyyx1';
-    $request->username = 'user';
+    $request->username = 'user';;
 
     $response = $sdk->externalFeeds->createExternalFeed($request);
 
@@ -84,15 +82,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteExternalFeedRequest();
-    $request->uuid = 'b0692cb8-a6d8-42d5-9923-10ace67bc974';
+        $request = new Operations\DeleteExternalFeedRequest();
+    $request->uuid = 'b0692cb8-a6d8-42d5-9923-10ace67bc974';;
 
     $response = $sdk->externalFeeds->deleteExternalFeed($request);
 
@@ -133,21 +129,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetAllExternalFeedsRequest();
+        $request = new Operations\GetAllExternalFeedsRequest();
     $request->authType = Operations\AuthType::NoAuth;
     $request->endDate = DateTime::createFromFormat('Y-m-d', '2022-12-17');
     $request->limit = 611577;
     $request->offset = 408687;
     $request->search = 'string';
     $request->sort = Operations\GetAllExternalFeedsQueryParamSort::Asc;
-    $request->startDate = DateTime::createFromFormat('Y-m-d', '2023-06-18');
+    $request->startDate = DateTime::createFromFormat('Y-m-d', '2023-06-18');;
 
     $response = $sdk->externalFeeds->getAllExternalFeeds($request);
 
@@ -188,15 +182,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetExternalFeedByUUIDRequest();
-    $request->uuid = 'fa819eb0-857b-463d-ad10-39975748ac59';
+        $request = new Operations\GetExternalFeedByUUIDRequest();
+    $request->uuid = 'fa819eb0-857b-463d-ad10-39975748ac59';;
 
     $response = $sdk->externalFeeds->getExternalFeedByUUID($request);
 
@@ -237,14 +229,12 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\UpdateExternalFeedRequest();
+        $request = new Operations\UpdateExternalFeedRequest();
     $request->updateExternalFeed = new Shared\UpdateExternalFeed();
     $request->updateExternalFeed->authType = Shared\UpdateExternalFeedAuthType::NoAuth;
     $request->updateExternalFeed->cache = true;
@@ -257,7 +247,7 @@ try {
     $request->updateExternalFeed->token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c';
     $request->updateExternalFeed->url = 'http://requestb.in/173lyyx1';
     $request->updateExternalFeed->username = 'user';
-    $request->uuid = '5fe6c802-73af-494b-8891-280ca7739cb6';
+    $request->uuid = '5fe6c802-73af-494b-8891-280ca7739cb6';;
 
     $response = $sdk->externalFeeds->updateExternalFeed($request);
 

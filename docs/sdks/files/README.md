@@ -26,15 +26,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\DeleteCrmFilesIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\DeleteCrmFilesIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->files->deleteCrmFilesId($request);
 
@@ -75,21 +73,19 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmFilesRequest();
+        $request = new Operations\GetCrmFilesRequest();
     $request->dateFrom = 736297;
     $request->dateTo = 40718;
     $request->entity = Operations\Entity::Deals;
     $request->entityIds = 'string';
     $request->limit = 240606;
     $request->offset = 115165;
-    $request->sort = Operations\GetCrmFilesQueryParamSort::Asc;
+    $request->sort = Operations\GetCrmFilesQueryParamSort::Asc;;
 
     $response = $sdk->files->getCrmFiles($request);
 
@@ -130,15 +126,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmFilesIdRequest();
-    $request->id = '<ID>';
+        $request = new Operations\GetCrmFilesIdRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->files->getCrmFilesId($request);
 
@@ -179,15 +173,13 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\GetCrmFilesIdDataRequest();
-    $request->id = '<ID>';
+        $request = new Operations\GetCrmFilesIdDataRequest();
+    $request->id = '<ID>';;
 
     $response = $sdk->files->getCrmFilesIdData($request);
 
@@ -228,20 +220,18 @@ use \test\BREVO\Models\Shared;
 use \test\BREVO\Models\Operations;
 
 $security = new Shared\Security();
-$security->apiKey = '';
+$security->apiKey = '<YOUR_API_KEY_HERE>';
 
-$sdk = BREVO\Brevo::builder()
-    ->setSecurity($security)
-    ->build();
+$sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    $request = new Operations\PostCrmFilesRequestBody();
+        $request = new Operations\PostCrmFilesRequestBody();
     $request->companyId = 'string';
     $request->contactId = 256288;
     $request->dealId = 'string';
     $request->file = new Operations\File();
     $request->file->content = '0xB42AB596aD';
-    $request->file->fileName = 'officer_personnel_diesel.mpg4';
+    $request->file->fileName = 'officer_personnel_diesel.mpg4';;
 
     $response = $sdk->files->postCrmFiles($request);
 
