@@ -579,12 +579,12 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetScheduledEmailByIdRequest();
-    $request->endDate = DateTime::createFromFormat('Y-m-d', '2021-10-03');
+    $request->endDate = DateTime::createFromFormat('Y-m-d', '2022-10-04');
     $request->identifier = 'string';
     $request->limit = 169392;
     $request->offset = 19100;
     $request->sort = Operations\GetScheduledEmailByIdQueryParamSort::Desc;
-    $request->startDate = DateTime::createFromFormat('Y-m-d', '2021-06-15');
+    $request->startDate = DateTime::createFromFormat('Y-m-d', '2022-06-15');
     $request->status = Operations\GetScheduledEmailByIdQueryParamStatus::Processed;;
 
     $response = $sdk->transactionalEmails->getScheduledEmailById($request);
