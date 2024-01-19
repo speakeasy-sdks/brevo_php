@@ -4,9 +4,9 @@ management:
   docChecksum: fd6551c04044961cce38d49d9c1dd06d
   docVersion: 3.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 2.1.1
-  configChecksum: 35a7ccdb99db88a9de3559864f586351
+  generationVersion: 2.237.2
+  releaseVersion: 2.1.2
+  configChecksum: 65e42c95c36015019bef99b11b8477d7
   repoURL: https://github.com/speakeasy-sdks/brevo_php.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/brevo_php
@@ -14,7 +14,7 @@ features:
   php:
     core: 3.3.0
     deprecations: 2.81.1
-    globalSecurity: 2.81.2
+    globalSecurity: 2.81.3
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/SDKConfiguration.php
