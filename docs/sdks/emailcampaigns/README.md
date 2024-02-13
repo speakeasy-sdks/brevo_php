@@ -90,7 +90,7 @@ try {
     if ($response->createModel !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -137,7 +137,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -187,7 +187,7 @@ try {
     if ($response->createdProcessId !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -234,7 +234,7 @@ try {
     if ($response->abTestCampaignResult !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -282,7 +282,7 @@ try {
     if ($response->getEmailCampaign !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -337,7 +337,7 @@ try {
     if ($response->getEmailCampaigns !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -384,7 +384,7 @@ try {
     if ($response->getSharedTemplateUrl !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -431,7 +431,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -485,7 +485,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -536,7 +536,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -585,7 +585,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -678,7 +678,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -725,7 +725,7 @@ try {
     if ($response->uploadImageModel !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```

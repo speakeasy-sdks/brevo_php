@@ -44,7 +44,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -87,7 +87,7 @@ try {
     if ($response->dealAttributes !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -133,7 +133,7 @@ try {
     if ($response->dealsList !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -180,7 +180,7 @@ try {
     if ($response->deal !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -225,7 +225,7 @@ try {
     if ($response->pipeline !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -262,7 +262,7 @@ try {
     if ($response->pipelines !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -303,7 +303,7 @@ try {
     if ($response->pipelines !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -363,7 +363,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -413,7 +413,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -461,7 +461,7 @@ try {
     if ($response->object !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```

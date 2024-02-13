@@ -44,7 +44,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -94,7 +94,7 @@ try {
     if ($response->getAccountActivity !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -137,7 +137,7 @@ try {
     if ($response->masterDetailsResponse !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -179,7 +179,7 @@ try {
     if ($response->subAccountsResponse !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -226,7 +226,7 @@ try {
     if ($response->subAccountDetailsResponse !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -275,7 +275,7 @@ try {
     if ($response->createSubAccountResponse !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -323,7 +323,7 @@ try {
     if ($response->createApiKeyResponse !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -373,7 +373,7 @@ try {
     if ($response->getSsoToken !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -434,7 +434,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -488,7 +488,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```

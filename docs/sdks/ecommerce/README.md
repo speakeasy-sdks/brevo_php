@@ -47,7 +47,7 @@ try {
     if ($response->createdBatchId !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -112,7 +112,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -161,7 +161,7 @@ try {
     if ($response->createUpdateBatchCategoryModel !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -210,7 +210,7 @@ try {
     if ($response->createUpdateBatchProductsModel !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -260,7 +260,7 @@ try {
     if ($response->createCategoryModel !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -320,7 +320,7 @@ try {
     if ($response->createProductModel !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -373,7 +373,7 @@ try {
     if ($response->getCategories !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -420,7 +420,7 @@ try {
     if ($response->getCategoryDetails !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -467,7 +467,7 @@ try {
     if ($response->getProductDetails !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -529,7 +529,7 @@ try {
     if ($response->getProducts !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -572,7 +572,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```

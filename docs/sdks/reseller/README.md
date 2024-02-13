@@ -53,7 +53,7 @@ try {
     if ($response->remainingCreditModel !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -102,7 +102,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -151,7 +151,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -202,7 +202,7 @@ try {
     if ($response->createReseller !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -250,7 +250,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -297,7 +297,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -346,7 +346,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -393,7 +393,7 @@ try {
     if ($response->getChildAccountCreationStatus !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -440,7 +440,7 @@ try {
     if ($response->getChildDomains !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -487,7 +487,7 @@ try {
     if ($response->getChildInfo !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -535,7 +535,7 @@ try {
     if ($response->getChildrenList !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -582,7 +582,7 @@ try {
     if ($response->getSsoToken !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -632,7 +632,7 @@ try {
     if ($response->remainingCreditModel !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -684,7 +684,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -734,7 +734,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -787,7 +787,7 @@ try {
     if ($response->statusCode === 200) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```

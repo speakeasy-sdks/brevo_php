@@ -36,7 +36,7 @@ try {
     if ($response->getProcess !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -85,7 +85,7 @@ try {
     if ($response->getProcesses !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```

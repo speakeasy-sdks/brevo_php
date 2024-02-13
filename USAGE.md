@@ -21,7 +21,7 @@ try {
     if ($response->getAccount !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 

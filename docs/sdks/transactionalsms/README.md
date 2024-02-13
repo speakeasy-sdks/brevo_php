@@ -46,7 +46,7 @@ try {
     if ($response->getSmsEventReport !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -96,7 +96,7 @@ try {
     if ($response->getTransacAggregatedSmsReport !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -147,7 +147,7 @@ try {
     if ($response->getTransacSmsReport !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -200,7 +200,7 @@ try {
     if ($response->sendSms !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```

@@ -32,7 +32,7 @@ try {
     if ($response->getInvitedUsersList !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -73,7 +73,7 @@ try {
     if ($response->getUserPermission !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```

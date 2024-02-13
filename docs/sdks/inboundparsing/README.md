@@ -37,7 +37,7 @@ try {
     if ($response->bytes !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -89,7 +89,7 @@ try {
     if ($response->getInboundEmailEvents !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
@@ -136,7 +136,7 @@ try {
     if ($response->getInboundEmailEventsByUuid !== null) {
         // handle response
     }
-} catch (Exception $e) {
+} catch (Throwable $e) {
     // handle exception
 }
 ```
