@@ -36,7 +36,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\DeleteConversationsMessagesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->conversations->deleteConversationsMessagesId($request);
 
@@ -83,7 +83,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\DeleteConversationsPushedMessagesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->conversations->deleteConversationsPushedMessagesId($request);
 
@@ -130,7 +130,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetConversationsMessagesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->conversations->getConversationsMessagesId($request);
 
@@ -177,7 +177,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetConversationsPushedMessagesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->conversations->getConversationsPushedMessagesId($request);
 
@@ -224,10 +224,10 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\PostConversationsAgentOnlinePingRequestBody();
-    $request->agentEmail = 'string';
-    $request->agentId = 'string';
-    $request->agentName = 'string';
-    $request->receivedFrom = 'string';;
+    $request->agentEmail = '<value>';
+    $request->agentId = '<value>';
+    $request->agentName = '<value>';
+    $request->receivedFrom = '<value>';;
 
     $response = $sdk->conversations->postConversationsAgentOnlinePing($request);
 
@@ -274,12 +274,12 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\PostConversationsMessagesRequestBody();
-    $request->agentEmail = 'string';
-    $request->agentId = 'string';
-    $request->agentName = 'string';
-    $request->receivedFrom = 'string';
-    $request->text = 'string';
-    $request->visitorId = 'string';;
+    $request->agentEmail = '<value>';
+    $request->agentId = '<value>';
+    $request->agentName = '<value>';
+    $request->receivedFrom = '<value>';
+    $request->text = '<value>';
+    $request->visitorId = '<value>';;
 
     $response = $sdk->conversations->postConversationsMessages($request);
 
@@ -326,10 +326,10 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\PostConversationsPushedMessagesRequestBody();
-    $request->agentId = 'string';
-    $request->groupId = 'string';
-    $request->text = 'string';
-    $request->visitorId = 'string';;
+    $request->agentId = '<value>';
+    $request->groupId = '<value>';
+    $request->text = '<value>';
+    $request->visitorId = '<value>';;
 
     $response = $sdk->conversations->postConversationsPushedMessages($request);
 
@@ -377,8 +377,8 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\PutConversationsMessagesIdRequest();
     $request->requestBody = new Operations\PutConversationsMessagesIdRequestBody();
-    $request->requestBody->text = 'string';
-    $request->id = '<ID>';;
+    $request->requestBody->text = '<value>';
+    $request->id = '<id>';;
 
     $response = $sdk->conversations->putConversationsMessagesId($request);
 
@@ -426,8 +426,8 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\PutConversationsPushedMessagesIdRequest();
     $request->requestBody = new Operations\PutConversationsPushedMessagesIdRequestBody();
-    $request->requestBody->text = 'string';
-    $request->id = '<ID>';;
+    $request->requestBody->text = '<value>';
+    $request->id = '<id>';;
 
     $response = $sdk->conversations->putConversationsPushedMessagesId($request);
 

@@ -32,14 +32,14 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\GetSmsEventsRequest();
     $request->days = 922986;
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->event = Operations\Event::Blocked;
     $request->limit = 648983;
     $request->offset = 491120;
-    $request->phoneNumber = 'string';
+    $request->phoneNumber = '<value>';
     $request->sort = Operations\GetSmsEventsQueryParamSort::Desc;
-    $request->startDate = 'string';
-    $request->tags = 'string';;
+    $request->startDate = '<value>';
+    $request->tags = '<value>';;
 
     $response = $sdk->transactionalSMS->getSmsEvents($request);
 
@@ -87,9 +87,9 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\GetTransacAggregatedSmsReportRequest();
     $request->days = 40533;
-    $request->endDate = 'string';
-    $request->startDate = 'string';
-    $request->tag = 'string';;
+    $request->endDate = '<value>';
+    $request->startDate = '<value>';
+    $request->tag = '<value>';;
 
     $response = $sdk->transactionalSMS->getTransacAggregatedSmsReport($request);
 
@@ -137,10 +137,10 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\GetTransacSmsReportRequest();
     $request->days = 183250;
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->sort = Operations\GetTransacSmsReportQueryParamSort::Desc;
-    $request->startDate = 'string';
-    $request->tag = 'string';;
+    $request->startDate = '<value>';
+    $request->tag = '<value>';;
 
     $response = $sdk->transactionalSMS->getTransacSmsReport($request);
 

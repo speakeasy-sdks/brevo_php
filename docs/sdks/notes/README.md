@@ -32,7 +32,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\DeleteCrmNotesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->notes->deleteCrmNotesId($request);
 
@@ -82,7 +82,7 @@ try {
     $request->dateFrom = 734797;
     $request->dateTo = 292043;
     $request->entity = Operations\QueryParamEntity::Contacts;
-    $request->entityIds = 'string';
+    $request->entityIds = '<value>';
     $request->limit = 672070;
     $request->offset = 601102;
     $request->sort = Operations\GetCrmNotesQueryParamSort::Asc;;
@@ -132,7 +132,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetCrmNotesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->notes->getCrmNotesId($request);
 
@@ -181,16 +181,16 @@ try {
         $request = new Operations\PatchCrmNotesIdRequest();
     $request->noteData = new Shared\NoteData();
     $request->noteData->companyIds = [
-        'string',
+        '<value>',
     ];
     $request->noteData->contactIds = [
         535017,
     ];
     $request->noteData->dealIds = [
-        'string',
+        '<value>',
     ];
     $request->noteData->text = 'In communication with client for resolution of queries.';
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->notes->patchCrmNotesId($request);
 
@@ -237,13 +237,13 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Shared\NoteData();
     $request->companyIds = [
-        'string',
+        '<value>',
     ];
     $request->contactIds = [
         684262,
     ];
     $request->dealIds = [
-        'string',
+        '<value>',
     ];
     $request->text = 'In communication with client for resolution of queries.';;
 

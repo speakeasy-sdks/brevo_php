@@ -32,7 +32,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\DeleteCrmFilesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->files->deleteCrmFilesId($request);
 
@@ -82,7 +82,7 @@ try {
     $request->dateFrom = 736297;
     $request->dateTo = 40718;
     $request->entity = Operations\Entity::Deals;
-    $request->entityIds = 'string';
+    $request->entityIds = '<value>';
     $request->limit = 240606;
     $request->offset = 115165;
     $request->sort = Operations\GetCrmFilesQueryParamSort::Asc;;
@@ -132,7 +132,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetCrmFilesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->files->getCrmFilesId($request);
 
@@ -179,7 +179,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetCrmFilesIdDataRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->files->getCrmFilesIdData($request);
 
@@ -226,9 +226,9 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\PostCrmFilesRequestBody();
-    $request->companyId = 'string';
+    $request->companyId = '<value>';
     $request->contactId = 256288;
-    $request->dealId = 'string';
+    $request->dealId = '<value>';
     $request->file = new Operations\File();
     $request->file->content = '0xB42AB596aD';
     $request->file->fileName = 'officer_personnel_diesel.mpg4';;

@@ -66,10 +66,10 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetAccountActivityRequest();
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->limit = 87824;
     $request->offset = 280117;
-    $request->startDate = 'string';;
+    $request->startDate = '<value>';;
 
     $response = $sdk->account->getAccountActivity($request);
 

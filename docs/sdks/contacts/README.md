@@ -56,7 +56,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\AddContactToListRequest();
-    $request->requestBody = 'string';
+    $request->requestBody = '<value>';
     $request->listId = 77706;;
 
     $response = $sdk->contacts->addContactToList($request);
@@ -105,7 +105,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\CreateAttributeRequest();
     $request->attributeCategory = Operations\AttributeCategory::Calculated;
-    $request->attributeName = 'string';
+    $request->attributeName = '<value>';
     $request->createAttribute = new Shared\CreateAttribute();
     $request->createAttribute->enumeration = [
         new Shared\Enumeration(),
@@ -159,7 +159,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Shared\CreateContact();
     $request->attributes = [
-        'Mercedes' => 'string',
+        'Mercedes' => '<value>',
     ];
     $request->email = 'elly@example.com';
     $request->emailBlacklisted = false;
@@ -218,7 +218,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Shared\CreateDoiContact();
     $request->attributes = [
-        'UDP' => 'string',
+        'UDP' => '<value>',
     ];
     $request->email = 'elly@example.com';
     $request->excludeListIds = [
@@ -369,7 +369,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\DeleteAttributeRequest();
     $request->attributeCategory = Operations\PathParamAttributeCategory::Normal;
-    $request->attributeName = 'string';;
+    $request->attributeName = '<value>';;
 
     $response = $sdk->contacts->deleteAttribute($request);
 
@@ -416,7 +416,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\DeleteContactRequest();
-    $request->identifier = 'string';;
+    $request->identifier = '<value>';;
 
     $response = $sdk->contacts->deleteContact($request);
 
@@ -594,9 +594,9 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetContactInfoRequest();
-    $request->endDate = 'string';
-    $request->identifier = 'string';
-    $request->startDate = 'string';;
+    $request->endDate = '<value>';
+    $request->identifier = '<value>';
+    $request->startDate = '<value>';;
 
     $response = $sdk->contacts->getContactInfo($request);
 
@@ -643,9 +643,9 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetContactStatsRequest();
-    $request->endDate = 'string';
-    $request->identifier = 'string';
-    $request->startDate = 'string';;
+    $request->endDate = '<value>';
+    $request->identifier = '<value>';
+    $request->startDate = '<value>';;
 
     $response = $sdk->contacts->getContactStats($request);
 
@@ -692,9 +692,9 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetContactsRequest();
-    $request->createdSince = 'string';
+    $request->createdSince = '<value>';
     $request->limit = 883763;
-    $request->modifiedSince = 'string';
+    $request->modifiedSince = '<value>';
     $request->offset = 587699;
     $request->sort = Operations\QueryParamSort::Desc;;
 
@@ -745,7 +745,7 @@ try {
         $request = new Operations\GetContactsFromListRequest();
     $request->limit = 164358;
     $request->listId = 721707;
-    $request->modifiedSince = 'string';
+    $request->modifiedSince = '<value>';
     $request->offset = 221058;
     $request->sort = Operations\GetContactsFromListQueryParamSort::Desc;;
 
@@ -1148,7 +1148,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\RemoveContactFromListRequest();
-    $request->requestBody = 'string';
+    $request->requestBody = '<value>';
     $request->listId = 85992;;
 
     $response = $sdk->contacts->removeContactFromList($request);
@@ -1253,7 +1253,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\UpdateAttributeRequest();
     $request->attributeCategory = Operations\UpdateAttributePathParamAttributeCategory::Calculated;
-    $request->attributeName = 'string';
+    $request->attributeName = '<value>';
     $request->updateAttribute = new Shared\UpdateAttribute();
     $request->updateAttribute->enumeration = [
         new Shared\UpdateAttributeEnumeration(),
@@ -1353,10 +1353,10 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\UpdateContactRequest();
-    $request->identifier = 'string';
+    $request->identifier = '<value>';
     $request->updateContact = new Shared\UpdateContact();
     $request->updateContact->attributes = [
-        'Jewell' => 'string',
+        'Jewell' => '<value>',
     ];
     $request->updateContact->emailBlacklisted = false;
     $request->updateContact->extId = 'updateExternalId';

@@ -190,11 +190,11 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetSmsCampaignsRequest();
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->limit = 200697;
     $request->offset = 609082;
     $request->sort = Operations\GetSmsCampaignsQueryParamSort::Desc;
-    $request->startDate = 'string';
+    $request->startDate = '<value>';
     $request->status = Operations\QueryParamStatus::Suspended;;
 
     $response = $sdk->smsCampaigns->getSmsCampaigns($request);

@@ -130,7 +130,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetCouponCollectionRequest();
-    $request->id = 'string';;
+    $request->id = '<value>';;
 
     $response = $sdk->coupons->getCouponCollection($request);
 
@@ -228,7 +228,7 @@ try {
         $request = new Operations\UpdateCouponCollectionRequest();
     $request->requestBody = new Operations\UpdateCouponCollectionRequestBody();
     $request->requestBody->defaultCoupon = '10 OFF';
-    $request->id = 'string';;
+    $request->id = '<value>';;
 
     $response = $sdk->coupons->updateCouponCollection($request);
 

@@ -31,12 +31,12 @@ try {
         $request = new Operations\GetWhatsappEventReportRequest();
     $request->contactNumber = '217-450-0860 x3202';
     $request->days = 322054;
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->event = Operations\QueryParamEvent::Sent;
     $request->limit = 686968;
     $request->offset = 60200;
     $request->sort = Operations\GetWhatsappEventReportQueryParamSort::Desc;
-    $request->startDate = 'string';;
+    $request->startDate = '<value>';;
 
     $response = $sdk->transactionalWhatsApp->getWhatsappEventReport($request);
 
@@ -81,7 +81,7 @@ $security->apiKey = '<YOUR_API_KEY_HERE>';
 $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    'string';
+    '<value>';
 
     $response = $sdk->transactionalWhatsApp->sendWhatsappMessage($request);
 

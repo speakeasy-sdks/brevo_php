@@ -33,7 +33,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\DeleteCrmTasksIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->tasks->deleteCrmTasksId($request);
 
@@ -82,17 +82,17 @@ try {
         $request = new Operations\GetCrmTasksRequest();
     $request->dateFrom = 347707;
     $request->dateTo = 258884;
-    $request->filterAssignTo = 'string';
-    $request->filterCompanies = 'string';
-    $request->filterContacts = 'string';
+    $request->filterAssignTo = '<value>';
+    $request->filterCompanies = '<value>';
+    $request->filterContacts = '<value>';
     $request->filterDate = Operations\FilterDate::Week;
-    $request->filterDeals = 'string';
+    $request->filterDeals = '<value>';
     $request->filterStatus = Operations\FilterStatus::Done;
-    $request->filterType = 'string';
+    $request->filterType = '<value>';
     $request->limit = 92194;
     $request->offset = 295949;
     $request->sort = Operations\GetCrmTasksQueryParamSort::Desc;
-    $request->sortBy = 'string';;
+    $request->sortBy = '<value>';;
 
     $response = $sdk->tasks->getCrmTasks($request);
 
@@ -139,7 +139,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetCrmTasksIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->tasks->getCrmTasksId($request);
 
@@ -226,14 +226,14 @@ try {
     $request->requestBody = new Operations\PatchCrmTasksIdRequestBody();
     $request->requestBody->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->requestBody->companiesIds = [
-        'string',
+        '<value>',
     ];
     $request->requestBody->contactsIds = [
         426328,
     ];
     $request->requestBody->date = DateTime::createFromFormat('Y-m-d\TH:i:s+', '2021-11-01T17:44:54.668Z');
     $request->requestBody->dealsIds = [
-        'string',
+        '<value>',
     ];
     $request->requestBody->done = false;
     $request->requestBody->duration = 600000;
@@ -246,7 +246,7 @@ try {
     $request->requestBody->reminder->unit = Shared\Unit::Weeks;
     $request->requestBody->reminder->value = 10;
     $request->requestBody->taskTypeId = '61a5cd07ca1347c82306ad09';
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->tasks->patchCrmTasksId($request);
 
@@ -295,14 +295,14 @@ try {
         $request = new Operations\PostCrmTasksRequestBody();
     $request->assignToId = '5faab4b7f195bb3c4c31e62a';
     $request->companiesIds = [
-        'string',
+        '<value>',
     ];
     $request->contactsIds = [
         185663,
     ];
     $request->date = DateTime::createFromFormat('Y-m-d\TH:i:s+', '2021-11-01T17:44:54.668Z');
     $request->dealsIds = [
-        'string',
+        '<value>',
     ];
     $request->done = false;
     $request->duration = 600000;

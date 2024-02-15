@@ -247,7 +247,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\DeleteScheduledEmailByIdRequest();
-    $request->identifier = 'string';;
+    $request->identifier = '<value>';;
 
     $response = $sdk->transactionalEmails->deleteScheduledEmailById($request);
 
@@ -388,7 +388,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\DeleteSmtpLogMessageIdRequest();
-    $request->messageId = 'string';;
+    $request->messageId = '<value>';;
 
     $response = $sdk->transactionalEmails->deleteSmtpLogMessageId($request);
 
@@ -436,9 +436,9 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\GetAggregatedSmtpReportRequest();
     $request->days = 49808;
-    $request->endDate = 'string';
-    $request->startDate = 'string';
-    $request->tag = 'string';;
+    $request->endDate = '<value>';
+    $request->startDate = '<value>';
+    $request->tag = '<value>';;
 
     $response = $sdk->transactionalEmails->getAggregatedSmtpReport($request);
 
@@ -524,14 +524,14 @@ try {
         $request = new Operations\GetEmailEventReportRequest();
     $request->days = 140058;
     $request->email = 'Saige.Keebler63@yahoo.com';
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->event = Operations\GetEmailEventReportQueryParamEvent::Clicks;
     $request->limit = 265644;
-    $request->messageId = 'string';
+    $request->messageId = '<value>';
     $request->offset = 736837;
     $request->sort = Operations\GetEmailEventReportQueryParamSort::Asc;
-    $request->startDate = 'string';
-    $request->tags = 'string';
+    $request->startDate = '<value>';
+    $request->tags = '<value>';
     $request->templateId = 427801;;
 
     $response = $sdk->transactionalEmails->getEmailEventReport($request);
@@ -580,7 +580,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\GetScheduledEmailByIdRequest();
     $request->endDate = DateTime::createFromFormat('Y-m-d', '2022-10-04');
-    $request->identifier = 'string';
+    $request->identifier = '<value>';
     $request->limit = 169392;
     $request->offset = 19100;
     $request->sort = Operations\GetScheduledEmailByIdQueryParamSort::Desc;
@@ -633,12 +633,12 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\GetSmtpReportRequest();
     $request->days = 6474;
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->limit = 183433;
     $request->offset = 786117;
     $request->sort = Operations\GetSmtpReportQueryParamSort::Desc;
-    $request->startDate = 'string';
-    $request->tag = 'string';;
+    $request->startDate = '<value>';
+    $request->tag = '<value>';;
 
     $response = $sdk->transactionalEmails->getSmtpReport($request);
 
@@ -782,14 +782,14 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetTransacBlockedContactsRequest();
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->limit = 309106;
     $request->offset = 420163;
     $request->senders = [
-        'string',
+        '<value>',
     ];
     $request->sort = Operations\GetTransacBlockedContactsQueryParamSort::Asc;
-    $request->startDate = 'string';;
+    $request->startDate = '<value>';;
 
     $response = $sdk->transactionalEmails->getTransacBlockedContacts($request);
 
@@ -884,12 +884,12 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\GetTransacEmailsListRequest();
     $request->email = 'Carmel_McLaughlin64@hotmail.com';
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->limit = 16086;
-    $request->messageId = 'string';
+    $request->messageId = '<value>';
     $request->offset = 704759;
     $request->sort = Operations\GetTransacEmailsListQueryParamSort::Desc;
-    $request->startDate = 'string';
+    $request->startDate = '<value>';
     $request->templateId = 839474;;
 
     $response = $sdk->transactionalEmails->getTransacEmailsList($request);
@@ -998,14 +998,14 @@ try {
         new Shared\Cc(),
     ];
     $request->headers = [
-        'voluptatem' => 'string',
+        'voluptatem' => '<value>',
     ];
     $request->htmlContent = '<!DOCTYPE html> <html> <body> <h1>Confirm you email</h1> <p>Please confirm your email address by clicking on the link below</p> </body> </html>';
     $request->messageVersions = [
         new Shared\MessageVersions(),
     ];
     $request->params = [
-        'Northwest' => 'string',
+        'Northwest' => '<value>',
     ];
     $request->replyTo = new Shared\ReplyTo();
     $request->replyTo->email = 'ann6533@example.com';

@@ -52,7 +52,7 @@ try {
     $request->mirrorActive = true;
     $request->name = 'Newsletter - May 2017';
     $request->params = [
-        'wield' => 'string',
+        'wield' => '<value>',
     ];
     $request->previewText = 'Thanks for your order!';
     $request->recipients = new Shared\Recipients();
@@ -322,12 +322,12 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetEmailCampaignsRequest();
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->excludeHtmlContent = Operations\ExcludeHtmlContent::True;
     $request->limit = 276251;
     $request->offset = 238074;
     $request->sort = Operations\GetEmailCampaignsQueryParamSort::Asc;
-    $request->startDate = 'string';
+    $request->startDate = '<value>';
     $request->statistics = Operations\QueryParamStatistics::LinksStats;
     $request->status = Operations\Status::Archive;
     $request->type = Operations\Type::Trigger;;
@@ -640,7 +640,7 @@ try {
     $request->updateEmailCampaign->mirrorActive = true;
     $request->updateEmailCampaign->name = 'Newsletter - May 2017';
     $request->updateEmailCampaign->params = [
-        'Bicycle' => 'string',
+        'Bicycle' => '<value>',
     ];
     $request->updateEmailCampaign->previewText = 'Thanks for your order!';
     $request->updateEmailCampaign->recipients = new Shared\UpdateEmailCampaignRecipients();

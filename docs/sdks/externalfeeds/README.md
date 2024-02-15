@@ -139,7 +139,7 @@ try {
     $request->endDate = DateTime::createFromFormat('Y-m-d', '2023-12-18');
     $request->limit = 611577;
     $request->offset = 408687;
-    $request->search = 'string';
+    $request->search = '<value>';
     $request->sort = Operations\GetAllExternalFeedsQueryParamSort::Asc;
     $request->startDate = DateTime::createFromFormat('Y-m-d', '2024-06-18');;
 

@@ -96,7 +96,7 @@ try {
     $request->billing->postCode = '4052';
     $request->billing->region = 'Northwestern Switzerland';
     $request->coupons = [
-        'string',
+        '<value>',
     ];
     $request->createdAt = '2021-07-29T20:59:23.383Z';
     $request->email = 'example@brevo.com';
@@ -300,18 +300,18 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Shared\CreateUpdateProduct();
     $request->categories = [
-        'string',
+        '<value>',
     ];
-    $request->deletedAt = 'string';
+    $request->deletedAt = '<value>';
     $request->id = 'P11';
     $request->imageUrl = 'http://mydomain.com/product-absoulte-url/img.jpeg';
     $request->metaInfo = [
-        'content' => 'string',
+        'content' => '<value>',
     ];
     $request->name = 'Iphone 11';
-    $request->parentId = 'string';
+    $request->parentId = '<value>';
     $request->price = 7600.86;
-    $request->sku = 'string';
+    $request->sku = '<value>';
     $request->updateEnabled = false;
     $request->url = 'http://mydomain.com/product/electronics/product1';;
 
@@ -361,10 +361,10 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\GetCategoriesRequest();
     $request->ids = [
-        'string',
+        '<value>',
     ];
     $request->limit = 806522;
-    $request->name = 'string';
+    $request->name = '<value>';
     $request->offset = 152083;
     $request->sort = Operations\GetCategoriesQueryParamSort::Desc;;
 
@@ -413,7 +413,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetCategoryInfoRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->ecommerce->getCategoryInfo($request);
 
@@ -460,7 +460,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetProductInfoRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->ecommerce->getProductInfo($request);
 
@@ -508,13 +508,13 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 try {
         $request = new Operations\GetProductsRequest();
     $request->categories = [
-        'string',
+        '<value>',
     ];
     $request->ids = [
-        'string',
+        '<value>',
     ];
     $request->limit = 530985;
-    $request->name = 'string';
+    $request->name = '<value>';
     $request->offset = 818885;
     $request->priceEq = 7490.81;
     $request->priceGt = 1751.87;

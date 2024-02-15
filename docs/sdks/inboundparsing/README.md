@@ -30,7 +30,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetInboundEmailAttachmentRequest();
-    $request->downloadToken = 'string';;
+    $request->downloadToken = '<value>';;
 
     $response = $sdk->inboundParsing->getInboundEmailAttachment($request);
 
@@ -77,12 +77,12 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetInboundEmailEventsRequest();
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->limit = 717459;
     $request->offset = 401477;
-    $request->sender = 'string';
+    $request->sender = '<value>';
     $request->sort = Operations\GetInboundEmailEventsQueryParamSort::Desc;
-    $request->startDate = 'string';;
+    $request->startDate = '<value>';;
 
     $response = $sdk->inboundParsing->getInboundEmailEvents($request);
 

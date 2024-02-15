@@ -34,7 +34,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\DeleteCompaniesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->companies->deleteCompaniesId($request);
 
@@ -81,13 +81,13 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetCompaniesRequest();
-    $request->filters = 'string';
+    $request->filters = '<value>';
     $request->limit = 817302;
     $request->linkedContactsIds = 571205;
-    $request->linkedDealsIds = 'string';
+    $request->linkedDealsIds = '<value>';
     $request->page = 66234;
     $request->sort = Operations\Sort::Desc;
-    $request->sortBy = 'string';;
+    $request->sortBy = '<value>';;
 
     $response = $sdk->companies->getCompanies($request);
 
@@ -171,7 +171,7 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetCompaniesIdRequest();
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->companies->getCompaniesId($request);
 
@@ -223,15 +223,15 @@ try {
         478673,
     ];
     $request->requestBody->linkDealsIds = [
-        'string',
+        '<value>',
     ];
     $request->requestBody->unlinkContactIds = [
         514435,
     ];
     $request->requestBody->unlinkDealsIds = [
-        'string',
+        '<value>',
     ];
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->companies->patchCompaniesLinkUnlinkId($request);
 
@@ -282,7 +282,7 @@ try {
     $request->requestBody->attributes = new Operations\Attributes();
     $request->requestBody->countryCode = 91;
     $request->requestBody->name = 'company';
-    $request->id = '<ID>';;
+    $request->id = '<id>';;
 
     $response = $sdk->companies->patchCompaniesId($request);
 

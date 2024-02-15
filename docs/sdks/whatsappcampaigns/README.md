@@ -239,11 +239,11 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetWhatsAppCampaignsRequest();
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->limit = 452266;
     $request->offset = 758325;
     $request->sort = Operations\GetWhatsAppCampaignsQueryParamSort::Asc;
-    $request->startDate = 'string';;
+    $request->startDate = '<value>';;
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppCampaigns($request);
 
@@ -327,11 +327,11 @@ $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
         $request = new Operations\GetWhatsAppTemplatesRequest();
-    $request->endDate = 'string';
+    $request->endDate = '<value>';
     $request->limit = 39819;
     $request->offset = 185489;
     $request->sort = Operations\GetWhatsAppTemplatesQueryParamSort::Asc;
-    $request->startDate = 'string';;
+    $request->startDate = '<value>';;
 
     $response = $sdk->whatsAppCampaigns->getWhatsAppTemplates($request);
 

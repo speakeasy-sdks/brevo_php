@@ -130,7 +130,7 @@ $security->apiKey = '<YOUR_API_KEY_HERE>';
 $sdk = BREVO\Brevo::builder()->setSecurity($security)->build();
 
 try {
-    'string';
+    '<value>';
 
     $response = $sdk->webhooks->exportWebhooksHistory($request);
 
