@@ -35,7 +35,8 @@ Blocks a new domain in order to avoid messages being sent to the same
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -81,7 +82,8 @@ Create an email template
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -139,7 +141,8 @@ Unblocks an existing domain from the list of blocked domains
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -186,7 +189,8 @@ Delete hardbounces. To use carefully (e.g. in case of temporary ISP failures)
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -234,7 +238,8 @@ Delete scheduled batch of emails by batchId or single scheduled email by message
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -281,7 +286,8 @@ Delete an inactive email template
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -328,7 +334,8 @@ Unblock or resubscribe a transactional contact
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -375,7 +382,8 @@ Delete an SMTP transactional log
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -422,7 +430,8 @@ This endpoint will show the aggregated stats for past 90 days by default if `sta
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -472,7 +481,8 @@ Get the list of blocked domains
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -509,7 +519,8 @@ This endpoint will show the aggregated stats for past 30 days by default if `sta
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -566,7 +577,8 @@ Fetch scheduled batch of emails by batchId or single scheduled email by messageI
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -619,7 +631,8 @@ Get your transactional email activity aggregated per day
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -672,7 +685,8 @@ Returns the template information
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -719,7 +733,8 @@ Get the list of email templates
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -769,7 +784,8 @@ Get the list of blocked or unsubscribed transactional contacts
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -823,7 +839,8 @@ Get the personalized content of a sent transactional email
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -870,7 +887,8 @@ This endpoint will show the list of emails for past 30 days by default. To retri
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -924,7 +942,8 @@ Send a template to your test list
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -975,7 +994,8 @@ Send a transactional email
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -1057,7 +1077,8 @@ Update an email template
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;

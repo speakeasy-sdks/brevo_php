@@ -17,7 +17,8 @@ This endpoint will retrieve inbound attachment with download token.
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -64,7 +65,8 @@ This endpoint will show the list of all the events for the received emails.
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -116,7 +118,8 @@ This endpoint will show the list of all events history for one particular receiv
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;

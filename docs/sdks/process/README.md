@@ -16,7 +16,8 @@ Return the informations for a process
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -63,7 +64,8 @@ Return all the processes for your account
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;

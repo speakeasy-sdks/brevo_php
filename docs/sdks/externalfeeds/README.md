@@ -19,7 +19,8 @@ This endpoint will create an external feed.
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -75,7 +76,8 @@ This endpoint will delete an external feed.
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -122,7 +124,8 @@ This endpoint can fetch all created external feeds.
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -175,7 +178,8 @@ This endpoint will update an external feed.
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -222,7 +226,8 @@ This endpoint will update an external feed.
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;

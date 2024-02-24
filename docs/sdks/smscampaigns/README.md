@@ -24,7 +24,8 @@ Creates an SMS campaign
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -83,7 +84,8 @@ Delete an SMS campaign
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -130,7 +132,8 @@ Get an SMS campaign
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -177,7 +180,8 @@ Returns the information for all your created SMS campaigns
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -229,7 +233,8 @@ It returns the background process ID which on completion calls the notify URL th
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -279,7 +284,8 @@ Send your SMS campaign immediately
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -326,7 +332,8 @@ Send report of Sent and Archived campaign, to the specified email addresses, wit
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -380,7 +387,8 @@ Send a test SMS campaign
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -429,7 +437,8 @@ Update an SMS campaign
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -491,7 +500,8 @@ Update a campaign's status
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;

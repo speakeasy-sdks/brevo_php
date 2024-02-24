@@ -92,8 +92,7 @@ class Brevo
 	public TransactionalWhatsApp $transactionalWhatsApp;
 	
 	public WhatsAppCampaigns $whatsAppCampaigns;
-		
-	private SDKConfiguration $sdkConfiguration;
+	
 
 	/**
 	 * Returns a new instance of the SDK builder used to configure and create the SDK instance.
@@ -108,9 +107,9 @@ class Brevo
 	/**
 	 * @param SDKConfiguration $sdkConfiguration
 	 */
-	public function __construct(SDKConfiguration $sdkConfiguration)
-	{
-		$this->sdkConfiguration = $sdkConfiguration;
+	public function __construct(
+		private SDKConfiguration $sdkConfiguration,
+	) {
 		
 		$this->account = new Account($this->sdkConfiguration);
 		

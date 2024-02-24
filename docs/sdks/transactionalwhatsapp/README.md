@@ -16,7 +16,8 @@ This endpoint will show the unaggregated statistics for WhatsApp activity (30 da
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;
@@ -70,7 +71,8 @@ This endpoint is used to send a WhatsApp message. <br/>(**The first message you 
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \test\BREVO;
 use \test\BREVO\Models\Shared;

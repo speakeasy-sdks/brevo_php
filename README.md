@@ -37,7 +37,8 @@ composer update
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use test\BREVO;
 use test\BREVO\Models\Shared;
